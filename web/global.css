@@ -73,7 +73,7 @@ article {
 
 @media (min-width: 768px) {
   article {
-    padding: 2rem 4em;
+    /* padding: 2rem 4em; */
     max-width: 974px;
   }
 }

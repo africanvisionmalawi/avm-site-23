@@ -170,6 +170,37 @@ const Page = ({ data }) => {
   );
 };
 
+export async function getStaticPaths() {
+  const allPages = await client.fetch(
+    ` *[_type == "page" && slug.current != null] {
+      'slug': slug.current,
+      'category': category->slug.current,
+      'indexPage': indexPage,
+    }`
+  );
+  // console.log
+  // console.log("allPages ", allPages);
+  // console.log(
+  //   "all pages map ",
+  //   allPages?.map((page) => ({
+  //     params: {
+  //       slug: page.indexPage ? page.slug : `${page.category}/${page.slug}`,
+  //     },
+  //   })) || []
+  // );
+
+  return {
+    paths:
+      allPages?.map((page, idx) => ({
+        params: {
+          slug: page.indexPage ? page.slug : `${page.category}/${page.slug}`,
+          // slug: `mypage-${idx}`,
+        },
+      })) || [],
+    fallback: true,
+  };
+}
+
 const query = groq`*[_type == "page" && slug.current == $currentSlug][0]{ 
   slug, 
   id,
@@ -193,17 +224,6 @@ const query = groq`*[_type == "page" && slug.current == $currentSlug][0]{
   },  
   body,
 }`;
-
-export async function getStaticPaths() {
-  const paths = await client.fetch(
-    `*[_type == "page" && defined[slug.current]][].slug.current`
-  );
-
-  return {
-    paths: paths.map((slug) => ({ params: { slug } })),
-    fallback: true,
-  };
-}
 
 export async function getStaticProps({ params, preview = false }) {
   // It's important to default the slug so that it doesn't return "undefined"
