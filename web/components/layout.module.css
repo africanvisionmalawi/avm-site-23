@@ -1,0 +1,24 @@
+.container {
+  /* background: #fff url("/img/common/body-back-grey.png") repeat-x 0 0; */
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-start;
+  min-height: 100vh;
+}
+.container__top {
+  flex: 1 0 auto;
+}
+.container__lower {
+  flex-shrink: 0;
+}
+/* TODO: fix this */
+/* blockquote {
+  border-left: 10px solid #d1c9c6;
+  font-size: 1.1em;
+  font-style: italic;
+  margin: 2rem 0;
+  max-width: 700px;
+  padding: 0 1rem;
+} */
+

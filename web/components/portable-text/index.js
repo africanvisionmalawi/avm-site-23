@@ -1,0 +1,1 @@
+export { portableText } from "./BasePortableText";

@@ -1,0 +1,45 @@
+.footer {
+  background: #fff;
+  color: #575757;
+  font-size: 0.9rem;
+  margin-top: auto;
+  padding-bottom: 60px;
+}
+.footer a:link,
+.footer a:visited {
+  color: #575757;
+}
+.footerInner {
+  /* display: flex;
+  justify-content: center; */
+  display: flex;
+  margin: 0 auto;
+  max-width: 980px;
+  width: 100%;
+}
+.footerInner h3 {
+  font-size: 1.1em;
+  text-transform: uppercase;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+}
+.list,
+.list li {
+  color: #575757;
+  list-style-type: none;
+}
+.iconsList {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.icon {
+  fill: #575757;
+  height: 30px;
+  margin: 0 5px;
+  width: auto;
+}

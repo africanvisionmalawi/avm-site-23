@@ -1,0 +1,37 @@
+.ctaButton {
+  display: block;
+
+  /* text-align: center;     */
+}
+.ctaButton a {
+  background: #58b5d7;
+  border-radius: 8px;
+  display: inline-block;
+  font-weight: bold;
+  /* padding: 10px 20px; */
+  padding: 6px 12px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.ctaButton-alt a {
+  background: #fff;
+  color: #58b5d7;
+}
+.ctaButton a:link,
+.ctaButton a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+.ctaButton a:hover {
+  background: #6dbedc;
+}
+.cartLink {
+  padding: 4px;
+}
+.cartLinkIcon {
+  height: 32px;
+  width: auto;
+}
+.cartLinkText {
+  color: #fff;
+}

@@ -1,0 +1,49 @@
+{
+  "root": true,
+  "project": {
+    "name": "avm-site-sanity"
+  },
+  "api": {
+    "projectId": "hh4wbbfo",
+    "dataset": "production"
+  },
+  "plugins": [
+    "@sanity/base",
+    "@sanity/components",
+    "@sanity/default-layout",
+    "@sanity/default-login",
+    "@sanity/desk-tool",
+    "autocomplete-tags",
+    "media-library",
+    "@sanity/dashboard",
+    "dashboard-widget-gatsby",
+    "snipcart-orders",
+    "@sanity/production-preview",
+    "dashboard-widget-netlify"
+  ],
+  "env": {
+    "development": {
+      "plugins": [
+        "@sanity/vision"
+      ]
+    }
+  },
+  "parts": [
+    {
+      "name": "part:@sanity/base/schema",
+      "path": "./schemas/schema"
+    },
+    {
+      "name": "part:@sanity/desk-tool/structure",
+      "path": "./deskStructure.js"
+    },
+    {
+      "implements": "part:@sanity/dashboard/config",
+      "path": "./dashboardConfig.js"
+    },
+    {
+      "implements": "part:@sanity/production-preview/resolve-production-url",
+      "path": "./resolveProductionUrl.js"
+    }
+  ]
+}
