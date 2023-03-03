@@ -66,7 +66,7 @@ const Page = ({ data }) => {
     .filter((c) => !c.disabled)
     .map((c, i) => {
       let el = null;
-      console.log("type ", c._type);
+      // console.log("type ", c._type);
       switch (c._type) {
         case "hero":
           el = (
@@ -83,7 +83,7 @@ const Page = ({ data }) => {
           el = <Videos key={c._key} {...c} />;
           break;
         case "pageLinks":
-          console.log("pageLinks c ", c);
+          // console.log("pageLinks c ", c);
           el = (
             <ContentSection>
               <PageLinks key={c._key} {...c} />
@@ -108,7 +108,7 @@ const Page = ({ data }) => {
           );
           break;
         case "googlemap":
-          console.log("has map");
+          // console.log("has map");
           el = <GoogleMap key={c._key} {...c} />;
           break;
         case "uiComponentRef":
@@ -178,23 +178,11 @@ export async function getStaticPaths() {
       'indexPage': indexPage,
     }`
   );
-  // console.log
-  // console.log("allPages ", allPages);
-  // console.log(
-  //   "all pages map ",
-  //   allPages?.map((page) => ({
-  //     params: {
-  //       slug: page.indexPage ? page.slug : `${page.category}/${page.slug}`,
-  //     },
-  //   })) || []
-  // );
-
   return {
     paths:
-      allPages?.map((page, idx) => ({
+      allPages?.map((page) => ({
         params: {
           slug: [page.indexPage ? page.slug : `${page.category}/${page.slug}`],
-          // slug: `mypage-${idx}`,
         },
       })) || [],
     fallback: true,

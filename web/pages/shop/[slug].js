@@ -284,12 +284,18 @@ const query = groq`{
 }`;
 
 export async function getStaticPaths() {
-  const paths = await client.fetch(
-    `*[_type == "shop" && defined[slug.current]][].slug.current`
+  const allPages = await client.fetch(
+    ` *[_type == "shop" && slug.current != null && hide != true] {
+      'slug': slug.current,            
+    }`
   );
-
   return {
-    paths: paths.map((slug) => ({ params: { slug } })),
+    paths:
+      allPages?.map((page) => ({
+        params: {
+          slug: page.slug,
+        },
+      })) || [],
     fallback: true,
   };
 }

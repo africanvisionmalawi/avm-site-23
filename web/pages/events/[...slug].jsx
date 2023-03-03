@@ -64,7 +64,7 @@ const Page = ({ data }) => {
     .filter((c) => !c.disabled)
     .map((c, i) => {
       let el = null;
-      console.log("type ", c._type);
+      // console.log("type ", c._type);
       switch (c._type) {
         case "hero":
           el = (
@@ -75,13 +75,13 @@ const Page = ({ data }) => {
               heroHeadingType="h2"
             />
           );
-          console.log("c.image.asset **********", c.image.asset);
+          // console.log("c.image.asset **********", c.image.asset);
           break;
         case "videoGallery":
           el = <Videos key={c._key} {...c} />;
           break;
         case "pageLinks":
-          console.log("pageLinks c ", c);
+          // console.log("pageLinks c ", c);
           el = (
             <ContentSection>
               <PageLinks key={c._key} {...c} />
@@ -106,7 +106,7 @@ const Page = ({ data }) => {
           );
           break;
         case "googlemap":
-          console.log("has map");
+          // console.log("has map");
           el = <GoogleMap key={c._key} {...c} />;
           break;
         case "uiComponentRef":
@@ -188,13 +188,18 @@ title,
 }`;
 
 export async function getStaticPaths() {
-  const paths = await client.fetch(
-    `*[_type == "event" && defined[slug.current]][].slug.current`
+  const allPages = await client.fetch(
+    ` *[_type == "event" && slug.current != null] {
+      'slug': slug.current,      
+    }`
   );
-  console.log("events paths ", paths);
-
   return {
-    paths: paths.map((slug) => ({ params: { slug } })),
+    paths:
+      allPages?.map((page) => ({
+        params: {
+          slug: [page.slug],
+        },
+      })) || [],
     fallback: true,
   };
 }
