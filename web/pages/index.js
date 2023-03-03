@@ -8,6 +8,7 @@ import { siteMeta } from "constants/site";
 import dayjs from "dayjs";
 import { NextSeo } from "next-seo";
 // import { PortableText } from "lib/sanity";
+import { OurWork } from "components/ourwork/OurWork";
 import { Player } from "components/videos/Player";
 import groq from "groq";
 import React from "react";
@@ -151,8 +152,8 @@ const PostsFooter = styled.div`
 
 const HomePage = ({ data }) => {
   // console.log("data here ", data);
-  const { homePage, events } = data;
-  // console.log("events ", events);
+  const { homePage, events, ourWork } = data;
+  // console.log("ourwork ", ourWork);
   const allEvents = events || [];
   // console.log("allEvents ", allEvents);
   let futureEvents = [];
@@ -218,6 +219,11 @@ const HomePage = ({ data }) => {
               </VideoSection>
             </TopVideoSectionInner>
           </TopVideoSection>
+          {ourWork ? (
+            <Container>
+              <OurWork ourWork={ourWork.ourWork} displayHeading />
+            </Container>
+          ) : null}
           {homePage.latestNews ? (
             <LatestNews>
               <h2>Latest news</h2>
@@ -309,7 +315,12 @@ const query = groq`{
   endDate,
   hideTime,
   allDay,
-}
+},
+
+'ourWork':*[_type == "ourWorkShared"][0]
+{  
+  ourWork,
+},
 }
 `;
 
