@@ -191,6 +191,7 @@ export async function getStaticPaths() {
   const paths = await client.fetch(
     `*[_type == "event" && defined[slug.current]][].slug.current`
   );
+  console.log("events paths ", paths);
 
   return {
     paths: paths.map((slug) => ({ params: { slug } })),

@@ -193,7 +193,7 @@ export async function getStaticPaths() {
     paths:
       allPages?.map((page, idx) => ({
         params: {
-          slug: page.indexPage ? page.slug : `${page.category}/${page.slug}`,
+          slug: [page.indexPage ? page.slug : `${page.category}/${page.slug}`],
           // slug: `mypage-${idx}`,
         },
       })) || [],
