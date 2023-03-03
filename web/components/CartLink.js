@@ -63,7 +63,7 @@ const TotalItems = styled.span`
 
 const Icon = styled.svg`
   height: auto;
-  width: 30px;
+  width: 26px;
 `;
 
 export default CartLink;

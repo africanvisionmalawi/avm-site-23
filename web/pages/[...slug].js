@@ -22,14 +22,21 @@ const Heading = styled.h1`
   text-align: center;
 `;
 
+// const TopSection = styled.div`
+//   margin: 0 auto;
+//   max-width: 885px;
+//   padding: 3rem 1rem 0;
+//   position: relative;
+//   width: 100%;
+//   @media (min-width: 768px) {
+//     padding-top: 1rem;
+//   }
+// `;
+
 const TopSection = styled.div`
-  margin: 0 auto;
-  max-width: 885px;
-  padding: 3rem 1rem 0;
-  position: relative;
-  width: 100%;
+  padding: 0 1rem;
   @media (min-width: 768px) {
-    padding-top: 1rem;
+    padding: 0 5rem;
   }
 `;
 
@@ -39,7 +46,6 @@ const TextSection = styled.section`
   max-width: 1180px;
   padding: 1rem;
   position: relative;
-  width: 100%;
   @media (min-width: 768px) {
     padding: 2rem 4em;
   }
@@ -150,7 +156,9 @@ const Page = ({ data }) => {
       />
       {path ? <Breadcrumbs path={path} indexPage={data?.indexPage} /> : null}
       <article>
-        <h1>{data?.title}</h1>
+        <TopSection>
+          <h1>{data?.title}</h1>
+        </TopSection>
         {data?.hero && (
           <div>
             <Hero
@@ -163,7 +171,9 @@ const Page = ({ data }) => {
             {/* <Image image={data.hero.image.asset} /> */}
           </div>
         )}
-        {data?.body ? <PortableText article blocks={data.body} /> : null}
+        <TopSection>
+          {data?.body ? <PortableText article blocks={data.body} /> : null}
+        </TopSection>
         <Container>{content}</Container>
       </article>
     </>

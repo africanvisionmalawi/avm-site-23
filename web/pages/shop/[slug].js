@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import { Breadcrumbs } from "components/Breadcrumbs";
 import { BuyButton } from "components/common/BuyButton";
 import { Carousel } from "components/common/Carousel";
 import { SectionInner } from "components/common/SectionInner";
@@ -123,7 +124,17 @@ export const Shop = ({ data }) => {
     (prod) => prod.tags[0].value === page.tags[0].value
   );
 
-  // console.log("relatedProducts ", relatedProducts);
+  const path = [
+    {
+      title: "Shop",
+      slug: "shop",
+    },
+    {
+      title: page.title,
+      slug: page.slug,
+    },
+  ];
+
   return (
     <>
       <NextSeo
@@ -136,6 +147,7 @@ export const Shop = ({ data }) => {
           page?.description ? page?.description : siteMeta.description
         }
       />
+      {path ? <Breadcrumbs path={path} /> : null}
       <article>
         <ShopSection>
           <article className="content">

@@ -31,18 +31,19 @@ export const Breadcrumbs = ({ path, indexPage }) => {
 
 const Container = styled.div`
   display: none;
+  font-family: var(--font-roboto);
   margin: 0 auto;
   max-width: 1080px;
-  padding: 0.5rem 100px;
+  padding: 0 90px;
   position: relative;
   @media (min-width: 480px) {
     display: block;
   }
   @media (min-width: 768px) {
-    padding-left: 120px;
+    padding-left: 110px;
   }
   @media (min-width: 1140px) {
-    padding: 0.5rem 0 0.5rem 90px;
+    padding: 0.5rem 0 0.5rem 80px;
   }
 `;
 

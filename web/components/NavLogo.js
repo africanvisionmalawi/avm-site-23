@@ -5,14 +5,17 @@ import styled from "@emotion/styled";
 const LogoCont = styled.div`
   & a {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
+    border-radius: 8px;
     display: block;
     left: 8px;
     overflow: hidden;
     position: absolute;
     top: 0;
     z-index: 9;
+    @media (min-width: 768px) {
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    }
   }
 `;
 
