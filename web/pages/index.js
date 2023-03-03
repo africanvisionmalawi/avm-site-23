@@ -34,7 +34,6 @@ const TopSection = styled.div`
   max-width: 885px;
   padding: 3rem 1rem 0;
   position: relative;
-  width: 100%;
   @media (min-width: 768px) {
     padding-top: 1rem;
   }
@@ -47,18 +46,15 @@ const TextSection = styled.section`
   max-width: 1180px;
   padding: 1rem;
   position: relative;
-  width: 100%;
 `;
 
 const LatestNews = styled.div`
   background: #f7f7f7;
-  padding: 2.5em 0;
   min-height: 24rem;
   margin: 0 auto;
   max-width: 1180px;
   padding: 1rem;
   position: relative;
-  width: 100%;
   @media (min-width: 768px) {
     padding: 2rem 4em 2rem;
   }

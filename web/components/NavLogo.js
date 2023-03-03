@@ -5,35 +5,41 @@ import styled from "@emotion/styled";
 const LogoCont = styled.div`
   & a {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
     display: block;
-    height: 120px;
+    left: 8px;
+    overflow: hidden;
     position: absolute;
     top: 0;
-    width: auto;
     z-index: 9;
-    @media (min-width: 768px) {
-      height: 160px;
-    }
-  }
-`;
-const LogoImg = styled.img`
-  display: block;
-  height: 120px;
-  width: auto;
-  @media (min-width: 768px) {
-    height: 160px;
   }
 `;
 
 const NavLogo = styled.figure`
+  background: #fff;
+  height: 70px;
   margin: 0;
+  padding: 0 0.5rem;
+  @media (min-width: 768px) {
+    height: 90px;
+  }
+  & img {
+    display: block;
+    height: 100%;
+    object-fit: contain;
+    width: auto;
+    @media (min-width: 768px) {
+      height: 100%;
+    }
+  }
 `;
 
-const navLogo = (Û) => (
+const navLogo = () => (
   <LogoCont>
     <a href="/">
       <NavLogo>
-        <LogoImg src="/img/logo-full.png" alt="" />
+        <img src="/img/common/logo-full.png" alt="" />
       </NavLogo>
     </a>
   </LogoCont>

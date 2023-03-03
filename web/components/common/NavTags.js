@@ -4,7 +4,6 @@ const TagsNavCont = styled.div`
   display: flex;
   justify-content: center;
   margin: 0 auto 1rem;
-  max-width: 640px;
   width: 100%;
 `;
 

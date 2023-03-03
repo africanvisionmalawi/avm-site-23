@@ -22,7 +22,6 @@ const TopSection = styled.div`
   max-width: 885px;
   padding: 3rem 1rem 0;
   position: relative;
-  width: 100%;
   @media (min-width: 768px) {
     padding-top: 1rem;
   }

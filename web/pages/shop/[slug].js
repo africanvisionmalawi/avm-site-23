@@ -41,7 +41,6 @@ const ShopSection = styled.section`
   margin: 0 auto;
   max-width: 1180px;
   padding: 0 1rem;
-  width: 100%;
 `;
 
 const Heading = styled.h1`
