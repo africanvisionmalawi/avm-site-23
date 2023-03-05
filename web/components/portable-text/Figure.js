@@ -8,7 +8,18 @@ export default ({ value }) => {
 
   return (
     <figure>
-      <Image image={value} alt={alt} maxWidth={800} />
+      <Image
+        image={value}
+        alt={alt}
+        maxWidth={1180}
+        style={{
+          objectFit: "cover",
+          height: "auto",
+          maxWidth: "100vw",
+        }}
+        sizes="(max-width: 1140px) 100vw, 1140px"
+        fit="crop"
+      />
       <figcaption>{caption}</figcaption>
     </figure>
   );
