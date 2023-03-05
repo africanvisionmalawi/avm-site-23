@@ -8,7 +8,7 @@ import { siteMeta } from "constants/site";
 import dayjs from "dayjs";
 import { NextSeo } from "next-seo";
 // import { PortableText } from "lib/sanity";
-import { OurWork } from "components/ourwork/OurWork";
+import { OurWork } from "components/ourwork/ourwork";
 import { Player } from "components/videos/Player";
 import groq from "groq";
 import React from "react";
