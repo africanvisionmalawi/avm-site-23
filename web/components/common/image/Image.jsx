@@ -23,6 +23,7 @@ export const Image = ({
   imageSize,
   layout = "fixed",
   style,
+  sizes,
 }) => {
   // const imageUrl =
   //   image &&
@@ -58,6 +59,7 @@ export const Image = ({
               imageSize,
               fit,
               layout,
+              sizes,
             })
           }
         />

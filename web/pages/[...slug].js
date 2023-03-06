@@ -1,5 +1,6 @@
 import styled from "@emotion/styled";
 import { Breadcrumbs } from "components/Breadcrumbs";
+import { BannerMsg } from "components/common/BannerMsg";
 import { Gallery } from "components/gallery";
 import { Hero } from "components/Hero";
 import { PageLinks } from "components/page-links";
@@ -68,6 +69,8 @@ const Main = styled.main`
 const Page = ({ data }) => {
   // console.log("content here is ***************** ", data?.content);
   // console.log("data here is ***************** ", data);
+  console.log("hero ", data.hero);
+  console.log("bannermsg ", data.bannerMsg);
   const content = (data?.content || [])
     .filter((c) => !c.disabled)
     .map((c, i) => {
@@ -144,6 +147,7 @@ const Page = ({ data }) => {
       slug: data?.slug,
     },
   ];
+
   return (
     <>
       <NextSeo
@@ -165,12 +169,18 @@ const Page = ({ data }) => {
               image={data.hero.image}
               mobileImage={data.hero.mobileImage}
               displayHeroMsg={false}
-              // heroHeading={c.title}
+              heroHeading={data.title}
               // heroHeadingType="h2"
             />
             {/* <Image image={data.hero.image.asset} /> */}
           </div>
         )}
+        {data.bannerMsg ? (
+          <BannerMsg
+            msg={data.bannerMsg.Message}
+            source={data.bannerMsg.source}
+          />
+        ) : null}
         <TopSection>
           {data?.body ? <PortableText article blocks={data.body} /> : null}
         </TopSection>

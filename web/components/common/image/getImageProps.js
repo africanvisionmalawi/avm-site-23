@@ -7,7 +7,7 @@ export const imageBuilder = imageUrlBuilder(sanityClient);
 const LARGEST_VIEWPORT = 1920; // Retina sizes will take care of 4k (2560px) and other huge screens
 
 const DEFAULT_MIN_STEP = 0.1; // 10%
-const DEFAULT_WIDTH_STEPS = [400, 600, 850, 1000, 1150]; // arbitrary
+const DEFAULT_WIDTH_STEPS = [300, 580, 768, 1000, 1150]; // arbitrary
 // Based on statcounter's most common screen sizes: https://gs.statcounter.com/screen-resolution-stats
 const DEFAULT_FULL_WIDTH_STEPS = [360, 414, 768, 1366, 1536, 1920];
 
@@ -92,6 +92,12 @@ export const getImageProps = ({
     });
 
   // console.log("sizes ", sizes);
+  // console.log(
+  //   "srcset ",
+  //   retinaSizes
+  //     .map((size) => `${builder.width(size).url()} ${size}w`)
+  //     .join(", ")
+  // );
 
   return {
     // Use the original image as the `src` for the <img>

@@ -32,6 +32,8 @@ export const Hero = ({
   //     ]
   //   : fluid;
 
+  console.log("herosubheading ", heroSubHeading);
+
   return (
     <HeroContainer className={children ? "lowerPage" : null}>
       <HeroCont>

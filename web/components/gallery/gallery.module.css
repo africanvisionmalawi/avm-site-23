@@ -20,22 +20,26 @@
   grid-template-rows: repeat(auto-fit, minmax(120px, 1fr));
   grid-gap: 1rem;
   grid-auto-flow: dense;
-  padding: 15px;
+  padding: 1rem 0.5rem;
 }
 
 @media (min-width: 1180px) {
   .gallery {
-    padding: 15px 0;
+    padding: 1rem 0;
   }
 }
 .gallery .gatsby-image-wrapper {
   height: 100%;
 }
-.grid-cell {
+.gridCell {
   cursor: pointer;
   display: inline-block;
   max-height: 160px;
   overflow: hidden;
+}
+.gridCell img {
+  display: block;
+  margin: 0 auto;
 }
 /* .gridCell {
   border: 1px solid #cacaca;

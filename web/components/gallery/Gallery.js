@@ -127,6 +127,11 @@ export const Gallery = (props) => {
                     maxWidth={800}
                     height={540}
                     alt={photos[selectedImageState].alt}
+                    fit="crop"
+                    sizes="(max-width: 400px) 300px, (max-width: 600px) 600px,
+            (max-width: 768px) 700px,
+            800px"
+                    layout="responsive"
                   />
 
                   <Caption>{photos[selectedImageState].caption}</Caption>
