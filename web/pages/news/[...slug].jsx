@@ -146,7 +146,7 @@ const Page = ({ data }) => {
             page.description ? page.description : siteMeta.description
           }
         />
-        <article>
+        <article className="articleInner">
           <h1>{page.title}</h1>
           {page.photo && (
             <div>

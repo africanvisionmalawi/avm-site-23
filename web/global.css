@@ -113,3 +113,13 @@ figcaption:not(:empty) {
   margin-top: 2rem;
   margin-bottom: 4rem;
 }
+
+blockquote {
+  border-left: 10px solid #d1c9c6;
+  font-family: var(--font-roboto);
+  font-size: 1.1em;
+  font-style: italic;
+  margin: 2rem 0;
+  max-width: 700px;
+  padding: 0 1rem;
+}

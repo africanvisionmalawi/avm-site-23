@@ -72,7 +72,7 @@ const Page = ({ data }) => {
         description="We work with and through communities to develop long-term and sustainable solutions to the welfare of orphans and vulnerable people in four key areas: self-sufficiency, health, education and water and sanitation."
       />
       <Breadcrumbs path={path} indexPage={null} />
-      <article>
+      <article className="articleInner">
         <TopSection>
           <Heading>{title}</Heading>
           {ourWork ? <PortableText blocks={body} /> : null}
