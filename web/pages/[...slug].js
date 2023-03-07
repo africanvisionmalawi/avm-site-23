@@ -2,6 +2,7 @@ import styled from "@emotion/styled";
 import { Breadcrumbs } from "components/Breadcrumbs";
 import { BannerMsg } from "components/common/BannerMsg";
 import { Gallery } from "components/gallery";
+import { GoogleMap } from "components/GoogleMap";
 import { Hero } from "components/Hero";
 import { PageLinks } from "components/page-links";
 import { PortableText } from "components/portable-text/BasePortableText";
