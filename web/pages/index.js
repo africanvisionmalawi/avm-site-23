@@ -53,9 +53,8 @@ const LatestNews = styled.div`
   background: #f7f7f7;
   min-height: 24rem;
   margin: 0 auto;
-  max-width: 1180px;
   padding: 1rem;
-  position: relative;
+
   @media (min-width: 768px) {
     padding: 2rem 4em 2rem;
   }
@@ -65,6 +64,11 @@ const LatestNews = styled.div`
   h2 {
     text-align: center;
   }
+`;
+const LatestNewsInner = styled.div`
+  margin: 0 auto;
+  max-width: 1180px;
+  position: relative;
 `;
 
 const PostList = styled.div`
@@ -188,99 +192,107 @@ const HomePage = ({ data }) => {
         description={siteMeta.description}
       />
       <article>
-        <Hero
-          image={homePage.hero.image}
-          mobileImage={homePage.hero.mobileImage}
-          displayHeroMsg={false}
-          // heroHeading={c.title}
-          // heroHeadingType="h2"
-        />
-        <TopSection>
-          <Heading>{homePage.title}</Heading>
-          {homePage.subTitle ? homePage.subTitle : null}
-        </TopSection>
+        <div class="articleInner">
+          <Hero
+            image={homePage.hero.image}
+            mobileImage={homePage.hero.mobileImage}
+            displayHeroMsg={false}
+            // heroHeading={c.title}
+            // heroHeadingType="h2"
+          />
+          <TopSection>
+            <Heading>{homePage.title}</Heading>
+            {homePage.subTitle ? homePage.subTitle : null}
+          </TopSection>
+        </div>
         <Main>
-          <TopVideoSection>
-            <TopVideoSectionInner>
-              <VideoSection>
-                {homePage.introText ? (
-                  <TextSection>
-                    <PortableText
-                      key={homePage.introText._key}
-                      blocks={homePage.introText}
-                    />
-                  </TextSection>
-                ) : null}
-              </VideoSection>
-              <VideoSection>
-                {homePage.promoVideo ? (
-                  <Player url={homePage.promoVideo.url} />
-                ) : null}
-              </VideoSection>
-            </TopVideoSectionInner>
-          </TopVideoSection>
-          {ourWork ? (
-            <Container>
-              <OurWork ourWork={ourWork.ourWork} displayHeading />
-            </Container>
-          ) : null}
+          <div className="articleInner">
+            <TopVideoSection>
+              <TopVideoSectionInner>
+                <VideoSection>
+                  {homePage.introText ? (
+                    <TextSection>
+                      <PortableText
+                        key={homePage.introText._key}
+                        blocks={homePage.introText}
+                      />
+                    </TextSection>
+                  ) : null}
+                </VideoSection>
+                <VideoSection>
+                  {homePage.promoVideo ? (
+                    <Player url={homePage.promoVideo.url} />
+                  ) : null}
+                </VideoSection>
+              </TopVideoSectionInner>
+            </TopVideoSection>
+            {ourWork ? (
+              <Container>
+                <OurWork ourWork={ourWork.ourWork} displayHeading />
+              </Container>
+            ) : null}
+          </div>
+
           {homePage.latestNews ? (
             <LatestNews>
-              <h2>Latest news</h2>
-              <PortableText
-                key={homePage.latestNews._key}
-                blocks={homePage.latestNews}
-              />
+              <LatestNewsInner>
+                <h2>Latest news</h2>
+                <PortableText
+                  key={homePage.latestNews._key}
+                  blocks={homePage.latestNews}
+                />
+              </LatestNewsInner>
             </LatestNews>
           ) : null}
+          <div className="articleInner">
+            {homePage.newsLinks ? (
+              <>
+                <section>
+                  <PostList>
+                    <CardCont>
+                      {homePage.newsLinks.newsLinks.map((post) => (
+                        <React.Fragment key={post._id}>
+                          <CardPost post={post} />
+                        </React.Fragment>
+                      ))}
+                    </CardCont>
+                  </PostList>
+                </section>
+                <PostsFooter>
+                  <a href="/news/">View all news</a>
+                </PostsFooter>
+              </>
+            ) : null}
 
-          {homePage.newsLinks ? (
-            <>
-              <section>
-                <PostList>
-                  <CardCont>
-                    {homePage.newsLinks.newsLinks.map((post) => (
-                      <React.Fragment key={post._id}>
-                        <CardPost post={post} />
-                      </React.Fragment>
-                    ))}
-                  </CardCont>
-                </PostList>
-              </section>
-              <PostsFooter>
-                <a href="/news/">View all news</a>
-              </PostsFooter>
-            </>
-          ) : null}
-
-          {latestEvents ? (
-            <>
-              <section>
-                <PostList>
-                  <CardCont>
-                    {latestEvents.map((post) => (
-                      <React.Fragment key={post.id}>
-                        <CardPostAlt
-                          type="event"
-                          title={post.title}
-                          excerpt={post.excerpt}
-                          slug={post.slug}
-                          date={post.date}
-                          endDate={post.endDate}
-                          hideTime={post.hideTime}
-                          allDay={post.allDay}
-                          photo={post.featured_image}
-                        />
-                      </React.Fragment>
-                    ))}
-                  </CardCont>
-                </PostList>
-              </section>
-              <PostsFooter>
-                <a href="/events/">View all events</a>
-              </PostsFooter>
-            </>
-          ) : null}
+            {latestEvents ? (
+              <>
+                <section>
+                  <PostList>
+                    <CardCont>
+                      {latestEvents.map((post) => (
+                        <React.Fragment key={post.id}>
+                          <CardPostAlt
+                            type="event"
+                            title={post.title}
+                            excerpt={post.excerpt}
+                            slug={post.slug}
+                            date={post.date}
+                            endDate={post.endDate}
+                            hideTime={post.hideTime}
+                            allDay={post.allDay}
+                            photo={post.featured_image}
+                          />
+                        </React.Fragment>
+                      ))}
+                    </CardCont>
+                  </PostList>
+                </section>
+                <PostsFooter>
+                  <a href="/events/">View all events</a>
+                </PostsFooter>
+              </>
+            ) : null}
+          </div>
         </Main>
       </article>
     </>

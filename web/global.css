@@ -66,19 +66,19 @@ span {
   font-family: var(--font-roboto);
 }
 
-article {
+.articleInner {
   margin: 0 auto;
   /* width: 100%; */
 }
 
 @media (min-width: 768px) {
-  article {
+  .articleInner {
     /* padding: 2rem 4em; */
     max-width: 974px;
   }
 }
 @media (min-width: 1024px) {
-  article {
+  .articleInner {
     max-width: 1180px;
   }
 }

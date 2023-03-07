@@ -90,7 +90,11 @@ const Page = ({ data }) => {
           // console.log("c.image.asset **********", c.image.asset);
           break;
         case "videoGallery":
-          el = <Videos key={c._key} {...c} />;
+          el = (
+            <div className="articleInner">
+              <Videos key={c._key} {...c} />
+            </div>
+          );
           break;
         case "pageLinks":
           // console.log("pageLinks c ", c);
@@ -161,11 +165,11 @@ const Page = ({ data }) => {
       />
       {path ? <Breadcrumbs path={path} indexPage={data?.indexPage} /> : null}
       <article>
-        <TopSection>
-          <h1>{data?.title}</h1>
-        </TopSection>
-        {data?.hero && (
-          <div>
+        <div className="articleInner">
+          <TopSection>
+            <h1>{data?.title}</h1>
+          </TopSection>
+          {data?.hero && (
             <Hero
               image={data.hero.image}
               mobileImage={data.hero.mobileImage}
@@ -173,18 +177,17 @@ const Page = ({ data }) => {
               heroHeading={data.title}
               // heroHeadingType="h2"
             />
-            {/* <Image image={data.hero.image.asset} /> */}
-          </div>
-        )}
-        {data?.bannerMsg ? (
-          <BannerMsg
-            msg={data.bannerMsg.Message}
-            source={data.bannerMsg.source}
-          />
-        ) : null}
-        <TopSection>
-          {data?.body ? <PortableText article blocks={data.body} /> : null}
-        </TopSection>
+          )}
+          {data?.bannerMsg ? (
+            <BannerMsg
+              msg={data.bannerMsg.Message}
+              source={data.bannerMsg.source}
+            />
+          ) : null}
+          <TopSection>
+            {data?.body ? <PortableText article blocks={data.body} /> : null}
+          </TopSection>
+        </div>
         <Container>{content}</Container>
       </article>
     </>
