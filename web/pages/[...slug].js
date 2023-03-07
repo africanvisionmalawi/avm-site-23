@@ -70,7 +70,7 @@ const Page = ({ data }) => {
   // console.log("content here is ***************** ", data?.content);
   // console.log("data here is ***************** ", data);
   // console.log("hero ", data.hero);
-  // console.log("bannermsg ", data.bannerMsg);
+  // console.log("bannermsg ", data?.bannerMsg);
   const content = (data?.content || [])
     .filter((c) => !c.disabled)
     .map((c, i) => {
@@ -175,7 +175,7 @@ const Page = ({ data }) => {
             {/* <Image image={data.hero.image.asset} /> */}
           </div>
         )}
-        {data.bannerMsg ? (
+        {data?.bannerMsg ? (
           <BannerMsg
             msg={data.bannerMsg.Message}
             source={data.bannerMsg.source}
