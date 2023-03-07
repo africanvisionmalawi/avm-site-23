@@ -69,8 +69,8 @@ const Main = styled.main`
 const Page = ({ data }) => {
   // console.log("content here is ***************** ", data?.content);
   // console.log("data here is ***************** ", data);
-  console.log("hero ", data.hero);
-  console.log("bannermsg ", data.bannerMsg);
+  // console.log("hero ", data.hero);
+  // console.log("bannermsg ", data.bannerMsg);
   const content = (data?.content || [])
     .filter((c) => !c.disabled)
     .map((c, i) => {
