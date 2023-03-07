@@ -105,3 +105,11 @@ figcaption:not(:empty) {
     margin: 0 -5rem;
   }
 }
+
+.videosWrapper {
+  background: #f7f7f7;
+  border-top: 1px solid #d7dade;
+  border-bottom: 1px solid #d7dade;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}

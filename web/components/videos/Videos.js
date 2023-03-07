@@ -3,9 +3,6 @@ import { Video } from "components/videos/";
 
 const Container = styled.div`
   background: #f7f7f7;
-  border-top: 1px solid #d7dade;
-  border-bottom: 1px solid #d7dade;
-  margin-bottom: 4rem;
   padding: 2rem 1rem 0;
   p {
     background: #f7f7f7;

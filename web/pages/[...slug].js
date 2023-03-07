@@ -91,8 +91,10 @@ const Page = ({ data }) => {
           break;
         case "videoGallery":
           el = (
-            <div className="articleInner">
-              <Videos key={c._key} {...c} />
+            <div className="videosWrapper">
+              <div className="articleInner">
+                <Videos key={c._key} {...c} />
+              </div>
             </div>
           );
           break;
