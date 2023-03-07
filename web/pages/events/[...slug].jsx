@@ -213,7 +213,7 @@ export async function getStaticProps({ params, preview = false }) {
   const data = await client.fetch(query, { slug, hasCategory });
   // console.log("slug ", slug);
   // console.log("hero ", data.content);
-  console.log("data ", data);
+  // console.log("data ", data);
   return {
     props: {
       data,
