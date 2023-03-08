@@ -153,7 +153,12 @@ const Footer = () => (
         </FooterContact>
         <FooterSocial>
           <FooterBottomRow>
-            <LogoImg src="/img/logo-full.png" alt="" />
+            <LogoImg
+              src="/img/common/logo-full.png"
+              alt=""
+              width="83"
+              height="120"
+            />
             <FooterInnerRow>
               <Heading>
                 <a href="/news">Join us on&hellip;</a>

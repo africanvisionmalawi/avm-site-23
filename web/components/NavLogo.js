@@ -42,7 +42,7 @@ const navLogo = () => (
   <LogoCont>
     <a href="/">
       <NavLogo>
-        <img src="/img/common/logo-full.png" alt="" />
+        <img src="/img/common/logo-full.png" alt="" height="90" width="62" />
       </NavLogo>
     </a>
   </LogoCont>
