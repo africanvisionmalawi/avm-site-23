@@ -31,10 +31,12 @@ const Heading = styled.h1`
 `;
 
 const TopSection = styled.div`
+font-family: Raleway, "Helvetica Neue", "Segoe UI", "Helvetica", "Arial",
   margin: 0 auto;
   max-width: 885px;
   padding: 3rem 1rem 0;
   position: relative;
+  text-align: center;
   @media (min-width: 768px) {
     padding-top: 1rem;
   }
