@@ -2,8 +2,9 @@ import React from "react";
 import { Player } from ".";
 
 export const Video = (props) => {
-  console.log("url etc ", props);
-  console.log("value ", props.props.index);
+  if (!props.props) {
+    return;
+  }
   const { url, text } = props.props.value;
   return (
     <>

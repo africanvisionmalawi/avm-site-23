@@ -39,7 +39,7 @@ export const Hero = ({
       <HeroCont>
         {heroHeadingHtml ? (
           <HeroMsgCont>
-            {heroHeadingHtml}
+            {/* {heroHeadingHtml} */}
             {heroSubHeading ? <HeroMsg>{heroSubHeading}</HeroMsg> : null}
           </HeroMsgCont>
         ) : null}
