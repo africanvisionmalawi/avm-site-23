@@ -1,5 +1,6 @@
 import styled from "@emotion/styled";
 import imageUrlBuilder from "@sanity/image-url";
+import { Breadcrumbs } from "components/Breadcrumbs";
 import { NavTags } from "components/common/NavTags";
 import { ShopListItem } from "components/shop/ShopListItem";
 import { tagsBase } from "constants/shop";
@@ -22,7 +23,10 @@ const Container = styled.div`
 const Heading = styled.h1`
   font-family: Raleway, "Helvetica Neue", "Segoe UI", "Helvetica", "Arial",
     "sans-serif";
-  text-align: center;
+  padding: 0 1rem;
+  @media (min-width: 768px) {
+    padding: 0 5rem;
+  }
 `;
 
 const ShopIndexList = styled.div`
@@ -175,13 +179,22 @@ const ShopHomePage = ({ data }) => {
   const description = "Welcome to our online shop.";
   const tags = site.shopTags;
   //   console.log("tags here *******", site.shopTags);
+
+  const path = [
+    {
+      title: "Shop",
+      slug: "/shop/",
+    },
+  ];
+
   return (
     <>
       <NextSeo
         title={`${title} |  African Vision Malawi` || siteMeta.title}
         description={description}
       />
-      <article>
+      {path ? <Breadcrumbs path={path} indexPage={data?.indexPage} /> : null}
+      <article className="articleInner">
         <Heading>{title}</Heading>
         <NavTags tags={tags} tagsBase={tagsBase} active={null} />
         <Container>

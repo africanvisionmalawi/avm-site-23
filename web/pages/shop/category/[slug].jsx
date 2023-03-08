@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import { Breadcrumbs } from "components/Breadcrumbs";
 import { NavTags } from "components/common/NavTags";
 import { ShopListItem } from "components/shop/ShopListItem";
 import { tagsBase } from "constants/shop";
@@ -47,7 +48,10 @@ const ShopSection = styled.section`
 const Heading = styled.h1`
   font-family: Raleway, "Helvetica Neue", "Segoe UI", "Helvetica", "Arial",
     "sans-serif";
-  text-align: center;
+  padding: 0 1rem;
+  @media (min-width: 768px) {
+    padding: 0 5rem;
+  }
 `;
 
 const SubHeading = styled.h2`
@@ -115,11 +119,21 @@ export const ShopCategory = ({ data, slug }) => {
   const { products, site } = data;
   const tags = site.shopTags;
   const currentTag = tags.find((tag) => tag.value.current === slug);
-  // console.log("currentTag ", currentTag);
 
   const filteredProducts = products.filter(
     (prod) => prod.tags[0].value === slug
   );
+
+  const path = [
+    {
+      title: "Shop",
+      slug: "shop",
+    },
+    {
+      title: currentTag.title,
+      slug: currentTag.value?.current,
+    },
+  ];
 
   return (
     <>
@@ -133,7 +147,8 @@ export const ShopCategory = ({ data, slug }) => {
           data?.description ? data?.description : siteMeta.description
         }
       />
-      <article>
+      {path ? <Breadcrumbs path={path} indexPage={data?.indexPage} /> : null}
+      <article className="articleInner">
         <Heading>Shop - {currentTag.title}</Heading>
         <NavTags tags={tags} tagsBase={tagsBase} active={null} />
         <Container>

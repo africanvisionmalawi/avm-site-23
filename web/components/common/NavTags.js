@@ -1,14 +1,24 @@
 import styled from "@emotion/styled";
 
 const TagsNavCont = styled.div`
-  display: flex;
-  justify-content: center;
   margin: 0 auto 1rem;
-  width: 100%;
+  overflow-x: scroll;
+  padding: 0 1rem;
+`;
+
+const Inner = styled.div`
+  overflow-x: auto;
+  white-space: nowrap;
+  @media (min-width: 579px) {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow-x: visible;
+  }
 `;
 
 const Tag = styled.span`
-  display: block;
+  display: inline-block;
   margin: 4px;
   & a {
     border: 1px solid #f99d1c;
@@ -25,17 +35,6 @@ const Tag = styled.span`
   }
   @media (min-width: 579px) {
     margin: 8px;
-  }
-`;
-
-const Inner = styled.div`
-  display: flex;
-  justify-content: center;
-  overflow-x: auto;
-  white-space: nowrap;
-  @media (min-width: 579px) {
-    flex-wrap: wrap;
-    overflow-x: visible;
   }
 `;
 
