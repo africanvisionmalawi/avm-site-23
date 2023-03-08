@@ -3,15 +3,15 @@ import imageUrlBuilder from "@sanity/image-url";
 import { CardPost } from "components/card/CardPost";
 import { CardPostAlt } from "components/card/CardPostAlt";
 import { Hero } from "components/Hero";
+import { OurWork } from "components/ourwork/ourwork";
 import { PortableText } from "components/portable-text/BasePortableText";
+import { Player } from "components/videos/Player";
 import { siteMeta } from "constants/site";
 import dayjs from "dayjs";
-import { NextSeo } from "next-seo";
-// import { PortableText } from "lib/sanity";
-import { OurWork } from "components/ourwork/ourwork";
-import { Player } from "components/videos/Player";
 import groq from "groq";
-import React from "react";
+import { PreviewSuspense } from "next-sanity/preview";
+import { NextSeo } from "next-seo";
+import React, { lazy } from "react";
 import client from "/client";
 
 function urlFor(source) {
@@ -156,7 +156,9 @@ const PostsFooter = styled.div`
   }
 `;
 
-const HomePage = ({ data }) => {
+const PreviewPage = lazy(() => import("components/PreviewPage"));
+
+const HomePage = ({ preview, data }) => {
   // console.log("data here ", data);
   const { homePage, events, ourWork } = data;
   // console.log("ourwork ", ourWork);
@@ -187,7 +189,11 @@ const HomePage = ({ data }) => {
 
   const latestEvents = [...futureEvents].reverse();
   // console.log("latestEvents ", latestEvents);
-  return (
+  return preview ? (
+    <PreviewSuspense fallback="Loading...">
+      <PreviewPage query={query} />
+    </PreviewSuspense>
+  ) : (
     <>
       <NextSeo
         title="Welcome to African Vision Malaw"
