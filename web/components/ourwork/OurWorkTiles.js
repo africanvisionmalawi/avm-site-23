@@ -228,6 +228,12 @@ const Container = styled.section`
 const TileCont = styled.div`
   display: flex;
   flex-wrap: wrap;
+  @media (min-width: 480px) {
+    display: grid;
+    grid-gap: 8px;
+    template-columns: 1fr 1fr;
+    padding: 0 8px;
+  }
 `;
 
 const Tile = styled.div`
@@ -240,11 +246,11 @@ const Tile = styled.div`
   }
   width: 100%;
   @media (min-width: 480px) {
+    padding: 0;
     &.fullWidth {
-      width: 100%;
+      grid-column: 1 / 3;
     }
     &.halfSize {
-      width: 50%;
     }
   }
   & a {
