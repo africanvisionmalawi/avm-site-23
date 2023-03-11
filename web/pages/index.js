@@ -346,7 +346,7 @@ const query = groq`{
 
 export async function getStaticProps({ params, preview = false }) {
   // It's important to default the slug so that it doesn't return "undefined"
-
+  console.log("preview homepage ", preview);
   const data = await client.fetch(query, {});
   // console.log("events **********", data);
 

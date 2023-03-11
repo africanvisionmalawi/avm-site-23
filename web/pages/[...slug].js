@@ -79,7 +79,7 @@ export async function getStaticProps({ params, preview = false }) {
   if (preview) {
     return { props: { preview } };
   }
-
+  console.log("PREVIEW ", preview);
   // It's important to default the slug so that it doesn't return "undefined"
   const { slug = "" } = params;
   // console.log("slug ", slug);
