@@ -60,6 +60,7 @@ export const Player = ({ url }) => {
     baseUrl: "",
   });
 
+  console.log("url here ", url);
   const handleThumbnailOnClick = () => {
     setDisplayVideo(true);
   };
