@@ -6,7 +6,7 @@ const components = {
   types: {
     mainImage: Figure,
     image: Figure,
-    video: (props) => <Video props={props} />,
+    video: (props) => <Video props={props.value} />,
     pdf: File,
   },
   marks: {
