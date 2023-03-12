@@ -6,7 +6,9 @@ export const PreviewPageCommon = ({ query }) => {
   return (
     <>
       <PageCommon data={data} />
-      <a href="/api/exit-preview">Exit Preview</a>
+      <a className="previewButton" href="/api/exit-preview">
+        Exit Preview
+      </a>
     </>
   );
 };
