@@ -1,8 +1,8 @@
 import { PageCommon } from "components/common/PageCommon";
 import { usePreview } from "lib/sanity.preview";
 
-export const PreviewPageCommon = ({ query }) => {
-  const data = usePreview(null, query);
+export const PreviewPageCommon = ({ query, queryParams }) => {
+  const data = usePreview(null, query, queryParams);
   return (
     <>
       <PageCommon data={data} />

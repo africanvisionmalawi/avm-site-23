@@ -1,4 +1,4 @@
-import { PageCommon } from "components/common/PageCommon";
+import { PreviewPageCommon } from "components/common/PreviewPageCommon";
 import { siteMeta } from "constants/site";
 import groq from "groq";
 import { PreviewSuspense } from "next-sanity/preview";
@@ -77,6 +77,7 @@ const query = groq`*[_type == "page" && slug.current == $currentSlug][0]{
 
 export async function getStaticProps({ params, preview = false }) {
   if (preview) {
+    console.log("hasPreview");
     return { props: { preview } };
   }
   console.log("PREVIEW ", preview);
@@ -86,6 +87,13 @@ export async function getStaticProps({ params, preview = false }) {
   const hasCategory = slug.length > 1;
   const currentSlug = hasCategory ? slug[slug.length - 1] : slug[0];
   // console.log("currentSlug ", currentSlug);
+
+  const queryParams = { currentSlug };
+
+  if (preview) {
+    return { props: { preview, data: { queryParams } } };
+  }
+
   const data = await client.fetch(query, { currentSlug });
   // console.log("data ", data);
   return {

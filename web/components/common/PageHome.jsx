@@ -154,8 +154,8 @@ const PostsFooter = styled.div`
   }
 `;
 
-export const PageHome = ({ preview, data }) => {
-  // console.log("data here ", data);
+export const PageHome = ({ data }) => {
+  console.log("data here ", data);
   const { homePage, events, ourWork } = data;
   // console.log("ourwork ", ourWork);
   const allEvents = events || [];
@@ -192,7 +192,7 @@ export const PageHome = ({ preview, data }) => {
         description={siteMeta.description}
       />
       <article>
-        <div class="articleInner">
+        <div className="articleInner">
           <Hero
             image={homePage.hero.image}
             mobileImage={homePage.hero.mobileImage}
