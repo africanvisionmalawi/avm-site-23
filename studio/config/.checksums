@@ -7,5 +7,6 @@
   "sanity-plugin-media-library": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
   "media-library": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
   "sanity-plugin-snipcart-orders": "922902575995e62af8f628e6abe652ecc5f3b1e1d2dec5859392e79e47707088",
-  "snipcart-orders": "922902575995e62af8f628e6abe652ecc5f3b1e1d2dec5859392e79e47707088"
+  "snipcart-orders": "922902575995e62af8f628e6abe652ecc5f3b1e1d2dec5859392e79e47707088",
+  "@sanity/vision": "da5b6ed712703ecd04bf4df560570c668aa95252c6bc1c41d6df1bda9b8b8f60"
 }

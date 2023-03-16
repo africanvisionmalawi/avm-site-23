@@ -144,11 +144,18 @@ blockquote {
 }
 
 .previewButton {
-  background: blue;
+  background: orangered;
+  border-radius: 8px;
   bottom: 20px;
   color: white;
   display: inline-block;
   padding: 8px 20px;
   position: fixed;
   right: 20px;
+  z-index: 4;
+}
+
+a.previewButton:link,
+a.previewButton:visited {
+  color: white;
 }

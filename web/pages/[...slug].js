@@ -1,16 +1,15 @@
-import { PreviewPageCommon } from "components/common/PreviewPageCommon";
+import { PreviewPageCommon } from "components/PreviewPageCommon";
 import { siteMeta } from "constants/site";
 import groq from "groq";
 import { PreviewSuspense } from "next-sanity/preview";
 import { NextSeo } from "next-seo";
 import client from "/client";
 
-const Page = ({ preview, data }) => {
+const Page = ({ preview, data, queryParams }) => {
   // console.log("content here is ***************** ", data?.content);
   // console.log("data here is ***************** ", data);
   // console.log("hero ", data.hero);
   // console.log("bannermsg ", data?.bannerMsg);
-
   return (
     <>
       <NextSeo
@@ -23,7 +22,7 @@ const Page = ({ preview, data }) => {
       />
       {preview ? (
         <PreviewSuspense fallback="Loading...">
-          <PreviewPageCommon query={query} />
+          <PreviewPageCommon query={query} queryParams={queryParams} />
         </PreviewSuspense>
       ) : (
         <PageCommon data={data} />
@@ -51,7 +50,7 @@ export async function getStaticPaths() {
   };
 }
 
-const query = groq`*[_type == "page" && slug.current == $currentSlug][0]{ 
+const query = groq`*[_type == "page" && slug.current == $slug][0]{ 
   slug, 
   id,
   title,
@@ -76,10 +75,10 @@ const query = groq`*[_type == "page" && slug.current == $currentSlug][0]{
 }`;
 
 export async function getStaticProps({ params, preview = false }) {
-  if (preview) {
-    console.log("hasPreview");
-    return { props: { preview } };
-  }
+  // if (preview) {
+  //   console.log("hasPreview");
+  //   return { props: { preview } };
+  // }
   console.log("PREVIEW ", preview);
   // It's important to default the slug so that it doesn't return "undefined"
   const { slug = "" } = params;
@@ -88,13 +87,13 @@ export async function getStaticProps({ params, preview = false }) {
   const currentSlug = hasCategory ? slug[slug.length - 1] : slug[0];
   // console.log("currentSlug ", currentSlug);
 
-  const queryParams = { currentSlug };
-
+  const queryParams = { slug: currentSlug };
+  console.log("queryparams inside page ", queryParams.slug);
   if (preview) {
-    return { props: { preview, data: { queryParams } } };
+    return { props: { preview, queryParams } };
   }
 
-  const data = await client.fetch(query, { currentSlug });
+  const data = await client.fetch(query, { slug: currentSlug });
   // console.log("data ", data);
   return {
     props: {

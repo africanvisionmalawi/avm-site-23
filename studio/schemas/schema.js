@@ -8,7 +8,7 @@ import homePage from "./documents/homePage";
 import news from "./documents/news";
 import ourWorkShared from "./documents/ourWorkShared";
 import page from "./documents/page";
-// import post from "./documents/post";
+import post from "./documents/post";
 import shop from "./documents/shop";
 import siteSettings from "./documents/siteSettings";
 import bannerMsg from "./objects/bannerMsg";
@@ -75,5 +75,6 @@ export default createSchema({
     googlemap,
     bannerMsg,
     pdf,
+    post,
   ]),
 });
