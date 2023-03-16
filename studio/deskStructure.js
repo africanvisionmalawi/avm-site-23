@@ -12,7 +12,7 @@ import { MdShoppingCart } from "react-icons/md";
 const sanityClient = require("@sanity/client");
 const client = sanityClient({
   // TODO: replace this with env vars
-  projectId: "hh4wbbfo",
+  projectId: SANITY_STUDIO_PROJECT_ID,
   dataset: "production",
   apiVersion: "2019-01-29", // use current UTC date - see "specifying API version"!
   // token: "sanity-auth-token", // or leave blank for unauthenticated usage
