@@ -1,3 +1,4 @@
+import { PageCommon } from "components/common/PageCommon";
 import { PreviewPageCommon } from "components/PreviewPageCommon";
 import { siteMeta } from "constants/site";
 import groq from "groq";
