@@ -1,5 +1,5 @@
 import imageUrlBuilder from "@sanity/image-url";
-import { PageHome } from "components/common/PageHome";
+import { PageIndex } from "components/common/PageIndex";
 import groq from "groq";
 import { PreviewSuspense } from "next-sanity/preview";
 import React, { lazy } from "react";
@@ -47,19 +47,19 @@ const query = groq`{
 }
 `;
 
-const PreviewPage = lazy(() => import("components/PreviewPage"));
+const PreviewPageIndex = lazy(() => import("components/PreviewPageIndex"));
 
 const HomePage = ({ data, preview }) => {
   // console.log("data here ", data);
 
-  console.log("query here ", query);
+  // console.log("query here ", query);
 
   return preview ? (
     <PreviewSuspense fallback="Loading...">
-      <PreviewPage query={query} />
+      <PreviewPageIndex query={query} />
     </PreviewSuspense>
   ) : (
-    <PageHome data={data} />
+    <PageIndex data={data} />
   );
 };
 
@@ -67,14 +67,14 @@ export async function getStaticProps({ params, preview = false }) {
   // It's important to default the slug so that it doesn't return "undefined"
 
   if (preview) {
-    console.log(
-      "preview homepag                                                                                                                                                                                                                                                                                                                                                    e ",
-      preview
-    );
+    // console.log(
+    //   "preview homepag                                                                                                                                                                                                                                                                                                                                                    e ",
+    //   preview
+    // );
     return { props: { preview } };
   }
 
-  console.log("no preview");
+  // console.log("no preview");
   const data = await client.fetch(query, {});
   // console.log("events **********", data);
 

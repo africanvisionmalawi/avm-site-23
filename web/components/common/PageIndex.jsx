@@ -29,7 +29,7 @@ const Heading = styled.h1`
 `;
 
 const TopSection = styled.div`
-font-family: Raleway, "Helvetica Neue", "Segoe UI", "Helvetica", "Arial",
+  font-family: Raleway, "Helvetica Neue", "Segoe UI", "Helvetica", "Arial";
   margin: 0 auto;
   max-width: 885px;
   padding: 3rem 1rem 0;
@@ -154,8 +154,8 @@ const PostsFooter = styled.div`
   }
 `;
 
-export const PageHome = ({ data }) => {
-  console.log("data here ", data);
+export const PageIndex = ({ data }) => {
+  // console.log("data here ", data);
   const { homePage, events, ourWork } = data;
   // console.log("ourwork ", ourWork);
   const allEvents = events || [];
@@ -270,7 +270,7 @@ export const PageHome = ({ data }) => {
                   <PostList>
                     <CardCont>
                       {latestEvents.map((post) => (
-                        <React.Fragment key={post.id}>
+                        <React.Fragment key={post._id}>
                           <CardPostAlt
                             type="event"
                             title={post.title}
