@@ -98,7 +98,7 @@ const ShopIndexList = styled.div`
   }
 `;
 
-export const Shop = ({ data }) => {
+export const Shop = ({ data, currentSlug }) => {
   if (!data) return;
   const { page, allProducts } = data;
   // console.log("data ", data);
@@ -146,7 +146,7 @@ export const Shop = ({ data }) => {
         description={
           page?.description ? page?.description : siteMeta.description
         }
-        canonical={`${process.env.NEXT_PUBLIC_BASE_URL}/shop/${data?.slug?.current}/`}
+        canonical={`${process.env.NEXT_PUBLIC_BASE_URL}/shop/${currentSlug}/`}
       />
       {path ? <Breadcrumbs path={path} /> : null}
       <article>
@@ -326,6 +326,7 @@ export async function getStaticProps({ params, preview = false }) {
     props: {
       data,
       preview,
+      currentSlug,
     },
     revalidate: 10,
   };

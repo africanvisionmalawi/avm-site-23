@@ -67,7 +67,7 @@ const Main = styled.main`
   border-radius: 2px;
 `;
 
-const Page = ({ data }) => {
+const Page = ({ data, currentSlug }) => {
   // console.log("data here is ***** ", data);
   // const { sanityPost } = data;
   if (data?.sanityPost) {
@@ -145,7 +145,7 @@ const Page = ({ data }) => {
           description={
             page.description ? page.description : siteMeta.description
           }
-          canonical={`${process.env.NEXT_PUBLIC_BASE_URL}/news/${page.slug}`}
+          canonical={`${process.env.NEXT_PUBLIC_BASE_URL}/news/${currentSlug}`}
         />
         <article className="articleInner">
           <section>
@@ -271,6 +271,7 @@ export async function getStaticProps({ params, preview = false }) {
     props: {
       data,
       preview,
+      currentSlug,
     },
     revalidate: 10,
   };
