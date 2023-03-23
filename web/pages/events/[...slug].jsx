@@ -135,31 +135,38 @@ const Page = ({ data }) => {
             : siteMeta.title
         }
         description={data?.description || siteMeta.description}
+        canonical={`${process.env.NEXT_PUBLIC_BASE_URL}/events/${data.slug}/`}
       />
 
       <article className="articleInner">
-        <h1>{data?.title}</h1>
-        {data?.photo && (
-          <div>
-            <Hero
+        <section>
+          <h1>{data?.title}</h1>
+          {data?.photo && (
+            <div>
+              <Hero
+                image={data.photo}
+                displayHeroMsg={false}
+                // heroHeading={c.title}
+                // heroHeadingType="h2"
+              />
+              {/* <Image image={data.hero.image.asset} /> */}
+            </div>
+          )}
+        </section>
+        <section>
+          {data?.body ? <PortableText article blocks={data.body} /> : null}
+        </section>
+        <section>
+          <Container>{content}</Container>
+          {data?.photo ? (
+            <Image
               image={data.photo}
-              displayHeroMsg={false}
-              // heroHeading={c.title}
-              // heroHeadingType="h2"
+              maxWidth={800}
+              height={540}
+              alt={data.photo.alt}
             />
-            {/* <Image image={data.hero.image.asset} /> */}
-          </div>
-        )}
-        {data?.body ? <PortableText article blocks={data.body} /> : null}
-        <Container>{content}</Container>
-        {data?.photo ? (
-          <Image
-            image={data.photo}
-            maxWidth={800}
-            height={540}
-            alt={data.photo.alt}
-          />
-        ) : null}
+          ) : null}
+        </section>
       </article>
     </>
   );

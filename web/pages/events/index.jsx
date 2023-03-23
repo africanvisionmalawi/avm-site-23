@@ -87,6 +87,7 @@ const EventsHomePage = ({ data }) => {
         description={
           data?.description ? data?.description : siteMeta.description
         }
+        canonical={`${process.env.NEXT_PUBLIC_BASE_URL}/events/`}
       />
       <article>
         {data.hero ? (

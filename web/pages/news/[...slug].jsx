@@ -145,30 +145,37 @@ const Page = ({ data }) => {
           description={
             page.description ? page.description : siteMeta.description
           }
+          canonical={`${process.env.NEXT_PUBLIC_BASE_URL}/news/${page.slug}`}
         />
         <article className="articleInner">
-          <h1>{page.title}</h1>
-          {page.photo && (
-            <div>
-              <Hero
+          <section>
+            <h1>{page.title}</h1>
+            {page.photo && (
+              <div>
+                <Hero
+                  image={page.photo}
+                  displayHeroMsg={false}
+                  // heroHeading={c.title}
+                  // heroHeadingType="h2"
+                />
+                {/* <Image image={page.hero.image.asset} /> */}
+              </div>
+            )}
+          </section>
+          <section>
+            {page.body ? <PortableText article blocks={page.body} /> : null}
+          </section>
+          <section>
+            <Container>{content}</Container>
+            {page.photo ? (
+              <Image
                 image={page.photo}
-                displayHeroMsg={false}
-                // heroHeading={c.title}
-                // heroHeadingType="h2"
+                maxWidth={800}
+                height={540}
+                alt={page.photo.alt}
               />
-              {/* <Image image={page.hero.image.asset} /> */}
-            </div>
-          )}
-          {page.body ? <PortableText article blocks={page.body} /> : null}
-          <Container>{content}</Container>
-          {page.photo ? (
-            <Image
-              image={page.photo}
-              maxWidth={800}
-              height={540}
-              alt={page.photo.alt}
-            />
-          ) : null}
+            ) : null}
+          </section>
         </article>
       </>
     );

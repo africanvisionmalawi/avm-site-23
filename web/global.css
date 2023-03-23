@@ -159,3 +159,7 @@ a.previewButton:link,
 a.previewButton:visited {
   color: white;
 }
+
+section {
+  padding: 0 1rem 1rem;
+}

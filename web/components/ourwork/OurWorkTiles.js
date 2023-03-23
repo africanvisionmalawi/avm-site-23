@@ -221,6 +221,7 @@ const projects = [
 const Container = styled.section`
   margin: 0 auto 3rem;
   max-width: 1080px;
+  padding: 0;
   position: relative;
   width: 100%;
 `;

@@ -6,7 +6,7 @@ import { PreviewSuspense } from "next-sanity/preview";
 import { NextSeo } from "next-seo";
 import client from "/client";
 
-const Page = ({ preview, data, queryParams }) => {
+const Page = ({ preview, data, queryParams, fullPath }) => {
   // console.log("content here is ***************** ", data?.content);
   // console.log("data here is ***************** ", data);
   // console.log("hero ", data.hero);
@@ -19,6 +19,7 @@ const Page = ({ preview, data, queryParams }) => {
             ? `${data?.title} |  African Vision Malawi`
             : siteMeta.title
         }
+        canonical={`${process.env.NEXT_PUBLIC_BASE_URL}/${fullPath}/`}
         description={data?.description || siteMeta.description}
       />
       {preview ? (
@@ -80,7 +81,10 @@ export async function getStaticProps({ params, preview = false }) {
   //   console.log("hasPreview");
   //   return { props: { preview } };
   // }
-  console.log("PREVIEW ", preview);
+
+  const fullPath = params.slug.join("/");
+
+  // console.log("PREVIEW ", preview);
   // It's important to default the slug so that it doesn't return "undefined"
   const { slug = "" } = params;
   // console.log("slug ", slug);
@@ -89,9 +93,9 @@ export async function getStaticProps({ params, preview = false }) {
   // console.log("currentSlug ", currentSlug);
 
   const queryParams = { slug: currentSlug };
-  console.log("queryparams inside page ", queryParams.slug);
+  // console.log("queryparams inside page ", queryParams.slug);
   if (preview) {
-    return { props: { preview, queryParams } };
+    return { props: { preview, queryParams, fullPath } };
   }
 
   const data = await client.fetch(query, { slug: currentSlug });
@@ -100,6 +104,7 @@ export async function getStaticProps({ params, preview = false }) {
     props: {
       data,
       preview,
+      fullPath,
     },
     revalidate: 10,
   };

@@ -146,6 +146,7 @@ export const ShopCategory = ({ data, slug }) => {
         description={
           data?.description ? data?.description : siteMeta.description
         }
+        canonical={`${process.env.NEXT_PUBLIC_BASE_URL}/shop/category/${data.slug}/`}
       />
       {path ? <Breadcrumbs path={path} indexPage={data?.indexPage} /> : null}
       <article className="articleInner">

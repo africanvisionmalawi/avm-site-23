@@ -2,7 +2,9 @@ import styled from "@emotion/styled";
 import imageUrlBuilder from "@sanity/image-url";
 import { CardPostAlt } from "components/card/CardPostAlt";
 import { Hero } from "components/Hero";
+import { siteMeta } from "constants/site";
 import groq from "groq";
+import { NextSeo } from "next-seo";
 import React from "react";
 import client from "/client";
 const glob = require("glob");
@@ -156,38 +158,49 @@ const NewsHomePage = ({ data }) => {
   // console.log("data here ", data.length);
 
   return (
-    <article>
-      {data.hero ? (
-        <Hero
-          image={data.hero.image}
-          mobileImage={data.hero.mobileImage}
-          displayHeroMsg={false}
-          // heroHeading={c.title}
-          // heroHeadingType="h2"
-        />
-      ) : null}
-      <TopSection>
-        <Heading>{data.title}</Heading>
-      </TopSection>
-      <Main>
-        <PostList>
-          {data.map((post) => {
-            return (
-              <React.Fragment key={post.id}>
-                <CardPostAlt
-                  type={post.type}
-                  title={post.title}
-                  excerpt={post.excerpt}
-                  slug={post.slug}
-                  publishDate={post.publishDate}
-                  photo={post.photo}
-                />
-              </React.Fragment>
-            );
-          })}
-        </PostList>
-      </Main>
-    </article>
+    <>
+      <NextSeo
+        title={
+          data?.title
+            ? `${data?.title} |  African Vision Malawi`
+            : siteMeta.title
+        }
+        description={data?.description || siteMeta.description}
+        canonical={`${process.env.NEXT_PUBLIC_BASE_URL}/news/`}
+      />
+      <article>
+        {data.hero ? (
+          <Hero
+            image={data.hero.image}
+            mobileImage={data.hero.mobileImage}
+            displayHeroMsg={false}
+            // heroHeading={c.title}
+            // heroHeadingType="h2"
+          />
+        ) : null}
+        <TopSection>
+          <Heading>{data.title}</Heading>
+        </TopSection>
+        <Main>
+          <PostList>
+            {data.map((post) => {
+              return (
+                <React.Fragment key={post.id}>
+                  <CardPostAlt
+                    type={post.type}
+                    title={post.title}
+                    excerpt={post.excerpt}
+                    slug={post.slug}
+                    publishDate={post.publishDate}
+                    photo={post.photo}
+                  />
+                </React.Fragment>
+              );
+            })}
+          </PostList>
+        </Main>
+      </article>
+    </>
   );
 };
 

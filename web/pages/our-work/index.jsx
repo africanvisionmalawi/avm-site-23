@@ -70,6 +70,7 @@ const Page = ({ data }) => {
         title={`
           ${title} |  African Vision Malawi`}
         description="We work with and through communities to develop long-term and sustainable solutions to the welfare of orphans and vulnerable people in four key areas: self-sufficiency, health, education and water and sanitation."
+        canonical={`${process.env.NEXT_PUBLIC_BASE_URL}/our-work/`}
       />
       <Breadcrumbs path={path} indexPage={null} />
       <article className="articleInner">

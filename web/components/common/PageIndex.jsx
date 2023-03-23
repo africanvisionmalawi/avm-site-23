@@ -134,7 +134,7 @@ const PostsFooter = styled.div`
     border-bottom: 1px solid #b75906;
     position: absolute;
     width: 100%;
-    z-index: 10;
+    z-index: 6;
   }
 
   & a {
@@ -190,6 +190,7 @@ export const PageIndex = ({ data }) => {
       <NextSeo
         title="Welcome to African Vision Malaw"
         description={siteMeta.description}
+        canonical={`${process.env.NEXT_PUBLIC_BASE_URL}/`}
       />
       <article>
         <div className="articleInner">
