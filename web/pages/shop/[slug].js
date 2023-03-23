@@ -146,7 +146,7 @@ export const Shop = ({ data }) => {
         description={
           page?.description ? page?.description : siteMeta.description
         }
-        canonical={`${process.env.NEXT_PUBLIC_BASE_URL}/shop/${data?.slug.current}/`}
+        canonical={`${process.env.NEXT_PUBLIC_BASE_URL}/shop/${data?.slug?.current}/`}
       />
       {path ? <Breadcrumbs path={path} /> : null}
       <article>
