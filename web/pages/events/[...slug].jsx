@@ -135,7 +135,7 @@ const Page = ({ data }) => {
             : siteMeta.title
         }
         description={data?.description || siteMeta.description}
-        canonical={`${process.env.NEXT_PUBLIC_BASE_URL}/events/${data?.slug}/`}
+        canonical={`${process.env.NEXT_PUBLIC_BASE_URL}/events/${data?.slug.current}/`}
       />
 
       <article className="articleInner">
