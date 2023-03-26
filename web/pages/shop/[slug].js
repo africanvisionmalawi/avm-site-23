@@ -1,17 +1,8 @@
 import styled from "@emotion/styled";
-import { Breadcrumbs } from "components/Breadcrumbs";
-import { BuyButton } from "components/common/BuyButton";
-import { Carousel } from "components/common/Carousel";
-import { SectionInner } from "components/common/SectionInner";
-import { SectionTop } from "components/common/SectionTop";
-import { PortableText } from "components/portable-text/BasePortableText";
-import { Photo } from "components/shop/Photo";
-import { ShopListItem } from "components/shop/ShopListItem";
-import { TagsList } from "components/shop/TagsList";
-import { siteMeta } from "constants/site";
+import { PageShop } from "components/common/PageShop";
+import { PreviewPageShop } from "components/PreviewPageShop";
 import groq from "groq";
-import { priceFormatted } from "lib/helpers";
-import { NextSeo } from "next-seo";
+import { PreviewSuspense } from "next-sanity/preview";
 import React from "react";
 import client from "/client";
 
@@ -98,159 +89,18 @@ const ShopIndexList = styled.div`
   }
 `;
 
-export const Shop = ({ data, currentSlug }) => {
+export const Shop = ({ preview, data, query, currentSlug }) => {
   if (!data) return;
-  const { page, allProducts } = data;
-  // console.log("data ", data);
-  // console.log("page.Gallery ", page.photoGallery);
-  // console.log("site ", site);
-  // console.log("relatedProducts ", relatedProducts);
-
-  const displayButtonCheck = (stock, price) => {
-    if (stock > 0 && price > 0) {
-      return true;
-    }
-  };
-
-  const productPrice = page.salePrice
-    ? page.salePrice
-    : page.price
-    ? page.price
-    : null;
-  // console.log("productPrice ", page);
-  // console.log("allProducts ", allProducts);
-  // console.log("page.tags ", page.tags);
-  const relatedProducts = allProducts.filter(
-    (prod) => prod.tags[0].value === page.tags[0].value
-  );
-
-  const path = [
-    {
-      title: "Shop",
-      slug: "shop",
-    },
-    {
-      title: page.title,
-      slug: page.slug,
-    },
-  ];
 
   return (
     <>
-      <NextSeo
-        title={
-          page.title
-            ? `Shop - ${page.title} |  African Vision Malawi`
-            : siteMeta.title
-        }
-        description={
-          page?.description ? page?.description : siteMeta.description
-        }
-        canonical={`${process.env.NEXT_PUBLIC_BASE_URL}/shop/${currentSlug}/`}
-      />
-      {path ? <Breadcrumbs path={path} /> : null}
-      <article>
-        <ShopSection>
-          <article className="content">
-            <SectionTop>
-              <Heading>Shop - {page.title ? page.title : null}</Heading>
-            </SectionTop>
-            <Columns>
-              <ColumnMain>
-                {page.photoGallery && page.photoGallery.photos.length > 1 && (
-                  <CarouselCont>
-                    <Carousel
-                      allSizesImages={page.photoGallery}
-                      photoType="featured"
-                    />
-                  </CarouselCont>
-                )}
-                {page.photoGallery && page.photoGallery.photos.length === 1 && (
-                  <PhotoCont>
-                    <Photo
-                      photo={page.photoGallery.photos[0]}
-                      photoType="featured"
-                    />
-                  </PhotoCont>
-                )}
-              </ColumnMain>
-              <ColumnAside>
-                <div>
-                  <SectionInner>
-                    <Price>
-                      {productPrice > 0 ? (
-                        <>&pound;{priceFormatted(productPrice)}</>
-                      ) : (
-                        <>Donation</>
-                      )}
-                    </Price>
-                    {displayButtonCheck(page.inStock, productPrice) ? (
-                      <BuyButton
-                        productId={page._id ? page._id : null}
-                        name={page.title ? page.title : null}
-                        description={page.description ? page.description : null}
-                        price={productPrice}
-                        image={
-                          page.photoGallery && page.photoGallery.length
-                            ? page.photoGallery[0].childImageSharp.fluid.src
-                            : null
-                        }
-                        url={
-                          page.slug
-                            ? `${siteUrl}/shop/${page.slug.current}/`
-                            : null
-                        }
-                        weight={page.weight ? page.weight : null}
-                        length={page.length ? page.length : null}
-                        width={page.width ? page.width : null}
-                        height={page.height ? page.height : null}
-                      />
-                    ) : productPrice > 0 ? (
-                      <p>
-                        <strong>Out of stock</strong>
-                      </p>
-                    ) : null}
-
-                    {page.tags && page.tags.length ? (
-                      <TagsList tags={page.tags} />
-                    ) : null}
-                  </SectionInner>
-                  <SectionInner>
-                    {page.body ? <PortableText blocks={page.body} /> : null}
-                  </SectionInner>
-                </div>
-              </ColumnAside>
-            </Columns>
-            {relatedProducts.length ? (
-              <>
-                <SubHeading>Related products</SubHeading>
-                <ShopIndexList>
-                  {relatedProducts.map((item, i) => (
-                    <React.Fragment key={item.id}>
-                      {i < 3 ? (
-                        <ShopListItem
-                          id={item._id}
-                          slug={item.slug.current}
-                          photo={item.photoGallery.photos[0]}
-                          photoType="default"
-                          title={item.title}
-                          price={item.price}
-                          salePrice={item.salePrice}
-                        />
-                      ) : null}
-                    </React.Fragment>
-                  ))}
-                </ShopIndexList>
-              </>
-            ) : null}
-          </article>
-        </ShopSection>
-        {/* <Donate
-        link="https://www.charitycheckout.co.uk/1113786/"
-        text="Donate"
-        displayImage
-      /> */}
-      </article>
+      {preview ? (
+        <PreviewSuspense fallback="Loading...">
+          <PreviewPageShop query={query} currentSlug={currentSlug} />
+        </PreviewSuspense>
+      ) : (
+        <PageShop data={data} currentSlug={currentSlug} />
+      )}
     </>
   );
 };
@@ -319,6 +169,11 @@ export async function getStaticProps({ params, preview = false }) {
   // const currentSlug = hasCategory ? slug[slug.length - 1] : slug[0];
   const currentSlug = slug;
   // console.log("currentSlug ", currentSlug);
+
+  if (preview) {
+    return { props: { preview, currentSlug } };
+  }
+
   const data = await client.fetch(query, { currentSlug });
   //   console.log("data **********", data);
 

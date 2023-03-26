@@ -1,13 +1,8 @@
 import styled from "@emotion/styled";
-import { Image } from "components/common/image/Image";
-import { Gallery } from "components/gallery";
-import { Hero } from "components/Hero";
-import { PageLinks } from "components/page-links";
-import { PortableText } from "components/portable-text/BasePortableText";
-import { Videos } from "components/videos";
-import { siteMeta } from "constants/site";
+import { PageEvent } from "components/common/PageEvent";
+import { PreviewPageEvent } from "components/PreviewPageEvent";
 import groq from "groq";
-import { NextSeo } from "next-seo";
+import { PreviewSuspense } from "next-sanity/preview";
 import client from "/client";
 
 const Container = styled.section`
@@ -58,116 +53,18 @@ const Main = styled.main`
   border-radius: 2px;
 `;
 
-const Page = ({ data }) => {
+const Page = ({ data, slug, preview }) => {
   // console.log("data here is ***** ", data);
-  const content = (data?.content || [])
-    .filter((c) => !c.disabled)
-    .map((c, i) => {
-      let el = null;
-      // console.log("type ", c._type);
-      switch (c._type) {
-        case "hero":
-          el = (
-            <Hero
-              image={c.image}
-              displayHeroMsg={false}
-              heroHeading={c.title}
-              heroHeadingType="h2"
-            />
-          );
-          // console.log("c.image.asset **********", c.image.asset);
-          break;
-        case "videoGallery":
-          el = <Videos key={c._key} {...c} />;
-          break;
-        case "pageLinks":
-          // console.log("pageLinks c ", c);
-          el = (
-            <ContentSection>
-              <PageLinks key={c._key} {...c} />
-            </ContentSection>
-          );
-          break;
-        case "photoGallery":
-          el = <Gallery key={c._key} {...c} />;
-          break;
-        case "blockPortableText":
-          el = (
-            <TextSection>
-              <PortableText key={c._key} {...c} />
-            </TextSection>
-          );
-          break;
-        case "team":
-          el = (
-            <TextSection>
-              <TeamList key={c._key} {...c} />
-            </TextSection>
-          );
-          break;
-        case "googlemap":
-          // console.log("has map");
-          el = <GoogleMap key={c._key} {...c} />;
-          break;
-        case "uiComponentRef":
-          switch (c.name) {
-            case "topWave":
-              //   el = <TopWave />;
-              break;
-            case "bottomWave":
-              //   el = <BottomWave />;
-              break;
-            default:
-              break;
-          }
-          break;
-        default:
-          el = null;
-      }
-      return el;
-    });
+
   return (
     <>
-      <NextSeo
-        title={
-          data?.title
-            ? `${data?.title} |  African Vision Malawi`
-            : siteMeta.title
-        }
-        description={data?.description || siteMeta.description}
-        canonical={`${process.env.NEXT_PUBLIC_BASE_URL}/events/${data?.slug?.current}/`}
-      />
-
-      <article className="articleInner">
-        <section>
-          <h1>{data?.title}</h1>
-          {data?.photo && (
-            <div>
-              <Hero
-                image={data.photo}
-                displayHeroMsg={false}
-                // heroHeading={c.title}
-                // heroHeadingType="h2"
-              />
-              {/* <Image image={data.hero.image.asset} /> */}
-            </div>
-          )}
-        </section>
-        <section>
-          {data?.body ? <PortableText article blocks={data.body} /> : null}
-        </section>
-        <section>
-          <Container>{content}</Container>
-          {data?.photo ? (
-            <Image
-              image={data.photo}
-              maxWidth={800}
-              height={540}
-              alt={data.photo.alt}
-            />
-          ) : null}
-        </section>
-      </article>
+      {preview ? (
+        <PreviewSuspense fallback="Loading...">
+          <PreviewPageEvent query={query} queryParams={queryParams} />
+        </PreviewSuspense>
+      ) : (
+        <PageEvent data={data} slug={slug} />
+      )}
     </>
   );
 };
@@ -225,6 +122,7 @@ export async function getStaticProps({ params, preview = false }) {
     props: {
       data,
       preview,
+      slug,
     },
     revalidate: 10,
   };

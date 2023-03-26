@@ -24,7 +24,11 @@ const Page = ({ preview, data, queryParams, fullPath }) => {
       />
       {preview ? (
         <PreviewSuspense fallback="Loading...">
-          <PreviewPageCommon query={query} queryParams={queryParams} />
+          <PreviewPageCommon
+            query={query}
+            queryParams={queryParams}
+            fullPath={fullPath}
+          />
         </PreviewSuspense>
       ) : (
         <PageCommon data={data} />

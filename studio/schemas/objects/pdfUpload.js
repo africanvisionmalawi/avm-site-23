@@ -8,5 +8,10 @@ export default {
       type: "string",
       title: "Description",
     },
+    {
+      title: "PDF Image",
+      name: "pdfImage",
+      type: "image",
+    },
   ],
 };
