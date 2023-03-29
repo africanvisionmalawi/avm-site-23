@@ -1,5 +1,4 @@
 import styled from "@emotion/styled";
-import { Hero } from "../Hero";
 import { CtaButton } from "./CtaButton";
 
 const Container = styled.div`
@@ -9,48 +8,36 @@ const Container = styled.div`
   text-align: center;
 `;
 
-export const Donate = (props) => {
-  const donateImage = useStaticQuery(
-    graphql`
-      query {
-        donateImageDesktop: file(
-          relativePath: { eq: "hero/donate-desktop.jpg" }
-        ) {
-          childImageSharp {
-            fluid(maxWidth: 1918, maxHeight: 540, quality: 60) {
-              ...GatsbyImageSharpFluid_withWebp_tracedSVG
-            }
-          }
-        }
-        donateImageMobile: file(
-          relativePath: { eq: "hero/donate-mobile.jpg" }
-        ) {
-          childImageSharp {
-            fluid(maxWidth: 480, maxHeight: 300, quality: 60) {
-              ...GatsbyImageSharpFluid_withWebp_tracedSVG
-            }
-          }
-        }
-      }
-    `
-  );
+const ContainerWithPhoto = styled.div`
+  background: url(/img/hero/donate-mobile.jpg) 0 0 no-repeat;
+  height: 300px;
+  position: relative;
+  width: 100%;
+  @media (min-width: 480px) {
+    background: url(/img/hero/donate-desktop.jpg) 00 no-repeat;
+    height: 540px;
+  }
+`;
 
+export const Donate = (props) => {
+  const {
+    displayImage = true,
+    link = "https://www.charitycheckout.co.uk/1113786/",
+    text,
+  } = props;
   return (
     <>
-      {props.displayImage ? (
-        <Hero
-          fluid={donateImage.donateImageDesktop.childImageSharp.fluid}
-          fluidMobile={donateImage.donateImageMobile.childImageSharp.fluid}
-        >
+      {displayImage ? (
+        <ContainerWithPhoto>
           <p>
             Donate now to help us help children &amp; vulnerable people in
             Malawi.
           </p>
-          <CtaButton link={props.link} text={props.text} placement="alt" />
-        </Hero>
+          <CtaButton link={link} text={text} placement="alt" />
+        </ContainerWithPhoto>
       ) : (
         <Container>
-          <CtaButton link={props.link} text={props.text} placement="alt" />
+          <CtaButton link={link} text={text} placement="alt" />
         </Container>
       )}
     </>
