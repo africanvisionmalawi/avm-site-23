@@ -35,7 +35,7 @@ const ContentSection = styled.section`
 `;
 
 export const PageEvent = ({ data, slug }) => {
-  // console.log("data here is ***** ", data);
+  console.log("data here is ***** ", data);
   const content = (data?.content || [])
     .filter((c) => !c.disabled)
     .map((c, i) => {
@@ -117,10 +117,10 @@ export const PageEvent = ({ data, slug }) => {
       <article className="articleInner">
         <section>
           <h1>{data?.title}</h1>
-          {data?.photo && (
+          {data?.featured_image && (
             <div>
               <Hero
-                image={data.photo}
+                image={data.featured_image}
                 displayHeroMsg={false}
                 // heroHeading={c.title}
                 // heroHeadingType="h2"

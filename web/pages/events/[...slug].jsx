@@ -84,10 +84,7 @@ title,
   endDate,
   allDay,
   hideTime,
-  featured_image {
-    ...,
-    asset->
-  },
+  featured_image,
   tag,   
 }`;
 

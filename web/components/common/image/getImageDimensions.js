@@ -1,9 +1,11 @@
 export function getImageDimensions(image) {
-  if (!image?.asset?._ref) {
+  if (!image?.asset?._ref && image?.asset?._id) {
     return;
   }
+  const dimensions = image?.asset?._ref
+    ? image.asset._ref.split("-")[2]
+    : image.asset._id.split("-")[2];
 
-  const dimensions = image.asset._ref.split("-")[2];
   const [width, height] = dimensions.split("x").map(Number);
 
   if (!width || !height || Number.isNaN(width) || Number.isNaN(height)) {
