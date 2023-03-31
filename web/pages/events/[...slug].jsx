@@ -85,7 +85,11 @@ title,
   allDay,
   hideTime,
   featured_image,
-  tag,   
+  tag, 
+  location,
+  contact,
+  telephone,
+  cost,  
 }`;
 
 export async function getStaticPaths() {

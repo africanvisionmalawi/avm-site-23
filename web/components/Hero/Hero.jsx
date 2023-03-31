@@ -22,6 +22,7 @@ export const Hero = ({
     }
   }
 
+  console.log("image ", image);
   // const sources = fluidMobile
   //   ? [
   //       fluidMobile,
@@ -51,9 +52,9 @@ export const Hero = ({
             image={image}
             alt=""
             width="100vw"
-            maxWidth={1180}
-            height={450}
-            maxHeight={450}
+            maxWidth={2180}
+            height={650}
+            maxHeight={650}
             fit="crop"
             style={{
               objectFit: "cover",

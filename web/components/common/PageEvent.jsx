@@ -1,5 +1,6 @@
 import styled from "@emotion/styled";
 import { Image } from "components/common/image/Image";
+import { EventDate } from "components/events/EventDate";
 import { Gallery } from "components/gallery";
 import { Hero } from "components/Hero";
 import { PageLinks } from "components/page-links";
@@ -32,6 +33,17 @@ const ContentSection = styled.section`
   margin: 0 auto;
   max-width: 1180px;
   padding: 0 0 3rem;
+`;
+
+const EventDetails = styled.ul`
+  background: #f7f7f7;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  padding: 16px;
+  &,
+  & li {
+    list-style-type: none;
+  }
 `;
 
 export const PageEvent = ({ data, slug }) => {
@@ -114,25 +126,43 @@ export const PageEvent = ({ data, slug }) => {
         canonical={`${process.env.NEXT_PUBLIC_BASE_URL}/events/${data?.slug?.current}/`}
       />
 
-      <article className="articleInner">
-        <section>
+      <article>
+        <section className="articleInner">
           <h1>{data?.title}</h1>
-          {data?.featured_image && (
-            <div>
-              <Hero
-                image={data.featured_image}
-                displayHeroMsg={false}
-                // heroHeading={c.title}
-                // heroHeadingType="h2"
-              />
-              {/* <Image image={data.hero.image.asset} /> */}
-            </div>
-          )}
         </section>
-        <section>
+        {data?.featured_image && (
+          <>
+            <Hero
+              image={data.featured_image}
+              displayHeroMsg={false}
+              // heroHeading={c.title}
+              // heroHeadingType="h2"
+            />
+            {/* <Image image={data.hero.image.asset} /> */}
+          </>
+        )}
+
+        <section className="articleInner">
+          <EventDetails>
+            <li>
+              <EventDate
+                date={data.date}
+                endDate={data.endDate}
+                hideTime={data.hideTime}
+                allDay={data.allDay}
+                layout="mainHeading"
+              />
+            </li>
+            {data.location ? <li>Location: {data.location}</li> : null}
+            {data.contact ? <li>Contact: {data.contact}</li> : null}
+            {data.telephone ? <li>Telephone: {data.telephone}</li> : null}
+            {data.cost ? <li>&pound;{data.cost}</li> : null}
+          </EventDetails>
+        </section>
+        <section className="articleInner">
           {data?.body ? <PortableText article blocks={data.body} /> : null}
         </section>
-        <section>
+        <section className="articleInner">
           <Container>{content}</Container>
           {data?.photo ? (
             <Image
