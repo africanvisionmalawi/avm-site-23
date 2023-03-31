@@ -144,30 +144,29 @@ export const PageCommon = ({ data }) => {
     <>
       {path ? <Breadcrumbs path={path} indexPage={data?.indexPage} /> : null}
       <article>
-        <div className="articleInner">
-          <TopSection>
-            <h1>{data?.title}</h1>
-          </TopSection>
-          {data?.hero && (
-            <Hero
-              image={data.hero.image}
-              mobileImage={data.hero.mobileImage}
-              displayHeroMsg={false}
-              heroHeading={data.title}
-              // heroHeadingType="h2"
-            />
-          )}
-          {data?.bannerMsg ? (
-            <BannerMsg
-              msg={data.bannerMsg.Message}
-              source={data.bannerMsg.source}
-            />
-          ) : null}
-          <TopSection>
-            {data?.body ? <PortableText article blocks={data.body} /> : null}
-          </TopSection>
-        </div>
-        <Container>{content}</Container>
+        <TopSection className="articleInner">
+          <h1>{data?.title}</h1>
+        </TopSection>
+        {data?.hero && (
+          <Hero
+            image={data.hero.image}
+            mobileImage={data.hero.mobileImage}
+            displayHeroMsg={false}
+            heroHeading={data.title}
+            // heroHeadingType="h2"
+          />
+        )}
+        {data?.bannerMsg ? (
+          <BannerMsg
+            msg={data.bannerMsg.Message}
+            source={data.bannerMsg.source}
+          />
+        ) : null}
+        <TopSection className="articleInner">
+          {data?.body ? <PortableText article blocks={data.body} /> : null}
+        </TopSection>
+
+        <Container className="articleInner">{content}</Container>
       </article>
     </>
   );
