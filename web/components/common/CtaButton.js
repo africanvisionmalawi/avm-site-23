@@ -25,7 +25,6 @@ const BtnLink = styled.a`
   border-radius: 8px;
   display: inline-block;
   font-weight: bold;
-  /* padding: 10px 20px; */
   padding: 6px 12px;
   text-align: center;
   text-decoration: none;
