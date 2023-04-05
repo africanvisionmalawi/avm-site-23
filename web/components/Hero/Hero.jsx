@@ -22,7 +22,7 @@ export const Hero = ({
     }
   }
 
-  console.log("image ", image);
+  // console.log("image ", image);
   // const sources = fluidMobile
   //   ? [
   //       fluidMobile,
