@@ -48,6 +48,11 @@ const EventDetails = styled.ul`
 
 export const PageEvent = ({ data, slug }) => {
   // console.log("data here is ***** ", data);
+
+  if (!data) {
+    console.log("error ******");
+    return;
+  }
   const content = (data?.content || [])
     .filter((c) => !c.disabled)
     .map((c, i) => {
@@ -142,23 +147,25 @@ export const PageEvent = ({ data, slug }) => {
           </>
         )}
 
-        <section className="articleInner">
-          <EventDetails>
-            <li>
-              <EventDate
-                date={data.date}
-                endDate={data.endDate}
-                hideTime={data.hideTime}
-                allDay={data.allDay}
-                layout="mainHeading"
-              />
-            </li>
-            {data.location ? <li>Location: {data.location}</li> : null}
-            {data.contact ? <li>Contact: {data.contact}</li> : null}
-            {data.telephone ? <li>Telephone: {data.telephone}</li> : null}
-            {data.cost ? <li>&pound;{data.cost}</li> : null}
-          </EventDetails>
-        </section>
+        {data.date ? (
+          <section className="articleInner">
+            <EventDetails>
+              <li>
+                <EventDate
+                  date={data.date}
+                  endDate={data.endDate}
+                  hideTime={data.hideTime}
+                  allDay={data.allDay}
+                  layout="mainHeading"
+                />
+              </li>
+              {data.location ? <li>Location: {data.location}</li> : null}
+              {data.contact ? <li>Contact: {data.contact}</li> : null}
+              {data.telephone ? <li>Telephone: {data.telephone}</li> : null}
+              {data.cost ? <li>&pound;{data.cost}</li> : null}
+            </EventDetails>
+          </section>
+        ) : null}
         <section className="articleInner">
           {data?.body ? <PortableText article blocks={data.body} /> : null}
         </section>

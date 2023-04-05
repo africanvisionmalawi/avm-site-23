@@ -1,4 +1,4 @@
-import { PageShop } from "components/common/PageCommon";
+import { PageShop } from "components/common/PageShop";
 import { usePreview } from "lib/sanity.preview";
 
 export const PreviewPageShop = ({ query, queryParams }) => {
