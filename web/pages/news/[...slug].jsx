@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { Image } from "components/common/image/Image";
+// import { Image } from "components/common/image/Image";
 import { Gallery } from "components/gallery";
 import { Hero } from "components/Hero";
 import { PageLinks } from "components/page-links";
@@ -147,34 +147,35 @@ const Page = ({ data, currentSlug }) => {
           }
           canonical={`${process.env.NEXT_PUBLIC_BASE_URL}/news/${currentSlug}`}
         />
-        <article className="articleInner">
-          <section>
+        <article>
+          <section className="articleInner">
             <h1>{page.title}</h1>
-            {page.photo && (
-              <div>
-                <Hero
-                  image={page.photo}
-                  displayHeroMsg={false}
-                  // heroHeading={c.title}
-                  // heroHeadingType="h2"
-                />
-                {/* <Image image={page.hero.image.asset} /> */}
-              </div>
-            )}
           </section>
-          <section>
+          {page.photo && (
+            <div>
+              <Hero
+                image={page.photo}
+                displayHeroMsg={false}
+                // heroHeading={c.title}
+                // heroHeadingType="h2"
+              />
+              {/* <Image image={page.hero.image.asset} /> */}
+            </div>
+          )}
+
+          <section className="articleInner">
             {page.body ? <PortableText article blocks={page.body} /> : null}
           </section>
-          <section>
+          <section className="articleInner">
             <Container>{content}</Container>
-            {page.photo ? (
+            {/* {page.photo ? (
               <Image
                 image={page.photo}
                 maxWidth={800}
                 height={540}
                 alt={page.photo.alt}
               />
-            ) : null}
+            ) : null} */}
           </section>
         </article>
       </>

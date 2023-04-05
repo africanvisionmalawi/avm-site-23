@@ -39,7 +39,7 @@ export const getImageProps = ({
   fit = "max",
   layout,
 }) => {
-  if (!image?.asset?._ref) {
+  if (!image?.asset?._ref && !image?.asset?._id) {
     return {};
   }
   const maxWidth =

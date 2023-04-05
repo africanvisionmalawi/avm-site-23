@@ -194,19 +194,18 @@ export const PageIndex = ({ data }) => {
         canonical={`${process.env.NEXT_PUBLIC_BASE_URL}/`}
       />
       <article>
-        <div className="articleInner">
-          <Hero
-            image={homePage.hero.image}
-            mobileImage={homePage.hero.mobileImage}
-            displayHeroMsg={false}
-            // heroHeading={c.title}
-            // heroHeadingType="h2"
-          />
-          <TopSection>
-            <Heading>{homePage.title}</Heading>
-            {homePage.subTitle ? homePage.subTitle : null}
-          </TopSection>
-        </div>
+        <Hero
+          image={homePage.hero.image}
+          mobileImage={homePage.hero.mobileImage}
+          displayHeroMsg={false}
+          // heroHeading={c.title}
+          // heroHeadingType="h2"
+        />
+        <TopSection className="articleInner">
+          <Heading>{homePage.title}</Heading>
+          {homePage.subTitle ? homePage.subTitle : null}
+        </TopSection>
+
         <Main>
           <div className="articleInner">
             <TopVideoSection>
@@ -234,8 +233,9 @@ export const PageIndex = ({ data }) => {
               </Container>
             ) : null}
           </div>
-
-          <Donate />
+          <div className="articleInner">
+            <Donate />
+          </div>
 
           {homePage.latestNews ? (
             <LatestNews>

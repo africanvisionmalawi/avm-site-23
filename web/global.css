@@ -92,8 +92,11 @@ h1 {
 
 @media (min-width: 768px) {
   .articleInner {
-    /* padding: 2rem 4em; */
     max-width: 974px;
+  }
+  .articleInner figure {
+    max-width: 95vw;
+    margin: 0 auto;
   }
 }
 @media (min-width: 1024px) {
@@ -120,9 +123,9 @@ figcaption:not(:empty) {
 }
 
 @media (min-width: 768px) {
-  figure {
+  /* figure {
     margin: 0 -5rem;
-  }
+  } */
 }
 
 .videosWrapper {

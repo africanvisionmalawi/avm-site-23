@@ -1,5 +1,5 @@
 export function getImageDimensions(image) {
-  if (!image?.asset?._ref && image?.asset?._id) {
+  if (!image?.asset?._ref && !image?.asset?._id) {
     return;
   }
   const dimensions = image?.asset?._ref

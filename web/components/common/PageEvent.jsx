@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { Image } from "components/common/image/Image";
+// import { Image } from "components/common/image/Image";
 import { EventDate } from "components/events/EventDate";
 import { Gallery } from "components/gallery";
 import { Hero } from "components/Hero";
@@ -164,14 +164,14 @@ export const PageEvent = ({ data, slug }) => {
         </section>
         <section className="articleInner">
           <Container>{content}</Container>
-          {data?.photo ? (
+          {/* {data?.photo ? (
             <Image
               image={data.photo}
               maxWidth={800}
               height={540}
               alt={data.photo.alt}
             />
-          ) : null}
+          ) : null} */}
         </section>
       </article>
     </>
