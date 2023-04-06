@@ -324,7 +324,7 @@ export async function getStaticPaths() {
   // create paths with `slug` param
   const allMarkdownPaths = allMarkdownPosts.map((post) => {
     return {
-      slug: post.slug,
+      slug: post.slug.replace("/news", ""),
     };
   });
 
