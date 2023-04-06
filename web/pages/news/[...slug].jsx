@@ -184,19 +184,31 @@ const Page = ({ data, currentSlug }) => {
 
   if (data?.markDownPost) {
     const { frontmatter, content } = data.markDownPost;
-    console.log("frontmattter ", frontmatter);
-    console.log("conent ", content);
+
     return (
-      <article>
-        <h1>{frontmatter.title}</h1>
-        <div
-          dangerouslySetInnerHTML={{
-            __html: md.render(
-              content.replace("http://www.africanvision.org.uk", ``)
-            ),
-          }}
+      <>
+        <NextSeo
+          title={
+            `${frontmatter.title} |  African Vision Malawi` || siteMeta.title
+          }
+          description={
+            frontmatter.excerpt ? frontmatter.excerpt : siteMeta.description
+          }
+          canonical={`${
+            process.env.NEXT_PUBLIC_BASE_URL
+          }/news/${frontmatter.path.replace("/posts/", "")}`}
         />
-      </article>
+        <article className="articleInner">
+          <h1>{frontmatter.title}</h1>
+          <div
+            dangerouslySetInnerHTML={{
+              __html: md.render(
+                content.replace("http://www.africanvision.org.uk", ``)
+              ),
+            }}
+          />
+        </article>
+      </>
     );
   }
 };
