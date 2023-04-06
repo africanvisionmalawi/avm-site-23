@@ -6,10 +6,13 @@ import { PageLinks } from "components/page-links";
 import { PortableText } from "components/portable-text/BasePortableText";
 import { Videos } from "components/videos";
 import { siteMeta } from "constants/site";
-import fs from "fs";
+import { format, parseISO } from "date-fns";
+import fs, { readdirSync } from "fs";
 import matter from "gray-matter";
 import groq from "groq";
 import { NextSeo } from "next-seo";
+import { join } from "path";
+
 // import md from "markdown-it";
 import client from "/client";
 
@@ -241,19 +244,103 @@ const query = groq`*[_type == "news" && slug.current == $currentSlug][0]{
 }`;
 
 export async function getStaticPaths() {
-  const allPages = await client.fetch(
+  const allSanityPosts = await client.fetch(
     ` *[_type == "news" && slug.current != null] {
       'slug': slug.current,      
     }`
   );
+
+  // Get Markdown posts
+  // const slugs = fs.readdirSync("posts");
+
+  // const getAllFiles = function(dirPath, arrayOfFiles) {
+  //   const files = fs.readdirSync(dirPath);
+  //   console.log("files **** ", files);
+
+  //   let markdownPaths = arrayOfFiles || [];
+
+  //   files.forEach(function(file) {
+  //     if (fs.statSync(dirPath + "/" + file).isDirectory()) {
+  //       markdownPaths = getAllFiles(dirPath + "/" + file, arrayOfFiles);
+  //     } else {
+  //       markdownPaths.push(path.join(__dirname, dirPath, "/", file));
+  //     }
+  //   });
+
+  //   return markdownPaths;
+  // };
+
+  // const slugs = getAllFiles("posts");
+
+  const getFileList = (dirName) => {
+    let files = [];
+    const items = readdirSync(dirName);
+
+    for (const item of items) {
+      if (fs.statSync(dirName + "/" + item).isDirectory()) {
+        files = [...files, ...getFileList(`${dirName}/${item}`)];
+      } else {
+        files.push(`${dirName}/${item}`);
+      }
+    }
+
+    return files;
+  };
+
+  const slugs = getFileList("posts");
+
+  // const dirPath = "posts";
+  // const files = fs.readdirSync(dirPath);
+  // let arrayOfFiles = [];
+  // files.forEach(function(file) {
+  //   if (fs.statSync(dirPath + "/" + file).isDirectory()) {
+  //     arrayOfFiles = getAllFiles(dirPath + "/" + file, arrayOfFiles);
+  //   } else {
+  //     arrayOfFiles.push(path.join(__dirname, dirPath, "/", file));
+  //   }
+  // });
+
+  // console.log("slugs **** ", slugs);
+  const allMarkdownPosts = slugs
+    .map((slug) => {
+      let dirPath = join("posts", slug);
+      // console.log("slug *** ", slug);
+      // console.log("dirPath *** ", dirPath);
+      // const fullPath = join(dirPath, `index.md`);
+      // `posts/${slug.join("/")}.md`, "utf-8");
+      const fileContents = fs.readFileSync(slug, "utf8");
+      const { data, content } = matter(fileContents);
+      // console.log("data ****", data);
+      const date = format(parseISO(data.date), "MMMM dd, yyyy");
+      return { slug: slug, frontmatter: { ...data, date }, content };
+    })
+    .sort((post1, post2) =>
+      new Date(post1.frontmatter.date) > new Date(post2.frontmatter.date)
+        ? -1
+        : 1
+    );
+  // console.log("allMarkdownPosts ", allMarkdownPosts);
+  // create paths with `slug` param
+  const allMarkdownPaths = allMarkdownPosts.map((post) => {
+    return {
+      params: {
+        slug: post.slug,
+      },
+    };
+  });
+
+  const allPosts = [...allSanityPosts, ...allMarkdownPaths];
+
+  console.log("allPosts ", allPosts);
+
   return {
     paths:
-      allPages?.map((page) => ({
+      allPosts?.map((page) => ({
         params: {
           slug: [page.slug],
         },
       })) || [],
-    fallback: true,
+    fallback: false,
   };
 }
 

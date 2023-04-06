@@ -11,6 +11,7 @@
     "@reach/dialog": "^0.18.0",
     "@sanity/client": "^4.0.0",
     "@sanity/image-url": "^1.0.1",
+    "date-fns": "^2.29.3",
     "dayjs": "^1.11.7",
     "gray-matter": "^4.0.3",
     "groq": "^2.33.2",
