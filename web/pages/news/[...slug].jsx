@@ -187,6 +187,7 @@ const Page = ({ data, currentSlug }) => {
 
   if (data?.markDownPost) {
     const { frontmatter, content } = data.markDownPost;
+    console.log("data.markDownPost **** ", data.markDownPost);
 
     return (
       <>
@@ -323,9 +324,7 @@ export async function getStaticPaths() {
   // create paths with `slug` param
   const allMarkdownPaths = allMarkdownPosts.map((post) => {
     return {
-      params: {
-        slug: post.slug,
-      },
+      slug: post.slug,
     };
   });
 
