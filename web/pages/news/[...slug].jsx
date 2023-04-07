@@ -299,14 +299,14 @@ export async function getStaticPaths() {
   // ];
   const allPosts = [...allSanityPosts, ...allMarkdownPaths];
 
-  // console.log("allPosts ", allPosts);
+  console.log("allPosts ", allPosts);
 
-  // console.log(
-  //   "all posts map **** ",
-  //   allPosts?.map((page) => {
-  //     return page?.slug?.replace("posts/", "").replace(".md", "");
-  //   })
-  // );
+  console.log(
+    "all posts map **** ",
+    allPosts?.map((page) => {
+      return page?.slug?.replace("posts/", "").replace(".md", "");
+    })
+  );
   return {
     paths:
       allPosts?.map((page) => ({
@@ -321,13 +321,13 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params, preview = false }) {
   const data = {};
-  // console.log("params ", params);
+  console.log("params ", params);
   // It's important to default the slug so that it doesn't return "undefined"
   const { slug = "" } = params;
   const hasCategory = !!slug.length > 1;
   const slugLength = slug.length;
   const currentSlug = hasCategory ? slug[slug.length - 1] : slug.toString();
-  // console.log("currentSlug ", currentSlug);
+  console.log("currentSlug ", currentSlug);
   // console.log("slug ", slug[slug.length - 1]);
   data.sanityPost = await client.fetch(query, { currentSlug, hasCategory });
   // console.log("data ", data);
