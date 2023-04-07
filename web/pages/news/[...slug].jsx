@@ -315,7 +315,7 @@ export async function getStaticPaths() {
           slug: [page?.slug?.replace("posts/", "").replace(".md", "")],
         },
       })) || [],
-    fallback: true,
+    fallback: false,
   };
 }
 
