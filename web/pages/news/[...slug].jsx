@@ -188,7 +188,7 @@ const Page = ({ data, currentSlug }) => {
   if (data?.markDownPost) {
     const { frontmatter, content } = data.markDownPost;
     // console.log("data.markDownPost **** ", data.markDownPost);
-
+    console.log("title **** ", frontmatter.title);
     return (
       <>
         <NextSeo
@@ -315,7 +315,7 @@ export async function getStaticPaths() {
           slug: [page?.slug?.replace("posts/", "").replace(".md", "")],
         },
       })) || [],
-    fallback: false,
+    fallback: true,
   };
 }
 
@@ -325,7 +325,7 @@ export async function getStaticProps({ params, preview = false }) {
   // It's important to default the slug so that it doesn't return "undefined"
   const { slug = "" } = params;
   const hasCategory = !!slug.length > 1;
-  const slugLength = slug.length;
+  // const slugLength = slug.length;
   const currentSlug = hasCategory ? slug[slug.length - 1] : slug.toString();
   console.log("currentSlug ", currentSlug);
   // console.log("slug ", slug[slug.length - 1]);
@@ -334,7 +334,7 @@ export async function getStaticProps({ params, preview = false }) {
 
   if (!data.sanityPost) {
     // check for markdown news
-    // console.log("getting markdown post ", slug);
+    console.log("getting markdown post ", slug);
     const fileName = fs.readFileSync(`posts/${slug.join("/")}.md`, "utf-8");
     const { data: frontmatter, content } = matter(fileName);
     data.markDownPost = {
