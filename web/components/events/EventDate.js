@@ -7,7 +7,7 @@ dayjs.extend(advancedFormat);
 // todo: tidy up this mess of if satements
 
 export const EventDate = ({ date, endDate, allDay, layout, hideTime }) => {
-  console.log("date here is ***** ", date);
+  // console.log("date here is ***** ", date);
   let dateString = "";
   let timeString = "";
   let timeStringEnd = "";

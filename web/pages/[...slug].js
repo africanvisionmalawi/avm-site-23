@@ -52,7 +52,7 @@ export async function getStaticPaths() {
           slug: [page.indexPage ? page.slug : `${page.category}/${page.slug}`],
         },
       })) || [],
-    fallback: true,
+    fallback: false,
   };
 }
 
