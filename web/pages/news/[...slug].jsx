@@ -267,6 +267,7 @@ export async function getStaticPaths() {
   };
 
   const slugs = getFileList("posts");
+  // console.log("slugs ", slugs);
 
   const allMarkdownPosts = slugs
     .map((slug) => {
@@ -310,8 +311,8 @@ export async function getStaticPaths() {
     paths:
       allPosts?.map((page) => ({
         params: {
-          slug: [page.slug],
-          // slug: [page?.slug?.replace("posts/", "").replace(".md", "")],
+          // slug: [page.slug],
+          slug: [page?.slug?.replace("posts/", "").replace(".md", "")],
         },
       })) || [],
     fallback: true,
