@@ -187,7 +187,7 @@ const Page = ({ data, currentSlug }) => {
 
   if (data?.markDownPost) {
     const { frontmatter, content } = data.markDownPost;
-    console.log("data.markDownPost **** ", data.markDownPost);
+    // console.log("data.markDownPost **** ", data.markDownPost);
 
     return (
       <>
@@ -251,28 +251,6 @@ export async function getStaticPaths() {
     }`
   );
 
-  // Get Markdown posts
-  // const slugs = fs.readdirSync("posts");
-
-  // const getAllFiles = function(dirPath, arrayOfFiles) {
-  //   const files = fs.readdirSync(dirPath);
-  //   console.log("files **** ", files);
-
-  //   let markdownPaths = arrayOfFiles || [];
-
-  //   files.forEach(function(file) {
-  //     if (fs.statSync(dirPath + "/" + file).isDirectory()) {
-  //       markdownPaths = getAllFiles(dirPath + "/" + file, arrayOfFiles);
-  //     } else {
-  //       markdownPaths.push(path.join(__dirname, dirPath, "/", file));
-  //     }
-  //   });
-
-  //   return markdownPaths;
-  // };
-
-  // const slugs = getAllFiles("posts");
-
   const getFileList = (dirName) => {
     let files = [];
     const items = readdirSync(dirName);
@@ -290,28 +268,11 @@ export async function getStaticPaths() {
 
   const slugs = getFileList("posts");
 
-  // const dirPath = "posts";
-  // const files = fs.readdirSync(dirPath);
-  // let arrayOfFiles = [];
-  // files.forEach(function(file) {
-  //   if (fs.statSync(dirPath + "/" + file).isDirectory()) {
-  //     arrayOfFiles = getAllFiles(dirPath + "/" + file, arrayOfFiles);
-  //   } else {
-  //     arrayOfFiles.push(path.join(__dirname, dirPath, "/", file));
-  //   }
-  // });
-
-  // console.log("slugs **** ", slugs);
   const allMarkdownPosts = slugs
     .map((slug) => {
       let dirPath = join("posts", slug);
-      // console.log("slug *** ", slug);
-      // console.log("dirPath *** ", dirPath);
-      // const fullPath = join(dirPath, `index.md`);
-      // `posts/${slug.join("/")}.md`, "utf-8");
       const fileContents = fs.readFileSync(slug, "utf8");
       const { data, content } = matter(fileContents);
-      // console.log("data ****", data);
       const date = format(parseISO(data.date), "MMMM dd, yyyy");
       return { slug: slug, frontmatter: { ...data, date }, content };
     })
@@ -320,31 +281,46 @@ export async function getStaticPaths() {
         ? -1
         : 1
     );
-  // console.log("allMarkdownPosts ", allMarkdownPosts);
-  // create paths with `slug` param
+
+  // console.log("allMarkdownPosts ", allMarkdownPosts)
+
   const allMarkdownPaths = allMarkdownPosts.map((post) => {
     return {
-      slug: post.slug.replace("/news", ""),
+      slug: post.slug.replace("posts/", "").replace(".md", ""),
     };
   });
 
+  // console.log("allMarkdownPaths ", allMarkdownPaths);
+
+  // const allPosts = [
+  //   ...allSanityPosts,
+  //   "news/2016/08/raffle-tickets-for-this-beautiful-blanket/",
+  // ];
   const allPosts = [...allSanityPosts, ...allMarkdownPaths];
 
-  console.log("allPosts ", allPosts);
+  // console.log("allPosts ", allPosts);
 
+  // console.log(
+  //   "all posts map **** ",
+  //   allPosts?.map((page) => {
+  //     return page?.slug?.replace("posts/", "").replace(".md", "");
+  //   })
+  // );
   return {
     paths:
       allPosts?.map((page) => ({
         params: {
           slug: [page.slug],
+          // slug: [page?.slug?.replace("posts/", "").replace(".md", "")],
         },
       })) || [],
-    fallback: false,
+    fallback: true,
   };
 }
 
 export async function getStaticProps({ params, preview = false }) {
   const data = {};
+  // console.log("params ", params);
   // It's important to default the slug so that it doesn't return "undefined"
   const { slug = "" } = params;
   const hasCategory = !!slug.length > 1;
@@ -357,7 +333,7 @@ export async function getStaticProps({ params, preview = false }) {
 
   if (!data.sanityPost) {
     // check for markdown news
-    console.log("getting markdown post");
+    // console.log("getting markdown post ", slug);
     const fileName = fs.readFileSync(`posts/${slug.join("/")}.md`, "utf-8");
     const { data: frontmatter, content } = matter(fileName);
     data.markDownPost = {
