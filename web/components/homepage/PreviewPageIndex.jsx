@@ -1,4 +1,4 @@
-import { PageIndex } from "components/common/PageIndex";
+import { PageIndex } from "components/homepage/PageIndex";
 import { usePreview } from "lib/sanity.preview";
 
 export default function PreviewPageIndex({ query }) {

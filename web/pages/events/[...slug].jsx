@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
-import { PageEvent } from "components/common/PageEvent";
-import { PreviewPageEvent } from "components/PreviewPageEvent";
+import { PageEvent } from "components/events/PageEvent";
+import { PreviewPageEvent } from "components/events/PreviewPageEvent";
 import groq from "groq";
 import { PreviewSuspense } from "next-sanity/preview";
 import client from "/client";

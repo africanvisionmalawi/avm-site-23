@@ -1,5 +1,5 @@
 import imageUrlBuilder from "@sanity/image-url";
-import { PageIndex } from "components/common/PageIndex";
+import { PageIndex } from "components/homepage/PageIndex";
 import groq from "groq";
 import { PreviewSuspense } from "next-sanity/preview";
 import React, { lazy } from "react";
@@ -47,7 +47,9 @@ const query = groq`{
 }
 `;
 
-const PreviewPageIndex = lazy(() => import("components/PreviewPageIndex"));
+const PreviewPageIndex = lazy(() =>
+  import("components/homepage/PreviewPageIndex")
+);
 
 const HomePage = ({ data, preview }) => {
   // console.log("data here ", data);

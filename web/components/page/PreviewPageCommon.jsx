@@ -1,11 +1,11 @@
-import { PageEvent } from "components/common/PageEvent";
+import { PageCommon } from "components/page/PageCommon";
 import { usePreview } from "lib/sanity.preview";
 
-export const PreviewPageEvent = ({ query, queryParams }) => {
+export const PreviewPageCommon = ({ query, queryParams }) => {
   const data = usePreview(null, query, queryParams);
   return (
     <>
-      <PageEvent data={data} slug={sluglug} />
+      <PageCommon data={data} />
       <a className="previewButton" href="/api/exit-preview">
         Exit Preview
       </a>

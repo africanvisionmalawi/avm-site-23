@@ -1,7 +1,6 @@
 import styled from "@emotion/styled";
-// import { Image } from "components/common/image/Image";
-import { Gallery } from "components/gallery";
 import { Hero } from "components/Hero";
+import { Gallery } from "components/gallery";
 import { PageLinks } from "components/page-links";
 import { PortableText } from "components/portable-text/BasePortableText";
 import { Videos } from "components/videos";
@@ -12,8 +11,6 @@ import matter from "gray-matter";
 import groq from "groq";
 import { NextSeo } from "next-seo";
 import { join } from "path";
-
-// import md from "markdown-it";
 import client from "/client";
 
 const md = require("markdown-it")({
@@ -25,23 +22,6 @@ const md = require("markdown-it")({
 const Container = styled.section`
   margin: 0 auto;
   padding: 0 0 3rem;
-`;
-
-const Heading = styled.h1`
-  font-family: Raleway, "Helvetica Neue", "Segoe UI", "Helvetica", "Arial",
-    "sans-serif";
-  text-align: center;
-`;
-
-const TopSection = styled.div`
-  margin: 0 auto;
-  max-width: 885px;
-  padding: 3rem 1rem 0;
-  position: relative;
-  width: 100%;
-  @media (min-width: 768px) {
-    padding-top: 1rem;
-  }
 `;
 
 const TextSection = styled.section`
@@ -65,14 +45,8 @@ const ContentSection = styled.section`
   padding: 0 0 3rem;
 `;
 
-const Main = styled.main`
-  background: #fff;
-  border-radius: 2px;
-`;
-
 const Page = ({ data, currentSlug }) => {
   // console.log("data here is ***** ", data);
-  // const { sanityPost } = data;
   if (data?.sanityPost) {
     const page = data.sanityPost;
     const content = (page.content || [])
@@ -90,7 +64,6 @@ const Page = ({ data, currentSlug }) => {
                 heroHeadingType="h2"
               />
             );
-            // console.log("c.image.asset **********", c.image.asset);
             break;
           case "videoGallery":
             el = <Videos key={c._key} {...c} />;
@@ -171,14 +144,6 @@ const Page = ({ data, currentSlug }) => {
           </section>
           <section className="articleInner">
             <Container>{content}</Container>
-            {/* {page.photo ? (
-              <Image
-                image={page.photo}
-                maxWidth={800}
-                height={540}
-                alt={page.photo.alt}
-              />
-            ) : null} */}
           </section>
         </article>
       </>
@@ -231,17 +196,7 @@ const query = groq`*[_type == "news" && slug.current == $currentSlug][0]{
   content,
   tags,
   pageHeading, 
-  publishDate,  
-  // content[] {        
-  //   ...
-  //   pageLinks {
-  //     ...
-  //     pageLinks[] {
-  //       ...
-  //       url->
-  //     }
-  //   },     
-  // },  
+  publishDate,    
 }`;
 
 export async function getStaticPaths() {
@@ -291,27 +246,18 @@ export async function getStaticPaths() {
     };
   });
 
-  // console.log("allMarkdownPaths ", allMarkdownPaths);
-
-  // const allPosts = [
-  //   ...allSanityPosts,
-  //   "news/2016/08/raffle-tickets-for-this-beautiful-blanket/",
-  // ];
   const allPosts = [...allSanityPosts, ...allMarkdownPaths];
 
-  console.log("allPosts ", allPosts);
-
-  console.log(
-    "all posts map **** ",
-    allPosts?.map((page) => {
-      return page?.slug?.replace("posts/", "").replace(".md", "");
-    })
-  );
+  // console.log(
+  //   "all posts map **** ",
+  //   allPosts?.map((page) => {
+  //     return page?.slug?.replace("posts/", "").replace(".md", "");
+  //   })
+  // );
   return {
     paths:
       allPosts?.map((page) => ({
         params: {
-          // slug: [page.slug],
           slug: [page?.slug?.replace("posts/", "").replace(".md", "")],
         },
       })) || [],
@@ -321,16 +267,14 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params, preview = false }) {
   const data = {};
-  console.log("params ", params);
+
   // It's important to default the slug so that it doesn't return "undefined"
   const { slug = "" } = params;
   const hasCategory = !!slug.length > 1;
-  // const slugLength = slug.length;
+
   const currentSlug = hasCategory ? slug[slug.length - 1] : slug.toString();
-  console.log("currentSlug ", currentSlug);
-  // console.log("slug ", slug[slug.length - 1]);
+
   data.sanityPost = await client.fetch(query, { currentSlug, hasCategory });
-  // console.log("data ", data);
 
   if (!data.sanityPost) {
     // check for markdown news

@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
-import { PageShop } from "components/common/PageShop";
-import { PreviewPageShop } from "components/PreviewPageShop";
+import { PageShop } from "components/shop/PageShop";
+import { PreviewPageShop } from "components/shop/PreviewPageShop";
 import groq from "groq";
 import { PreviewSuspense } from "next-sanity/preview";
 import React from "react";

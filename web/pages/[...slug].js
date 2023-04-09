@@ -1,5 +1,5 @@
-import { PageCommon } from "components/common/PageCommon";
-import { PreviewPageCommon } from "components/PreviewPageCommon";
+import { PageCommon } from "components/page/PageCommon";
+import { PreviewPageCommon } from "components/page/PreviewPageCommon";
 import { siteMeta } from "constants/site";
 import groq from "groq";
 import { PreviewSuspense } from "next-sanity/preview";
