@@ -1,0 +1,3 @@
+# pagefind.yml
+source: .next
+bundle_dir: _pagefind
