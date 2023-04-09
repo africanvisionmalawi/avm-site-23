@@ -15,7 +15,7 @@ export default ({ value }) => {
         style={{
           objectFit: "cover",
           height: "auto",
-          maxWidth: "100vw",
+          maxWidth: "756px",
         }}
         sizes="(max-width: 1140px) 100vw, 1140px"
         fit="crop"

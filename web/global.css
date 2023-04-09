@@ -96,7 +96,7 @@ h1 {
   }
   .articleInner figure {
     max-width: 95vw;
-    margin: 0 auto;
+    margin: 0 auto 1rem;
   }
 }
 @media (min-width: 1024px) {
@@ -106,7 +106,6 @@ h1 {
 }
 
 figure {
-  margin: 0 -1rem;
   position: relative;
 }
 

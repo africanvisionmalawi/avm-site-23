@@ -26,7 +26,7 @@ const Text = styled.p`
 
 export default (props) => {
   // console.log("props **** ", props);
-  const { asset } = props.value;
+  const { asset, description } = props.value;
   // console.log("asset ", asset);
   if (!asset) {
     return null;
@@ -37,7 +37,7 @@ export default (props) => {
         <ImFilePdf />
       </IconContext.Provider>
       <div>
-        {/* {props.description ? <Heading>{props.description}</Heading> : null} */}
+        {description ? <Heading>{description}</Heading> : null}
         <Text>{asset.originalFilename}</Text>
       </div>
     </Container>

@@ -77,7 +77,10 @@ const query = groq`*[_type == "page" && slug.current == $slug][0]{
       },
     },         
   },  
-  body,
+  body[] {
+    ...,
+    asset-> 
+  },
 }`;
 
 export async function getStaticProps({ params, preview = false }) {
