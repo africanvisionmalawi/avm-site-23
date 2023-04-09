@@ -1,9 +1,9 @@
 import styled from "@emotion/styled";
 import imageUrlBuilder from "@sanity/image-url";
+import { Hero } from "components/Hero";
 import { CardPost } from "components/card/CardPost";
 import { CardPostAlt } from "components/card/CardPostAlt";
 import { Donate } from "components/common/Donate";
-import { Hero } from "components/Hero";
 import { OurWork } from "components/ourwork/ourwork";
 import { PortableText } from "components/portable-text/BasePortableText";
 import { Player } from "components/videos/Player";

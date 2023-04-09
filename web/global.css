@@ -166,3 +166,8 @@ a.previewButton:visited {
 section {
   padding: 0 1rem 1rem;
 }
+@media (min-width: 1220px) {
+  section {
+    padding: 0 0 1rem;
+  }
+}
