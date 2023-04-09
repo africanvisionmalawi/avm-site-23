@@ -15,11 +15,11 @@ const ContainerInner = styled.div`
   color: #fff;
   padding: 1rem;
   text-align: center;
-  width: 100%;
   z-index: 6;
   @media (min-width: 750px) {
     border-radius: 0 8px 0 0;
     bottom: 0;
+    font-size: 1.4rem;
     left: 0;
     position: absolute;
     max-width: 480px;
@@ -34,11 +34,14 @@ const ContainerInner = styled.div`
 
 const ContainerWithPhoto = styled.div`
   background: url(/img/hero/donate-mobile.jpg) 0 0 no-repeat;
-  height: 300px;
+  height: 150px;
+  margin-bottom: 2rem;
+  padding-top: 400px;
   position: relative;
   width: 100%;
   @media (min-width: 480px) {
     background: url(/img/hero/donate-desktop.jpg) 00 no-repeat;
+    padding-top: 0;
     height: 540px;
   }
 `;
