@@ -90,6 +90,11 @@ h1 {
   /* width: 100%; */
 }
 
+.articleInner figure {
+  margin: 0 -0.3rem 1rem;
+  max-width: 480px;
+}
+
 @media (min-width: 768px) {
   .articleInner {
     max-width: 974px;

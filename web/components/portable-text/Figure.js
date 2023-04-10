@@ -12,12 +12,13 @@ export default ({ value }) => {
         image={value}
         alt={alt}
         maxWidth={1180}
+        layout="responsive"
         style={{
           objectFit: "cover",
           height: "auto",
           maxWidth: "756px",
         }}
-        sizes="(max-width: 1140px) 100vw, 1140px"
+        sizes="(max-width: 767px) 95vw, (max-width: 940px) 80vw, 756px"
         fit="crop"
       />
       <figcaption>{caption}</figcaption>

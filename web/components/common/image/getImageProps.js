@@ -119,11 +119,9 @@ export const getImageProps = ({
         : sizes || `(max-width: ${maxWidth}px) 100vw, ${maxWidth}px`,
 
     // Let's also tell the browser what's the size of the image so it can calculate aspect ratios
-    width: layout === "fixed" ? maxWidth : retinaSizes[0],
+    width: layout === "fixed" ? maxWidth : null,
     // height: retinaSizes[0] / imageDimensions.aspectRatio,
-    height:
-      layout === "fixed"
-        ? maxHeight
-        : retinaSizes[0] / imageDimensions.aspectRatio,
+    height: layout === "fixed" ? maxHeight : null,
+    // : retinaSizes[0] / imageDimensions.aspectRatio,
   };
 };
