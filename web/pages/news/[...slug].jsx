@@ -153,7 +153,7 @@ const Page = ({ data, currentSlug }) => {
   if (data?.markDownPost) {
     const { frontmatter, content } = data.markDownPost;
     // console.log("data.markDownPost **** ", data.markDownPost);
-    console.log("title **** ", frontmatter.title);
+    // console.log("title **** ", frontmatter.title);
     return (
       <>
         <NextSeo
@@ -165,7 +165,7 @@ const Page = ({ data, currentSlug }) => {
           }
           canonical={`${
             process.env.NEXT_PUBLIC_BASE_URL
-          }/news/${frontmatter.path.replace("/posts/", "")}`}
+          }/news/${frontmatter.path.replace(/\/posts\//, "")}`}
         />
         <article className="articleInner">
           <h1>{frontmatter.title}</h1>
@@ -230,7 +230,7 @@ export async function getStaticPaths() {
       const fileContents = fs.readFileSync(slug, "utf8");
       const { data, content } = matter(fileContents);
       const date = format(parseISO(data.date), "MMMM dd, yyyy");
-      return { slug: slug, frontmatter: { ...data, date }, content };
+      return { slug, frontmatter: { ...data, date }, content };
     })
     .sort((post1, post2) =>
       new Date(post1.frontmatter.date) > new Date(post2.frontmatter.date)
@@ -258,7 +258,7 @@ export async function getStaticPaths() {
     paths:
       allPosts?.map((page) => ({
         params: {
-          slug: [page?.slug?.replace("posts/", "").replace(".md", "")],
+          slug: [page?.slug?.replace(/posts\//, "").replace(/\.md/, "")],
         },
       })) || [],
     fallback: true,
@@ -273,14 +273,16 @@ export async function getStaticProps({ params, preview = false }) {
   const hasCategory = !!slug.length > 1;
 
   const currentSlug = hasCategory ? slug[slug.length - 1] : slug.toString();
+  console.log("currentSlug ", currentSlug);
 
   data.sanityPost = await client.fetch(query, { currentSlug, hasCategory });
 
   if (!data.sanityPost) {
     // check for markdown news
     console.log("getting markdown post ", slug);
-    const fileName = fs.readFileSync(`posts/${slug.join("/")}.md`, "utf-8");
-    const { data: frontmatter, content } = matter(fileName);
+    const source = fs.readFileSync(`posts/${slug.join("/")}.md`, "utf-8");
+    // console.log("source ", source);
+    const { data: frontmatter, content } = matter(source);
     data.markDownPost = {
       frontmatter: frontmatter,
       content: content,
