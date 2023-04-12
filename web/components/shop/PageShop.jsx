@@ -3,7 +3,6 @@ import { Breadcrumbs } from "components/Breadcrumbs";
 import { BuyButton } from "components/common/BuyButton";
 import { Carousel } from "components/common/Carousel";
 import { SectionInner } from "components/common/SectionInner";
-import { SectionTop } from "components/common/SectionTop";
 import { PortableText } from "components/portable-text/BasePortableText";
 import { Photo } from "components/shop/Photo";
 import { ShopListItem } from "components/shop/ShopListItem";
@@ -152,9 +151,8 @@ export const PageShop = ({ data, currentSlug }) => {
       <article>
         <ShopSection>
           <article className="content">
-            <SectionTop>
-              <Heading>Shop - {page.title ? page.title : null}</Heading>
-            </SectionTop>
+            <Heading>Shop - {page.title ? page.title : null}</Heading>
+
             <Columns>
               <ColumnMain>
                 {page.photoGallery && page.photoGallery.photos.length > 1 && (
