@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2017/07/update-on-june-malawi-visit/"
+path: "2017/07/update-on-june-malawi-visit"
 date: "2017-07-12T12:27:35Z"
 title: "June 2017 Malawi visit"
 categories: ["News from Malawi"]

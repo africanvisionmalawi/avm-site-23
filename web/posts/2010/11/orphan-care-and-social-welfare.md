@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2010/11/orphan-care-and-social-welfare/"
+path: "2010/11/orphan-care-and-social-welfare"
 date: "2010-11-12T08:59:41Z"
 title: "Orphan Care and Social Welfare"
 categories: ["News from Malawi"]

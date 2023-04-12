@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2010/11/water-and-sanitation/"
+path: "2010/11/water-and-sanitation"
 date: "2010-11-12T08:55:56Z"
 title: "Water and Sanitation"
 categories: ["News from Malawi"]

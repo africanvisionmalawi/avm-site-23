@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2012/07/kellys-100km-bike-ride-update/"
+path: "2012/07/kellys-100km-bike-ride-update"
 date: "2012-07-17T10:57:02Z"
 title: "Kelly's 100km bike ride update"
 categories: ["Fundraising News", "General News"]

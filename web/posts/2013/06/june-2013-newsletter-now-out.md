@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2013/06/june-2013-newsletter-now-out/"
+path: "2013/06/june-2013-newsletter-now-out"
 date: "2013-06-28T14:51:41Z"
 title: "Newsletter June 2013 "
 categories: []

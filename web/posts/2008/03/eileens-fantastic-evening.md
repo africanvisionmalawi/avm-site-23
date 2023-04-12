@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2008/03/eileens-fantastic-evening/"
+path: "2008/03/eileens-fantastic-evening"
 date: "2008-03-17T09:43:37Z"
 title: "Eileen's fantastic evening"
 categories: []

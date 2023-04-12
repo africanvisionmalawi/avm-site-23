@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2013/03/around-the-coast-in-80-days/"
+path: "2013/03/around-the-coast-in-80-days"
 date: "2013-03-05T16:04:30Z"
 title: "Around the coast in 80 days..."
 categories: []

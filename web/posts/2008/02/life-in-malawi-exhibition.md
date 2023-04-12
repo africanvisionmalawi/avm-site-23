@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2008/02/life-in-malawi-exhibition/"
+path: "2008/02/life-in-malawi-exhibition"
 date: "2008-02-18T09:48:03Z"
 title: "Life in Malawi exhibition"
 categories: ["News from the UK"]

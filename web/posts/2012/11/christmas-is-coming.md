@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2012/11/christmas-is-coming/"
+path: "2012/11/christmas-is-coming"
 date: "2012-11-16T14:39:51Z"
 title: "Christmas is coming..."
 categories: []

@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2008/06/malawi-evening/"
+path: "2008/06/malawi-evening"
 date: "2008-06-30T09:34:55Z"
 title: "Malawi Evening"
 categories: []

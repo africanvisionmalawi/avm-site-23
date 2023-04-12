@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2010/02/vodafone-world-of-difference/"
+path: "2010/02/vodafone-world-of-difference"
 date: "2010-02-10T17:14:34Z"
 title: "Vodafone World of Difference"
 categories: []

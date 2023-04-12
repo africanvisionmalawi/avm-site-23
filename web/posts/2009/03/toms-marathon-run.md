@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2009/03/toms-marathon-run/"
+path: "2009/03/toms-marathon-run"
 date: "2009-03-05T15:29:22Z"
 title: "Tom's marathon run!"
 categories: []

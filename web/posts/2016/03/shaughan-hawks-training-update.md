@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2016/03/shaughan-hawks-training-update/"
+path: "2016/03/shaughan-hawks-training-update"
 date: "2016-03-21T14:19:14Z"
 title: "Shaughan Hawks training update"
 categories: ["Fundraising News", "General News", "News from the UK"]

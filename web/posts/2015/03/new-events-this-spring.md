@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2015/03/new-events-this-spring/"
+path: "2015/03/new-events-this-spring"
 date: "2015-03-13T09:16:57Z"
 title: "New events this spring ..."
 categories: ["Fundraising News", "General News"]

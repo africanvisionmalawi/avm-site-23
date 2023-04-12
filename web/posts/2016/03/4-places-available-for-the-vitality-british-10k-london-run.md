@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2016/03/4-places-available-for-the-vitality-british-10k-london-run/"
+path: "2016/03/4-places-available-for-the-vitality-british-10k-london-run"
 date: "2016-03-30T19:07:51Z"
 title: "4 places available for the Vitality British 10k London Run!"
 categories: ["Fundraising News", "General News", "News from the UK"]

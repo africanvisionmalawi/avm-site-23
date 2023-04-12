@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2010/08/funding-for-childrens-centres/"
+path: "2010/08/funding-for-childrens-centres"
 date: "2010-08-22T13:31:19Z"
 title: "Funding for Children's Centres"
 categories: ["News from Malawi"]

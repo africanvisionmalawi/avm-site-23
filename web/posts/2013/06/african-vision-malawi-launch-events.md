@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2013/06/african-vision-malawi-launch-events/"
+path: "2013/06/african-vision-malawi-launch-events"
 date: "2013-06-25T15:11:53Z"
 title: "African Vision Malawi launch events..."
 categories: []

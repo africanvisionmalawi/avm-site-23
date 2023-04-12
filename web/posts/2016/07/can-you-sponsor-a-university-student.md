@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2016/07/can-you-sponsor-a-university-student/"
+path: "2016/07/can-you-sponsor-a-university-student"
 date: "2016-07-03T21:40:25Z"
 title: "Can you sponsor a University Student?"
 categories:

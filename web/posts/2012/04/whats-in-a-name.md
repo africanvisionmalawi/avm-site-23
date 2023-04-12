@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2012/04/whats-in-a-name/"
+path: "2012/04/whats-in-a-name"
 date: "2012-04-16T13:10:14Z"
 title: "What’s In A Name? "
 categories: []

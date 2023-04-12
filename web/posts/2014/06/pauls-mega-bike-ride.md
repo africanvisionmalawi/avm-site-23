@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2014/06/pauls-mega-bike-ride/"
+path: "2014/06/pauls-mega-bike-ride"
 date: "2014-06-17T10:24:27Z"
 title: "Paul's mega bike ride..."
 categories: []

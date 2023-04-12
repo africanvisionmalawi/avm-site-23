@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2013/09/maternity-unit-build-starts/"
+path: "2013/09/maternity-unit-build-starts"
 date: "2013-09-10T19:14:56Z"
 title: "Maternity Unit is Open!"
 categories: ["News from Malawi", "Projects"]

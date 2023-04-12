@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2010/09/sam-and-robs-journey/"
+path: "2010/09/sam-and-robs-journey"
 date: "2010-09-09T11:09:02Z"
 title: "Sam and Rob's Journey"
 categories: []

@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2013/05/new-country-manager-starts/"
+path: "2013/05/new-country-manager-starts"
 date: "2013-05-16T17:12:01Z"
 title: "New Country Manager starts..."
 categories: ["News from Malawi"]

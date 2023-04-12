@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2015/10/project-4-africa-team-visit/"
+path: "2015/10/project-4-africa-team-visit"
 date: "2015-10-27T12:55:54Z"
 title: "Project 4 Africa Team Visit"
 categories: ["General News", "News from Malawi", "Projects", "Reports"]

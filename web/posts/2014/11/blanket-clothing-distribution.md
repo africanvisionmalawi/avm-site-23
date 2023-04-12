@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2014/11/blanket-clothing-distribution/"
+path: "2014/11/blanket-clothing-distribution"
 date: "2014-11-14T10:50:27Z"
 title: "Blanket & Clothing Distribution..."
 categories: ["News from Malawi", "Reports"]

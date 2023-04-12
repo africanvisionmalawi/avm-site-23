@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2012/07/kondwani-update/"
+path: "2012/07/kondwani-update"
 date: "2012-07-27T09:49:42Z"
 title: "Kondwani update..."
 categories: ["News from Malawi"]

@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2017/03/summer-indulgence-day/"
+path: "2017/03/summer-indulgence-day"
 date: "2017-03-30T20:14:03Z"
 title: "Summer Indulgence Day"
 categories: ["Fundraising News", "News from the UK"]

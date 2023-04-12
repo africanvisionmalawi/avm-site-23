@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2011/09/christine-burgess-running-half-marathon/"
+path: "2011/09/christine-burgess-running-half-marathon"
 date: "2011-09-04T13:19:47Z"
 title: "Christine Burgess running Half Marathon"
 categories: []

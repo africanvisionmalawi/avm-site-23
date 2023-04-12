@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2010/09/2105km-later-sam-and-rob-have-arrived/"
+path: "2010/09/2105km-later-sam-and-rob-have-arrived"
 date: "2010-09-27T17:57:44Z"
 title: "2,105km later...Sam and Rob have arrived!"
 categories: []

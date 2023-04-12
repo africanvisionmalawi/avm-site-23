@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2016/10/celebration-tree-a-celebration-of-those-you-love/"
+path: "2016/10/celebration-tree-a-celebration-of-those-you-love"
 date: "2016-10-28T11:43:35Z"
 title: "Celebration Tree - A celebration of those you love"
 categories: ["Fundraising News", "News from the UK"]

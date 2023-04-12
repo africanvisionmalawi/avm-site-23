@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2015/05/african-vision-music-event/"
+path: "2015/05/african-vision-music-event"
 date: "2015-05-21T11:18:21Z"
 title: "African Vision Music Event..."
 categories: []

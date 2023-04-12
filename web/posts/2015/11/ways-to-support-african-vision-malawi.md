@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2015/11/ways-to-support-african-vision-malawi/"
+path: "2015/11/ways-to-support-african-vision-malawi"
 date: "2015-11-14T19:08:16Z"
 title: "12 Ways to Support African Vision Malawi"
 categories: ["Fundraising News", "General News"]

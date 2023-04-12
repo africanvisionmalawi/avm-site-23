@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2014/11/christmas-cards-now-available/"
+path: "2014/11/christmas-cards-now-available"
 date: "2014-11-14T11:15:09Z"
 title: "Christmas Cards...now available..."
 categories: []

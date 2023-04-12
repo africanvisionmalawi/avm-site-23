@@ -230,7 +230,11 @@ export async function getStaticPaths() {
       const fileContents = fs.readFileSync(slug, "utf8");
       const { data, content } = matter(fileContents);
       const date = format(parseISO(data.date), "MMMM dd, yyyy");
-      return { slug, frontmatter: { ...data, date }, content };
+      return {
+        slug,
+        frontmatter: { ...data, date },
+        content,
+      };
     })
     .sort((post1, post2) =>
       new Date(post1.frontmatter.date) > new Date(post2.frontmatter.date)
@@ -242,9 +246,12 @@ export async function getStaticPaths() {
 
   const allMarkdownPaths = allMarkdownPosts.map((post) => {
     return {
-      slug: post.slug.replace("posts/", "").replace(".md", ""),
+      // slug: post.slug.replace("posts/", "").replace(".md", ""),
+      slug: post.frontmatter.path,
     };
   });
+
+  // console.log("allMarkdownPaths ", allMarkdownPaths);
 
   const allPosts = [...allSanityPosts, ...allMarkdownPaths];
 
@@ -273,13 +280,13 @@ export async function getStaticProps({ params, preview = false }) {
   const hasCategory = !!slug.length > 1;
 
   const currentSlug = hasCategory ? slug[slug.length - 1] : slug.toString();
-  console.log("currentSlug ", currentSlug);
+  // console.log("currentSlug ", currentSlug);
 
   data.sanityPost = await client.fetch(query, { currentSlug, hasCategory });
 
   if (!data.sanityPost) {
     // check for markdown news
-    console.log("getting markdown post ", slug);
+    // console.log("getting markdown post ", slug);
     const source = fs.readFileSync(`posts/${slug.join("/")}.md`, "utf-8");
     // console.log("source ", source);
     const { data: frontmatter, content } = matter(source);

@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2010/09/sam-and-rob-cycling-to-morocco/"
+path: "2010/09/sam-and-rob-cycling-to-morocco"
 date: "2010-09-09T10:51:36Z"
 title: "Sam and Rob cycling to Morocco"
 categories: []

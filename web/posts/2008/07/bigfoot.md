@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2008/07/bigfoot/"
+path: "2008/07/bigfoot"
 date: "2008-07-04T09:29:17Z"
 title: "BIGFOOT"
 categories: []

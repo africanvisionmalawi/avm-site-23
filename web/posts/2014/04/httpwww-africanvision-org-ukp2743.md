@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2014/04/httpwww-africanvision-org-ukp2743/"
+path: "2014/04/httpwww-africanvision-org-ukp2743"
 date: "2014-04-11T21:01:33Z"
 title: "April 2014 Newsletter"
 categories: []

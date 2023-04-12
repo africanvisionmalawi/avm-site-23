@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2012/07/bore-hole-repairs/"
+path: "2012/07/bore-hole-repairs"
 date: "2012-07-19T10:58:57Z"
 title: "Bore Hole Repairs"
 categories: ["News from Malawi", "Reports"]

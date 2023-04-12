@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2011/08/education-2/"
+path: "2011/08/education-2"
 date: "2011-08-24T11:27:40Z"
 title: "Education"
 categories: ["News from Malawi"]

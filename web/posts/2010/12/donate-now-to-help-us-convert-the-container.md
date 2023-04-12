@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2010/12/donate-now-to-help-us-convert-the-container/"
+path: "2010/12/donate-now-to-help-us-convert-the-container"
 date: "2010-12-09T08:52:29Z"
 title: "DONATE NOW TO HELP US CONVERT THE CONTAINER"
 categories: []

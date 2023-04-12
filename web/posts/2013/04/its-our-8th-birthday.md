@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2013/04/its-our-8th-birthday/"
+path: "2013/04/its-our-8th-birthday"
 date: "2013-04-22T18:56:19Z"
 title: "It's our 8th birthday!"
 categories: []

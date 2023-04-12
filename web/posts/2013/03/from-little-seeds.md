@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2013/03/from-little-seeds/"
+path: "2013/03/from-little-seeds"
 date: "2013-03-25T10:35:34Z"
 title: "From little seeds..."
 categories: []

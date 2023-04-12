@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2014/06/malawi-turns-50/"
+path: "2014/06/malawi-turns-50"
 date: "2014-06-30T14:16:18Z"
 title: "Malawi Turns 50... update..."
 categories: []

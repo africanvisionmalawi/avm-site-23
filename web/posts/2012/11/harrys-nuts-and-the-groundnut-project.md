@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2012/11/harrys-nuts-and-the-groundnut-project/"
+path: "2012/11/harrys-nuts-and-the-groundnut-project"
 date: "2012-11-19T14:06:21Z"
 title: " Harry's Nuts and the Groundnut Project"
 categories: ["News from Malawi", "Projects"]

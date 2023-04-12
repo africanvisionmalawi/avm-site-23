@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2016/10/creating-lasting-change-photographic-exhibition/"
+path: "2016/10/creating-lasting-change-photographic-exhibition"
 date: "2016-10-28T11:25:04Z"
 title: "‘CREATING LASTING CHANGE’                                                   Photographic exhibition"
 categories: ["News from the UK"]

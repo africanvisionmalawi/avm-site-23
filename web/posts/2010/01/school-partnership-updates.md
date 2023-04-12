@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2010/01/school-partnership-updates/"
+path: "2010/01/school-partnership-updates"
 date: "2010-01-05T13:10:12Z"
 title: "School Partnership updates"
 categories: []

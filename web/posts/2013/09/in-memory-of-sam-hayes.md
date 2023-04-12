@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2013/09/in-memory-of-sam-hayes/"
+path: "2013/09/in-memory-of-sam-hayes"
 date: "2013-09-23T08:01:07Z"
 title: "In memory of Sam Hayes..."
 categories: []

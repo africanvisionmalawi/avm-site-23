@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2012/10/excitement-at-nkhunku-school/"
+path: "2012/10/excitement-at-nkhunku-school"
 date: "2012-10-25T13:18:34Z"
 title: "Excitement at Nkhunku school..."
 categories: ["News from Malawi"]

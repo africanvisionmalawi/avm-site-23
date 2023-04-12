@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2008/09/september-sparkles/"
+path: "2008/09/september-sparkles"
 date: "2008-09-30T10:11:47Z"
 title: "September Sparkles"
 categories: []

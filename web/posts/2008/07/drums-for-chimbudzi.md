@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2008/07/drums-for-chimbudzi/"
+path: "2008/07/drums-for-chimbudzi"
 date: "2008-07-05T09:29:11Z"
 title: "Drums for Chimbudzi"
 categories: []

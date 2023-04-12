@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2016/06/announcing-our-10k-runners/"
+path: "2016/06/announcing-our-10k-runners"
 date: "2016-06-06T20:47:59Z"
 title: "Announcing our 10K runners!"
 categories: []

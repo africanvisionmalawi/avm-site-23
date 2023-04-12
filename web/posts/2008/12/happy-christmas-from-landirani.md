@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2008/12/happy-christmas-from-landirani/"
+path: "2008/12/happy-christmas-from-landirani"
 date: "2008-12-19T09:41:54Z"
 title: "Happy Christmas from Landirani"
 categories: []

@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2010/11/landirani-calendar-2011-and-christmas-cards-on-sale-on-our-online-shop-now/"
+path: "2010/11/landirani-calendar-2011-and-christmas-cards-on-sale-on-our-online-shop-now"
 date: "2010-11-22T06:53:27Z"
 title: "Landirani Christmas Cards on sale on our online shop now!"
 categories: []

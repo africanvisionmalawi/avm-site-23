@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2010/10/sams-account-of-his-journey/"
+path: "2010/10/sams-account-of-his-journey"
 date: "2010-10-18T08:03:08Z"
 title: "Sam's account of his journey"
 categories: ["Fundraising News", "General News"]

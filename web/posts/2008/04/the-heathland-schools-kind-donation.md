@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2008/04/the-heathland-schools-kind-donation/"
+path: "2008/04/the-heathland-schools-kind-donation"
 date: "2008-04-22T09:33:50Z"
 title: "The Heathland School's kind donation"
 categories: []

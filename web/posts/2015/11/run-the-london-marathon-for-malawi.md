@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2015/11/run-the-london-marathon-for-malawi/"
+path: "2015/11/run-the-london-marathon-for-malawi"
 date: "2015-11-12T20:54:16Z"
 title: "Run the London Marathon for Malawi?"
 categories: ["Fundraising News", "General News", "News from the UK"]

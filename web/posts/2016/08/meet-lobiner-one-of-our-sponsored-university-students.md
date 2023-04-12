@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2016/08/meet-lobiner-one-of-our-sponsored-university-students/"
+path: "2016/08/meet-lobiner-one-of-our-sponsored-university-students"
 date: "2016-08-01T19:21:15Z"
 title: "Meet Lobiner - one of our sponsored University Students"
 categories: ["News from Malawi"]

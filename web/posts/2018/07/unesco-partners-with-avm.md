@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2018/07/unesco-partners-with-avm/"
+path: "2018/07/unesco-partners-with-avm"
 date: "2018-07-13T16:13:29Z"
 title: "UNESCO partners with AVM"
 categories: ["Fundraising News", "General News", "News from Malawi"]

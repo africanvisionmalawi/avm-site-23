@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2016/08/raffle-tickets-for-this-beautiful-blanket/"
+path: "2016/08/raffle-tickets-for-this-beautiful-blanket"
 date: "2016-08-01T18:02:15Z"
 title: "Raffle tickets for this beautiful blanket...."
 categories: []

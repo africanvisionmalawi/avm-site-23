@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2010/08/fantastic-event-at-tolworth-girls-school/"
+path: "2010/08/fantastic-event-at-tolworth-girls-school"
 date: "2010-08-20T11:19:21Z"
 title: "Fantastic event at Tolworth Girls' School"
 categories: []

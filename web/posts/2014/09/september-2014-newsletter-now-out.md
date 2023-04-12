@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2014/09/september-2014-newsletter-now-out/"
+path: "2014/09/september-2014-newsletter-now-out"
 date: "2014-09-03T17:50:58Z"
 title: "September 2014 Newsletter"
 categories: []

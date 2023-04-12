@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2008/07/our-director-in-the-uk/"
+path: "2008/07/our-director-in-the-uk"
 date: "2008-07-08T09:29:04Z"
 title: "Our Director in the UK"
 categories: []

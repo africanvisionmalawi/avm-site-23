@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2008/02/thank-you-to-tom/"
+path: "2008/02/thank-you-to-tom"
 date: "2008-02-26T09:45:45Z"
 title: "Thank you to Tom"
 categories: ["News from the UK"]

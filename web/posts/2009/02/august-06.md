@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2009/02/august-06/"
+path: "2009/02/august-06"
 date: "2009-02-13T14:36:09Z"
 title: "August 06"
 categories: ["Reports"]

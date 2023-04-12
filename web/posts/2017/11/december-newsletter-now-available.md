@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2017/11/december-newsletter-now-available/"
+path: "2017/11/december-newsletter-now-available"
 date: "2017-11-20T12:57:39Z"
 title: "December Newsletter now available!"
 categories: ["News from Malawi", "Newsletters"]

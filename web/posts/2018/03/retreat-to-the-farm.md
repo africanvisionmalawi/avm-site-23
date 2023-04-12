@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2018/03/retreat-to-the-farm/"
+path: "2018/03/retreat-to-the-farm"
 date: "2018-03-01T12:32:39Z"
 title: "Retreat to the Farm"
 categories:

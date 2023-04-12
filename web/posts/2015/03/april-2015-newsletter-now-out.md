@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2015/03/april-2015-newsletter-now-out/"
+path: "2015/03/april-2015-newsletter-now-out"
 date: "2015-03-29T14:15:00Z"
 title: "April 2015 Newsletter"
 categories: []

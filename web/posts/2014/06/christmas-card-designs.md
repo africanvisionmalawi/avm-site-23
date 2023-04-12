@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2014/06/christmas-card-designs/"
+path: "2014/06/christmas-card-designs"
 date: "2014-06-17T09:57:47Z"
 title: "Christmas card designs..."
 categories: ["Fundraising News", "General News", "News from the UK"]

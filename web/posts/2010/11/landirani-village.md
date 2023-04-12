@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2010/11/landirani-village/"
+path: "2010/11/landirani-village"
 date: "2010-11-12T09:02:32Z"
 title: "Landirani Village"
 categories: ["News from Malawi"]

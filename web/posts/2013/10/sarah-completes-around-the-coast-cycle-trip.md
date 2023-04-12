@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2013/10/sarah-completes-around-the-coast-cycle-trip/"
+path: "2013/10/sarah-completes-around-the-coast-cycle-trip"
 date: "2013-10-28T12:35:06Z"
 title: "Sarah completes 'Around the Coast' cycle trip..."
 categories: []

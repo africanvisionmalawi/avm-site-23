@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2009/12/issue-6-of-landirani-newsletter/"
+path: "2009/12/issue-6-of-landirani-newsletter"
 date: "2009-12-08T11:56:19Z"
 title: "Issue 6 of Landirani Newsletter"
 categories: []

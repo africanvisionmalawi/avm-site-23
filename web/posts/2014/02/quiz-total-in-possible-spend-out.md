@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2014/02/quiz-total-in-possible-spend-out/"
+path: "2014/02/quiz-total-in-possible-spend-out"
 date: "2014-02-12T14:48:06Z"
 title: "Quiz total in & possible spend out..."
 categories: ["Fundraising News", "News from Malawi"]

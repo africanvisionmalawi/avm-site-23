@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2016/12/christmas-2016-newsletter-now-out/"
+path: "2016/12/christmas-2016-newsletter-now-out"
 date: "2016-12-16T14:39:39Z"
 title: "Christmas 2016 Newsletter now out!"
 categories: ["General News", "News from the UK", "Newsletters"]

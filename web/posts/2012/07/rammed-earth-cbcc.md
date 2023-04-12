@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2012/07/rammed-earth-cbcc/"
+path: "2012/07/rammed-earth-cbcc"
 date: "2012-07-24T13:28:00Z"
 title: "Rammed Earth CBCC"
 categories: ["News from Malawi"]

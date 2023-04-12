@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2016/12/christmas-appeal-to-complete-sams-village/"
+path: "2016/12/christmas-appeal-to-complete-sams-village"
 date: "2016-12-06T14:40:19Z"
 title: "Christmas Appeal to complete Sam's Village"
 categories: ["General News", "News from the UK"]

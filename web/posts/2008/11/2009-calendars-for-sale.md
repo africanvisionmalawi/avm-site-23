@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2008/11/2009-calendars-for-sale/"
+path: "2008/11/2009-calendars-for-sale"
 date: "2008-11-27T07:39:56Z"
 title: "2009 Calendars for sale!"
 categories: []

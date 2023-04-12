@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2013/03/world-epilepsy-day/"
+path: "2013/03/world-epilepsy-day"
 date: "2013-03-28T09:00:36Z"
 title: "World Epilepsy Day "
 categories: ["General News", "News from Malawi"]

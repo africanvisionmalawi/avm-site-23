@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2017/08/august-2017-newsletter-now-out/"
+path: "2017/08/august-2017-newsletter-now-out"
 date: "2017-08-15T17:49:41Z"
 title: "August 2017 Newsletter"
 categories:

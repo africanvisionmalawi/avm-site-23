@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2012/03/first-rammed-earth-building/"
+path: "2012/03/first-rammed-earth-building"
 date: "2012-03-16T12:07:38Z"
 title: "First rammed earth building"
 categories: ["News from Malawi"]

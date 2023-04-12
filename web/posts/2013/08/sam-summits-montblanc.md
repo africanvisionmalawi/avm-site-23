@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2013/08/sam-summits-montblanc/"
+path: "2013/08/sam-summits-montblanc"
 date: "2013-08-24T11:41:50Z"
 title: "Sam climbs Mont Blanc!"
 categories: ["Fundraising News", "General News", "News from the UK"]

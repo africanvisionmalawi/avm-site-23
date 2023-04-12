@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2008/02/grey-horse-gig/"
+path: "2008/02/grey-horse-gig"
 date: "2008-02-25T09:46:41Z"
 title: "Grey Horse Gig"
 categories: ["Fundraising News"]

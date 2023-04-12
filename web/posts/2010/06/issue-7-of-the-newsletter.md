@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2010/06/issue-7-of-the-newsletter/"
+path: "2010/06/issue-7-of-the-newsletter"
 date: "2010-06-21T05:28:56Z"
 title: "Issue 7 of the Newsletter"
 categories: []

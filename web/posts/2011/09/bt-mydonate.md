@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2011/09/bt-mydonate/"
+path: "2011/09/bt-mydonate"
 date: "2011-09-10T14:35:00Z"
 title: "BT MyDonate"
 categories: []

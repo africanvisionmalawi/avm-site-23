@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2015/01/date-for-p4a-walk/"
+path: "2015/01/date-for-p4a-walk"
 date: "2015-01-06T12:23:21Z"
 title: "P4A walk...UPDATE - Change of venue"
 categories: []

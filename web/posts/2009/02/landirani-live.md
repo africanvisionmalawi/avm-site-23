@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2009/02/landirani-live/"
+path: "2009/02/landirani-live"
 date: "2009-02-24T12:10:11Z"
 title: "Landirani Live"
 categories: []

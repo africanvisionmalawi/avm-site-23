@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2012/11/mteza-cbcc-completed/"
+path: "2012/11/mteza-cbcc-completed"
 date: "2012-11-18T13:36:22Z"
 title: "M'Teza CBCC completed"
 categories: ["News from Malawi", "Reports"]

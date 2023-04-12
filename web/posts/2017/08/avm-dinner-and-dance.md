@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2017/08/avm-dinner-and-dance/"
+path: "2017/08/avm-dinner-and-dance"
 date: "2017-08-16T09:46:23Z"
 title: "AVM Dinner and Dance"
 categories: ["Fundraising News", "News from the UK"]

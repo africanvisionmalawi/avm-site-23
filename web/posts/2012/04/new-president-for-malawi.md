@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2012/04/new-president-for-malawi/"
+path: "2012/04/new-president-for-malawi"
 date: "2012-04-16T16:08:01Z"
 title: "New President for Malawi"
 categories: ["News from Malawi"]

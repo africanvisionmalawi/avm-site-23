@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2016/01/alex-is-running-the-north-london-half-marathon-for-us/"
+path: "2016/01/alex-is-running-the-north-london-half-marathon-for-us"
 date: "2016-01-10T17:29:30Z"
 title: "Alex is running the North London Half Marathon for us!"
 categories: []

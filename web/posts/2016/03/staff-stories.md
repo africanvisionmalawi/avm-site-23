@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2016/03/staff-stories/"
+path: "2016/03/staff-stories"
 date: "2016-03-01T12:35:43Z"
 title: "Staff Stories"
 categories: ["General News", "News from Malawi"]

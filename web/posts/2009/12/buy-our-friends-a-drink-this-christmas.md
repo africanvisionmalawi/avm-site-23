@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2009/12/buy-our-friends-a-drink-this-christmas/"
+path: "2009/12/buy-our-friends-a-drink-this-christmas"
 date: "2009-12-11T11:30:30Z"
 title: "BUY OUR FRIENDS A DRINK THIS CHRISTMAS"
 categories: []

@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2016/06/meet-our-sponsored-university-students/"
+path: "2016/06/meet-our-sponsored-university-students"
 date: "2016-06-17T12:48:41Z"
 title: "Meet our sponsored University Students!"
 categories: ["General News", "News from Malawi", "Projects", "Reports"]

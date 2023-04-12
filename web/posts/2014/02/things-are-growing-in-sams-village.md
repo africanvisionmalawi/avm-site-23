@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2014/02/things-are-growing-in-sams-village/"
+path: "2014/02/things-are-growing-in-sams-village"
 date: "2014-02-02T11:21:42Z"
 title: "Things are growing in Sam's Village..."
 categories: ["News from Malawi"]

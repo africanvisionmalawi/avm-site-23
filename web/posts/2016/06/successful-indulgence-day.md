@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2016/06/successful-indulgence-day/"
+path: "2016/06/successful-indulgence-day"
 date: "2016-06-17T12:44:59Z"
 title: "Successful Indulgence Day"
 categories: ["Fundraising News", "General News", "News from the UK", "Reports"]

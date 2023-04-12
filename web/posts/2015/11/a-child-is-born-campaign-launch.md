@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2015/11/a-child-is-born-campaign-launch/"
+path: "2015/11/a-child-is-born-campaign-launch"
 date: "2015-11-09T22:05:38Z"
 title: "A Child is Born Campaign Launch"
 categories: ["Fundraising News", "General News", "Projects"]

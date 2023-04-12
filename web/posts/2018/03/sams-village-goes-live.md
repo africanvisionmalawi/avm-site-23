@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2018/03/sams-village-goes-live/"
+path: "2018/03/sams-village-goes-live"
 date: "2018-03-29T12:25:07Z"
 title: "Sam's Village live!"
 categories: ["News from Malawi"]

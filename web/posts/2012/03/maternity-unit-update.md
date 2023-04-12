@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2012/03/maternity-unit-update/"
+path: "2012/03/maternity-unit-update"
 date: "2012-03-21T11:04:04Z"
 title: "Maternity Unit Update"
 categories: ["General News", "News from Malawi"]

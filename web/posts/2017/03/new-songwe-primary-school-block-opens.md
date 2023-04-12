@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2017/03/new-songwe-primary-school-block-opens/"
+path: "2017/03/new-songwe-primary-school-block-opens"
 date: "2017-03-02T15:15:42Z"
 title: "New Songwe Primary School block opens"
 categories: ["News from Malawi", "Projects"]

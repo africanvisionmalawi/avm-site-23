@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2011/07/nigel-and-sam-fundraising-ride-to-france/"
+path: "2011/07/nigel-and-sam-fundraising-ride-to-france"
 date: "2011-07-12T09:49:03Z"
 title: "Nigel and Sam - Fundraising ride to France"
 categories: []

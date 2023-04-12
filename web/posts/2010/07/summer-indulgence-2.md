@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2010/07/summer-indulgence-2/"
+path: "2010/07/summer-indulgence-2"
 date: "2010-07-21T12:22:01Z"
 title: "Summer Indulgence"
 categories: []

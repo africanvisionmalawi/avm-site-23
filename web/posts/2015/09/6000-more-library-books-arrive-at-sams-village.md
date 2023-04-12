@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2015/09/6000-more-library-books-arrive-at-sams-village/"
+path: "2015/09/6000-more-library-books-arrive-at-sams-village"
 date: "2015-09-14T17:45:59Z"
 title: "6,000 more library books arrive at Sam's Village"
 categories: ["General News", "News from Malawi", "Projects", "Reports"]

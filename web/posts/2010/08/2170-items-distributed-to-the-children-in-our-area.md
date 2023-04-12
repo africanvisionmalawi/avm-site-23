@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2010/08/2170-items-distributed-to-the-children-in-our-area/"
+path: "2010/08/2170-items-distributed-to-the-children-in-our-area"
 date: "2010-08-20T10:34:41Z"
 title: "2170 items distributed to the children in our area"
 categories: ["News from Malawi"]

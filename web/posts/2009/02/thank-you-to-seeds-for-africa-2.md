@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2009/02/thank-you-to-seeds-for-africa-2/"
+path: "2009/02/thank-you-to-seeds-for-africa-2"
 date: "2009-02-24T07:45:39Z"
 title: "Thank you to Seeds for Africa"
 categories: []

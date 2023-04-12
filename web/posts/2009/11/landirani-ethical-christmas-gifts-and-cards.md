@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2009/11/landirani-ethical-christmas-gifts-and-cards/"
+path: "2009/11/landirani-ethical-christmas-gifts-and-cards"
 date: "2009-11-27T12:37:48Z"
 title: "Landirani ethical Christmas gifts and cards"
 categories: []

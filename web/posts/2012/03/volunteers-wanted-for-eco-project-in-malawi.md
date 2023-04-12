@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2012/03/volunteers-wanted-for-eco-project-in-malawi/"
+path: "2012/03/volunteers-wanted-for-eco-project-in-malawi"
 date: "2012-03-07T14:56:23Z"
 title: "Volunteers wanted for eco-project in Malawi"
 categories: []

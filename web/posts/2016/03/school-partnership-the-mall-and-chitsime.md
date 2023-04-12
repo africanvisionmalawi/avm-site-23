@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2016/03/school-partnership-the-mall-and-chitsime/"
+path: "2016/03/school-partnership-the-mall-and-chitsime"
 date: "2016-03-10T11:49:53Z"
 title: "School Partnership - The Mall and Chitsime"
 categories: ["General News", "News from Malawi", "News from the UK", "Projects"]

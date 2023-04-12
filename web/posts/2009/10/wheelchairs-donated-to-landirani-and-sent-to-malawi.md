@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2009/10/wheelchairs-donated-to-landirani-and-sent-to-malawi/"
+path: "2009/10/wheelchairs-donated-to-landirani-and-sent-to-malawi"
 date: "2009-10-06T12:14:33Z"
 title: "Wheelchairs donated to Landirani and sent to Malawi"
 categories: ["News from Malawi"]

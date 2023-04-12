@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2008/03/art-day-at-maple-infants/"
+path: "2008/03/art-day-at-maple-infants"
 date: "2008-03-17T09:44:33Z"
 title: "Art day at Maple Infants"
 categories: []

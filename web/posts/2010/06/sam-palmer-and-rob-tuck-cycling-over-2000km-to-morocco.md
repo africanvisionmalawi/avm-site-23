@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2010/06/sam-palmer-and-rob-tuck-cycling-over-2000km-to-morocco/"
+path: "2010/06/sam-palmer-and-rob-tuck-cycling-over-2000km-to-morocco"
 date: "2010-06-13T17:54:17Z"
 title: "Sam Palmer and Rob Tuck cycling over 2000km to Morocco"
 categories: []

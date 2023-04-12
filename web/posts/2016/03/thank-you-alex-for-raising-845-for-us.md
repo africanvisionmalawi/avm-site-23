@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2016/03/thank-you-alex-for-raising-845-for-us/"
+path: "2016/03/thank-you-alex-for-raising-845-for-us"
 date: "2016-03-21T14:05:16Z"
 title: "Thank you Alex for raising £845 for us!"
 categories: []

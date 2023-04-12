@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2016/03/video-sams-training-village/"
+path: "2016/03/video-sams-training-village"
 date: "2016-03-01T13:19:10Z"
 title: "VIDEO: Sam's Training Village"
 categories: ["General News", "News from Malawi", "Projects"]

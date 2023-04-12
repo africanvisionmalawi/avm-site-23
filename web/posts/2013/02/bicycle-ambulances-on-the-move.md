@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2013/02/bicycle-ambulances-on-the-move/"
+path: "2013/02/bicycle-ambulances-on-the-move"
 date: "2013-02-05T10:11:16Z"
 title: "Bicycle ambulances on the move..."
 categories: []

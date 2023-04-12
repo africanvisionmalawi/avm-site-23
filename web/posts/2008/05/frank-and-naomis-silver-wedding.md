@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2008/05/frank-and-naomis-silver-wedding/"
+path: "2008/05/frank-and-naomis-silver-wedding"
 date: "2008-05-29T09:30:49Z"
 title: "Frank and Naomi's Silver Wedding"
 categories: []

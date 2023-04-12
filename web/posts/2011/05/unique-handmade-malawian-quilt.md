@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2011/05/unique-handmade-malawian-quilt/"
+path: "2011/05/unique-handmade-malawian-quilt"
 date: "2011-05-04T07:38:30Z"
 title: "UNIQUE HANDMADE MALAWIAN QUILT"
 categories: []

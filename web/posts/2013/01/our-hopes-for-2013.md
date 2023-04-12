@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2013/01/our-hopes-for-2013/"
+path: "2013/01/our-hopes-for-2013"
 date: "2013-01-29T09:38:28Z"
 title: "Our hopes for 2013..."
 categories: []

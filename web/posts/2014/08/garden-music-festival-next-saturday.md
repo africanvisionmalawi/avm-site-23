@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2014/08/garden-music-festival-next-saturday/"
+path: "2014/08/garden-music-festival-next-saturday"
 date: "2014-08-23T10:49:22Z"
 title: "Garden Music Festival next Saturday!"
 categories: []

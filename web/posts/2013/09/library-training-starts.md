@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2013/09/library-training-starts/"
+path: "2013/09/library-training-starts"
 date: "2013-09-23T07:45:20Z"
 title: "Library training starts..."
 categories: ["News from Malawi"]

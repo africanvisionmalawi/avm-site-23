@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2017/03/official-opening-of-sams-village-library/"
+path: "2017/03/official-opening-of-sams-village-library"
 date: "2017-03-02T14:59:40Z"
 title: "Official Opening of Sam's Village Library"
 categories: ["News from Malawi"]

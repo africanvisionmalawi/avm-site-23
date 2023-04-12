@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2012/05/disability-register-established/"
+path: "2012/05/disability-register-established"
 date: "2012-05-21T08:51:33Z"
 title: "Disability Register established"
 categories: ["News from Malawi"]

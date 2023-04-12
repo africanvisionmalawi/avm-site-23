@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "/posts/2016/05/marathon-and-triathalon-success/"
+path: "2016/05/marathon-and-triathalon-success"
 date: "2016-05-01T08:31:12Z"
 title: "Marathon and Triathlon success!"
 categories: ["Fundraising News", "General News", "News from the UK"]
