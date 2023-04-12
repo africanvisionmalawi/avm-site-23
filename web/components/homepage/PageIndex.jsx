@@ -145,7 +145,7 @@ const PostsFooter = styled.div`
     display: inline-block;
     font-size: 0.8em;
     left: 50%;
-    margin-left: -80px;
+    margin-left: -107px;
     padding: 4px 24px;
     position: absolute;
     text-align: center;
