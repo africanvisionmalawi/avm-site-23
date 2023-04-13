@@ -45,6 +45,10 @@ const ContentSection = styled.section`
   padding: 0 0 3rem;
 `;
 
+const PostInner = styled.div`
+  padding: 0 1rem;
+`;
+
 const Page = ({ data, currentSlug }) => {
   // console.log("data here is ***** ", data);
   if (data?.sanityPost) {
@@ -168,14 +172,16 @@ const Page = ({ data, currentSlug }) => {
           }/news/${frontmatter.path.replace(/\/posts\//, "")}`}
         />
         <article className="articleInner">
-          <h1>{frontmatter.title}</h1>
-          <div
-            dangerouslySetInnerHTML={{
-              __html: md.render(
-                content.replace("http://www.africanvision.org.uk", ``)
-              ),
-            }}
-          />
+          <PostInner>
+            <h1>{frontmatter.title}</h1>
+            <div
+              dangerouslySetInnerHTML={{
+                __html: md.render(
+                  content.replace("http://www.africanvision.org.uk", ``)
+                ),
+              }}
+            />
+          </PostInner>
         </article>
       </>
     );
