@@ -247,7 +247,7 @@ export async function getStaticPaths() {
   const allMarkdownPaths = allMarkdownPosts.map((post) => {
     return {
       // slug: post.slug.replace("posts/", "").replace(".md", ""),
-      slug: post.frontmatter.path,
+      slug: decodeURI(post.frontmatter.path),
     };
   });
 
