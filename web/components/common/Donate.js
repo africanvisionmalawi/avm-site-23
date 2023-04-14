@@ -34,6 +34,7 @@ const ContainerInner = styled.div`
 
 const ContainerWithPhoto = styled.div`
   background: url(/img/hero/donate-mobile.jpg) 0 0 no-repeat;
+  border-radius: 8px;
   height: 150px;
   margin-bottom: 2rem;
   padding-top: 400px;
