@@ -59,7 +59,7 @@ export const PageCommon = ({ data }) => {
   // console.log("bannermsg ", data?.bannerMsg);
   const content = (data?.content || [])
     .filter((c) => !c.disabled)
-    . ((c, i) => {
+    .map((c, i) => {
       let el = null;
       // console.log("type ", c._type);
       switch (c._type) {
