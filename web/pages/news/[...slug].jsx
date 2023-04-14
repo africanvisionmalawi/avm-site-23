@@ -274,7 +274,7 @@ export async function getStaticPaths() {
           slug: [page?.slug?.replace(/newsposts\//, "").replace(/\.md/, "")],
         },
       })) || [],
-    fallback: false,
+    fallback: true,
   };
 }
 
