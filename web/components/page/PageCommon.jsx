@@ -59,7 +59,7 @@ export const PageCommon = ({ data }) => {
   // console.log("bannermsg ", data?.bannerMsg);
   const content = (data?.content || [])
     .filter((c) => !c.disabled)
-    .map((c, i) => {
+    . ((c, i) => {
       let el = null;
       // console.log("type ", c._type);
       switch (c._type) {
@@ -166,7 +166,7 @@ export const PageCommon = ({ data }) => {
           {data?.body ? <PortableText article blocks={data.body} /> : null}
         </TopSection>
 
-        <Container className="articleInner">{content}</Container>
+        <Container>{content}</Container>
       </article>
     </>
   );
