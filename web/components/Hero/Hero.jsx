@@ -12,6 +12,7 @@ export const Hero = ({
   mobileImage,
   children,
   image,
+  displayOverlay = false,
 }) => {
   let heroHeadingHtml;
   if (heroHeading) {
@@ -81,7 +82,7 @@ export const Hero = ({
           />
         ) : null} */}
 
-        {children ? null : <Overlay />}
+        {children && !displayOverlay ? null : <Overlay />}
       </HeroCont>
       {children ? null : <Divider />}
     </HeroContainer>
@@ -126,6 +127,8 @@ const ChildrenCont = styled.div`
 const HeroContainer = styled.div`
   position: relative;
   maxheight: 300px;
+  max-width: 2180px;
+  margin: 0 auto;
   &.lowerPage {
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
