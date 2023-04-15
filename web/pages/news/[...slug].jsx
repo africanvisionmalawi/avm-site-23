@@ -5,12 +5,8 @@ import { PageLinks } from "components/page-links";
 import { PortableText } from "components/portable-text/BasePortableText";
 import { Videos } from "components/videos";
 import { siteMeta } from "constants/site";
-import { format, parseISO } from "date-fns";
-import fs, { readdirSync } from "fs";
-import matter from "gray-matter";
 import groq from "groq";
 import { NextSeo } from "next-seo";
-import { join } from "path";
 import client from "/client";
 
 const md = require("markdown-it")({
@@ -153,39 +149,6 @@ const Page = ({ data, currentSlug }) => {
       </>
     );
   }
-
-  if (data?.markDownPost) {
-    const { frontmatter, content } = data.markDownPost;
-    // console.log("data.markDownPost **** ", data.markDownPost);
-    // console.log("title **** ", frontmatter.title);
-    return (
-      <>
-        <NextSeo
-          title={
-            `${frontmatter.title} |  African Vision Malawi` || siteMeta.title
-          }
-          description={
-            frontmatter.excerpt ? frontmatter.excerpt : siteMeta.description
-          }
-          canonical={`${
-            process.env.NEXT_PUBLIC_BASE_URL
-          }/news/${frontmatter.path.replace(/\/posts\//, "")}`}
-        />
-        <article className="articleInner">
-          <PostInner>
-            <h1>{frontmatter.title}</h1>
-            <div
-              dangerouslySetInnerHTML={{
-                __html: md.render(
-                  content.replace("http://www.africanvision.org.uk", ``)
-                ),
-              }}
-            />
-          </PostInner>
-        </article>
-      </>
-    );
-  }
 };
 
 const query = groq`*[_type == "news" && slug.current == $currentSlug][0]{ 
@@ -212,54 +175,9 @@ export async function getStaticPaths() {
     }`
   );
 
-  const getFileList = (dirName) => {
-    let files = [];
-    const items = readdirSync(dirName);
-
-    for (const item of items) {
-      if (fs.statSync(dirName + "/" + item).isDirectory()) {
-        files = [...files, ...getFileList(`${dirName}/${item}`)];
-      } else {
-        files.push(`${dirName}/${item}`);
-      }
-    }
-
-    return files;
-  };
-
-  const slugs = getFileList("newsposts");
-  console.log("slugs ", slugs);
-
-  const allMarkdownPosts = slugs
-    .map((slug) => {
-      let dirPath = join("newsposts", slug);
-      const fileContents = fs.readFileSync(slug, "utf8");
-      const { data, content } = matter(fileContents);
-      const date = format(parseISO(data.date), "MMMM dd, yyyy");
-      return {
-        slug,
-        frontmatter: { ...data, date },
-        content,
-      };
-    })
-    .sort((post1, post2) =>
-      new Date(post1.frontmatter.date) > new Date(post2.frontmatter.date)
-        ? -1
-        : 1
-    );
-
-  // console.log("allMarkdownPosts ", allMarkdownPosts)
-
-  const allMarkdownPaths = allMarkdownPosts.map((post) => {
-    return {
-      // slug: post.slug.replace("posts/", "").replace(".md", ""),
-      slug: decodeURI(post.frontmatter.path),
-    };
-  });
-
   // console.log("allMarkdownPaths ", allMarkdownPaths);
 
-  const allPosts = [...allSanityPosts, ...allMarkdownPaths];
+  const allPosts = [...allSanityPosts];
 
   // console.log(
   //   "all posts map **** ",
@@ -289,21 +207,6 @@ export async function getStaticProps({ params, preview = false }) {
   // console.log("currentSlug ", currentSlug);
 
   data.sanityPost = await client.fetch(query, { currentSlug, hasCategory });
-
-  if (!data.sanityPost) {
-    // check for markdown news
-    // console.log("getting markdown post ", slug);
-    const source = fs.readFileSync(
-      `newsposts/${slug.join("/").substring(8)}.md`,
-      "utf-8"
-    );
-    console.log("source ", source);
-    const { data: frontmatter, content } = matter(source);
-    data.markDownPost = {
-      frontmatter: frontmatter,
-      content: content,
-    };
-  }
 
   return {
     props: {
