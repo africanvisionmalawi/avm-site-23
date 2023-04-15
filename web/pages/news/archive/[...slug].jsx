@@ -171,12 +171,7 @@ export async function getStaticProps({ params, preview = false }) {
   const { slug = "" } = params;
   const hasCategory = !!slug.length > 1;
 
-  console.log("slug ", slug);
-
-  // check for markdown news
-  // console.log("getting markdown post ", slug);
   const source = fs.readFileSync(`newsposts/${slug.join("/")}.md`, "utf-8");
-  console.log("source ", source);
   const { data: frontmatter, content } = matter(source);
   data.markDownPost = {
     frontmatter: frontmatter,
