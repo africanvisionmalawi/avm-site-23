@@ -3,7 +3,7 @@ layout: post
 templateKey: blog-post
 published: true
 featuredImage: /img/default/default-landscape.jpg
-path: "2018/08/summer-2018-newsletter"
+path: "2018-08-summer-2018-newsletter"
 date: "2018-08-28T14:15:45Z"
 title: "Summer 2018 Newsletter"
 categories: []
