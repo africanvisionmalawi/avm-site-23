@@ -1,10 +1,11 @@
 import styled from "@emotion/styled";
 import imageUrlBuilder from "@sanity/image-url";
-import { Hero } from "components/Hero";
-import { CardPostAlt } from "components/card/CardPostAlt";
 import { siteMeta } from "constants/site";
-import groq from "groq";
+import { format, parseISO } from "date-fns";
+import fs, { readdirSync } from "fs";
+import matter from "gray-matter";
 import { NextSeo } from "next-seo";
+import { join } from "path";
 import React from "react";
 import client from "/client";
 const glob = require("glob");
@@ -155,7 +156,7 @@ const PostsFooter = styled.div`
 `;
 
 const NewsHomePage = ({ data }) => {
-  // console.log("data here ", data.length);
+  //   console.log("data here ", data);
 
   return (
     <>
@@ -169,76 +170,70 @@ const NewsHomePage = ({ data }) => {
         canonical={`${process.env.NEXT_PUBLIC_BASE_URL}/news/`}
       />
       <article>
-        {data.hero ? (
-          <Hero
-            image={data.hero.image}
-            mobileImage={data.hero.mobileImage}
-            displayHeroMsg={false}
-            // heroHeading={c.title}
-            // heroHeadingType="h2"
-          />
-        ) : null}
         <TopSection>
-          <Heading>{data.title}</Heading>
+          <Heading>News Archive</Heading>
         </TopSection>
         <Main>
-          <PostList>
+          <ul>
             {data.map((post) => {
               return (
-                <React.Fragment key={post.id}>
-                  <CardPostAlt
-                    type={post.type}
-                    title={post.title}
-                    excerpt={post.excerpt}
-                    slug={post.slug}
-                    publishDate={post.publishDate}
-                    photo={post.photo}
-                  />
-                </React.Fragment>
+                <li key={post.frontmatter.path}>
+                  <a href={`/news/archive/${post.frontmatter.path}`}>
+                    {post.frontmatter.title}, <em>{post.frontmatter.date}</em>
+                  </a>
+                </li>
               );
             })}
-          </PostList>
-          <section>
-            <p>
-              <a href="/news/archive/">News Archive</a>
-            </p>
-          </section>
+          </ul>
         </Main>
       </article>
     </>
   );
 };
 
-const query = groq`*[_type == "news"] | order(publishDate desc){     
-  _id,
-    title,
-  publishDate,
-  slug,
-  photo,
-  excerpt,
-  tag,  
-}`;
+export async function getStaticProps(context) {
+  //   const fs} = require("fs/promises"); // LOOK HERE
 
-export async function getStaticProps({ params, preview = false }) {
-  // It's important to default the slug so that it doesn't return "undefined"
-  // let markdownPosts = [];
-  const files = glob("posts/**/**/*.md", { absolute: true });
-  // console.log("files ", files);
-  glob("posts/**/**/*.md", (err, files) => {
-    {
-      files;
+  const getFileList = (dirName) => {
+    let files = [];
+    const items = readdirSync(dirName);
+
+    for (const item of items) {
+      if (fs.statSync(dirName + "/" + item).isDirectory()) {
+        files = [...files, ...getFileList(`${dirName}/${item}`)];
+      } else {
+        files.push(`${dirName}/${item}`);
+      }
     }
-  });
-  // console.log("markdownosts ", markdownPosts);
-  const data = await client.fetch(query, {});
-  //   console.log("data **********", data);
+
+    return files;
+  };
+
+  const slugs = getFileList("newsposts");
+  console.log("slugs ", slugs);
+
+  const data = slugs
+    .map((slug) => {
+      let dirPath = join("newsposts", slug);
+      const fileContents = fs.readFileSync(slug, "utf8");
+      const { data, content } = matter(fileContents);
+      const date = format(parseISO(data.date), "MMMM dd, yyyy");
+      return {
+        slug,
+        frontmatter: { ...data, date },
+        content,
+      };
+    })
+    .sort((post1, post2) =>
+      new Date(post1.frontmatter.date) > new Date(post2.frontmatter.date)
+        ? -1
+        : 1
+    );
 
   return {
     props: {
       data,
-      preview,
     },
-    revalidate: 10,
   };
 }
 
