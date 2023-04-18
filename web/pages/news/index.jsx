@@ -2,7 +2,6 @@ import styled from "@emotion/styled";
 import imageUrlBuilder from "@sanity/image-url";
 import { Hero } from "components/Hero";
 import { CardPostAlt } from "components/card/CardPostAlt";
-import { siteMeta } from "constants/site";
 import groq from "groq";
 import { NextSeo } from "next-seo";
 import React from "react";
@@ -30,7 +29,7 @@ const TopSection = styled.div`
   max-width: 885px;
   padding: 3rem 1rem 0;
   position: relative;
-  width: 100%;
+
   @media (min-width: 768px) {
     padding-top: 1rem;
   }
@@ -165,12 +164,8 @@ const NewsHomePage = ({ data }) => {
   return (
     <>
       <NextSeo
-        title={
-          data?.title
-            ? `${data?.title} |  African Vision Malawi`
-            : siteMeta.title
-        }
-        description={data?.description || siteMeta.description}
+        title="Latest News"
+        description="Latest News from African Vision Malawi"
         canonical={`${process.env.NEXT_PUBLIC_BASE_URL}/news/`}
       />
       <article>
@@ -184,7 +179,7 @@ const NewsHomePage = ({ data }) => {
           />
         ) : null}
         <TopSection>
-          <Heading>{data.title}</Heading>
+          <Heading>Latest News</Heading>
         </TopSection>
         <Main>
           <PostList>
@@ -203,13 +198,15 @@ const NewsHomePage = ({ data }) => {
               );
             })}
           </PostList>
-          <NewsFooter className="articleInner">
-            <p>
-              <a href="/news/archive/">News Archive</a>
-            </p>
-          </NewsFooter>
         </Main>
       </article>
+      <aside>
+        <NewsFooter className="articleInner">
+          <p>
+            <a href="/news/archive/">News Archive</a>
+          </p>
+        </NewsFooter>
+      </aside>
     </>
   );
 };

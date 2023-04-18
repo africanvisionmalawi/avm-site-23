@@ -120,6 +120,7 @@ const SubNavBar = () => {
 const CloseBtn = styled.div`
   color: #aaa;
   cursor: pointer;
+  font-family: var(--font-raleway);
   font-size: 2rem;
   font-weight: 100;
   opacity: 1;
