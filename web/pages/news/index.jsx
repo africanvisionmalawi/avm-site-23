@@ -154,6 +154,11 @@ const PostsFooter = styled.div`
   }
 `;
 
+const NewsFooter = styled.section`
+  border-top: 1px solid #b75906;
+  text-align: right;
+`;
+
 const NewsHomePage = ({ data }) => {
   // console.log("data here ", data.length);
 
@@ -198,11 +203,11 @@ const NewsHomePage = ({ data }) => {
               );
             })}
           </PostList>
-          <section>
+          <NewsFooter className="articleInner">
             <p>
               <a href="/news/archive/">News Archive</a>
             </p>
-          </section>
+          </NewsFooter>
         </Main>
       </article>
     </>

@@ -114,7 +114,7 @@ export async function getStaticPaths() {
   };
 
   const slugs = getFileList("newsposts");
-  console.log("slugs ", slugs);
+  // console.log("slugs ", slugs);
 
   const allMarkdownPosts = slugs
     .map((slug) => {

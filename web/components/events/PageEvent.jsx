@@ -50,7 +50,7 @@ export const PageEvent = ({ data, slug }) => {
   // console.log("data here is ***** ", data);
 
   if (!data) {
-    console.log("error ******");
+    // console.log("error ******");
     return;
   }
   const content = (data?.content || [])

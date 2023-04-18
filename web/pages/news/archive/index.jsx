@@ -1,6 +1,5 @@
 import styled from "@emotion/styled";
 import imageUrlBuilder from "@sanity/image-url";
-import { siteMeta } from "constants/site";
 import { format, parseISO } from "date-fns";
 import fs, { readdirSync } from "fs";
 import matter from "gray-matter";
@@ -155,25 +154,26 @@ const PostsFooter = styled.div`
   }
 `;
 
+const NewsFooter = styled.section`
+  border-top: 1px solid #b75906;
+  text-align: right;
+`;
+
 const NewsHomePage = ({ data }) => {
   //   console.log("data here ", data);
 
   return (
     <>
       <NextSeo
-        title={
-          data?.title
-            ? `${data?.title} |  African Vision Malawi`
-            : siteMeta.title
-        }
-        description={data?.description || siteMeta.description}
-        canonical={`${process.env.NEXT_PUBLIC_BASE_URL}/news/`}
+        title="News Archive |  African Vision Malawi"
+        description="An archive of older news posts from African Vision Malawi"
+        canonical={`${process.env.NEXT_PUBLIC_BASE_URL}/news/archive/`}
       />
       <article>
         <TopSection>
           <Heading>News Archive</Heading>
         </TopSection>
-        <Main>
+        <Main className="articleInner">
           <ul>
             {data.map((post) => {
               return (
@@ -186,6 +186,13 @@ const NewsHomePage = ({ data }) => {
             })}
           </ul>
         </Main>
+        <aside>
+          <NewsFooter className="articleInner">
+            <p>
+              <a href="/news/">Recent News</a>
+            </p>
+          </NewsFooter>
+        </aside>
       </article>
     </>
   );
@@ -210,7 +217,7 @@ export async function getStaticProps(context) {
   };
 
   const slugs = getFileList("newsposts");
-  console.log("slugs ", slugs);
+  //   console.log("slugs ", slugs);
 
   const data = slugs
     .map((slug) => {
