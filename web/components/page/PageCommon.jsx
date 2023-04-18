@@ -77,7 +77,7 @@ export const PageCommon = ({ data }) => {
         case "videoGallery":
           el = (
             <div className="videosWrapper">
-              <div className="articleInner">
+              <div className="videosWrapper-inner">
                 <Videos key={c._key} {...c} />
               </div>
             </div>
