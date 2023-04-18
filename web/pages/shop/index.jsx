@@ -195,7 +195,7 @@ const ShopHomePage = ({ data }) => {
         canonical={`${process.env.NEXT_PUBLIC_BASE_URL}/shop/`}
       />
       {path ? <Breadcrumbs path={path} indexPage={data?.indexPage} /> : null}
-      <article className="articleInner">
+      <article className="col-wide">
         <Heading>{title}</Heading>
         <NavTags tags={tags} tagsBase={tagsBase} active={null} />
         <Container>

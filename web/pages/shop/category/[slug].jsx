@@ -149,7 +149,7 @@ export const ShopCategory = ({ data, slug }) => {
         canonical={`${process.env.NEXT_PUBLIC_BASE_URL}/shop/category/${data?.slug?.current}/`}
       />
       {path ? <Breadcrumbs path={path} indexPage={data?.indexPage} /> : null}
-      <article className="articleInner">
+      <article className="col-wide">
         <Heading>Shop - {currentTag.title}</Heading>
         <NavTags tags={tags} tagsBase={tagsBase} active={null} />
         <Container>
