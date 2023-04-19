@@ -33,22 +33,21 @@ const Container = styled.div`
   display: none;
   font-family: var(--font-roboto);
   margin: 0 auto;
-  max-width: 1080px;
-  padding: 0 90px;
+  max-width: 1140px;
+  padding-top: 2rem;
+  padding-left: 1rem;
   position: relative;
   @media (min-width: 480px) {
     display: block;
   }
-  @media (min-width: 768px) {
-    padding-left: 110px;
-  }
+
   @media (min-width: 1140px) {
-    padding: 0.5rem 0 0.5rem 80px;
+    padding: 0.5rem 1rem;
   }
 `;
 
 const Links = styled.div`
-  max-width: 750px;
+  // max-width: 750px;
   text-transform: capitalize;
   @media (max-width: 767px) {
     overflow-x: auto;

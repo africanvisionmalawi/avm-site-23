@@ -106,12 +106,12 @@ export const navLinks = [
       },
       {
         name: "Work for us",
-        url: "/get-involved/vacancies/",
+        url: "/get-involved/current-vacancies/",
         mobileOnly: false,
       },
       {
         name: "Volunteer with us",
-        url: "/get-involved/volunteering/",
+        url: "/get-involved/volunteer-programme/",
         mobileOnly: false,
       },
       {
