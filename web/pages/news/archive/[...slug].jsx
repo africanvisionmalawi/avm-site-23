@@ -13,34 +13,13 @@ const md = require("markdown-it")({
   typographer: true,
 });
 
-const Container = styled.section`
-  margin: 0 auto;
-  padding: 0 0 3rem;
-`;
-
-const TextSection = styled.section`
-  background: #fff;
-  margin: 0 auto;
-  max-width: 1180px;
-  padding: 1rem;
-  position: relative;
-  width: 100%;
-  @media (min-width: 768px) {
-    padding: 2rem 4em;
-  }
-  @media (min-width: 1040px) {
-    padding: 2rem 8em;
-  }
-`;
-
-const ContentSection = styled.section`
-  margin: 0 auto;
-  max-width: 1180px;
-  padding: 0 0 3rem;
-`;
-
 const PostInner = styled.div`
   padding: 0 1rem;
+`;
+
+const NewsFooter = styled.section`
+  border-top: 1px solid #b75906;
+  text-align: right;
 `;
 
 const Page = ({ data }) => {
@@ -75,6 +54,11 @@ const Page = ({ data }) => {
             />
           </PostInner>
         </article>
+        <NewsFooter className="articleInner">
+          <p>
+            <a href="/news/">Recent News</a>
+          </p>
+        </NewsFooter>
       </>
     );
   }
