@@ -19,6 +19,7 @@ const PostInner = styled.div`
 
 const NewsFooter = styled.section`
   border-top: 1px solid #b75906;
+  margin-top: 2rem;
   text-align: right;
 `;
 
