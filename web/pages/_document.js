@@ -73,6 +73,10 @@ export default function Document() {
           sizes="16x16"
           href={`/img/favicon-16x16.png`}
         />
+        <script
+          defer
+          src="https://app.tinyanalytics.io/pixel/xCGm0jsyv06tq4hy"
+        ></script>
       </Head>
       <body>
         <Main />
