@@ -14,43 +14,16 @@ const Container = styled.section`
 const Heading = styled.h1`
   font-family: Raleway, "Helvetica Neue", "Segoe UI", "Helvetica", "Arial",
     "sans-serif";
-  text-align: center;
 `;
 
 const TopSection = styled.div`
   margin: 0 auto;
-  max-width: 885px;
+  max-width: 1080px;
   padding: 3rem 1rem 0;
   position: relative;
   @media (min-width: 768px) {
-    padding-top: 1rem;
+    padding: 1rem 0 0;
   }
-`;
-
-const TextSection = styled.section`
-  background: #fff;
-  margin: 0 auto;
-  max-width: 1180px;
-  padding: 1rem;
-  position: relative;
-  width: 100%;
-  @media (min-width: 768px) {
-    padding: 2rem 4em;
-  }
-  @media (min-width: 1040px) {
-    padding: 2rem 8em;
-  }
-`;
-
-const ContentSection = styled.section`
-  margin: 0 auto;
-  max-width: 1180px;
-  padding: 0 0 3rem;
-`;
-
-const Main = styled.main`
-  background: #fff;
-  border-radius: 2px;
 `;
 
 const Page = ({ data }) => {

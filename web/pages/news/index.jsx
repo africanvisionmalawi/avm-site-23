@@ -21,12 +21,11 @@ const Container = styled.div`
 const Heading = styled.h1`
   font-family: Raleway, "Helvetica Neue", "Segoe UI", "Helvetica", "Arial",
     "sans-serif";
-  text-align: center;
 `;
 
 const TopSection = styled.div`
   margin: 0 auto;
-  max-width: 885px;
+  max-width: 1080px;
   padding: 3rem 1rem 0;
   position: relative;
 

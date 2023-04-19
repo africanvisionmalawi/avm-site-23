@@ -39,7 +39,7 @@ const PhotoCont = styled.div`
 
 const ShopSection = styled.section`
   margin: 0 auto;
-  max-width: 1180px;
+  max-width: 1080px;
   padding: 0 1rem;
 `;
 

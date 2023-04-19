@@ -33,7 +33,7 @@ const Container = styled.div`
   display: none;
   font-family: var(--font-roboto);
   margin: 0 auto;
-  max-width: 1140px;
+  max-width: 1080px;
   padding-top: 2rem;
   padding-left: 1rem;
   position: relative;
@@ -47,7 +47,6 @@ const Container = styled.div`
 `;
 
 const Links = styled.div`
-  // max-width: 750px;
   text-transform: capitalize;
   @media (max-width: 767px) {
     overflow-x: auto;

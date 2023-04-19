@@ -22,15 +22,15 @@ const Heading = styled.h1`
 
 const TopSection = styled.div`
   padding: 0 1rem;
-  @media (min-width: 768px) {
-    padding: 0 5rem;
-  }
+  // @media (min-width: 768px) {
+  //   padding: 0 5rem;
+  // }
 `;
 
 const TextSection = styled.section`
   background: #fff;
   margin: 0 auto;
-  max-width: 1180px;
+  max-width: 1080px;
   padding: 1rem;
   position: relative;
   @media (min-width: 768px) {
@@ -43,7 +43,7 @@ const TextSection = styled.section`
 
 const ContentSection = styled.section`
   margin: 0 auto;
-  max-width: 1180px;
+  max-width: 1080px;
   padding: 0 0 3rem;
 `;
 

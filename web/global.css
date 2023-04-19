@@ -97,7 +97,8 @@ h1 {
 
 @media (min-width: 768px) {
   .articleInner {
-    max-width: 885px;
+    /* max-width: 885px; */
+    max-width: 1080px;
   }
   .articleInner figure {
     max-width: 95vw;
