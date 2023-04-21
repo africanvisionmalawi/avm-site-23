@@ -183,7 +183,6 @@ export async function getStaticProps({ params, preview = false }) {
       preview,
       currentSlug,
     },
-    revalidate: 10,
   };
 }
 

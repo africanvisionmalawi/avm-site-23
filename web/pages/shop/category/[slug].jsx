@@ -235,7 +235,6 @@ export async function getStaticProps({ params, preview = false }) {
       slug,
       preview,
     },
-    revalidate: 10,
   };
 }
 

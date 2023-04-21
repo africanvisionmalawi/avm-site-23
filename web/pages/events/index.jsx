@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 import imageUrlBuilder from "@sanity/image-url";
-import { CardPostAlt } from "components/card/CardPostAlt";
 import { Hero } from "components/Hero";
+import { CardPostAlt } from "components/card/CardPostAlt";
 import { siteMeta } from "constants/site";
 import dayjs from "dayjs";
 import groq from "groq";
@@ -185,7 +185,6 @@ export async function getStaticProps({ params, preview = false }) {
       data,
       preview,
     },
-    revalidate: 10,
   };
 }
 

@@ -113,7 +113,6 @@ export async function getStaticProps({ params, preview = false }) {
       preview,
       fullPath,
     },
-    revalidate: 10,
   };
 }
 
