@@ -42,9 +42,10 @@ export const CardSingle = ({
   // const pageUrl = url.category.slug.current;
   // const pageTitle = url.category.title;
   // console.log("linkText ", linkText);
+  // console.log("photo ", photo);
   return (
     <div>
-      {url || extUrl ? (
+      {(url || extUrl) && photo ? (
         <>
           {url ? (
             <a href={extUrl} className="card-image">
