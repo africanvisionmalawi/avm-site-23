@@ -10,6 +10,7 @@ const Heading = styled.h2`
 `;
 
 const PageLinksWithPhotos = ({ pageLinks }) => {
+  console.log("p *** ", pageLinks);
   return (
     <>
       {pageLinks.length
@@ -33,7 +34,7 @@ const PageLinksWithPhotos = ({ pageLinks }) => {
                       extUrl={pageLink.extUrl ? pageLink.extUrl : null}
                       title={pageLink.linkTitle ? pageLink.linkTitle : null}
                       linkText={pageLink.linkText ? pageLink.linkText : null}
-                      fixed={pageLink.photo ? pageLink.photo.asset.fixed : null}
+                      fixed={pageLink?.photo?.asset?.fixed || null}
                       photo={pageLink.photo ? pageLink.photo : null}
                       featured={pageLink.featured ? pageLink.featured : false}
                       // showPageLink={pageLink.showPageLink}
