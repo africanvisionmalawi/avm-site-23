@@ -187,3 +187,7 @@ section {
     padding: 0 0 1rem;
   }
 }
+
+ol {
+  font-family: var(--font-roboto);
+}
