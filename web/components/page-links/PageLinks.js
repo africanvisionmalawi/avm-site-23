@@ -10,7 +10,7 @@ const Heading = styled.h2`
 `;
 
 const PageLinksWithPhotos = ({ pageLinks }) => {
-  console.log("p *** ", pageLinks);
+  // console.log("p *** ", pageLinks);
   return (
     <>
       {pageLinks.length
@@ -25,9 +25,12 @@ const PageLinksWithPhotos = ({ pageLinks }) => {
               categoryUrl === pageUrl
                 ? `/${pageUrl}`
                 : `/${categoryUrl}${pageUrl}`;
+            // console.log("link here ", pageLink.extUrl, url);
             return (
               <React.Fragment key={pageLink.id}>
-                {!pageLink.hideLink ? (
+                {!pageLink.hideLink &&
+                (pageLink.extUrl || url) &&
+                url !== "/" ? (
                   <>
                     <CardSingle
                       url={url}
