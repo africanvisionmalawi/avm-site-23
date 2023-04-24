@@ -1,5 +1,5 @@
 [[redirects]]
 from = "/avm-studio/*"
-to = "https://avm.sanity.studio/desk"
+to = "https://avm.sanity.studio/desk/"
 status = 200
 force = true
