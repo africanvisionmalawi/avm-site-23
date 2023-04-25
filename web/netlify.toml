@@ -9,3 +9,9 @@ from  ="/static/js/"
 to    ="https://avm.sanity.studio/static/js/"
 status=200
 force =true
+
+[[redirects]]
+from  ="/static/css/"
+to    ="https://avm.sanity.studio/static/css/"
+status=200
+force =true
