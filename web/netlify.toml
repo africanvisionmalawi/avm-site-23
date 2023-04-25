@@ -1,5 +1,11 @@
 [[redirects]]
-from = "/avm-studio/*"
-to = "https://avm.sanity.studio/desk/"
-status = 200
-force = true
+from  ="/avm-studio/"
+to    ="https://avm.sanity.studio/"
+status=200
+force =true
+
+[[redirects]]
+from  ="/static/js/"
+to    ="https://avm.sanity.studio/static/js/"
+status=200
+force =true
