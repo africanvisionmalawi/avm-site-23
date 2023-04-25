@@ -15,3 +15,9 @@ from  ="/static/css/"
 to    ="https://avm.sanity.studio/static/css/"
 status=200
 force =true
+
+[[redirects]]
+from  ="/static/"
+to    ="https://avm.sanity.studio/static/"
+status=200
+force =true
