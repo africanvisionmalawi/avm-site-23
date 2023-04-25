@@ -7,6 +7,10 @@ export default function MyApp({ Component, pageProps }) {
     <Layout>
       {/* <DefaultSeo /> */}
       <Component {...pageProps} />
+      <script
+        type="text/javascript"
+        src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"
+      ></script>
     </Layout>
   );
 }
