@@ -51,29 +51,32 @@ const PreviewPageIndex = lazy(() =>
   import("components/homepage/PreviewPageIndex")
 );
 
-const HomePage = ({ data, preview }) => {
+const HomePage = ({ data, preview, token }) => {
   // console.log("data here ", data);
 
   // console.log("query here ", query);
 
+  // console.log("token here is ", token);
+
   return preview ? (
     <PreviewSuspense fallback="Loading...">
-      <PreviewPageIndex query={query} />
+      <PreviewPageIndex query={query} token={token} />
     </PreviewSuspense>
   ) : (
     <PageIndex data={data} />
   );
 };
 
-export async function getStaticProps({ params, preview = false }) {
+export async function getStaticProps({ preview = false, previewData = {} }) {
   // It's important to default the slug so that it doesn't return "undefined"
+  // console.log("previewData ", previewData);
 
-  if (preview) {
+  if (preview && previewData?.token) {
     // console.log(
     //   "preview homepag                                                                                                                                                                                                                                                                                                                                                    e ",
     //   preview
     // );
-    return { props: { preview } };
+    return { props: { preview, token: previewData.token } };
   }
 
   // console.log("no preview");
