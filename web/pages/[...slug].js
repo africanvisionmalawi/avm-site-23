@@ -6,7 +6,7 @@ import { PreviewSuspense } from "next-sanity/preview";
 import { NextSeo } from "next-seo";
 import client from "/client";
 
-const Page = ({ preview, data, queryParams, fullPath }) => {
+const Page = ({ preview, data, queryParams, fullPath, token }) => {
   // console.log("content here is ***************** ", data?.content);
   // console.log("data here is ***************** ", data);
   // console.log("hero ", data.hero);
@@ -28,6 +28,7 @@ const Page = ({ preview, data, queryParams, fullPath }) => {
             query={query}
             queryParams={queryParams}
             fullPath={fullPath}
+            token={token}
           />
         </PreviewSuspense>
       ) : (
@@ -83,7 +84,11 @@ const query = groq`*[_type == "page" && (indexPage != true && slug.current == $s
   },
 }`;
 
-export async function getStaticProps({ params, preview = false }) {
+export async function getStaticProps({
+  params,
+  preview = false,
+  previewData = {},
+}) {
   // if (preview) {
   //   console.log("hasPreview");
   //   return { props: { preview } };
@@ -101,8 +106,10 @@ export async function getStaticProps({ params, preview = false }) {
 
   const queryParams = { slug: currentSlug, categorySlug };
 
-  if (preview) {
-    return { props: { preview, queryParams, fullPath } };
+  if (preview && previewData?.token) {
+    return {
+      props: { preview, queryParams, fullPath, token: previewData.token },
+    };
   }
 
   const data = await client.fetch(query, { slug: currentSlug, categorySlug });
