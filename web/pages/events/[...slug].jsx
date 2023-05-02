@@ -4,14 +4,18 @@ import groq from "groq";
 import { PreviewSuspense } from "next-sanity/preview";
 import client from "/client";
 
-const Page = ({ data, slug, preview }) => {
+const Page = ({ data, slug, preview, queryParams, token }) => {
   // console.log("data here is ***** ", data);
 
   return (
     <>
       {preview ? (
         <PreviewSuspense fallback="Loading...">
-          <PreviewPageEvent query={query} queryParams={queryParams} />
+          <PreviewPageEvent
+            query={query}
+            queryParams={queryParams}
+            token={token}
+          />
         </PreviewSuspense>
       ) : (
         <PageEvent data={data} slug={slug} />
@@ -70,6 +74,15 @@ export async function getStaticProps({
   // console.log("slug length ", slug.length);
   const hasCategory = !!slug.length > 1;
   // console.log("hasCategory ", hasCategory);
+
+  const queryParams = { slug };
+
+  if (preview && previewData?.token) {
+    return {
+      props: { preview, queryParams, token: previewData.token },
+    };
+  }
+
   const data = await client.fetch(query, { slug, hasCategory });
   // console.log("slug ", slug);
   // console.log("hero ", data.content);
