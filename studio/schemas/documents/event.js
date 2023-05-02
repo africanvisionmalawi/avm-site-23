@@ -84,11 +84,11 @@ export default {
       name: "url",
       type: "string",
     },
-    {
-      title: "Tags",
-      name: "tags",
-      type: "tags",
-    },
+    // {
+    //   title: "Tags",
+    //   name: "tags",
+    //   type: "tags",
+    // },
     {
       title: "Meta Description",
       name: "meta_description",

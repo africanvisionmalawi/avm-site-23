@@ -60,11 +60,11 @@ export default {
       description: "Add, edit, and reorder sections",
       of: [{ type: "photoGallery" }, { type: "blockPortableText" }],
     },
-    {
-      title: "Tags",
-      name: "tags",
-      type: "tags",
-    },
+    // {
+    //   title: "Tags",
+    //   name: "tags",
+    //   type: "tags",
+    // },
     {
       title: "Meta Description",
       name: "description",
