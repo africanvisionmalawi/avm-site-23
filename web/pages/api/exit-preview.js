@@ -1,5 +1,5 @@
 export default function exit(req, res) {
   res.clearPreviewData();
-  res.writeHead(387, { Location: "/" });
+  res.writeHead(307, { Location: "/" });
   res.end();
 }

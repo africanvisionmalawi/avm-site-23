@@ -1,8 +1,9 @@
 import { PageShop } from "components/shop/PageShop";
 import { usePreview } from "lib/sanity.preview";
 
-export const PreviewPageShop = ({ query, queryParams }) => {
-  const data = usePreview(null, query, queryParams);
+export const PreviewPageShop = ({ query, queryParams, currentSlug, token }) => {
+  const data = usePreview(token, query, queryParams);
+
   return (
     <>
       <PageShop data={data} currentSlug={currentSlug} />
