@@ -54,6 +54,14 @@ export default {
       validation: (Rule) => Rule.required(),
     },
     {
+      title: "Event page to reference",
+      description:
+        "Search for an event page here. The details of the event will be displayed below the main text of the news item.",
+      name: "event",
+      type: "reference",
+      to: [{ type: "event" }],
+    },
+    {
       name: "content",
       type: "array",
       title: "Page sections",

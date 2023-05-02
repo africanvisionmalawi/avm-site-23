@@ -1,8 +1,8 @@
 import styled from "@emotion/styled";
 // import { Image } from "components/common/image/Image";
-import { EventDate } from "components/events/EventDate";
-import { Gallery } from "components/gallery";
 import { Hero } from "components/Hero";
+import { EventSummary } from "components/events/EventSummary";
+import { Gallery } from "components/gallery";
 import { PageLinks } from "components/page-links";
 import { PortableText } from "components/portable-text/BasePortableText";
 import { Videos } from "components/videos";
@@ -149,21 +149,7 @@ export const PageEvent = ({ data, slug }) => {
 
         {data.date ? (
           <section className="articleInner">
-            <EventDetails>
-              <li>
-                <EventDate
-                  date={data.date}
-                  endDate={data.endDate}
-                  hideTime={data.hideTime}
-                  allDay={data.allDay}
-                  layout="mainHeading"
-                />
-              </li>
-              {data.location ? <li>Location: {data.location}</li> : null}
-              {data.contact ? <li>Contact: {data.contact}</li> : null}
-              {data.telephone ? <li>Telephone: {data.telephone}</li> : null}
-              {data.cost ? <li>&pound;{data.cost}</li> : null}
-            </EventDetails>
+            <EventSummary data={data} />
           </section>
         ) : null}
         <section className="articleInner">

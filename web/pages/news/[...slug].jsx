@@ -1,5 +1,6 @@
 import styled from "@emotion/styled";
 import { Hero } from "components/Hero";
+import { EventSummary } from "components/events/EventSummary";
 import { Gallery } from "components/gallery";
 import { PageLinks } from "components/page-links";
 import { PortableText } from "components/portable-text/BasePortableText";
@@ -142,6 +143,11 @@ const Page = ({ data, currentSlug }) => {
           <section className="articleInner">
             {page.body ? <PortableText article blocks={page.body} /> : null}
           </section>
+          {page.event ? (
+            <section className="articleInner">
+              <EventSummary data={page.event} displayTitle displayLink />
+            </section>
+          ) : null}
           <section className="articleInner">
             <Container>{content}</Container>
           </section>
@@ -161,7 +167,8 @@ const query = groq`*[_type == "news" && slug.current == $currentSlug][0]{
   body[] {
     ...,
     asset->     
-  },    
+  },  
+  event->,  
   content,
   tags,
   pageHeading, 
