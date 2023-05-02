@@ -92,7 +92,7 @@ export async function getStaticProps({
   const { slug = "" } = params;
   const currentSlug = slug;
   const queryParams = { slug: currentSlug };
-  console.log("queryParams ", queryParams);
+  // console.log("queryParams ", queryParams);
   // const hasCategory = slug.length > 1;
   // const currentSlug = hasCategory ? slug[slug.length - 1] : slug[0];
   // console.log("currentSlug ", currentSlug);
