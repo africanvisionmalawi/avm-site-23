@@ -12,7 +12,7 @@ export default async function preview(req, res) {
   }
 
   res.setPreviewData({
-    token: process.env.NEXT_PUBLIC_SANITY_STUDIO_READ_TOKEN,
+    token: process.env.NEXT_PUBLIC_SANITY_READ_TOKEN,
   });
   res.writeHead(307, {
     Location: req?.query?.slug ? `/${req.query.slug}` : "/",
