@@ -135,7 +135,7 @@ export const PageEvent = ({ data, slug }) => {
         <section className="articleInner">
           <h1>{data?.title}</h1>
         </section>
-        {data?.featured_image && (
+        {data?.featured_image && !data?.noHero && (
           <>
             <Hero
               image={data.featured_image}
