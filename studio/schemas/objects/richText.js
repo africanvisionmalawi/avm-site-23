@@ -1,4 +1,4 @@
-// in post.js
+import { ImFilePdf } from "react-icons/bi";
 
 export default {
   title: "Rich Text",
@@ -53,7 +53,14 @@ export default {
       },
     },
     {
+      type: "video",
+    },
+    {
       type: "image",
+    },
+    {
+      type: "pdf",
+      icon: ImFilePdf,
     },
   ],
 };

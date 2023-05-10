@@ -11,6 +11,11 @@ export default {
       type: "image",
     },
     {
+      title: "Disable Hero Image",
+      name: "noHero",
+      type: "boolean",
+    },
+    {
       title: "Title",
       name: "title",
       type: "string",
