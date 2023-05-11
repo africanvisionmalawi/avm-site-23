@@ -78,6 +78,13 @@ const PostList = styled.div`
   max-width: 1180px;
 `;
 
+const EventList = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin: 2rem auto;
+  max-width: 1180px;
+`;
+
 const CardCont = styled.div`
   align-items: grid-start;
   display: grid;
@@ -271,25 +278,23 @@ export const PageIndex = ({ data }) => {
             {latestEvents ? (
               <>
                 <section>
-                  <PostList>
-                    <CardCont>
-                      {latestEvents.map((post) => (
-                        <React.Fragment key={post._id}>
-                          <CardPostAlt
-                            type="event"
-                            title={post.title}
-                            excerpt={post.excerpt}
-                            slug={post.slug}
-                            date={post.date}
-                            endDate={post.endDate}
-                            hideTime={post.hideTime}
-                            allDay={post.allDay}
-                            photo={post.featured_image}
-                          />
-                        </React.Fragment>
-                      ))}
-                    </CardCont>
-                  </PostList>
+                  <EventList>
+                    {latestEvents.map((post) => (
+                      <React.Fragment key={post._id}>
+                        <CardPostAlt
+                          type="event"
+                          title={post.title}
+                          excerpt={post.excerpt}
+                          slug={post.slug}
+                          date={post.date}
+                          endDate={post.endDate}
+                          hideTime={post.hideTime}
+                          allDay={post.allDay}
+                          photo={post.featured_image}
+                        />
+                      </React.Fragment>
+                    ))}
+                  </EventList>
                 </section>
                 <PostsFooter>
                   <a href="/events/">View all events</a>

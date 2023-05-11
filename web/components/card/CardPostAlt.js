@@ -2,6 +2,7 @@ import styled from "@emotion/styled";
 // import Img from "gatsby-image";
 // import styled from "@emotion/styled";
 import { EventDate } from "components/common/EventDate";
+import { EventDateFormatted } from "components/events/EventDateFormatted";
 import { PortableText } from "components/portable-text/BasePortableText";
 import { MoreButton } from "./MoreButton";
 import { PhotoCont } from "./PhotoCont";
@@ -10,6 +11,20 @@ const Card = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+`;
+
+const CardEvent = styled.div`
+  display: grid;
+  grid-template-columns: 190px 1fr;
+  grid-gap: 1.5rem;
+  margin-bottom: 2rem;
+`;
+
+const DateBox = styled.div`
+  background: #246a73;
+  color: #fff;
+  height: 190px;
+  border-radius: 8px;
 `;
 
 const Content = styled.div`
@@ -62,7 +77,42 @@ export const CardPostAlt = ({
       <div>{excerpt}</div>
     );
 
-  return (
+  return type === "event" ? (
+    <CardEvent>
+      {slug ? (
+        <>
+          <a href={url} className="card-image">
+            <DateBox>
+              {date && typeof photo === "object" ? (
+                <EventDateFormatted
+                  date={date}
+                  endDate={endDate ? endDate : null}
+                  hideTime={hideTime ? hideTime : false}
+                  allDay={allDay ? allDay : false}
+                />
+              ) : null}
+            </DateBox>
+          </a>
+        </>
+      ) : date && typeof photo === "object" ? (
+        <EventDateFormatted
+          date={date}
+          endDate={endDate ? endDate : null}
+          hideTime={hideTime ? hideTime : false}
+          allDay={allDay ? allDay : false}
+        />
+      ) : null}
+      <Content>
+        {title ? (
+          <Heading>{slug ? <a href={url}>{title}</a> : title}</Heading>
+        ) : null}
+        {publishDate ? <SubHeading>{publishDate}</SubHeading> : null}
+        {excerpt ? text : null}
+        {/* TODO: add hideLink here */}
+      </Content>
+      {url && displayMoreButton ? <MoreButton url={url} /> : null}
+    </CardEvent>
+  ) : (
     <Card>
       <div>
         {slug ? (
