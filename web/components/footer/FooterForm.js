@@ -69,12 +69,12 @@ export const FooterForm = () => {
               </Button>
             </FormGroup>
           </FormInner>
-          <FormExtra>
+          {/* <FormExtra>
             <label>
               Don’t fill this out:{" "}
               <input name="bot-field" onChange={handleChange} />
             </label>
-          </FormExtra>
+          </FormExtra> */}
           <input type="hidden" name="form-name" value="mailing-list" />
         </form>
       </FormContInner>
@@ -130,8 +130,9 @@ const TextInput = styled.input`
   }
   @media (min-width: 600px) {
     width: auto;
-    &#name {
-      border-right: 4px solid #f7f7f7;
+    & {
+      margin-right: 8px;
+      // border-right: 4px solid #f7f7f7;
       margin-bottom: 0;
     }
   }
