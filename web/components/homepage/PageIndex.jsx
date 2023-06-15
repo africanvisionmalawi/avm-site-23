@@ -1,12 +1,6 @@
 import styled from "@emotion/styled";
 import imageUrlBuilder from "@sanity/image-url";
-import { Hero } from "components/Hero";
-import { CardPost } from "components/card/CardPost";
-import { CardPostAlt } from "components/card/CardPostAlt";
-import { Donate } from "components/common/Donate";
-import { OurWork } from "components/ourwork/ourwork";
-import { PortableText } from "components/portable-text/BasePortableText";
-import { Player } from "components/videos/Player";
+import { FooterForm } from "components/footer/FooterForm";
 import { siteMeta } from "constants/site";
 import dayjs from "dayjs";
 import { NextSeo } from "next-seo";
@@ -194,109 +188,46 @@ export const PageIndex = ({ data }) => {
         canonical={`${process.env.NEXT_PUBLIC_BASE_URL}/`}
       />
       <article>
-        <Hero
-          image={homePage.hero.image}
-          mobileImage={homePage.hero.mobileImage}
-          displayHeroMsg={false}
-          // heroHeading={c.title}
-          // heroHeadingType="h2"
-        />
-        <TopSection className="articleInner">
-          <Heading>{homePage.title}</Heading>
-          {homePage.subTitle ? homePage.subTitle : null}
-        </TopSection>
-
         <Main>
-          <div className="articleInner">
-            <TopVideoSection>
-              <TopVideoSectionInner>
-                <VideoSection>
-                  {homePage.introText ? (
-                    <TextSection>
-                      <PortableText
-                        key={homePage.introText._key}
-                        blocks={homePage.introText}
-                      />
-                    </TextSection>
-                  ) : null}
-                </VideoSection>
-                <VideoSection>
-                  {homePage.promoVideo ? (
-                    <Player url={homePage.promoVideo.url} />
-                  ) : null}
-                </VideoSection>
-              </TopVideoSectionInner>
-            </TopVideoSection>
-            {ourWork ? (
-              <Container>
-                <OurWork ourWork={ourWork.ourWork} displayHeading />
-              </Container>
-            ) : null}
-          </div>
-          <div className="articleInner">
-            <Donate />
-          </div>
+          <center>
+            <h2>Form test 1</h2>
+            <FooterForm />
+            <hr />
+            <h2>Form test 2</h2>
+            <form
+              action="https://www.createsend.com/t/subscribeerror?description="
+              id="subForm"
+              className="js-cm-form"
+              name="mailing-list"
+              method="post"
+              data-id="191722FC90141D02184CB1B62AB3DC26534B73A939144A114A65220640919F92FC6A5ED12F30EFA39EE631C0319C1BF2CBF80D465049B494DC85F6BDBDE44C47"
+            >
+              <input
+                type="text"
+                className="js-cm-email-input qa-input-email"
+                name="cm-name"
+                aria-label="Name"
+                id="fieldName"
+                placeholder="Name"
+                required
+              />
+              <input
+                type="email"
+                maxlength="200"
+                name="cm-jdhiii-jdhiii"
+                aria-label="Email"
+                id="fieldEmail"
+                placeholder="Email"
+                required
+              />
 
-          {homePage.latestNews ? (
-            <LatestNews>
-              <LatestNewsInner>
-                <h2>Latest news</h2>
-                <PortableText
-                  key={homePage.latestNews._key}
-                  blocks={homePage.latestNews}
-                />
-              </LatestNewsInner>
-            </LatestNews>
-          ) : null}
-          <div className="articleInner">
-            {homePage.newsLinks ? (
-              <>
-                <section>
-                  <PostList>
-                    <CardCont>
-                      {homePage.newsLinks.newsLinks.map((post) => (
-                        <React.Fragment key={post._id}>
-                          <CardPost post={post} />
-                        </React.Fragment>
-                      ))}
-                    </CardCont>
-                  </PostList>
-                </section>
-                <PostsFooter>
-                  <a href="/news/">View all news</a>
-                </PostsFooter>
-              </>
-            ) : null}
+              <button className="btn btn-primary" type="submit">
+                Join list
+              </button>
 
-            {latestEvents ? (
-              <>
-                <section>
-                  <PostList>
-                    <CardCont>
-                      {latestEvents.map((post) => (
-                        <React.Fragment key={post._id}>
-                          <CardPostAlt
-                            type="event"
-                            title={post.title}
-                            excerpt={post.excerpt}
-                            slug={post.slug}
-                            date={post.date}
-                            endDate={post.endDate}
-                            hideTime={post.hideTime}
-                            allDay={post.allDay}
-                            photo={post.featured_image}
-                          />
-                        </React.Fragment>
-                      ))}
-                    </CardCont>
-                  </PostList>
-                </section>
-                <PostsFooter>
-                  <a href="/events/">View all events</a>
-                </PostsFooter>
-              </>
-            ) : null}
-          </div>
+              <input type="hidden" name="form-name" value="mailing-list" />
+            </form>
+          </center>
         </Main>
       </article>
     </>
