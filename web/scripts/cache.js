@@ -13,6 +13,7 @@ const query = groq`*[_type == "page"] {
   slug, 
   _id,
   title,  
+  indexPage,
   "categoryTitle": category->title, 
   "categorySlug": category->slug.current,
 }`;
@@ -23,6 +24,7 @@ async function getPages() {
   const pages = data.map((page) => {
     return {
       id: page._id,
+      indexPage: page.indexPage,
       title: page.title,
       slug: page.slug,
       categorySlug: page.categorySlug,

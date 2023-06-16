@@ -1,7 +1,8 @@
 import styled from "@emotion/styled";
 import CartLink from "components/CartLink";
-import { CtaButton } from "components/common/CtaButton";
 import NavLogo from "components/NavLogo";
+import { CtaButton } from "components/common/CtaButton";
+import { Search } from "components/search/Search";
 import { navLinks } from "constants/nav";
 import React, { useState } from "react";
 // import Search from "../search";
@@ -65,6 +66,7 @@ const SubNavBar = () => {
       </Drawer>
       <Nav>
         <NavInner>
+          <Search />
           <CtaButton
             link="https://www.crowdfunder.co.uk/apf/step/basics/7nPGOrqW"
             text="Fundraise for us"
