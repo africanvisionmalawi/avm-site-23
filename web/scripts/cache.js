@@ -1,6 +1,5 @@
 const fs = require("fs");
 const groq = require("groq");
-// const client = require("/client.js");
 const sanityClient = require("@sanity/client");
 
 const client = sanityClient({
@@ -29,21 +28,25 @@ async function getPages() {
       categorySlug: page.categorySlug,
     };
   });
-  console.log("pages ", pages);
   return JSON.stringify(pages);
 }
-const allPages = getPages();
-const fileContents = `export const pages = ${allPages}`; // here we created the contents of the cache file
 
-try {
-  fs.readdirSync("cache");
-} catch (e) {
-  fs.mkdirSync("cache");
-}
-// if cache directory exists, ok else create it
+async function writePages() {
+  const allPages = await getPages();
+  const fileContents = `export const pages = ${allPages}`; // here we created the contents of the cache file
 
-fs.writeFile("cache/data.js", fileContents, function(err) {
+  // if cache directory exists, ok else create it
+  try {
+    fs.readdirSync("cache");
+  } catch (e) {
+    fs.mkdirSync("cache");
+  }
+
   // writing to the cache/data.js file
-  if (err) return console.log(err);
-  console.log("Pages cached.");
-});
+  fs.writeFile("cache/data.js", fileContents, function(err) {
+    if (err) return console.log(err);
+    console.log("Page data cached.");
+  });
+}
+
+writePages();
