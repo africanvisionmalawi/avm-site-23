@@ -22,12 +22,12 @@ async function getPages() {
   const data = await client.fetch(query);
 
   const pages = data.map((page) => {
+    const urlBase = page.categorySlug ? `/${page.categorySlug}` : "/";
+    const slug = page.slug?.current ? `/${page.slug.current}` : "";
     return {
       id: page._id,
-      indexPage: page.indexPage,
       title: page.title,
-      slug: page.slug,
-      categorySlug: page.categorySlug,
+      path: page.indexPage ? `${urlBase}/` : `${urlBase}${slug}/`,
     };
   });
   return JSON.stringify(pages);

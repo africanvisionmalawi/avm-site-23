@@ -46,11 +46,7 @@ export const Search = () => {
       />
       {active && results.length > 0 && (
         <ul>
-          {results.map(({ id, title, slug, categorySlug, indexPage }) => {
-            const urlBase = categorySlug ? `/${categorySlug}` : "/";
-            const path = indexPage
-              ? `${urlBase}/`
-              : `${urlBase}/${slug.current}/`;
+          {results.map(({ id, title, path }) => {
             return (
               <li key={id}>
                 <a href={path}>{title}</a>
