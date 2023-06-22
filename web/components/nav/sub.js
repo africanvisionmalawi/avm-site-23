@@ -37,6 +37,7 @@ const SubNavBar = () => {
         <DrawerOverlay className={drawerVisible ? "open" : ""} />
         <DrawerContent className={drawerVisible ? "open" : ""}>
           <CloseBtn onClick={toggleMenu}>X</CloseBtn>
+
           <Menu>
             {navLinks.map((link, i) => (
               <React.Fragment key={i}>
@@ -62,11 +63,11 @@ const SubNavBar = () => {
               </React.Fragment>
             ))}
           </Menu>
+          <Search />
         </DrawerContent>
       </Drawer>
       <Nav>
         <NavInner>
-          <Search />
           <CtaButton
             link="https://www.crowdfunder.co.uk/apf/step/basics/7nPGOrqW"
             text="Fundraise for us"
@@ -95,7 +96,7 @@ const SubNavBar = () => {
                 placement="header"
               />
             </NavIconsInner>
-            <IconsCont>{/* <Search indices={searchIndices} /> */}</IconsCont>
+
             <IconsCont>
               <CartLink variant="orange" />
             </IconsCont>
