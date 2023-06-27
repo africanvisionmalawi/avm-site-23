@@ -82,11 +82,17 @@ const SearchCont = styled.div`
   @media (min-width: 768px) {
     padding-left: 0;
   }
+  @media (min-width: 900px) {
+    display: block;
+  }
   & button {
     background: transparent;
     border: none;
     cursor: pointer;
     margin: 8px 5px 0 0;
+    @media (min-width: 900px) {
+      display: none;
+    }
   }
   & input {
     border-radius: 8px;
@@ -94,14 +100,22 @@ const SearchCont = styled.div`
     padding: 4px;
     transition: all 0.3s ease-out;
     @media (min-width: 768px) {
-      bottom: 5px;
+      bottom: 2px;
+      padding: 6px;
       right: 35px;
       position: absolute;
+      width: 120px;
+    }
+    @media (min-width: 900px) {
+      bottom: -15px;
     }
   }
   & input.searchHidden {
     @media (min-width: 768px) {
       bottom: 100px;
+    }
+    @media (min-width: 900px) {
+      bottom: -15px;
     }
   }
   & svg {

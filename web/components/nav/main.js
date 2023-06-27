@@ -169,6 +169,9 @@ const DesktopNav = styled.nav`
     align-items: middle;
     display: flex;
   }
+  @media (min-width: 1080px) {
+    padding-right: 2%;
+  }
 `;
 
 const IconCont = styled.div`
