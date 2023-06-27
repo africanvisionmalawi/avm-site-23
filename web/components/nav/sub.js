@@ -1,7 +1,8 @@
 import styled from "@emotion/styled";
 import CartLink from "components/CartLink";
-import { CtaButton } from "components/common/CtaButton";
 import NavLogo from "components/NavLogo";
+import { CtaButton } from "components/common/CtaButton";
+import { Search } from "components/search/Search";
 import { navLinks } from "constants/nav";
 import React, { useState } from "react";
 // import Search from "../search";
@@ -36,6 +37,7 @@ const SubNavBar = () => {
         <DrawerOverlay className={drawerVisible ? "open" : ""} />
         <DrawerContent className={drawerVisible ? "open" : ""}>
           <CloseBtn onClick={toggleMenu}>X</CloseBtn>
+
           <Menu>
             {navLinks.map((link, i) => (
               <React.Fragment key={i}>
@@ -61,6 +63,7 @@ const SubNavBar = () => {
               </React.Fragment>
             ))}
           </Menu>
+          <Search />
         </DrawerContent>
       </Drawer>
       <Nav>
@@ -93,7 +96,7 @@ const SubNavBar = () => {
                 placement="header"
               />
             </NavIconsInner>
-            <IconsCont>{/* <Search indices={searchIndices} /> */}</IconsCont>
+
             <IconsCont>
               <CartLink variant="orange" />
             </IconsCont>

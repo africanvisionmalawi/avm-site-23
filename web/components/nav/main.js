@@ -1,6 +1,7 @@
 import styled from "@emotion/styled";
 import CartLink from "components/CartLink";
 import NavLogo from "components/NavLogo";
+import { Search } from "components/search/Search";
 import { navLinks } from "constants/nav";
 import React from "react";
 // import Search from "../search";
@@ -50,7 +51,9 @@ const Navbar = () => {
             ))}
           </Menu>
           <IconRow>
-            <IconCont>{/* <Search indices={searchIndices} /> */}</IconCont>
+            <IconCont>
+              <Search />
+            </IconCont>
             <IconCont>
               <CartLink />
             </IconCont>
@@ -165,6 +168,9 @@ const DesktopNav = styled.nav`
   @media (min-width: 768px) {
     align-items: middle;
     display: flex;
+  }
+  @media (min-width: 1080px) {
+    padding-right: 2%;
   }
 `;
 
