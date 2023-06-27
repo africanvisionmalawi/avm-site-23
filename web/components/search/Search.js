@@ -58,19 +58,23 @@ export const Search = () => {
         value={query}
         className={showInput ? "searchInput" : "searchInput searchHidden"}
       />
-      {active && results.length > 0 && (
+      {active && query ? (
         <SearchList>
-          {results.map(({ id, title, path }, index) => {
-            if (index <= 5) {
-              return (
-                <li key={id}>
-                  <a href={path}>{title}</a>
-                </li>
-              );
-            }
-          })}
+          {results.length > 0 ? (
+            results.map(({ id, title, path }, index) => {
+              if (index <= 5) {
+                return (
+                  <li key={id}>
+                    <a href={path}>{title}</a>
+                  </li>
+                );
+              }
+            })
+          ) : (
+            <li>No resuls found</li>
+          )}
         </SearchList>
-      )}
+      ) : null}
     </SearchCont>
   );
 };
@@ -108,6 +112,8 @@ const SearchCont = styled.div`
     }
     @media (min-width: 900px) {
       bottom: -15px;
+      right: 15px;
+      width: 150px;
     }
   }
   & input.searchHidden {
