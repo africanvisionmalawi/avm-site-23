@@ -71,7 +71,7 @@ export const Search = () => {
               }
             })
           ) : (
-            <li>No resuls found</li>
+            <li>No results found</li>
           )}
         </SearchList>
       ) : null}
