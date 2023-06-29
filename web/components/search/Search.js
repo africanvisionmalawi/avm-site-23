@@ -53,7 +53,7 @@ export const Search = () => {
       <input
         onChange={onChange}
         onFocus={onFocus}
-        placeholder="Search pages"
+        placeholder="Search page titles"
         type="text"
         value={query}
         className={showInput ? "searchInput" : "searchInput searchHidden"}
