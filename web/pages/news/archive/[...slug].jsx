@@ -71,6 +71,7 @@ const query = groq`*[_type == "news" && slug.current == $currentSlug][0]{
   title,
   description,
   photo,
+  hideHeaderPhoto,
   excerpt,
   body[] {
     ...,

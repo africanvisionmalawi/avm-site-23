@@ -128,7 +128,7 @@ const Page = ({ data, currentSlug }) => {
           <section className="articleInner">
             <h1>{page.title}</h1>
           </section>
-          {page.photo && (
+          {page.photo && !page.hideHeaderPhoto ? (
             <div>
               <Hero
                 image={page.photo}
@@ -138,7 +138,7 @@ const Page = ({ data, currentSlug }) => {
               />
               {/* <Image image={page.hero.image.asset} /> */}
             </div>
-          )}
+          ) : null}
 
           <section className="articleInner">
             {page.body ? <PortableText article blocks={page.body} /> : null}
@@ -163,6 +163,7 @@ const query = groq`*[_type == "news" && slug.current == $currentSlug][0]{
   title,
   description,
   photo,
+  hideHeaderPhoto,
   excerpt,
   body[] {
     ...,

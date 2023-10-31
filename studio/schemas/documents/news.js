@@ -40,6 +40,11 @@ export default {
       type: "figure",
     },
     {
+      title: "Hide header photo",
+      name: "hideHeaderPhoto",
+      type: "boolean",
+    },
+    {
       title: "Excerpt",
       name: "excerpt",
       description:
