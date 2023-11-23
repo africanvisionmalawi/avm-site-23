@@ -1,6 +1,7 @@
 import styled from "@emotion/styled";
 import imageUrlBuilder from "@sanity/image-url";
 import { Breadcrumbs } from "components/Breadcrumbs";
+import { BuyButton } from "components/common/BuyButton";
 import { NavTags } from "components/common/NavTags";
 import { ShopListItem } from "components/shop/ShopListItem";
 import { tagsBase } from "constants/shop";
@@ -9,6 +10,8 @@ import groq from "groq";
 import { NextSeo } from "next-seo";
 import React from "react";
 import client from "/client";
+
+const siteUrl = "https://www.africanvision.org.uk";
 
 function urlFor(source) {
   return imageUrlBuilder(client).image(source);
@@ -77,22 +80,59 @@ const ShopHomePage = ({ data }) => {
         <Container>
           <ShopIndexList>
             {data.products.map((item, i) => {
-              // console.log("item hoto ", item?.photoGallery?.photos?.length);
+              const productPrice = item.salePrice
+                ? item.salePrice
+                : item.price
+                ? item.price
+                : null;
+              const displayButtonCheck = (stock, price) => {
+                if (item.inStock && productPrice > 0) {
+                  return true;
+                }
+              };
               return (
                 <React.Fragment key={item.id}>
-                  <ShopListItem
-                    id={item.id}
-                    slug={item.slug.current}
-                    photo={
-                      item?.photoGallery?.photos?.length
-                        ? item?.photoGallery?.photos[0]
-                        : null
-                    }
-                    photoType="default"
-                    title={item.title}
-                    price={item.price}
-                    salePrice={item.salePrice}
-                  />
+                  <div>
+                    <ShopListItem
+                      id={item.id}
+                      slug={item.slug.current}
+                      photo={
+                        item?.photoGallery?.photos?.length
+                          ? item?.photoGallery?.photos[0]
+                          : null
+                      }
+                      photoType="default"
+                      title={item.title}
+                      price={item.price}
+                      salePrice={item.salePrice}
+                    />
+                    {displayButtonCheck(item.inStock, productPrice) ? (
+                      <BuyButton
+                        productId={item._id ? item._id : null}
+                        name={item.title ? item.title : null}
+                        description={item.description ? item.description : null}
+                        price={productPrice}
+                        image={
+                          item.photoGallery && item.photoGallery.length
+                            ? item.photoGallery[0].childImageSharp.fluid.src
+                            : null
+                        }
+                        url={
+                          item.slug
+                            ? `${siteUrl}/shop/${item.slug.current}/`
+                            : null
+                        }
+                        weight={item.weight ? item.weight : null}
+                        length={item.length ? item.length : null}
+                        width={item.width ? item.width : null}
+                        height={item.height ? item.height : null}
+                      />
+                    ) : productPrice > 0 ? (
+                      <p>
+                        <strong>Out of stock</strong>
+                      </p>
+                    ) : null}
+                  </div>
                 </React.Fragment>
               );
             })}
