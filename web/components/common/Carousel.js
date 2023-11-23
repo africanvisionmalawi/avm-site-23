@@ -32,7 +32,7 @@ const SliderStyles = styled(Slider)`
     text-indent: -1000em;
     background-color: white;
     border-radius: 50%;
-    z-index: 100;
+    z-index: 20;
   }
 
   & .slick-prev {
