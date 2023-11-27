@@ -119,8 +119,8 @@ export const PageShop = ({ data, currentSlug }) => {
   // console.log("productPrice ", page);
   // console.log("allProducts ", allProducts);
   // console.log("page.tags ", page.tags);
-  const relatedProducts = allProducts.filter(
-    (prod) => prod.tags[0].value === page.tags[0].value
+  const relatedProducts = allProducts.filter((prod) =>
+    prod?.tags?.length ? prod.tags[0].value === page.tags[0].value : null
   );
 
   const path = [

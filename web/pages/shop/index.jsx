@@ -93,44 +93,50 @@ const ShopHomePage = ({ data }) => {
               return (
                 <React.Fragment key={item.id}>
                   <div>
-                    <ShopListItem
-                      id={item.id}
-                      slug={item.slug.current}
-                      photo={
-                        item?.photoGallery?.photos?.length
-                          ? item?.photoGallery?.photos[0]
-                          : null
-                      }
-                      photoType="default"
-                      title={item.title}
-                      price={item.price}
-                      salePrice={item.salePrice}
-                    />
-                    {displayButtonCheck(item.inStock, productPrice) ? (
-                      <BuyButton
-                        productId={item._id ? item._id : null}
-                        name={item.title ? item.title : null}
-                        description={item.description ? item.description : null}
-                        price={productPrice}
-                        image={
-                          item.photoGallery && item.photoGallery.length
-                            ? item.photoGallery[0].childImageSharp.fluid.src
-                            : null
-                        }
-                        url={
-                          item.slug
-                            ? `${siteUrl}/shop/${item.slug.current}/`
-                            : null
-                        }
-                        weight={item.weight ? item.weight : null}
-                        length={item.length ? item.length : null}
-                        width={item.width ? item.width : null}
-                        height={item.height ? item.height : null}
-                      />
-                    ) : productPrice > 0 ? (
-                      <p>
-                        <strong>Out of stock</strong>
-                      </p>
+                    {item.slug ? (
+                      <>
+                        <ShopListItem
+                          id={item.id}
+                          slug={item.slug.current}
+                          photo={
+                            item?.photoGallery?.photos?.length
+                              ? item?.photoGallery?.photos[0]
+                              : null
+                          }
+                          photoType="default"
+                          title={item.title}
+                          price={item.price}
+                          salePrice={item.salePrice}
+                        />
+                        {displayButtonCheck(item.inStock, productPrice) ? (
+                          <BuyButton
+                            productId={item._id ? item._id : null}
+                            name={item.title ? item.title : null}
+                            description={
+                              item.description ? item.description : null
+                            }
+                            price={productPrice}
+                            image={
+                              item.photoGallery && item.photoGallery.length
+                                ? item.photoGallery[0].childImageSharp.fluid.src
+                                : null
+                            }
+                            url={
+                              item.slug
+                                ? `${siteUrl}/shop/${item.slug.current}/`
+                                : null
+                            }
+                            weight={item.weight ? item.weight : null}
+                            length={item.length ? item.length : null}
+                            width={item.width ? item.width : null}
+                            height={item.height ? item.height : null}
+                          />
+                        ) : productPrice > 0 ? (
+                          <p>
+                            <strong>Out of stock</strong>
+                          </p>
+                        ) : null}
+                      </>
                     ) : null}
                   </div>
                 </React.Fragment>
