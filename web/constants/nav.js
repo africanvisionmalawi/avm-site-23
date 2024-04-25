@@ -106,7 +106,7 @@ export const navLinks = [
       },
       {
         name: "Work for us",
-        url: "/get-involved/vacancies/",
+        url: "/get-involved/current-vacancies/",
         mobileOnly: false,
       },
       {
