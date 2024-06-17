@@ -144,7 +144,7 @@ const projects = [
   {
     id: "village",
     name: "Sam's Village",
-    src: "/sams-village/",
+    src: "/sams-village",
     imageIdDesktop: "PhotoVillageDesktop",
     imageIdMobile: "PhotoVillageMobile",
     imgSrcDesktop: "mainphoto_village-ver3",
@@ -158,7 +158,7 @@ const projects = [
   {
     id: "water",
     name: "Water",
-    src: "/water/",
+    src: "/water",
     imageId: "PhotoWater",
     colWidth: {
       base: "100%",
@@ -170,7 +170,7 @@ const projects = [
   {
     id: "health",
     name: "Health",
-    src: "/health/",
+    src: "/health",
     imageId: "PhotoHealth",
     colWidth: {
       base: "100%",
@@ -182,7 +182,7 @@ const projects = [
   {
     id: "education",
     name: "Education",
-    src: "/education/",
+    src: "/education",
     imageIdDesktop: "PhotoEducationDesktop",
     imageIdMobile: "PhotoEducationMobile",
     colWidth: {
@@ -195,7 +195,7 @@ const projects = [
   {
     id: "environment",
     name: "Environment",
-    src: "/environment/",
+    src: "/environment",
     imageId: "PhotoEnvironment",
     colWidth: {
       base: "100%",
@@ -207,7 +207,7 @@ const projects = [
   {
     id: "celebrate",
     name: "Celebrate & Give",
-    src: "/celebrate-and-give/",
+    src: "/celebrate-and-give",
     imageId: "PhotoCelebrate",
     colWidth: {
       base: "100%",
