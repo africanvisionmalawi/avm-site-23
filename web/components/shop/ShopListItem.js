@@ -29,7 +29,7 @@ export const ShopListItem = (props) => {
     : null;
   return (
     <li key={props.id}>
-      <a href={`/shop/${props.slug}/`}>
+      <a href={`/shop/${props.slug}`}>
         {props.photo && (
           <PhotoCont>
             <Photo photo={props.photo} photoType={props.photoType} />

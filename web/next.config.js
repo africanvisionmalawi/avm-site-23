@@ -1,5 +1,5 @@
 module.exports = {
-  trailingSlash: true,
+  trailingSlash: false,
   webpack5: true,
   webpack: (config, { isServer }) => {
     config.resolve.fallback = { ...config.resolve.fallback, fs: false };

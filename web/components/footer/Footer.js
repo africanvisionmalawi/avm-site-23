@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 import { getCurrentYear } from "lib/helpers";
-import footerStyles from "./footer.module.css";
 import { FooterForm } from "./FooterForm";
+import footerStyles from "./footer.module.css";
 
 const LogoImg = styled.img`
   display: block;
@@ -84,44 +84,44 @@ const Footer = () => (
               <Heading>What we do</Heading>
               <ul className={footerStyles.list}>
                 <li>
-                  <a href="/sams-village/">Sam's Village</a>
+                  <a href="/sams-village">Sam's Village</a>
                 </li>
                 <li>
-                  <a href="/water/">Water</a>
+                  <a href="/water">Water</a>
                 </li>
                 <li>
-                  <a href="/health/">Health</a>
+                  <a href="/health">Health</a>
                 </li>
                 <li>
-                  <a href="/education/">Education</a>
+                  <a href="/education">Education</a>
                 </li>
                 <li>
-                  <a href="/environment/">Environment</a>
-                </li>
-              </ul>
-            </FooterCol>
-
-            <FooterCol xs={12} sm={8}>
-              <Heading>
-                <a href="/news/">Latest news &amp; events</a>
-              </Heading>
-              <ul className={footerStyles.list}>
-                <li>
-                  <a href="/news/">News</a>
-                </li>
-                <li>
-                  <a href="/events/">Events</a>
+                  <a href="/environment">Environment</a>
                 </li>
               </ul>
             </FooterCol>
 
             <FooterCol xs={12} sm={8}>
               <Heading>
-                <a href="/shop/">Shop</a>
+                <a href="/news">Latest news &amp; events</a>
               </Heading>
               <ul className={footerStyles.list}>
                 <li>
-                  <a href="/shop/">View all products</a>
+                  <a href="/news">News</a>
+                </li>
+                <li>
+                  <a href="/events">Events</a>
+                </li>
+              </ul>
+            </FooterCol>
+
+            <FooterCol xs={12} sm={8}>
+              <Heading>
+                <a href="/shop">Shop</a>
+              </Heading>
+              <ul className={footerStyles.list}>
+                <li>
+                  <a href="/shop">View all products</a>
                 </li>
                 <li>
                   <CartLink className="snipcart-summary snipcart-checkout">
@@ -201,7 +201,7 @@ const Footer = () => (
               <p className="source-org copyright">
                 &copy; {getCurrentYear()} African Vision Malawi. Registered
                 charity 1113786.{" "}
-                <a href="/privacy-statement/">View our Privacy Statement</a>
+                <a href="/privacy-statement">View our Privacy Statement</a>
               </p>
             </FooterInnerRow>
           </FooterBottomRow>

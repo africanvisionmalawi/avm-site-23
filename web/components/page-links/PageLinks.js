@@ -15,17 +15,23 @@ const PageLinksWithPhotos = ({ pageLinks }) => {
     <>
       {pageLinks.length
         ? pageLinks.map((pageLink) => {
+            // console.log(
+            //   "category ",
+            //   pageLink.linkTitle,
+            //   pageLink.url?.category
+            // );
             const categoryUrl = pageLink.url?.category?.slug?.current
               ? `${pageLink.url.category.slug.current}/`
               : "";
+            // console.log("link here ", pageLink.linkTitle, categoryUrl);
             const pageUrl = pageLink?.url?.slug?.current
-              ? `${pageLink.url.slug.current}/`
+              ? `${pageLink.url.slug.current}`
               : "";
             const url =
               categoryUrl === pageUrl
                 ? `/${pageUrl}`
                 : `/${categoryUrl}${pageUrl}`;
-            // console.log("link here ", pageLink.extUrl, url);
+            // console.log("link here ", pageLink.linkTitle, url);
             return (
               <React.Fragment key={pageLink.id}>
                 {!pageLink.hideLink &&
