@@ -53,7 +53,7 @@ export const CardPostAlt = ({
 }) => {
   const baseFolder = type === "event" ? "events" : "news";
 
-  const url = `/${baseFolder}/${slug.current}/`;
+  const url = `/${baseFolder}/${slug.current}`;
 
   const text =
     type === "sanity" || type === "event" ? (

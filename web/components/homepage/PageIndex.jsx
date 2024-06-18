@@ -263,7 +263,7 @@ export const PageIndex = ({ data }) => {
                   </PostList>
                 </section>
                 <PostsFooter>
-                  <a href="/news/">View all news</a>
+                  <a href="/news">View all news</a>
                 </PostsFooter>
               </>
             ) : null}
@@ -292,7 +292,7 @@ export const PageIndex = ({ data }) => {
                   </PostList>
                 </section>
                 <PostsFooter>
-                  <a href="/events/">View all events</a>
+                  <a href="/events">View all events</a>
                 </PostsFooter>
               </>
             ) : null}
