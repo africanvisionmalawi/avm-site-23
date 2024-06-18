@@ -11,7 +11,7 @@ export const OurWork = ({ displayHeading, ourWork }) => {
         {ourWork.length
           ? ourWork.map((project) => (
               <Tile key={project._key}>
-                <a href={`/${project.slug.current}/`}>
+                <a href={`/${project.slug.current}`}>
                   {project.photo && project.photo.asset ? (
                     <PhotoCont photo={project.photo} photoType="ourWork" />
                   ) : null}
@@ -22,7 +22,7 @@ export const OurWork = ({ displayHeading, ourWork }) => {
                     {project.body ? (
                       <PortableText blocks={project.body} />
                     ) : null}
-                    <MoreButton url={`/${project.slug.current}/`} />
+                    <MoreButton url={`/${project.slug.current}`} />
                   </div>
                 </TextCont>
               </Tile>
