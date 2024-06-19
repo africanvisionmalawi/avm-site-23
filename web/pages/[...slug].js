@@ -19,7 +19,7 @@ const Page = ({ preview, data, queryParams, fullPath, token }) => {
             ? `${data?.title} |  African Vision Malawi`
             : siteMeta.title
         }
-        canonical={`${process.env.NEXT_PUBLIC_BASE_URL}/${fullPath}/`}
+        canonical={`${process.env.NEXT_PUBLIC_BASE_URL}/${fullPath}`}
         description={data?.description || siteMeta.description}
       />
       {preview ? (

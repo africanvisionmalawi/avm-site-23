@@ -71,7 +71,7 @@ const ShopHomePage = ({ data }) => {
       <NextSeo
         title={`${title} |  African Vision Malawi` || siteMeta.title}
         description={description}
-        canonical={`${process.env.NEXT_PUBLIC_BASE_URL}/shop/`}
+        canonical={`${process.env.NEXT_PUBLIC_BASE_URL}/shop`}
       />
       {path ? <Breadcrumbs path={path} indexPage={data?.indexPage} /> : null}
       <article className="col-wide">

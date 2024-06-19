@@ -165,7 +165,7 @@ const NewsHomePage = ({ data }) => {
       <NextSeo
         title="Latest News"
         description="Latest News from African Vision Malawi"
-        canonical={`${process.env.NEXT_PUBLIC_BASE_URL}/news/`}
+        canonical={`${process.env.NEXT_PUBLIC_BASE_URL}/news`}
       />
       <article>
         {data.hero ? (

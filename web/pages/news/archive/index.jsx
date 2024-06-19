@@ -167,7 +167,7 @@ const NewsHomePage = ({ data }) => {
       <NextSeo
         title="News Archive |  African Vision Malawi"
         description="An archive of older news posts from African Vision Malawi"
-        canonical={`${process.env.NEXT_PUBLIC_BASE_URL}/news/archive/`}
+        canonical={`${process.env.NEXT_PUBLIC_BASE_URL}/news/archive`}
       />
       <article>
         <TopSection>

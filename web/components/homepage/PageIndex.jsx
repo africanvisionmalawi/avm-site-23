@@ -191,7 +191,7 @@ export const PageIndex = ({ data }) => {
       <NextSeo
         title="Welcome to African Vision Malaw"
         description={siteMeta.description}
-        canonical={`${process.env.NEXT_PUBLIC_BASE_URL}/`}
+        canonical={`${process.env.NEXT_PUBLIC_BASE_URL}`}
       />
       <article>
         <Hero

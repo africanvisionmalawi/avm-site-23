@@ -33,7 +33,7 @@ const GiftAidFormPage = () => {
       <NextSeo
         title="Gift Aid Form"
         description="Gift aid form."
-        canonical={`${process.env.NEXT_PUBLIC_BASE_URL}/giftaidform/`}
+        canonical={`${process.env.NEXT_PUBLIC_BASE_URL}/giftaidform`}
       />
       <article>
         <TopSection>

@@ -128,7 +128,7 @@ export const PageEvent = ({ data, slug }) => {
             : siteMeta.title
         }
         description={data?.description || siteMeta.description}
-        canonical={`${process.env.NEXT_PUBLIC_BASE_URL}/events/${data?.slug?.current}/`}
+        canonical={`${process.env.NEXT_PUBLIC_BASE_URL}/events/${data?.slug?.current}`}
       />
 
       <article>
