@@ -23,7 +23,7 @@ export const Hero = ({
     }
   }
 
-  // console.log("image ", image);
+  console.log("image ", image);
   // const sources = fluidMobile
   //   ? [
   //       fluidMobile,
@@ -63,7 +63,7 @@ export const Hero = ({
               maxWidth: "100vw",
             }}
             priority="eager"
-            sizes="(max-width: 1140px) 100vw, 1140px"
+            sizes="(max-width: 1140px) 100vw, 320px"
           />
         ) : null}
 

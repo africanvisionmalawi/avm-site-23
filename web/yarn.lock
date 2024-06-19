@@ -4974,6 +4974,11 @@ same-origin@^0.1.1:
   resolved "https://registry.yarnpkg.com/same-origin/-/same-origin-0.1.1.tgz#c2287d3192577df517acbbd6d1451a9c3c3914f5"
   integrity sha512-effkSW9cap879l6CVNdwL5iubVz8tkspqgfiqwgBgFQspV7152WHaLzr5590yR8oFgt7E1d4lO09uUhtAgUPoA==
 
+sanity-image@^0.1.8:
+  version "0.1.8"
+  resolved "https://registry.yarnpkg.com/sanity-image/-/sanity-image-0.1.8.tgz#2e384c0db830f829b48dba249491145c74b35122"
+  integrity sha512-yzwm1foHgzo3JcY7mgXhpBT9C0122sAFx24u6ALgriU5Pw+YW5FQ6tr2Vsvq+mjMJHdt7EckkExT/nI2D4MnEg==
+
 scheduler@^0.23.0:
   version "0.23.0"
   resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.23.0.tgz#ba8041afc3d30eb206a487b6b384002e4e61fdfe"

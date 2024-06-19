@@ -1,4 +1,14 @@
 module.exports = {
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "cdn.sanity.io",
+        port: "",
+        pathname: "/images/hh4wbbfo/production/",
+      },
+    ],
+  },
   trailingSlash: false,
   webpack5: true,
   webpack: (config, { isServer }) => {
