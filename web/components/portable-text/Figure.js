@@ -11,7 +11,7 @@ export default ({ value }) => {
       <Image
         image={value}
         alt={alt}
-        maxWidth={1180}
+        // maxWidth={1180}
         layout="responsive"
         style={{
           objectFit: "cover",
@@ -20,6 +20,7 @@ export default ({ value }) => {
         }}
         sizes="(max-width: 767px) 95vw, (max-width: 940px) 80vw, 756px"
         fit="crop"
+        fill
       />
       <figcaption>{caption}</figcaption>
     </figure>

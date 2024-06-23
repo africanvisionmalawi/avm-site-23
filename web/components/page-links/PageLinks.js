@@ -21,7 +21,7 @@ const PageLinksWithPhotos = ({ pageLinks }) => {
             //   pageLink.url?.category
             // );
             const categoryUrl = pageLink.url?.category?.slug?.current
-              ? `${pageLink.url.category.slug.current}/`
+              ? `${pageLink.url.category.slug.current}`
               : "";
             // console.log("link here ", pageLink.linkTitle, categoryUrl);
             const pageUrl = pageLink?.url?.slug?.current

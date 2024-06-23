@@ -52,18 +52,18 @@ export const Hero = ({
           <Image
             image={image}
             alt=""
-            width="100vw"
+            // width="100vw"
             maxWidth={2180}
-            height={650}
+            // height={650}
             maxHeight={650}
-            fit="crop"
+            fill
             style={{
               objectFit: "cover",
               height: "auto",
-              maxWidth: "100vw",
+              // maxWidth: "100vw",
             }}
             priority="eager"
-            sizes="(max-width: 1140px) 100vw, 1140px"
+            sizes="(max-width: 1140px) 100vw, 320px"
           />
         ) : null}
 
