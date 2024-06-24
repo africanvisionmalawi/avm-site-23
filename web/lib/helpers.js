@@ -74,6 +74,10 @@ export const getPath = (cat, slug) => {
   return null;
 };
 
+export const removeTrailingSash = (str) => {
+  return str.endsWith("/") ? str.slice(0, -1) : str;
+};
+
 // export function getPostBySlug(slug) {
 //   let dirPath = join("posts", slug);
 //   const fullPath = join(dirPath, `index.md`);
