@@ -202,7 +202,7 @@ const NewsHomePage = ({ data }) => {
       <aside>
         <NewsFooter className="articleInner">
           <p>
-            <a href="/news/archive/">News Archive</a>
+            <a href="/news/archive">News Archive</a>
           </p>
         </NewsFooter>
       </aside>
