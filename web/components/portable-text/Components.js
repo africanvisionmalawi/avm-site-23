@@ -20,7 +20,7 @@ const components = {
       return (
         <a
           href={removeTrailingSash(props?.value?.href)}
-          target="_blank"
+          target={props?.value?.blank ? "_blank" : "_self"}
           rel="noopener"
         >
           {props.children}
@@ -28,6 +28,7 @@ const components = {
       );
     },
     internalLink: ({ mark, children }) => {
+      // console.log("data ", mark, children);
       if (mark?.reference) {
         const { slug = {}, category = {} } = mark.reference;
         const href = `/${
