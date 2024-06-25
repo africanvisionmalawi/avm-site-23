@@ -1,4 +1,5 @@
 import { Video } from "components/videos";
+import { removeTrailingSash } from "lib/helpers";
 import Figure from "./Figure";
 import File from "./File";
 
@@ -14,12 +15,20 @@ const components = {
     highlight: (props) => (
       <span className="font-bold text-brand-primary">{props.children}</span>
     ),
-    link: (props) => (
-      <a href={props?.value?.href} target="_blank" rel="noopener">
-        {props.children}
-      </a>
-    ),
+    link: (props) => {
+      // console.log("props ", props);
+      return (
+        <a
+          href={removeTrailingSash(props?.value?.href)}
+          target={props?.value?.blank ? "_blank" : "_self"}
+          rel="noopener"
+        >
+          {props.children}
+        </a>
+      );
+    },
     internalLink: ({ mark, children }) => {
+      // console.log("data ", mark, children);
       if (mark?.reference) {
         const { slug = {}, category = {} } = mark.reference;
         const href = `/${

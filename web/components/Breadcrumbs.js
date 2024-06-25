@@ -17,7 +17,7 @@ export const Breadcrumbs = ({ path, indexPage }) => {
           ? path.map((c, i) => (
               <React.Fragment key={i}>
                 {i < path.length - 1 ? (
-                  <a href={`/${c.slug}/`}>{c.title}</a>
+                  <a href={`/${c.slug}`}>{c.title}</a>
                 ) : (
                   <CrumbCurrent>{c.title}</CrumbCurrent>
                 )}
