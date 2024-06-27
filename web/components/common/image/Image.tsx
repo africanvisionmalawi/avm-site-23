@@ -14,6 +14,7 @@ const imageSizes = {
 };
 
 export const Image = ({
+  className,
   image,
   height,
   width,
@@ -31,9 +32,10 @@ export const Image = ({
 }) => {
   if (!image) return;
 
-  console.log("image ", image);
+  // console.log("image ", image);
   const imageUrl = urlFor(image).width(maxWidth).height(maxHeight).dpr(2).quality(60).url()
-  const blurUrl = urlFor(image).width(20).quality(20).url() // Low-quality blurred image
+  const blurUrl = urlFor(image).width(5).quality(5).url() // Low-quality blurred image
+  // console.log("image blurred ", image.metadata);
   // const builder = imageBuilder
   //   .image(image)
   //   .fit(fit)
@@ -60,6 +62,7 @@ export const Image = ({
       {image ? (
         <NextImage
         alt={alt}
+        className={className || '' }
           src={imageUrl}
           // baseUrl="https://cdn.sanity.io/images/hh4wbbfo/production/"
           height={!fill ? maxHeight : undefined}
@@ -67,6 +70,8 @@ export const Image = ({
           width={!fill ? maxWidth : undefined}
           blurDataURL={blurUrl}
           fill={fill}
+          priority={priority}
+          style={style}
         />
       ) : // <img
       //   style={{

@@ -62,11 +62,12 @@ export const PhotoCont = (props) => {
           maxHeight={photoSizes[photoType].h}
           alt={photo.alt}
           style={{
-            width: photoSizes[photoType].cssW
-              ? photoSizes[photoType].cssW
-              : "100%",
-            height: "auto",
+            // width: photoSizes[photoType].cssW
+            //   ? photoSizes[photoType].cssW
+            //   : "100%",
+            // height: "auto",
             objectFit: "cover",
+            width: "100%",
           }}
           sizes={
             photoSizes[photoType].sizes ? photoSizes[photoType].sizes : "unset"

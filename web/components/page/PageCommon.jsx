@@ -66,10 +66,11 @@ export const PageCommon = ({ data }) => {
         case "hero":
           el = (
             <Hero
-              image={c.image}
               displayHeroMsg={false}
               heroHeading={c.title}
               heroHeadingType="h2"
+              image={c.image}
+              mobileImage={c.mobileImage}
             />
           );
           // console.log("c.image.asset **********", c.image.asset);
