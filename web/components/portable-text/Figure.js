@@ -15,7 +15,7 @@ export default ({ value }) => {
         layout="responsive"
         style={{
           objectFit: "cover",
-          height: "auto",
+          // height: "auto",
           maxWidth: "80vw",
         }}
         sizes="(max-width: 767px) 95vw, (max-width: 940px) 80vw, 756px"

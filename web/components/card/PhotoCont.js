@@ -49,7 +49,7 @@ export const PhotoCont = (props) => {
                   <EventDate
                     date={props.date}
                     endDate={props.endDate}
-                    layout="card"
+                  layout="card"
                   />
                 </EventDateCont>
               )} */}
