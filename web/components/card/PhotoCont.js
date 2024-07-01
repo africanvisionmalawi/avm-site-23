@@ -19,18 +19,22 @@ export const PhotoCont = (props) => {
       w: 280,
       h: 125,
       cssW: "280px",
+      sizes: "280px",
     },
     featured: {
       w: 560,
       h: 280,
+      sizes: "560px",
     },
     news: {
       w: 371,
       h: 222,
+      sizes: "371px",
     },
     event: {
       w: 371,
       h: 222,
+      sizes: "371px",
     },
     ourWork: {
       w: 381,
@@ -40,6 +44,7 @@ export const PhotoCont = (props) => {
     shop: {
       w: 600,
       h: 600,
+      sizes: "600px",
     },
   };
   return (

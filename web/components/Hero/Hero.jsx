@@ -66,7 +66,7 @@ export const Hero = ({
               // maxWidth: "100vw",
             }}
             priority="eager"
-            sizes="(max-width: 1140px) 100vw, 100vw"
+            sizes="(min-width: 2300px) 2180px, 100vw"
           />
         ) : null}
         {mobileImage ? (
