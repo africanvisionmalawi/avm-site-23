@@ -1,7 +1,12 @@
 import styled from "@emotion/styled";
-// import SanityImage from "gatsby-plugin-sanity-image";
+import styles from "components/Hero/hero.module.css";
 import { Image } from "components/common/image/Image";
+import { imageBuilder } from "components/common/image/getImageProps";
 import { Divider } from "../common/Divider";
+
+function urlFor(source) {
+  return imageBuilder.image(source);
+}
 
 export const Hero = ({
   heroHeading,
@@ -22,21 +27,20 @@ export const Hero = ({
       heroHeadingHtml = <HeroHeadingH2>{heroHeading}</HeroHeadingH2>;
     }
   }
-
-  // console.log("mobileImage ", mobileImage);
-
-  // console.log("image ", image);
-  // const sources = fluidMobile
-  //   ? [
-  //       fluidMobile,
-  //       {
-  //         ...fluid,
-  //         media: `(min-width: 580px)`,
-  //       },
-  //     ]
-  //   : fluid;
-
-  // console.log("herosubheading ", heroSubHeading);
+  const desktopImageUrl = urlFor(image)
+    .width(2180)
+    .height(650)
+    .dpr(2)
+    .quality(60)
+    .url();
+  const mobileImageUrl = mobileImage
+    ? urlFor(mobileImage)
+        .width(600)
+        .height(500)
+        .dpr(2)
+        .quality(60)
+        .url()
+    : null;
 
   return (
     <HeroContainer className={children ? "lowerPage" : null}>
@@ -50,59 +54,30 @@ export const Hero = ({
 
         {children && <ChildrenCont>{children}</ChildrenCont>}
 
-        {image ? (
+        {mobileImageUrl ? (
+          <picture className={styles.picture}>
+            <source
+              srcSet={desktopImageUrl}
+              media="(min-width: 768px)"
+              sizes="(min-width: 2300px) 2180px, 100vw"
+            />
+            <img src={mobileImageUrl} sizes="100vw" />
+          </picture>
+        ) : (
           <Image
             className={mobileImage ? "desktopImage" : ""}
             image={image}
             alt=""
-            // width="100vw"
             maxWidth={2180}
-            // height={650}
             maxHeight={650}
             fill
             style={{
               objectFit: "cover",
-              // height: "auto",
-              // maxWidth: "100vw",
             }}
             priority="eager"
             sizes="(min-width: 2300px) 2180px, 100vw"
           />
-        ) : null}
-        {mobileImage ? (
-          <Image
-            className="mobileImage"
-            image={mobileImage}
-            alt=""
-            // width="100vw"
-            maxWidth={600}
-            // height={650}
-            maxHeight={350}
-            fill
-            // style={{
-            //   objectFit: "cover",
-            //   height: "auto",
-            //   // maxWidth: "100vw",
-            // }}
-            priority
-            sizes="100vw"
-          />
-        ) : null}
-
-        {/* {image ? (
-          <SanityImage
-            {...sanityImage}
-            width={1024}
-            height={400}
-            alt=""
-            style={{
-              width: "100%",
-              height: "auto",
-              objectFit: "cover",
-            }}
-            sizes="(max-width: 1140px) 100vw, 1140px"
-          />
-        ) : null} */}
+        )}
 
         {children && !displayOverlay ? null : <Overlay />}
       </HeroCont>
@@ -155,19 +130,6 @@ const HeroContainer = styled.div`
     border-bottom: 1px solid #000;
     margin-bottom: 2rem;
   }
-  @media (max-width: 580px) {
-    & .mobileImage {
-      display: block;
-    }
-    & .desktopImage {
-      display: none;
-    }
-  }
-  @media (min-width: 581px) {
-    & .mobileImage {
-      display: none;
-    }
-  }
 `;
 
 const HeroCont = styled.div`
@@ -185,7 +147,8 @@ const HeroCont = styled.div`
     height: 0;
     padding-bottom: 30%;
   }
-  & > img {
+  & img {
+    max-width: 100%;
     object-fit: cover;
   }
 `;
