@@ -65,7 +65,7 @@ export const PhotoCont = (props) => {
             // width: photoSizes[photoType].cssW
             //   ? photoSizes[photoType].cssW
             //   : "100%",
-            // height: "auto",
+            height: "auto",
             objectFit: "cover",
             width: "100%",
           }}
