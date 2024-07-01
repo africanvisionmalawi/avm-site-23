@@ -128,10 +128,15 @@ export const Gallery = (props) => {
                     height={540}
                     alt={photos[selectedImageState].alt}
                     fit="crop"
+                    style={{
+                      objectFit: "cover",
+                      // height: "auto",
+                      // maxWidth: "100vw",
+                    }}
                     sizes="(max-width: 400px) 300px, (max-width: 600px) 600px,
             (max-width: 768px) 700px,
             800px"
-                    layout="responsive"
+                    fill
                   />
 
                   <Caption>{photos[selectedImageState].caption}</Caption>

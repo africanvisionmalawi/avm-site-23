@@ -22,6 +22,7 @@ const Heading = styled.h4`
 const Text = styled.p`
   font-style: italic;
   margin-bottom: 0;
+  word-break: break-word;
 `;
 
 export default (props) => {

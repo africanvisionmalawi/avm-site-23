@@ -23,6 +23,8 @@ export const Hero = ({
     }
   }
 
+  // console.log("mobileImage ", mobileImage);
+
   // console.log("image ", image);
   // const sources = fluidMobile
   //   ? [
@@ -50,20 +52,40 @@ export const Hero = ({
 
         {image ? (
           <Image
+            className={mobileImage ? "desktopImage" : ""}
             image={image}
             alt=""
-            width="100vw"
+            // width="100vw"
             maxWidth={2180}
-            height={650}
+            // height={650}
             maxHeight={650}
-            fit="crop"
+            fill
             style={{
               objectFit: "cover",
-              height: "auto",
-              maxWidth: "100vw",
+              // height: "auto",
+              // maxWidth: "100vw",
             }}
             priority="eager"
-            sizes="(max-width: 1140px) 100vw, 1140px"
+            sizes="(max-width: 1140px) 100vw, 320px"
+          />
+        ) : null}
+        {mobileImage ? (
+          <Image
+            className="mobileImage"
+            image={mobileImage}
+            alt=""
+            // width="100vw"
+            maxWidth={600}
+            // height={650}
+            maxHeight={350}
+            fill
+            // style={{
+            //   objectFit: "cover",
+            //   height: "auto",
+            //   // maxWidth: "100vw",
+            // }}
+            priority
+            sizes="100vw"
           />
         ) : null}
 
@@ -125,6 +147,7 @@ const ChildrenCont = styled.div`
 `;
 
 const HeroContainer = styled.div`
+  height: 300px;
   position: relative;
   maxheight: 300px;
   max-width: 2180px;
@@ -134,16 +157,33 @@ const HeroContainer = styled.div`
     border-bottom: 1px solid #000;
     margin-bottom: 2rem;
   }
+  @media (max-width: 580px) {
+    & .mobileImage {
+      display: block;
+    }
+    & .desktopImage {
+      display: none;
+    }
+  }
+  @media (min-width: 581px) {
+    & .mobileImage {
+      display: none;
+    }
+  }
 `;
 
 const HeroCont = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
+  height: 100%;
   justify-content: center;
   position: relative;
   @media (max-width: 750px) {
     display: flex;
     flex-direction: column-reverse;
+  }
+  & > img {
+    object-fit: cover;
   }
 `;
 
