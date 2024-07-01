@@ -66,7 +66,7 @@ export const Hero = ({
               // maxWidth: "100vw",
             }}
             priority="eager"
-            sizes="(max-width: 1140px) 100vw, 320px"
+            sizes="(max-width: 1140px) 100vw, 100vw"
           />
         ) : null}
         {mobileImage ? (
@@ -147,9 +147,7 @@ const ChildrenCont = styled.div`
 `;
 
 const HeroContainer = styled.div`
-  height: 300px;
   position: relative;
-  maxheight: 300px;
   max-width: 2180px;
   margin: 0 auto;
   &.lowerPage {
@@ -175,12 +173,17 @@ const HeroContainer = styled.div`
 const HeroCont = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100%;
+  height: 0;
+  padding-bottom: 65%;
   justify-content: center;
   position: relative;
   @media (max-width: 750px) {
     display: flex;
     flex-direction: column-reverse;
+  }
+  @media (min-width: 768px) {
+    height: 0;
+    padding-bottom: 30%;
   }
   & > img {
     object-fit: cover;
