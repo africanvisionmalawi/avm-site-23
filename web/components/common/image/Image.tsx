@@ -3,7 +3,7 @@ import { imageBuilder } from "./getImageProps";
 // const builder = imageUrlBuilder(sanityClient);
 
 function urlFor(source) {
-  return imageBuilder.image(source);
+  return imageBuilder.image(source).auto("format");;
 }
 
 const imageSizes = {
