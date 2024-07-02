@@ -59,7 +59,7 @@ export const Hero = ({
             <source
               srcSet={desktopImageUrl}
               media="(min-width: 768px)"
-              sizes="(min-width: 2300px) 2180px, 100vw"
+              sizes="(min-width: 2300px) 2180px, calc(94.95vw + 15px)"
             />
             <img src={mobileImageUrl} sizes="100vw" />
           </picture>
