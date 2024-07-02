@@ -28,7 +28,8 @@ export const Image = ({
   layout = "fixed",
   style,
   sizes,
-  fill = false
+  fill = false,
+  quality = 60
 }) => {
   if (!image) return;
 
@@ -72,6 +73,7 @@ export const Image = ({
           fill={fill}
           priority={priority}
           style={style}
+          quality={quality}
         />
       ) : // <img
       //   style={{

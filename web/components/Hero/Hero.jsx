@@ -5,7 +5,7 @@ import { imageBuilder } from "components/common/image/getImageProps";
 import { Divider } from "../common/Divider";
 
 function urlFor(source) {
-  return imageBuilder.image(source);
+  return imageBuilder.image(source).auto("format");
 }
 
 export const Hero = ({
