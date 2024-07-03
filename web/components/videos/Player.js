@@ -131,6 +131,7 @@ export const Player = ({ url }) => {
             </svg>
           </IconWrapper>
           <img
+            loading="lazy"
             src={video.thumbnail_url}
             alt={
               videoType === VIDEO_TYPE_YOUTUBE ? "Youtube video" : "Vimeo video"

@@ -19,18 +19,22 @@ export const PhotoCont = (props) => {
       w: 280,
       h: 125,
       cssW: "280px",
+      sizes: "280px",
     },
     featured: {
       w: 560,
       h: 280,
+      sizes: "560px",
     },
     news: {
       w: 371,
       h: 222,
+      sizes: "371px",
     },
     event: {
       w: 371,
       h: 222,
+      sizes: "371px",
     },
     ourWork: {
       w: 381,
@@ -40,6 +44,7 @@ export const PhotoCont = (props) => {
     shop: {
       w: 600,
       h: 600,
+      sizes: "600px",
     },
   };
   return (
@@ -49,7 +54,7 @@ export const PhotoCont = (props) => {
                   <EventDate
                     date={props.date}
                     endDate={props.endDate}
-                    layout="card"
+                  layout="card"
                   />
                 </EventDateCont>
               )} */}
@@ -62,11 +67,12 @@ export const PhotoCont = (props) => {
           maxHeight={photoSizes[photoType].h}
           alt={photo.alt}
           style={{
-            width: photoSizes[photoType].cssW
-              ? photoSizes[photoType].cssW
-              : "100%",
+            // width: photoSizes[photoType].cssW
+            //   ? photoSizes[photoType].cssW
+            //   : "100%",
             height: "auto",
             objectFit: "cover",
+            width: "100%",
           }}
           sizes={
             photoSizes[photoType].sizes ? photoSizes[photoType].sizes : "unset"

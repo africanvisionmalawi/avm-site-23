@@ -81,7 +81,7 @@ const PostList = styled.div`
 const CardCont = styled.div`
   align-items: grid-start;
   display: grid;
-  grid-template-columns: repeat(auto-fill, 280px);
+  grid-template-columns: repeat(auto-fill, minmax(0, 280px));
   grid-gap: 30px;
   flex-shrink: 2;
   justify-content: center;

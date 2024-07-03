@@ -149,6 +149,7 @@ const Tile = styled.div`
   background: #f7f7f7;
   border-radius: 8px;
   padding-bottom: 1rem;
+  overflow: hidden;
 `;
 
 // const TileLink = styled(Link)`

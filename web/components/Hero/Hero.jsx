@@ -1,7 +1,12 @@
 import styled from "@emotion/styled";
-// import SanityImage from "gatsby-plugin-sanity-image";
+import styles from "components/Hero/hero.module.css";
 import { Image } from "components/common/image/Image";
+import { imageBuilder } from "components/common/image/getImageProps";
 import { Divider } from "../common/Divider";
+
+function urlFor(source) {
+  return imageBuilder.image(source).auto("format");
+}
 
 export const Hero = ({
   heroHeading,
@@ -22,19 +27,20 @@ export const Hero = ({
       heroHeadingHtml = <HeroHeadingH2>{heroHeading}</HeroHeadingH2>;
     }
   }
-
-  // console.log("image ", image);
-  // const sources = fluidMobile
-  //   ? [
-  //       fluidMobile,
-  //       {
-  //         ...fluid,
-  //         media: `(min-width: 580px)`,
-  //       },
-  //     ]
-  //   : fluid;
-
-  // console.log("herosubheading ", heroSubHeading);
+  const desktopImageUrl = urlFor(image)
+    .width(2180)
+    .height(650)
+    .dpr(2)
+    .quality(60)
+    .url();
+  const mobileImageUrl = mobileImage
+    ? urlFor(mobileImage)
+        .width(600)
+        .height(500)
+        .dpr(2)
+        .quality(60)
+        .url()
+    : null;
 
   return (
     <HeroContainer className={children ? "lowerPage" : null}>
@@ -48,39 +54,30 @@ export const Hero = ({
 
         {children && <ChildrenCont>{children}</ChildrenCont>}
 
-        {image ? (
+        {mobileImageUrl ? (
+          <picture className={styles.picture}>
+            <source
+              srcSet={desktopImageUrl}
+              media="(min-width: 768px)"
+              sizes="(min-width: 2300px) 2180px, calc(94.95vw + 15px)"
+            />
+            <img src={mobileImageUrl} sizes="100vw" />
+          </picture>
+        ) : (
           <Image
+            className={mobileImage ? "desktopImage" : ""}
             image={image}
             alt=""
-            width="100vw"
             maxWidth={2180}
-            height={650}
             maxHeight={650}
-            fit="crop"
+            fill
             style={{
               objectFit: "cover",
-              height: "auto",
-              maxWidth: "100vw",
             }}
             priority="eager"
-            sizes="(max-width: 1140px) 100vw, 1140px"
+            sizes="(min-width: 2300px) 2180px, 100vw"
           />
-        ) : null}
-
-        {/* {image ? (
-          <SanityImage
-            {...sanityImage}
-            width={1024}
-            height={400}
-            alt=""
-            style={{
-              width: "100%",
-              height: "auto",
-              objectFit: "cover",
-            }}
-            sizes="(max-width: 1140px) 100vw, 1140px"
-          />
-        ) : null} */}
+        )}
 
         {children && !displayOverlay ? null : <Overlay />}
       </HeroCont>
@@ -126,7 +123,6 @@ const ChildrenCont = styled.div`
 
 const HeroContainer = styled.div`
   position: relative;
-  maxheight: 300px;
   max-width: 2180px;
   margin: 0 auto;
   &.lowerPage {
@@ -139,11 +135,23 @@ const HeroContainer = styled.div`
 const HeroCont = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
+  height: 0;
   justify-content: center;
+  margin-bottom: 2rem;
+  overflow: hidden;
+  padding-bottom: 75%;
   position: relative;
   @media (max-width: 750px) {
     display: flex;
     flex-direction: column-reverse;
+  }
+  @media (min-width: 768px) {
+    height: 0;
+    padding-bottom: 30%;
+  }
+  & img {
+    max-width: 100%;
+    object-fit: cover;
   }
 `;
 

@@ -46,6 +46,7 @@
   max-width: 300px;
 } */
 .dialogInner {
+  padding-bottom: 65%;
   position: relative;
 }
 .closeicon {
