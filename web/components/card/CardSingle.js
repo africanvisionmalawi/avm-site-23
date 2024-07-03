@@ -48,11 +48,11 @@ export const CardSingle = ({
       {(url || extUrl) && photo ? (
         <>
           {url ? (
-            <a href={extUrl} className="card-image">
+            <a href={url} className="card-image">
               <PhotoCont photo={photo} photoType={photoType} />
             </a>
           ) : (
-            <a href={url} className="card-image">
+            <a href={extUrl} className="card-image">
               <PhotoCont photo={photo} photoType={photoType} />
             </a>
           )}

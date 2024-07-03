@@ -136,8 +136,10 @@ const HeroCont = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
   height: 0;
-  padding-bottom: 65%;
   justify-content: center;
+  margin-bottom: 2rem;
+  overflow: hidden;
+  padding-bottom: 75%;
   position: relative;
   @media (max-width: 750px) {
     display: flex;
