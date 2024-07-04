@@ -41,7 +41,7 @@ const Page = ({ data }) => {
           }
           canonical={`${
             process.env.NEXT_PUBLIC_BASE_URL
-          }/news/${frontmatter.path.replace(/\/posts\//, "")}`}
+          }/news/archive/${frontmatter.path.replace(/\/posts\//, "")}`}
         />
         <article className="articleInner">
           <PostInner>
