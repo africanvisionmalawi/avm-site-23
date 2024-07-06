@@ -1,0 +1,47 @@
+.contentHeading {
+  margin-bottom: 0.5rem;
+}
+.contentCont {
+  padding: 1rem;
+}
+
+.postCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.postContent {
+  padding: 1rem 1rem 0;
+}
+
+.postHeading {
+  margin-top: 0;
+  margin-bottom: 0;
+  a:link,
+  a:visited {
+    color: #246a73;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+.postSubHeading {
+  color: #ababad;
+  display: block;
+  font-size: 0.9rem;
+  padding: 0 2px 8px;
+}
+
+@media (min-width: 576px) {
+  .contentCont {
+    padding: 1rem 3px;
+  }
+  .card {
+    padding: 1rem 3px;
+  }
+  .postContent {
+    padding: 1rem 3px 0;
+  }
+}

@@ -1,0 +1,13 @@
+.container {
+  margin: 3em auto;
+  max-width: 650px;
+  p {
+    font-size: 1.7rem;
+  }
+  padding: 0 2rem;
+}
+
+.citation {
+  font-size: 0.8em;
+  text-align: right;
+}

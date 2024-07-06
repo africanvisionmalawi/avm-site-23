@@ -1,5 +1,3 @@
-// import Img from "gatsby-image";
-// import { EventDate } from "../events/EventDate";
 import { CardContent } from "./CardContent";
 import { PhotoCont } from "./PhotoCont";
 

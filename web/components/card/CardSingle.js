@@ -1,22 +1,5 @@
-// import { Link } from "gatsby";
-// import Img from "gatsby-image";
-// import { EventDate } from "../events/EventDate";
 import { CardContent } from "./CardContent";
 import { PhotoCont } from "./PhotoCont";
-
-// const ImageCont = styled.div`
-//   margin: 0;
-//   position: relative;
-// `;
-
-// const Btn = styled.div`
-//   border: 1px solid #f99d1c;
-//   border-radius: 4px;
-//   color: #f99d1c;
-//   display: block;
-//   padding: 8px;
-//   text-align: center;
-// `;
 
 export const CardSingle = ({
   url,

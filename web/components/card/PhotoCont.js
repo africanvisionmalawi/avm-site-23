@@ -1,15 +1,4 @@
 import { Image } from "components/common/image/Image";
-// const ImageCont = styled.div`
-//   margin: 0;
-//   position: relative;
-// `;
-
-// const EventDateCont = styled.div`
-//   bottom: 12px;
-//   left: calc(50% - 150px);
-//   position: absolute;
-//   z-index: 100;
-// `;
 
 export const PhotoCont = (props) => {
   const { photo, photoType } = props;

@@ -1,50 +1,6 @@
-import styled from "@emotion/styled";
+import styles from "carousel.module.css";
 import React, { useCallback, useEffect, useRef } from "react";
-import Slider from "react-slick";
 import { Photo } from "../shop/Photo";
-
-const SliderStyles = styled(Slider)`
-  box-sizing: border-box;
-  display: block;
-  height: 100%;
-  position: relative;
-  touch-action: pan-y;
-  user-select: none;
-  & div {
-    height: 100%;
-  }
-  & .slick-list {
-    overflow: hidden;
-  }
-  & .slick-slide {
-    float: left;
-  }
-  & .slick-arrow {
-    position: absolute;
-    top: 45%;
-    display: block;
-    width: 50px;
-    height: 50px;
-    background-position: center;
-    background-repeat: no-repeat;
-    cursor: pointer;
-    border: 1px solid #dbdbdb;
-    text-indent: -1000em;
-    background-color: white;
-    border-radius: 50%;
-    z-index: 20;
-  }
-
-  & .slick-prev {
-    left: -20px;
-    background-image: url("data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNzUgMTIwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSIxOCI+PHBhdGggZD0iTTYwIDBsMTUgMTUtNDUgNDUgNDUgNDUtMTUgMTVMMCA2MCIgZmlsbD0iI0U3NzQ1QyIvPjwvc3ZnPg==");
-  }
-
-  & .slick-next {
-    right: -20px;
-    background-image: url("data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNzUgMTIwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSIxOCI+PHBhdGggZD0iTTE1IDBMMCAxNWw0NSA0NS00NSA0NSAxNSAxNSA2MC02MCIgZmlsbD0iI0U3NzQ1QyIvPjwvc3ZnPg==");
-  }
-`;
 
 const AUTOPLAY_INTERVAL = 1500;
 
@@ -74,12 +30,12 @@ export const Carousel = React.memo((props) => {
   };
 
   return (
-    <SliderStyles
+    <div
       ref={sliderRef}
       autoplay={true}
       afterChange={onSlideChange}
       arrows={true}
-      className="gallery"
+      className={`gallery ${styles.slider}`}
       infinite={allSizesImages.length > 1}
       initialSlide={activeIndex || 0}
       dots="true"
@@ -93,6 +49,6 @@ export const Carousel = React.memo((props) => {
       ) : (
         <div />
       )}
-    </SliderStyles>
+    </div>
   );
 });

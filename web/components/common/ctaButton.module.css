@@ -1,0 +1,31 @@
+.button {
+  display: block;
+}
+
+.buttonLink {
+  background: #58b5d7;
+  border-radius: 8px;
+  display: inline-block;
+  font-weight: bold;
+  padding: 6px 12px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  &:link,
+  &:visited {
+    color: #fff;
+  }
+  &:hover {
+    background: #6dbedc;
+  }
+  &.alt {
+    background: #fff;
+    border: 2px solid #fff;
+    color: #58b5d7;
+  }
+  &.header {
+    font-size: 0.8em;
+    margin: 8px 0.5rem;
+    padding: 4px 8px;
+  }
+}

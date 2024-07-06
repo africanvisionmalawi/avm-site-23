@@ -1,6 +1,6 @@
-import styled from "@emotion/styled";
 import dayjs from "dayjs";
 import advancedFormat from "dayjs/plugin/advancedFormat";
+import styles from "eventDate.module.css";
 import PropTypes from "prop-types";
 dayjs.extend(advancedFormat);
 
@@ -54,37 +54,15 @@ export const EventDate = ({ date, endDate, allDay, layout, hideTime }) => {
 
   if (layout) {
     if (layout === "card") {
-      dateHtml = <Notice>{dateString}</Notice>;
+      dateHtml = <div className={styles.notice}>{dateString}</div>;
     } else {
-      dateHtml = <DatesHeading>Dates: {dateString}</DatesHeading>;
+      dateHtml = <div className={styles.heading}>Dates: {dateString}</div>;
     }
   } else {
-    dateHtml = <DatesSubHeading>Dates: {dateString}</DatesSubHeading>;
+    dateHtml = <div className={styles.subHeading}>Dates: {dateString}</div>;
   }
 
   return dateHtml;
 };
-
-const Notice = styled.div`
-  background: #fff;
-  border: 1px solid #c07d44;
-  border-radius: 8px;
-  color: #c07d44;
-  font-size: 1.2em;
-  padding: 12px;
-  text-align: center;
-  width: 300px;
-`;
-
-const DatesSubHeading = styled.div`
-  color: #ababad;
-  font-size: 0.9rem;
-`;
-
-const DatesHeading = styled.div`
-  color: #000;
-  font-size: 1.2rem;
-  font-weight: bold;
-`;
 
 export default EventDate;

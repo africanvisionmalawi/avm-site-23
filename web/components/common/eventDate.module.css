@@ -1,0 +1,21 @@
+.notice {
+  background: #fff;
+  border: 1px solid #c07d44;
+  border-radius: 8px;
+  color: #c07d44;
+  font-size: 1.2em;
+  padding: 12px;
+  text-align: center;
+  width: 300px;
+}
+
+.heading {
+  color: #000;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.subHeading {
+  color: #ababad;
+  font-size: 0.9rem;
+}

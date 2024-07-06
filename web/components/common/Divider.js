@@ -1,8 +1,8 @@
-import styled from "@emotion/styled";
+import styles from "divider.module.css";
 
 export const Divider = () => {
   return (
-    <Container>
+    <div className={styles.Container}>
       <svg
         data-name="Layer 1"
         xmlns="http://www.w3.org/2000/svg"
@@ -14,30 +14,6 @@ export const Divider = () => {
           className="shape-fill"
         ></path>
       </svg>
-    </Container>
+    </div>
   );
 };
-
-const Container = styled.div`
-  display: none;
-  @media (min-width: 1024px) {
-    display: block;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    z-index: 75;
-    & svg {
-      position: relative;
-      display: block;
-      width: calc(100% + 1.3px);
-      height: 25px;
-    }
-
-    & .shape-fill {
-      fill: #ffffff;
-    }
-  }
-`;

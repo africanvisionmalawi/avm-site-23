@@ -1,9 +1,8 @@
 import styled from "@emotion/styled";
-import { getFeaturedLinks } from "lib/helpers";
-import React from "react";
-// import { CardDouble } from "../card/CardDouble";
 import { CardSingle } from "components/card/CardSingle";
 import styles from "components/page-links/pageLinks.module.css";
+import { getFeaturedLinks } from "lib/helpers";
+import React from "react";
 
 const Heading = styled.h2`
   text-align: center;
