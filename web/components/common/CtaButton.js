@@ -1,4 +1,4 @@
-import styles from "ctaButton.module.css";
+import styles from "./ctaButton.module.css";
 
 export const CtaButton = ({ link, text, placement }) => (
   <span className={styles.ctaButton}>

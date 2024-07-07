@@ -11,13 +11,6 @@
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  &:link,
-  &:visited {
-    color: #fff;
-  }
-  &:hover {
-    background: #6dbedc;
-  }
   &.alt {
     background: #fff;
     border: 2px solid #fff;
@@ -28,4 +21,12 @@
     margin: 8px 0.5rem;
     padding: 4px 8px;
   }
+}
+.buttonLink a:link,
+.buttonLink a:visited {
+  color: #fff;
+}
+
+.buttonLink &:hover {
+  background: #6dbedc;
 }

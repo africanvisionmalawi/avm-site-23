@@ -18,13 +18,15 @@
 .postHeading {
   margin-top: 0;
   margin-bottom: 0;
-  a:link,
-  a:visited {
-    color: #246a73;
-  }
-  a:hover {
-    text-decoration: underline;
-  }
+}
+
+.postHeading a:link,
+.postHeading a:visited {
+  color: #246a73;
+}
+
+.postHeading a:hover {
+  text-decoration: underline;
 }
 
 .postSubHeading {
