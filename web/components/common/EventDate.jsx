@@ -1,7 +1,7 @@
 import dayjs from "dayjs";
 import advancedFormat from "dayjs/plugin/advancedFormat";
-import styles from "eventDate.module.css";
 import PropTypes from "prop-types";
+import styles from "./eventDate.module.css";
 dayjs.extend(advancedFormat);
 
 // todo: tidy up this mess of if satements

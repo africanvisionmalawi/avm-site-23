@@ -12,15 +12,14 @@
     overflow: hidden;
     line-height: 0;
     z-index: 75;
-    & svg {
-      position: relative;
-      display: block;
-      width: calc(100% + 1.3px);
-      height: 25px;
-    }
-
-    & .shape-fill {
-      fill: #ffffff;
-    }
+  }
+  .container svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 25px;
+  }
+  .container .shape-fill {
+    fill: #ffffff;
   }
 }

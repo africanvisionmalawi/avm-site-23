@@ -1,4 +1,4 @@
-import styles from "divider.module.css";
+import styles from "./divider.module.css";
 
 export const Divider = () => {
   return (

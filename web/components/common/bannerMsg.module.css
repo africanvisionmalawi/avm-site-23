@@ -1,10 +1,11 @@
 .container {
   margin: 3em auto;
   max-width: 650px;
-  p {
-    font-size: 1.7rem;
-  }
   padding: 0 2rem;
+}
+
+.container p {
+  font-size: 1.7rem;
 }
 
 .citation {

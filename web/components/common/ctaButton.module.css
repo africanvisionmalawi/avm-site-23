@@ -11,22 +11,25 @@
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  &.alt {
-    background: #fff;
-    border: 2px solid #fff;
-    color: #58b5d7;
-  }
-  &.header {
-    font-size: 0.8em;
-    margin: 8px 0.5rem;
-    padding: 4px 8px;
-  }
 }
-.buttonLink a:link,
-.buttonLink a:visited {
+
+.buttonLink .alt {
+  background: #fff;
+  border: 2px solid #fff;
+  color: #58b5d7;
+}
+
+.buttonLink .header {
+  font-size: 0.8em;
+  margin: 8px 0.5rem;
+  padding: 4px 8px;
+}
+
+a.buttonLink:link,
+a.buttonLink:visited {
   color: #fff;
 }
 
-.buttonLink &:hover {
+a.buttonLink:hover {
   background: #6dbedc;
 }
