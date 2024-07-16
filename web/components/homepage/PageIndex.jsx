@@ -1,4 +1,3 @@
-import styled from "@emotion/styled";
 import imageUrlBuilder from "@sanity/image-url";
 import { Hero } from "components/Hero";
 import { CardPost } from "components/card/CardPost";
@@ -11,149 +10,12 @@ import { siteMeta } from "constants/site";
 import dayjs from "dayjs";
 import { NextSeo } from "next-seo";
 import React from "react";
+import styles from "./pageindex.module.css";
 import client from "/client";
 
 function urlFor(source) {
   return imageUrlBuilder(client).image(source);
 }
-
-const Container = styled.div`
-  margin: 0 auto;
-  max-width: 1180px;
-  padding: 3em 0;
-`;
-
-const Heading = styled.h1`
-  font-family: Raleway, "Helvetica Neue", "Segoe UI", "Helvetica", "Arial",
-    "sans-serif";
-  text-align: center;
-`;
-
-const TopSection = styled.div`
-  font-family: Raleway, "Helvetica Neue", "Segoe UI", "Helvetica", "Arial";
-  margin: 0 auto;
-  max-width: 885px;
-  padding: 3rem 1rem 0;
-  position: relative;
-  text-align: center;
-  @media (min-width: 768px) {
-    padding-top: 1rem;
-  }
-`;
-
-const TextSection = styled.section`
-  background: #fff;
-  min-height: 24rem;
-  margin: 0 auto;
-  max-width: 1180px;
-  padding: 1rem;
-  position: relative;
-`;
-
-const LatestNews = styled.div`
-  background: #f7f7f7;
-  min-height: 24rem;
-  margin: 0 auto;
-  padding: 1rem;
-
-  @media (min-width: 768px) {
-    padding: 2rem 4em 2rem;
-  }
-  @media (min-width: 1040px) {
-    padding: 2rem 8em 2rem;
-  }
-  h2 {
-    text-align: center;
-  }
-`;
-const LatestNewsInner = styled.div`
-  margin: 0 auto;
-  max-width: 1180px;
-  position: relative;
-`;
-
-const PostList = styled.div`
-  display: flex;
-  margin: 2rem auto;
-  max-width: 1180px;
-`;
-
-const CardCont = styled.div`
-  align-items: grid-start;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(0, 280px));
-  grid-gap: 30px;
-  flex-shrink: 2;
-  justify-content: center;
-  max-width: 1525px;
-  width: 100%;
-  @media (min-width: 414px) {
-    grid-template-columns: repeat(auto-fill, 373px);
-  }
-`;
-
-const VideoSection = styled.div`
-  width: 100%;
-  @media (min-width: 768px) {
-    width: 50%;
-  }
-`;
-
-const TopVideoSection = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 0 auto 1rem;
-  text-align: center;
-  @media (min-width: 778px) {
-    text-align: left;
-  }
-`;
-
-const TopVideoSectionInner = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 auto;
-  max-width: 1280px;
-  padding: 3em 1em 1em;
-  width: 100%;
-`;
-
-const Main = styled.main`
-  background: #fff;
-  border-radius: 2px;
-`;
-
-const PostsFooter = styled.div`
-  height: 50px;
-  margin: 0 auto 3rem;
-  max-width: 1180px;
-  position: relative;
-  &::before {
-    bottom: 50%;
-    content: "";
-    border-bottom: 1px solid #b75906;
-    position: absolute;
-    width: 100%;
-    z-index: 6;
-  }
-
-  & a {
-    background: #fff;
-    border: 2px solid #b75906;
-    border-radius: 12px;
-    display: inline-block;
-    font-size: 0.8em;
-    left: 50%;
-    margin-left: -107px;
-    padding: 4px 24px;
-    position: absolute;
-    text-align: center;
-    top: 10%;
-    width: 160px;
-    z-index: 20;
-  }
-`;
 
 export const PageIndex = ({ data }) => {
   // console.log("data here ", data);
@@ -201,36 +63,36 @@ export const PageIndex = ({ data }) => {
           // heroHeading={c.title}
           // heroHeadingType="h2"
         />
-        <TopSection className="articleInner">
-          <Heading>{homePage.title}</Heading>
+        <div className={`${styles.topSection} articleInner`}>
+          <h1 className={styles.heading}>{homePage.title}</h1>
           {homePage.subTitle ? homePage.subTitle : null}
-        </TopSection>
+        </div>
 
-        <Main>
+        <main className={styles.main}>
           <div className="articleInner">
-            <TopVideoSection>
-              <TopVideoSectionInner>
-                <VideoSection>
+            <div className={styles.topVideoSection}>
+              <div className={styles.topVideoSectionInner}>
+                <div className={styles.videoSection}>
                   {homePage.introText ? (
-                    <TextSection>
+                    <section className={styles.textSection}>
                       <PortableText
                         key={homePage.introText._key}
                         blocks={homePage.introText}
                       />
-                    </TextSection>
+                    </section>
                   ) : null}
-                </VideoSection>
-                <VideoSection>
+                </div>
+                <div className={styles.videoSection}>
                   {homePage.promoVideo ? (
                     <Player url={homePage.promoVideo.url} />
                   ) : null}
-                </VideoSection>
-              </TopVideoSectionInner>
-            </TopVideoSection>
+                </div>
+              </div>
+            </div>
             {ourWork ? (
-              <Container>
+              <div className={styles.container}>
                 <OurWork ourWork={ourWork.ourWork} displayHeading />
-              </Container>
+              </div>
             ) : null}
           </div>
           <div className="articleInner">
@@ -238,41 +100,41 @@ export const PageIndex = ({ data }) => {
           </div>
 
           {homePage.latestNews ? (
-            <LatestNews>
-              <LatestNewsInner>
+            <div className={styles.latestNews}>
+              <div className={styles.latestNewsInner}>
                 <h2>Latest news</h2>
                 <PortableText
                   key={homePage.latestNews._key}
                   blocks={homePage.latestNews}
                 />
-              </LatestNewsInner>
-            </LatestNews>
+              </div>
+            </div>
           ) : null}
           <div className="articleInner">
             {homePage.newsLinks ? (
               <>
                 <section>
-                  <PostList>
-                    <CardCont>
+                  <div className={styles.postList}>
+                    <div className={styles.cardCont}>
                       {homePage.newsLinks.newsLinks.map((post) => (
                         <React.Fragment key={post._id}>
                           <CardPost post={post} />
                         </React.Fragment>
                       ))}
-                    </CardCont>
-                  </PostList>
+                    </div>
+                  </div>
                 </section>
-                <PostsFooter>
+                <div className={styles.postsFooter}>
                   <a href="/news">View all news</a>
-                </PostsFooter>
+                </div>
               </>
             ) : null}
 
             {latestEvents ? (
               <>
                 <section>
-                  <PostList>
-                    <CardCont>
+                  <div className={styles.postList}>
+                    <div className={styles.cardCont}>
                       {latestEvents.map((post) => (
                         <React.Fragment key={post._id}>
                           <CardPostAlt
@@ -288,16 +150,16 @@ export const PageIndex = ({ data }) => {
                           />
                         </React.Fragment>
                       ))}
-                    </CardCont>
-                  </PostList>
+                    </div>
+                  </div>
                 </section>
-                <PostsFooter>
+                <div className={styles.postsFooter}>
                   <a href="/events">View all events</a>
-                </PostsFooter>
+                </div>
               </>
             ) : null}
           </div>
-        </Main>
+        </main>
       </article>
     </>
   );

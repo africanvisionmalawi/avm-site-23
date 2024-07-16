@@ -1,0 +1,151 @@
+.container {
+  margin: 0 auto;
+  max-width: 1180px;
+  padding: 3em 0;
+}
+
+.heading {
+  font-family: Raleway, "Helvetica Neue", "Segoe UI", "Helvetica", "Arial",
+    "sans-serif";
+  text-align: center;
+}
+
+.topSection {
+  font-family: Raleway, "Helvetica Neue", "Segoe UI", "Helvetica", "Arial";
+  margin: 0 auto;
+  max-width: 885px;
+  padding: 3rem 1rem 0;
+  position: relative;
+  text-align: center;
+}
+
+.textSection {
+  background: #fff;
+  min-height: 24rem;
+  margin: 0 auto;
+  max-width: 1180px;
+  padding: 1rem;
+  position: relative;
+}
+
+.latestNews {
+  background: #f7f7f7;
+  min-height: 24rem;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.latestNews h2 {
+  text-align: center;
+}
+
+.latestNewsInner {
+  margin: 0 auto;
+  max-width: 1180px;
+  position: relative;
+}
+
+.postList {
+  display: flex;
+  margin: 2rem auto;
+  max-width: 1180px;
+}
+
+.cardCont {
+  align-items: grid-start;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(0, 280px));
+  grid-gap: 30px;
+  flex-shrink: 2;
+  justify-content: center;
+  max-width: 1525px;
+  width: 100%;
+}
+
+.videoSection {
+  width: 100%;
+}
+
+.topVideoSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  text-align: center;
+}
+
+.topVideoSectionInner {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 1280px;
+  padding: 3em 1em 1em;
+  width: 100%;
+}
+
+.main {
+  background: #fff;
+  border-radius: 2px;
+}
+
+.postsFooter {
+  height: 50px;
+  margin: 0 auto 3rem;
+  max-width: 1180px;
+  position: relative;
+}
+
+.postsFooter::before {
+  bottom: 50%;
+  content: "";
+  border-bottom: 1px solid #b75906;
+  position: absolute;
+  width: 100%;
+  z-index: 6;
+}
+
+.postsFooter a {
+  background: #fff;
+  border: 2px solid #b75906;
+  border-radius: 12px;
+  display: inline-block;
+  font-size: 0.8em;
+  left: 50%;
+  margin-left: -107px;
+  padding: 4px 24px;
+  position: absolute;
+  text-align: center;
+  top: 10%;
+  width: 160px;
+  z-index: 20;
+}
+
+@media (min-width: 414px) {
+  .cardCont {
+    grid-template-columns: repeat(auto-fill, 373px);
+  }
+}
+
+@media (min-width: 768px) {
+  .topSection {
+    padding-top: 1rem;
+  }
+  .latestNews {
+    padding: 2rem 4em 2rem;
+  }
+  .videoSection {
+    width: 50%;
+  }
+}
+
+@media (min-width: 778px) {
+  .topVideoSection {
+    text-align: left;
+  }
+}
+
+@media (min-width: 1040px) {
+  .latestNews {
+    padding: 2rem 8em 2rem;
+  }
+}
