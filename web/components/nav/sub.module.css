@@ -1,0 +1,75 @@
+.closeBtn {
+  color: #aaa;
+  cursor: pointer;
+  font-family: var(--font-raleway);
+  font-size: 2rem;
+  font-weight: 100;
+  opacity: 1;
+  position: absolute;
+  right: 8px;
+  top: -3px;
+}
+
+.drawerOverlay {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  height: 100%;
+  opacity: 0;
+  width: 100%;
+  z-index: 1300;
+}
+
+.drawerOverlay.open {
+    opacity: 100;
+    transition: opacity 0.4s ease-in-out;
+  }
+}
+
+.drawer {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: translateX(200%);
+  transition: transform 0.4s ease-in-out 0.4s;
+  z-index: 100;  
+}
+
+.drawer.open {
+    transform: translateX(0);
+    transition: transform 0ms ease-in-out;
+  }
+
+.drawerContent {
+  background-color: #fff;
+  height: 100%;
+  overflow-y: auto;
+  position: absolute;
+  right: 0;
+  transform: translateX(100%);
+  transition: all 0.4s ease-in-out;
+  z-index: 1400;
+}
+
+.drawerContent.open {
+  min-width: 50vw;
+  max-width: calc(100vw - 20px);
+  width: 300px;
+  transform: translateX(0);
+  transition: transform 0.4s ease-in-out;
+}
+
+.navInner {
+  display: none;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+@media (min-width: 768px) {
+  .navInner {
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 0 0 6px 6px;
+    display: flex;
+  }
+}

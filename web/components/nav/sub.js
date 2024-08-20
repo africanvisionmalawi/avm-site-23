@@ -5,6 +5,7 @@ import { CtaButton } from "components/common/CtaButton";
 import { Search } from "components/search/Search";
 import { navLinks } from "constants/nav";
 import React, { useState } from "react";
+import styles from "./sub.module.css";
 // import Search from "../search";
 // const searchIndices = [{ name: `Pages`, title: `Pages` }];
 // const { SubMenu } = Menu;
@@ -33,10 +34,14 @@ const SubNavBar = () => {
 
   return (
     <NavCont>
-      <Drawer className={drawerVisible ? "open" : ""}>
-        <DrawerOverlay className={drawerVisible ? "open" : ""} />
-        <DrawerContent className={drawerVisible ? "open" : ""}>
-          <CloseBtn onClick={toggleMenu}>X</CloseBtn>
+      <div className={`${styles.drawer} ${drawerVisible ? "open" : ""}`}>
+        <div
+          className={`${styles.drawerOverlay} ${drawerVisible ? "open" : ""}`}
+        />
+        <div className={`${styles.drawerContent} ${drawerVisible ? "open" : ""`}>
+          <div className={styles.closeBtn} onClick={toggleMenu}>
+            X
+          </div>
 
           <Menu>
             {navLinks.map((link, i) => (
@@ -64,10 +69,10 @@ const SubNavBar = () => {
             ))}
           </Menu>
           <Search />
-        </DrawerContent>
-      </Drawer>
+        </div>
+      </div>
       <Nav>
-        <NavInner>
+        <div className={styles.navInner}>
           <CtaButton
             link="https://www.crowdfunder.co.uk/apf/step/basics/7nPGOrqW"
             text="Fundraise for us"
@@ -78,7 +83,7 @@ const SubNavBar = () => {
             text="Donate"
             placement="header"
           />
-        </NavInner>
+        </div>
         <MobileNav>
           <NavLogo />
           <NavIcons>
@@ -120,75 +125,10 @@ const SubNavBar = () => {
     </NavCont>
   );
 };
-const CloseBtn = styled.div`
-  color: #aaa;
-  cursor: pointer;
-  font-family: var(--font-raleway);
-  font-size: 2rem;
-  font-weight: 100;
-  opacity: 1;
-  position: absolute;
-  right: 8px;
-  top: -3px;
-`;
 
-const DrawerOverlay = styled.div`
-  background: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  height: 100%;
-  opacity: 0;
-  width: 100%;
-  z-index: 1300;
-  &.open {
-    opacity: 100;
-    transition: opacity 0.4s ease-in-out;
-  }
-`;
 
-const Drawer = styled.div`
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  transform: translateX(200%);
-  transition: transform 0.4s ease-in-out 0.4s;
-  z-index: 100;
-  &.open {
-    transform: translateX(0);
-    transition: transform 0ms ease-in-out;
-  }
-`;
 
-const DrawerContent = styled.div`
-  background-color: #fff;
-  height: 100%;
-  overflow-y: auto;
-  position: absolute;
-  right: 0;
-  transform: translateX(100%);
-  transition: all 0.4s ease-in-out;
-  z-index: 1400;
 
-  &.open {
-    min-width: 50vw;
-    max-width: calc(100vw - 20px);
-    width: 300px;
-    transform: translateX(0);
-    transition: transform 0.4s ease-in-out;
-  }
-`;
-
-const NavInner = styled.div`
-  display: none;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-  @media (min-width: 768px) {
-    background: rgba(255, 255, 255, 0.7);
-    border-radius: 0 0 6px 6px;
-    display: flex;
-  }
-`;
 
 const NavIconsInner = styled.div`
   background: rgba(255, 255, 255, 0.7);
