@@ -33,7 +33,7 @@ const SubNavBar = () => {
   };
 
   return (
-    <NavCont>
+    <div className={styles.navCont}>
       <div className={`${styles.drawer} ${drawerVisible ? "open" : ""}`}>
         <div
           className={`${styles.drawerOverlay} ${drawerVisible ? "open" : ""}`}
@@ -71,7 +71,7 @@ const SubNavBar = () => {
           <Search />
         </div>
       </div>
-      <Nav>
+      <nav className={styles.nav}>
         <div className={styles.navInner}>
           <CtaButton
             link="https://www.crowdfunder.co.uk/apf/step/basics/7nPGOrqW"
@@ -84,28 +84,28 @@ const SubNavBar = () => {
             placement="header"
           />
         </div>
-        <MobileNav>
+        <div className={styles.mobileNav}>
           <NavLogo />
-          <NavIcons>
-            <NavIconsInner>
-              <InnerFlex>
+          <div className={styles.navIcon}>
+            <div className={styles.navIconsInner}>
+              <div className={styles.innerFlex>
                 <CtaButton
                   link="https://www.crowdfunder.co.uk/apf/step/basics/7nPGOrqW"
                   text="Fundraise for us"
                   placement="header"
                 />
-              </InnerFlex>
+              </div>
               <CtaButton
                 link="https://www.charitycheckout.co.uk/1113786/"
                 text="Donate"
                 placement="header"
               />
-            </NavIconsInner>
+            </div>
 
-            <IconsCont>
+            <div className={styles.iconCont}>
               <CartLink variant="orange" />
-            </IconsCont>
-            <IconsCont>
+            </div>
+            <div className={styles.iconCont}>
               <MobileNavIcon
                 type="primary"
                 onClick={toggleMenu}
@@ -118,11 +118,11 @@ const SubNavBar = () => {
                   fill="#f99d1c"
                 />
               </MobileNavIcon>
-            </IconsCont>
-          </NavIcons>
-        </MobileNav>
-      </Nav>
-    </NavCont>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
   );
 };
 
@@ -130,42 +130,13 @@ const SubNavBar = () => {
 
 
 
-const NavIconsInner = styled.div`
-  background: rgba(255, 255, 255, 0.7);
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-`;
 
-const InnerFlex = styled.div`
-  display: none;
-  @media (min-width: 576px) {
-    display: flex;
-  }
-`;
 
-const NavCont = styled.div`
-  position: sticky;
-  top: 0;
-  z-index: 7;
-`;
-const Nav = styled.div`
-  display: flex;
-  justify-content: flex-end;
-  flex-wrap: nowrap;
-  margin: 0 auto;
-  max-width: 1060px;
-  width: 100%;
-`;
 
-const IconsCont = styled.div`
-  align-items: center;
-  background: rgba(255, 255, 255, 0.7);
-  display: flex;
-  height: 48px;
-  justify-content: center;
-  padding: 0 4px;
-`;
+
+
+
+
 
 const Menu = styled.ul`
   font-size: 1em;
@@ -200,27 +171,9 @@ const Menu = styled.ul`
   }
 `;
 
-const MobileNav = styled.div`
-  align-items: flex-end;
-  height: 48px;
-  justify-content: flex-end;
-  margin: 4px 16px 0 0;
-  position: sticky;
-  text-transform: uppercase;
-  top: 10px;
-  width: 100%;
-  @media (min-width: 370px) {
-    flex-direction: row;
-  }
-  @media (min-width: 768px) {
-    display: none;
-  }
-`;
 
-const NavIcons = styled.div`
-  display: flex;
-  justify-content: flex-end;
-`;
+
+
 
 const MobileNavIcon = styled.svg`
   cursor: pointer;
