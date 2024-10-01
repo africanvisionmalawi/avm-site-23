@@ -118,10 +118,12 @@ export const ShopCategory = ({ data, slug }) => {
   if (!data) return;
   const { products, site } = data;
   const tags = site.shopTags;
-  const currentTag = tags.find((tag) => tag.value.current === slug);
+  const currentTag = tags.find(
+    (tag) => tag.value.current.toLowerCase() === slug
+  );
 
   const filteredProducts = products.filter((prod) =>
-    prod?.tags?.length ? prod.tags[0].value === slug : null
+    prod?.tags?.length ? prod.tags[0].value.toLowerCase() === slug : null
   );
 
   const path = [
