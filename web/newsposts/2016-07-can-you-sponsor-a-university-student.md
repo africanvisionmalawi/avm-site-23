@@ -44,4 +44,4 @@ Please email us on info@africanvision.org.uk if you would like to sponsor a stud
 
 You can also read more about all our education projects [here](https://www.africanvision.org.uk/education/).
 
-[Donate](https://www.charitycheckout.co.uk/1113786/)
+[Donate](https://africanvisionmalawi.enthuse.com/)

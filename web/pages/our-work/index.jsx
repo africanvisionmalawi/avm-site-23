@@ -57,7 +57,7 @@ const Page = ({ data }) => {
           </Container>
         ) : null}
         {/* <Donate
-          link="https://www.charitycheckout.co.uk/1113786/"
+          link="https://africanvisionmalawi.enthuse.com/"
           text="Donate"
           displayImage
         /> */}

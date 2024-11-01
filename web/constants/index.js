@@ -1,1 +1,1 @@
-export const donateUrl = "https://www.charitycheckout.co.uk/1113786/";
+export const donateUrl = "https://africanvisionmalawi.enthuse.com/";

@@ -19,6 +19,6 @@ Have a look at the overview film of Sam's Village, a drone's-eye view! [More det
 
 [![xmas-pledge](https://f000.backblazeb2.com/file/avm-wp-uploads/2016/12/Xmas-pledge.bmp)](https://f000.backblazeb2.com/file/avm-wp-uploads/2016/12/Xmas-pledge.bmp)If you would like to support us in getting Sam's Village complete, please just click on any of the Donate buttons and where it says: "I would like to leave the charity a message" just type 'Xmas'
 
-[Donate](https://www.charitycheckout.co.uk/1113786/)
+[Donate](https://africanvisionmalawi.enthuse.com/)
 
 [![How greatly blessed are we](https://f000.backblazeb2.com/file/avm-wp-uploads/2014/10/Paige-card-300x300.jpg)](https://f000.backblazeb2.com/file/avm-wp-uploads/2014/10/Paige-card.jpg) Thank you for your support!

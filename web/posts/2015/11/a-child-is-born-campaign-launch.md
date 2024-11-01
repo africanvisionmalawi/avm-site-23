@@ -15,7 +15,7 @@ Launching our "A Child is Born" Christmas Campaign 2015!
 
 We aim to raise £15,000 which will be doubled by matched funds to £30,000.
 
-[Donate](https://www.charitycheckout.co.uk/1113786/a-child-is-born/)
+[Donate](https://africanvisionmalawi.enthuse.com/a-child-is-born/)
 
 The purpose of the campaign is to build a waiting home for new mothers at the recently completed maternity unit in M'bang'gombe.
 
@@ -27,7 +27,7 @@ Globally, prematurity is the leading cause of death in children under the age of
 
 **Contribute** to A Child is Born:
 
-[Donate](https://www.charitycheckout.co.uk/1113786/a-child-is-born/)
+[Donate](https://africanvisionmalawi.enthuse.com/a-child-is-born/)
 
 And please go to the [A Child is Born](https://www.africanvision.org.uk/health/a-child-is-born/) webpage to **read** about the campaign's progress.
 

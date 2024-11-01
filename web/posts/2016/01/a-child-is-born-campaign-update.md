@@ -19,7 +19,7 @@ In addition, a kind donor has agreed to match-fund all donations up to the £15,
 
 Can you donate to bring us up to the target we need to meet?
 
-<div id="paypal_donate">[Donate](https://www.charitycheckout.co.uk/1113786/)</div>
+<div id="paypal_donate">[Donate](https://africanvisionmalawi.enthuse.com/)</div>
 
 [![Baby in the Maternity Unit](https://f000.backblazeb2.com/file/avm-wp-uploads/2016/01/Baby-2-259x300.jpg)](https://f000.backblazeb2.com/file/avm-wp-uploads/2016/01/Baby-2.jpg) Baby in the Maternity Unit
 
@@ -33,4 +33,4 @@ We want to say a big **THANK YOU** to everybody who has contributed towards this
 
 Can you donate to help us raise that final £1,060 ?
 
-<div id="paypal_donate">[Donate](https://www.charitycheckout.co.uk/1113786/)</div>
+<div id="paypal_donate">[Donate](https://africanvisionmalawi.enthuse.com/)</div>

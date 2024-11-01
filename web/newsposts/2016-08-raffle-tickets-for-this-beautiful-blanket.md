@@ -23,7 +23,7 @@ Tickets are £1 each - or 10 tickets for £10!
 
 You have two options to buy them
 
-1. Head [to this donation web-link](https://www.charitycheckout.co.uk/1113786/) and leave a message saying that your donation is for the raffle.  Lorraine will then contact you with your raffle tickets number/s.
+1. Head [to this donation web-link](https://africanvisionmalawi.enthuse.com/) and leave a message saying that your donation is for the raffle.  Lorraine will then contact you with your raffle tickets number/s.
 2. Email lorraine.mole@africanvision.org.uk and she will allocate you a ticket and arrange your payment
 3. On a Tuesday morning at All Saints Church, Kingston on a Tuesday morning when the knitting group meet,
 4. St Matthews Church, Surbiton on a Sunday morning

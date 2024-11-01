@@ -244,7 +244,7 @@ export const PageShop = ({ data, currentSlug }) => {
           </article>
         </ShopSection>
         {/* <Donate
-        link="https://www.charitycheckout.co.uk/1113786/"
+        link="https://africanvisionmalawi.enthuse.com/"
         text="Donate"
         displayImage
       /> */}

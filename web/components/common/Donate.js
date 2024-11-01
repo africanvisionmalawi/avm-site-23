@@ -50,7 +50,7 @@ const ContainerWithPhoto = styled.div`
 export const Donate = (props) => {
   const {
     displayImage = true,
-    link = "https://www.charitycheckout.co.uk/1113786/",
+    link = "https://africanvisionmalawi.enthuse.com/",
     text = "Donate",
   } = props;
   return (

@@ -27,6 +27,6 @@ Some photos of the day here:
 
 If you would also like to donate towards Burns Prevention Workshops or our other work in rural Malawi, please click here:
 
-<div id="paypal_donate">[Donate](https://www.charitycheckout.co.uk/1113786/)</div>
+<div id="paypal_donate">[Donate](https://africanvisionmalawi.enthuse.com/)</div>
 
 To keep up with all our latest news, you can also follow us on [Facebook](https://www.facebook.com/africanvision/) or Twitter @avmalawi.
