@@ -74,7 +74,7 @@ const SubNavBar = () => {
             placement="header"
           />
           <CtaButton
-            link="https://www.charitycheckout.co.uk/1113786/"
+            link="https://africanvisionmalawi.enthuse.com/"
             text="Donate"
             placement="header"
           />
@@ -91,7 +91,7 @@ const SubNavBar = () => {
                 />
               </InnerFlex>
               <CtaButton
-                link="https://www.charitycheckout.co.uk/1113786/"
+                link="https://africanvisionmalawi.enthuse.com/"
                 text="Donate"
                 placement="header"
               />
