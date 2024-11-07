@@ -45,21 +45,23 @@ export const CardSingle = ({
   // console.log("photo ", photo);
   return (
     <div>
-      {(url || extUrl) && photo ? (
-        <>
-          {url ? (
-            <a href={url} className="card-image">
-              <PhotoCont photo={photo} photoType={photoType} />
-            </a>
-          ) : (
-            <a href={extUrl} className="card-image">
-              <PhotoCont photo={photo} photoType={photoType} />
-            </a>
-          )}
-        </>
-      ) : (
-        <PhotoCont photo={photo} photoType={photoType} />
-      )}
+      {photo && photo?.asset ? (
+        url || extUrl ? (
+          <>
+            {url ? (
+              <a href={url} className="card-image">
+                <PhotoCont photo={photo} photoType={photoType} />
+              </a>
+            ) : (
+              <a href={extUrl} className="card-image">
+                <PhotoCont photo={photo} photoType={photoType} />
+              </a>
+            )}
+          </>
+        ) : (
+          <PhotoCont photo={photo} photoType={photoType} />
+        )
+      ) : null}
 
       <CardContent
         title={title ? title : null}
