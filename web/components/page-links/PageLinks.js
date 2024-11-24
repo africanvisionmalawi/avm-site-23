@@ -10,7 +10,6 @@ const Heading = styled.h2`
 `;
 
 const PageLinksWithPhotos = ({ pageLinks }) => {
-  // console.log("p *** ", pageLinks);
   return (
     <>
       {pageLinks.length
@@ -65,12 +64,8 @@ export const PageLinks = ({
   showPageLink,
   hideOtherPhotos,
 }) => {
-  // console.log("pageLink photo ", pageLinks[0].photo.asset);
-  // console.log("pageLinks ", pageLinks);
   const featuredLinks = pageLinks ? getFeaturedLinks(pageLinks, true) : null;
   const otherLinks = getFeaturedLinks(pageLinks, false);
-  // console.log("featuredLinks ", featuredLinks);
-  // console.log("otherLinks", otherLinks);
 
   return (
     <div>

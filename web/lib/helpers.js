@@ -7,7 +7,11 @@ export const getFeaturedLinks = (array, featured) => {
   // the second element passed in
   // console.log("array ", array);
   // console.log("featured ", featured);
-  let featuredLinks = array.filter((e) => e.featured === featured);
+  const featuredLinks = array.filter((e) =>
+    featured === false
+      ? e.featured === false || e.featured === undefined
+      : e.featured === true
+  );
   return featuredLinks;
 };
 
