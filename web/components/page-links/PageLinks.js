@@ -65,7 +65,7 @@ export const PageLinks = ({
   hideOtherPhotos,
 }) => {
   const featuredLinks = pageLinks ? getFeaturedLinks(pageLinks, true) : null;
-  const otherLinks = getFeaturedLinks(pageLinks, false);
+  const otherLinks = pageLinks ? getFeaturedLinks(pageLinks, false) : undefined;
 
   return (
     <div>
@@ -75,7 +75,7 @@ export const PageLinks = ({
           <PageLinksWithPhotos pageLinks={featuredLinks} />
         </div>
       ) : null}
-      {otherLinks.length ? (
+      {otherLinks?.length ? (
         <div className={styles.cardCont}>
           <PageLinksWithPhotos pageLinks={otherLinks} />
         </div>
