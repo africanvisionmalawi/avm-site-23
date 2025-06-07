@@ -195,7 +195,7 @@ export const PageShop = ({ data, currentSlug }) => {
                         }
                         url={
                           page.slug
-                            ? `${siteUrl}/shop/${page.slug.current}/`
+                            ? `${siteUrl}/shop/${page.slug.current}`
                             : null
                         }
                         weight={page.weight ? page.weight : null}
