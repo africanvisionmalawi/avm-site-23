@@ -123,7 +123,7 @@ const ShopHomePage = ({ data }) => {
                             }
                             url={
                               item.slug
-                                ? `${siteUrl}/shop/${item.slug.current}`
+                                ? `/${item.slug.current}`
                                 : null
                             }
                             weight={item.weight ? item.weight : null}
