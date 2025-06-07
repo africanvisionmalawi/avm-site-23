@@ -193,11 +193,11 @@ export const PageShop = ({ data, currentSlug }) => {
                             ? page.photoGallery[0].childImageSharp.fluid.src
                             : null
                         }
-                        // url={
-                        //   page.slug
-                        //     ? `/${page.slug.current}`
-                        //     : null
-                        // }
+                        url={
+                          page.slug
+                            ? `${siteUrl}/shop/${page.slug.current}`
+                            : null
+                        }
                         weight={page.weight ? page.weight : null}
                         length={page.length ? page.length : null}
                         width={page.width ? page.width : null}
