@@ -140,13 +140,8 @@ const Footer = () => (
             <a href="mailto:info@africanvision.org.uk">
               info@africanvision.org.uk
             </a>
-            <br />
-            tel (United Kingdom): +44 (0)20 8287 8169
-            <br />
-            tel (Malawi): +265 9 99 759 005
-            <br />
-            post (United Kingdom): 31 Upper Brighton Road, Surbiton, Surrey KT6
-            6QX
+            <br />            
+            tel (Malawi): +265 9 99 759 005            
             <br />
             post (Malawi): P.O. Box 30928, Lilongwe
           </p>
