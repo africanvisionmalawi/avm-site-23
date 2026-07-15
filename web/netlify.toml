@@ -5,8 +5,12 @@
   external_node_modules = ["sharp", "@img/sharp-wasm32"]
   included_files = ["node_modules/@img/**/*"]
 
+[build.environment]
+  NODE_VERSION = "20.9.0"
+
 [[redirects]]
 from = "/avm-studio/*"
 to = "https://avm.sanity.studio/desk/"
 status = 200
 force = true
+
