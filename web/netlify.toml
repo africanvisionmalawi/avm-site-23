@@ -1,3 +1,10 @@
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+[functions]
+  external_node_modules = ["sharp", "@img/sharp-wasm32"]
+  included_files = ["node_modules/@img/**/*"]
+
 [[redirects]]
 from = "/avm-studio/*"
 to = "https://avm.sanity.studio/desk/"
