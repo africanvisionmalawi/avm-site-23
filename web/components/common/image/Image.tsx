@@ -74,6 +74,7 @@ export const Image = ({
           priority={priority}
           style={style}
           quality={quality}
+          unoptimized={true}
         />
       ) : // <img
       //   style={{
