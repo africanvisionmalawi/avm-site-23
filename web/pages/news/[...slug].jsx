@@ -3,12 +3,11 @@ import { Hero } from "components/Hero";
 import { EventSummary } from "components/events/EventSummary";
 import { Gallery } from "components/gallery";
 import { PageLinks } from "components/page-links";
-import { PortableText } from "components/portable-text/BasePortableText";
+import { MarkdownContent } from "components/common/MarkdownContent";
 import { Videos } from "components/videos";
 import { siteMeta } from "constants/site";
-import groq from "groq";
+import { getAllNews, getNewsBySlug } from "lib/content";
 import { NextSeo } from "next-seo";
-import client from "/client";
 
 const md = require("markdown-it")({
   html: true,
@@ -83,7 +82,10 @@ const Page = ({ data, currentSlug }) => {
           case "blockPortableText":
             el = (
               <TextSection>
-                <PortableText key={c._key} {...c} />
+                <MarkdownContent
+                  key={c._key}
+                  content={c.markdown || c.blocks}
+                />
               </TextSection>
             );
             break;
@@ -141,7 +143,7 @@ const Page = ({ data, currentSlug }) => {
           ) : null}
 
           <section className="articleInner">
-            {page.body ? <PortableText article blocks={page.body} /> : null}
+            {page.body ? <MarkdownContent content={page.body} /> : null}
           </section>
           {page.event ? (
             <section className="articleInner">
@@ -157,68 +159,30 @@ const Page = ({ data, currentSlug }) => {
   }
 };
 
-const query = groq`*[_type == "news" && slug.current == $currentSlug][0]{ 
-  slug, 
-  id,
-  title,
-  description,
-  photo,
-  hideHeaderPhoto,
-  excerpt,
-  body[] {
-    ...,
-    asset->     
-  },  
-  event->,  
-  content,
-  tags,
-  pageHeading, 
-  publishDate,    
-}`;
-
 export async function getStaticPaths() {
-  const allSanityPosts = await client.fetch(
-    ` *[_type == "news" && slug.current != null] {
-      'slug': slug.current,      
-    }`
-  );
-
-  // console.log("allMarkdownPaths ", allMarkdownPaths);
-
-  const allPosts = [...allSanityPosts];
-
-  // console.log(
-  //   "all posts map **** ",
-  //   allPosts?.map((page) => {
-  //     return page?.slug?.replace("posts/", "").replace(".md", "");
-  //   })
-  // );
+  const allPosts = getAllNews();
   return {
-    paths:
-      allPosts?.map((page) => ({
-        params: {
-          slug: [page?.slug?.replace(/newsposts\//, "").replace(/\.md/, "")],
-        },
-      })) || [],
-    fallback: true,
+    paths: allPosts.map((page) => ({
+      params: {
+        slug: [page.slug.current],
+      },
+    })),
+    fallback: false,
   };
 }
 
 export async function getStaticProps({ params, preview = false }) {
-  const data = {};
+  const { slug = [] } = params;
+  const currentSlug = Array.isArray(slug) ? slug[slug.length - 1] : slug;
+  const sanityPost = getNewsBySlug(currentSlug);
 
-  // It's important to default the slug so that it doesn't return "undefined"
-  const { slug = "" } = params;
-  const hasCategory = !!slug.length > 1;
-
-  const currentSlug = hasCategory ? slug[slug.length - 1] : slug.toString();
-  // console.log("currentSlug ", currentSlug);
-
-  data.sanityPost = await client.fetch(query, { currentSlug, hasCategory });
+  if (!sanityPost) {
+    return { notFound: true };
+  }
 
   return {
     props: {
-      data,
+      data: { sanityPost },
       preview,
       currentSlug,
     },

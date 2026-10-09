@@ -1,10 +1,10 @@
 import styled from "@emotion/styled";
-import { PortableText } from "components/portable-text/BasePortableText";
+import { MarkdownContent } from "components/common/MarkdownContent";
 
 export const BannerMsg = ({ msg, source }) => {
   return (
     <HeroMsgDiv>
-      {msg ? <PortableText blocks={msg} /> : null}
+      {msg ? <MarkdownContent content={msg} /> : null}
       {source ? <Citation>{source}</Citation> : null}
     </HeroMsgDiv>
   );

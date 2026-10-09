@@ -1,8 +1,6 @@
 import styled from "@emotion/styled";
-// import Img from "gatsby-image";
-// import styled from "@emotion/styled";
 import { EventDate } from "components/common/EventDate";
-import { PortableText } from "components/portable-text/BasePortableText";
+import { MarkdownContent } from "components/common/MarkdownContent";
 import { MoreButton } from "./MoreButton";
 import { PhotoCont } from "./PhotoCont";
 
@@ -57,7 +55,7 @@ export const CardPostAlt = ({
 
   const text =
     type === "sanity" || type === "event" ? (
-      <PortableText blocks={excerpt} />
+      <MarkdownContent content={excerpt} />
     ) : (
       <div>{excerpt}</div>
     );

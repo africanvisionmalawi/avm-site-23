@@ -1,0 +1,87 @@
+{
+  "meta_description": "Since 2005 African Vision Malawi has been helping children and vulnerable people in Malawi, one of the poorest countries in the world. Our vision is to see a healthy, educated and self-sufficient community in Malawi..",
+  "meta_title": "African Vision Malawi",
+  "shopTags": [
+    {
+      "_key": "e25a3302999e",
+      "_type": "shopTag",
+      "title": "Books",
+      "value": {
+        "_type": "slug",
+        "current": "books"
+      }
+    },
+    {
+      "_key": "a5a1ac56bf43",
+      "_type": "shopTag",
+      "title": "Christmas",
+      "value": {
+        "_type": "slug",
+        "current": "christmas"
+      }
+    },
+    {
+      "_key": "7b72c1476336",
+      "_type": "shopTag",
+      "title": "Events",
+      "value": {
+        "_type": "slug",
+        "current": "events"
+      }
+    },
+    {
+      "_key": "740b9891dbe1",
+      "_type": "shopTag",
+      "title": "Craft",
+      "value": {
+        "_type": "slug",
+        "current": "craft"
+      }
+    },
+    {
+      "_key": "4fd3d5942737",
+      "_type": "shopTag",
+      "title": "Donated Gifts",
+      "value": {
+        "_type": "slug",
+        "current": "donated-gifts"
+      }
+    },
+    {
+      "_key": "9f11776bc4ca",
+      "_type": "shopTag",
+      "title": "Education",
+      "value": {
+        "_type": "slug",
+        "current": "education"
+      }
+    },
+    {
+      "_key": "ccb07db6fab7",
+      "_type": "shopTag",
+      "title": "Support Malawi",
+      "value": {
+        "_type": "slug",
+        "current": "support-malawi"
+      }
+    },
+    {
+      "_key": "1ab4b46ac1db",
+      "_type": "shopTag",
+      "title": "Media",
+      "value": {
+        "_type": "slug",
+        "current": "media"
+      }
+    },
+    {
+      "_key": "e60e746b4f44",
+      "_type": "shopTag",
+      "title": "Postcards",
+      "value": {
+        "_type": "slug",
+        "current": "postcards"
+      }
+    }
+  ]
+}

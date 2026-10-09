@@ -1,10 +1,9 @@
 import styled from "@emotion/styled";
 import { Breadcrumbs } from "components/Breadcrumbs";
 import { OurWork } from "components/ourwork";
-import { PortableText } from "components/portable-text/BasePortableText";
-import groq from "groq";
+import { MarkdownContent } from "components/common/MarkdownContent";
+import { getOurWork } from "lib/content";
 import { NextSeo } from "next-seo";
-import client from "/client";
 
 const Container = styled.section`
   margin: 0 auto;
@@ -27,8 +26,6 @@ const TopSection = styled.div`
 `;
 
 const Page = ({ data }) => {
-  // console.log("content here is ***************** ", data?.content);
-  // console.log("data here is ***************** ", data);
   const { body, ourWork } = data;
   const title = "Our Work";
   const path = [
@@ -49,36 +46,23 @@ const Page = ({ data }) => {
       <article className="articleInner">
         <TopSection>
           <Heading>{title}</Heading>
-          {ourWork ? <PortableText blocks={body} /> : null}
+          {ourWork ? <MarkdownContent content={body} /> : null}
         </TopSection>
         {ourWork ? (
           <Container>
             <OurWork ourWork={ourWork} />
           </Container>
         ) : null}
-        {/* <Donate
-          link="https://africanvisionmalawi.enthuse.com/"
-          text="Donate"
-          displayImage
-        /> */}
       </article>
     </>
   );
 };
 
-const query = groq`*[_type == "ourWorkShared"][0]{   
-  id, 
-  body,
-  ourWork,  
-}`;
-
-export async function getStaticProps({ params, preview = false }) {
-  const data = await client.fetch(query);
-  // console.log("data ", data);
+export async function getStaticProps() {
+  const data = getOurWork();
   return {
     props: {
       data,
-      preview,
     },
   };
 }

@@ -5,7 +5,7 @@ import { Gallery } from "components/gallery";
 import { GoogleMap } from "components/GoogleMap";
 import { Hero } from "components/Hero";
 import { PageLinks } from "components/page-links";
-import { PortableText } from "components/portable-text/BasePortableText";
+import { MarkdownContent } from "components/common/MarkdownContent";
 import { TeamList } from "components/team";
 import { Videos } from "components/videos";
 
@@ -98,7 +98,10 @@ export const PageCommon = ({ data }) => {
         case "blockPortableText":
           el = (
             <TextSection>
-              <PortableText key={c._key} {...c} />
+              <MarkdownContent
+                key={c._key}
+                content={c.markdown || c.blocks}
+              />
             </TextSection>
           );
           break;
@@ -164,7 +167,7 @@ export const PageCommon = ({ data }) => {
           />
         ) : null}
         <TopSection className="articleInner">
-          {data?.body ? <PortableText article blocks={data.body} /> : null}
+          {data?.body ? <MarkdownContent content={data.body} /> : null}
         </TopSection>
 
         <Container>{content}</Container>

@@ -1,17 +1,10 @@
 import styled from "@emotion/styled";
-import imageUrlBuilder from "@sanity/image-url";
-import { Hero } from "components/Hero";
 import { CardPostAlt } from "components/card/CardPostAlt";
 import { siteMeta } from "constants/site";
 import dayjs from "dayjs";
-import groq from "groq";
+import { getAllEvents } from "lib/content";
 import { NextSeo } from "next-seo";
 import React from "react";
-import client from "/client";
-
-function urlFor(source) {
-  return imageUrlBuilder(client).image(source);
-}
 
 const TopHeading = styled.h1`
   font-family: Raleway, "Helvetica Neue", "Segoe UI", "Helvetica", "Arial",
@@ -156,34 +149,12 @@ const EventsHomePage = ({ data }) => {
   );
 };
 
-const query = groq`*[_type == "event"] | order(date desc){     
-  _id,
-    title,
-  publishDate,
-  slug,
-  photo,
-  excerpt,
-  body[] {
-    ...,
-    asset->
-  },
-  date,
-  endDate,
-  allDay,
-  hideTime,
-  featured_image,
-  tag,  
-}`;
-
-export async function getStaticProps({ params, preview = false }) {
-  // It's important to default the slug so that it doesn't return "undefined"
-
-  const data = await client.fetch(query, {});
+export async function getStaticProps() {
+  const data = getAllEvents();
 
   return {
     props: {
       data,
-      preview,
     },
   };
 }

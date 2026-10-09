@@ -1,21 +1,15 @@
 import styled from "@emotion/styled";
-import imageUrlBuilder from "@sanity/image-url";
 import { Breadcrumbs } from "components/Breadcrumbs";
 import { BuyButton } from "components/common/BuyButton";
 import { NavTags } from "components/common/NavTags";
 import { ShopListItem } from "components/shop/ShopListItem";
 import { tagsBase } from "constants/shop";
 import { siteMeta } from "constants/site";
-import groq from "groq";
+import { getAllShopProducts, getSiteSettings } from "lib/content";
 import { NextSeo } from "next-seo";
 import React from "react";
-import client from "/client";
 
 const siteUrl = "https://www.africanvision.org.uk";
-
-function urlFor(source) {
-  return imageUrlBuilder(client).image(source);
-}
 
 const Container = styled.div`
   margin: 0 auto;
@@ -149,43 +143,16 @@ const ShopHomePage = ({ data }) => {
   );
 };
 
-const query = groq`{
-"products":*[_type == "shop" && hide != true] | order(publishDate desc)
-{     
-  _id,
-    title,
-  publishDate,
-  slug,
-  hide,
-  inStock,
-  price,
-  salePrice,
-  tags {
-    label,
-    value,
-  },
-  photoGallery, 
-},
-'site':*[_type == "siteSettings"][0]
-{
-  shopTags,  
-}
-
-
-}
-
-`;
-
-export async function getStaticProps({ params, preview = false }) {
-  // It's important to default the slug so that it doesn't return "undefined"
-
-  const data = await client.fetch(query, {});
-  //   console.log("data **********", data);
+export async function getStaticProps() {
+  const products = getAllShopProducts();
+  const site = getSiteSettings();
 
   return {
     props: {
-      data,
-      preview,
+      data: {
+        products,
+        site,
+      },
     },
   };
 }

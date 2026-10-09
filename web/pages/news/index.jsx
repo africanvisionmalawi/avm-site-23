@@ -1,16 +1,8 @@
 import styled from "@emotion/styled";
-import imageUrlBuilder from "@sanity/image-url";
-import { Hero } from "components/Hero";
 import { CardPostAlt } from "components/card/CardPostAlt";
-import groq from "groq";
+import { getAllNews } from "lib/content";
 import { NextSeo } from "next-seo";
 import React from "react";
-import client from "/client";
-const glob = require("glob");
-
-function urlFor(source) {
-  return imageUrlBuilder(client).image(source);
-}
 
 const Container = styled.div`
   margin: 0 auto;
@@ -184,9 +176,9 @@ const NewsHomePage = ({ data }) => {
           <PostList>
             {data.map((post) => {
               return (
-                <React.Fragment key={post.id}>
+                <React.Fragment key={post.id || post._id}>
                   <CardPostAlt
-                    type={post.type}
+                    type="sanity"
                     title={post.title}
                     excerpt={post.excerpt}
                     slug={post.slug}
@@ -210,34 +202,12 @@ const NewsHomePage = ({ data }) => {
   );
 };
 
-const query = groq`*[_type == "news"] | order(publishDate desc){     
-  _id,
-    title,
-  publishDate,
-  slug,
-  photo,
-  excerpt,
-  tag,  
-}`;
-
-export async function getStaticProps({ params, preview = false }) {
-  // It's important to default the slug so that it doesn't return "undefined"
-  // let markdownPosts = [];
-  const files = glob("posts/**/**/*.md", { absolute: true });
-  // console.log("files ", files);
-  glob("posts/**/**/*.md", (err, files) => {
-    {
-      files;
-    }
-  });
-  // console.log("markdownosts ", markdownPosts);
-  const data = await client.fetch(query, {});
-  //   console.log("data **********", data);
+export async function getStaticProps() {
+  const data = getAllNews();
 
   return {
     props: {
       data,
-      preview,
     },
   };
 }

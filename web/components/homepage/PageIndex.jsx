@@ -5,7 +5,7 @@ import { CardPost } from "components/card/CardPost";
 import { CardPostAlt } from "components/card/CardPostAlt";
 import { Donate } from "components/common/Donate";
 import { OurWork } from "components/ourwork/ourwork";
-import { PortableText } from "components/portable-text/BasePortableText";
+import { MarkdownContent } from "components/common/MarkdownContent";
 import { Player } from "components/videos/Player";
 import { siteMeta } from "constants/site";
 import dayjs from "dayjs";
@@ -213,10 +213,7 @@ export const PageIndex = ({ data }) => {
                 <VideoSection>
                   {homePage.introText ? (
                     <TextSection>
-                      <PortableText
-                        key={homePage.introText._key}
-                        blocks={homePage.introText}
-                      />
+                      <MarkdownContent content={homePage.introText} />
                     </TextSection>
                   ) : null}
                 </VideoSection>
@@ -241,21 +238,18 @@ export const PageIndex = ({ data }) => {
             <LatestNews>
               <LatestNewsInner>
                 <h2>Latest news</h2>
-                <PortableText
-                  key={homePage.latestNews._key}
-                  blocks={homePage.latestNews}
-                />
+                <MarkdownContent content={homePage.latestNews} />
               </LatestNewsInner>
             </LatestNews>
           ) : null}
           <div className="articleInner">
-            {homePage.newsLinks ? (
+            {homePage.newsLinks?.newsLinks?.length ? (
               <>
                 <section>
                   <PostList>
                     <CardCont>
                       {homePage.newsLinks.newsLinks.map((post) => (
-                        <React.Fragment key={post._id}>
+                        <React.Fragment key={post._key || post.slug?.current}>
                           <CardPost post={post} />
                         </React.Fragment>
                       ))}

@@ -3,7 +3,7 @@ import { Breadcrumbs } from "components/Breadcrumbs";
 import { BuyButton } from "components/common/BuyButton";
 import { Carousel } from "components/common/Carousel";
 import { SectionInner } from "components/common/SectionInner";
-import { PortableText } from "components/portable-text/BasePortableText";
+import { MarkdownContent } from "components/common/MarkdownContent";
 import { Photo } from "components/shop/Photo";
 import { ShopListItem } from "components/shop/ShopListItem";
 import { TagsList } from "components/shop/TagsList";
@@ -214,7 +214,7 @@ export const PageShop = ({ data, currentSlug }) => {
                     ) : null}
                   </SectionInner>
                   <SectionInner>
-                    {page.body ? <PortableText blocks={page.body} /> : null}
+                    {page.body ? <MarkdownContent content={page.body} /> : null}
                   </SectionInner>
                 </div>
               </ColumnAside>

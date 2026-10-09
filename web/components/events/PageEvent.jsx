@@ -4,7 +4,7 @@ import { Hero } from "components/Hero";
 import { EventSummary } from "components/events/EventSummary";
 import { Gallery } from "components/gallery";
 import { PageLinks } from "components/page-links";
-import { PortableText } from "components/portable-text/BasePortableText";
+import { MarkdownContent } from "components/common/MarkdownContent";
 import { Videos } from "components/videos";
 import { siteMeta } from "constants/site";
 import { NextSeo } from "next-seo";
@@ -87,7 +87,10 @@ export const PageEvent = ({ data, slug }) => {
         case "blockPortableText":
           el = (
             <TextSection>
-              <PortableText key={c._key} {...c} />
+              <MarkdownContent
+                key={c._key}
+                content={c.markdown || c.blocks}
+              />
             </TextSection>
           );
           break;
@@ -153,7 +156,7 @@ export const PageEvent = ({ data, slug }) => {
           </section>
         ) : null}
         <section className="articleInner">
-          {data?.body ? <PortableText article blocks={data.body} /> : null}
+          {data?.body ? <MarkdownContent content={data.body} /> : null}
         </section>
         <section className="articleInner">
           <Container>{content}</Container>
