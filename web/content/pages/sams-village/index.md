@@ -52,6 +52,7 @@ content:
         text: Sam's Training Village from Sam Palmer on Vimeo.
         url: 'https://vimeo.com/153218473'
     title: null
+    team: null
   - _key: 79dbdfd3df5d
     _type: pageLinks
     disabled: false

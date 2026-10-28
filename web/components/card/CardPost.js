@@ -5,8 +5,8 @@ import { PhotoCont } from "./PhotoCont";
 
 export const CardPost = ({ post }) => {
   // console.log("cardpost *******", post);
-  const { slug, title, excerpt, body, photo } = post;
-  const url = `/news/${slug.current}`;
+  const { slug, title, excerpt, photo } = post;
+  const url = slug?.current ? `/news/${slug.current}` : null;
 
   return (
     <div>

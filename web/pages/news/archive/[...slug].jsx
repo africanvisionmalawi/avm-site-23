@@ -3,7 +3,6 @@ import { siteMeta } from "constants/site";
 import { format, parseISO } from "date-fns";
 import fs, { readdirSync } from "fs";
 import matter from "gray-matter";
-import groq from "groq";
 import { NextSeo } from "next-seo";
 import { join } from "path";
 

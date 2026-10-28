@@ -83,17 +83,8 @@ const EventsHomePage = ({ data }) => {
         canonical={`${process.env.NEXT_PUBLIC_BASE_URL}/events`}
       />
       <article>
-        {data.hero ? (
-          <Hero
-            image={data.hero.image}
-            mobileImage={data.hero.mobileImage}
-            displayHeroMsg={false}
-            // heroHeading={c.title}
-            // heroHeadingType="h2"
-          />
-        ) : null}
         <TopSection>
-          <Heading>{data.title}</Heading>
+          <Heading>{title}</Heading>
         </TopSection>
         <Main>
           <PostList>

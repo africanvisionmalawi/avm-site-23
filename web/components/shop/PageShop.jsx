@@ -8,11 +8,9 @@ import { Photo } from "components/shop/Photo";
 import { ShopListItem } from "components/shop/ShopListItem";
 import { TagsList } from "components/shop/TagsList";
 import { siteMeta } from "constants/site";
-import groq from "groq";
 import { priceFormatted } from "lib/helpers";
 import { NextSeo } from "next-seo";
 import React from "react";
-import client from "/client";
 
 const siteUrl = "https://www.africanvision.org.uk";
 
@@ -252,60 +250,3 @@ export const PageShop = ({ data, currentSlug }) => {
     </>
   );
 };
-
-const query = groq`{
-"page":*[_type == "shop" && hide != true && slug.current == $currentSlug][0]
-{     
-  _id,
-    title,
-    description,
-    body,
-  publishDate,
-  slug,
-  hide,
-  inStock,
-  price,
-  salePrice,
-  tags, 
-  photoGallery,   
-  name,
-  url,
-  weight,
-  length,
-  width,
-  height,
-},
-
-
-"allProducts":*[_type == "shop" && hide != true && slug.current != $currentSlug]
-{     
-  _id,
-    title,
-  publishDate,
-  slug,
-  hide,
-  inStock,
-  price,
-  salePrice,
-  tags,
-  photoGallery, 
-},
-
-}`;
-
-export async function getStaticPaths() {
-  const allPages = await client.fetch(
-    ` *[_type == "shop" && slug.current != null && hide != true] {
-      'slug': slug.current,            
-    }`
-  );
-  return {
-    paths:
-      allPages?.map((page) => ({
-        params: {
-          slug: page.slug,
-        },
-      })) || [],
-    fallback: true,
-  };
-}

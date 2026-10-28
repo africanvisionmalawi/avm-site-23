@@ -9,7 +9,7 @@ export const TeamList = (props) => {
     <>
       <Heading>{props.heading}</Heading>
       <List>
-        {props.team.map((t) => (
+        {(props.team || []).map((t) => (
           <li key={t.name}>
             {t.photo && typeof t.photo === "object" && (
               <TeamPhoto>

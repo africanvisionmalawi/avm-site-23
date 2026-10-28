@@ -187,7 +187,7 @@ export function getAllShopProducts({ includeHidden = false } = {}) {
   return files
     .map((file) => {
       const doc = readMarkdownFile(file);
-      if (!doc) return null;
+      if (!doc || !doc.slug) return null;
       if (!includeHidden && doc.hide) return null;
       return {
         ...doc,

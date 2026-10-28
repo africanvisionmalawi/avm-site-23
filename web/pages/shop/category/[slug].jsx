@@ -4,10 +4,9 @@ import { NavTags } from "components/common/NavTags";
 import { ShopListItem } from "components/shop/ShopListItem";
 import { tagsBase } from "constants/shop";
 import { siteMeta } from "constants/site";
-import groq from "groq";
+import { getAllShopProducts, getSiteSettings } from "lib/content";
 import { NextSeo } from "next-seo";
 import React from "react";
-import client from "/client";
 
 const siteUrl = "https://www.africanvision.org.uk";
 
@@ -122,9 +121,12 @@ export const ShopCategory = ({ data, slug }) => {
     (tag) => tag.value.current.toLowerCase() === slug
   );
 
-  const filteredProducts = products.filter((prod) =>
-    prod?.tags?.length ? prod.tags[0].value.toLowerCase() === slug : null
-  );
+  const filteredProducts = products.filter((prod) => {
+    const tagValue = prod?.tags?.[0]?.value;
+    const value =
+      typeof tagValue === "string" ? tagValue : tagValue?.current || "";
+    return value.toLowerCase() === slug;
+  });
 
   const path = [
     {
@@ -186,56 +188,38 @@ export const ShopCategory = ({ data, slug }) => {
   );
 };
 
-const query = groq`{
-"products":*[_type == "shop" && hide != true]
-{     
-  _id,
-  title,
-  publishDate,
-  slug,
-  hide,
-  inStock,
-  price,
-  salePrice,
-  tags,
-  photoGallery, 
-},
-
-'site':*[_type == "siteSettings"][0]
-{
-  shopTags,  
-},
-
-
-
-}`;
-
 export async function getStaticPaths() {
-  const paths = await client.fetch(
-    `*[_type == "shop" && defined[slug.current]][].slug.current`
-  );
+  const site = getSiteSettings();
+  const paths = (site.shopTags || [])
+    .map((tag) => tag.value?.current)
+    .filter(Boolean);
 
   return {
     paths: paths.map((slug) => ({ params: { slug } })),
-    fallback: true,
+    fallback: false,
   };
 }
 
-export async function getStaticProps({ params, preview = false }) {
-  // It's important to default the slug so that it doesn't return "undefined"
+export async function getStaticProps({ params }) {
   const { slug = "" } = params;
-  const data = await client.fetch(query, { slug });
-  // console.log("data **********", data);
+  const products = getAllShopProducts();
+  const site = getSiteSettings();
 
-  if (!data) {
-    return false;
+  const currentTag = (site.shopTags || []).find(
+    (tag) => tag.value?.current?.toLowerCase() === slug
+  );
+
+  if (!currentTag) {
+    return { notFound: true };
   }
 
   return {
     props: {
-      data,
+      data: {
+        products,
+        site,
+      },
       slug,
-      preview,
     },
   };
 }

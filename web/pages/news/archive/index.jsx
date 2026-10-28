@@ -1,17 +1,10 @@
 import styled from "@emotion/styled";
-import imageUrlBuilder from "@sanity/image-url";
 import { format, parseISO } from "date-fns";
 import fs, { readdirSync } from "fs";
 import matter from "gray-matter";
 import { NextSeo } from "next-seo";
 import { join } from "path";
 import React from "react";
-import client from "/client";
-const glob = require("glob");
-
-function urlFor(source) {
-  return imageUrlBuilder(client).image(source);
-}
 
 const Container = styled.div`
   margin: 0 auto;

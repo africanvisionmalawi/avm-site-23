@@ -9,12 +9,6 @@ import { siteMeta } from "constants/site";
 import { getAllNews, getNewsBySlug } from "lib/content";
 import { NextSeo } from "next-seo";
 
-const md = require("markdown-it")({
-  html: true,
-  linkify: true,
-  typographer: true,
-});
-
 const Container = styled.section`
   margin: 0 auto;
   padding: 0 0 3rem;

@@ -212,7 +212,7 @@ function convertContentSections(content) {
 
     if (section._type === "team") {
       next.heading = section.heading || null;
-      next.members = (section.members || []).map((m) => ({
+      next.team = (section.team || []).map((m) => ({
         _key: m._key,
         name: m.name || null,
         role: m.role || null,
@@ -330,7 +330,8 @@ async function exportPages() {
       photos[]{ ..., asset-> },
       image{ ..., asset-> },
       mobileImage{ ..., asset-> },
-      members[]{ ..., photo{ ..., asset-> } },
+      team[]{ ..., photo{ ..., asset-> } },
+      videos[]{ ... },
       blocks[]{ ..., asset-> }
     }
   }`);

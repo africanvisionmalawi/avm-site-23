@@ -1,5 +1,4 @@
 import styled from "@emotion/styled";
-import imageUrlBuilder from "@sanity/image-url";
 import { Hero } from "components/Hero";
 import { CardPost } from "components/card/CardPost";
 import { CardPostAlt } from "components/card/CardPostAlt";
@@ -11,11 +10,6 @@ import { siteMeta } from "constants/site";
 import dayjs from "dayjs";
 import { NextSeo } from "next-seo";
 import React from "react";
-import client from "/client";
-
-function urlFor(source) {
-  return imageUrlBuilder(client).image(source);
-}
 
 const Container = styled.div`
   margin: 0 auto;
