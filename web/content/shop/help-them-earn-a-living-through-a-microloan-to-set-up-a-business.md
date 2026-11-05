@@ -15,14 +15,10 @@ tags:
 photoGallery:
   _type: photoGallery
   photos:
-    - _type: figure
+    - src: /images/0781112966042d5bd95048e6f2e53be212ed9877.jpg
+      width: 450
+      height: 299
       alt: Help them earn a living through a microloan to set up a business
-      caption: null
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-0781112966042d5bd95048e6f2e53be212ed9877-450x299-jpg
 name: null
 url: null
 weight: 4

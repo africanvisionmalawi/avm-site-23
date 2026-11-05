@@ -18,5 +18,5 @@ content: []
 ---
 We work in an area 30km away from the capital city, Lilongwe. The area we cover is 400km2 with a local population of 60,000. We support 26 Primary Schools, have just under 3,000 orphans and 300 disabled registered with 2 clinics and 2 maternity units. We work through 14 centres where we have a Local Based Committee (LBC) of 7 volunteers in each centre who help us see and resolve the issues.
 
-![Centres map](https://cdn.sanity.io/images/hh4wbbfo/production/0ea8225187f082c4c155f3e884b573a00083710f-600x336.jpg?auto=format)
+![Centres map](/images/0ea8225187f082c4c155f3e884b573a00083710f.jpg)
 *Centres map*

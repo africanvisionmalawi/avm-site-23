@@ -15,14 +15,10 @@ tags:
 photoGallery:
   _type: photoGallery
   photos:
-    - _type: figure
+    - src: /images/30bd50a3f4ea137d75e4822f16d8fc7674aeea72.jpg
+      width: 2400
+      height: 1535
       alt: wooden landrover
-      caption: null
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-30bd50a3f4ea137d75e4822f16d8fc7674aeea72-3789x2424-jpg
 name: null
 url: null
 weight: 680

@@ -15,22 +15,16 @@ tags:
 photoGallery:
   _type: photoGallery
   photos:
-    - _type: figure
+    - src: /images/b172ef687376599d487bf27150f6e716a5f8ed00.jpg
+      width: 1024
+      height: 768
       alt: Hotplate
       caption: Hotplate
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-b172ef687376599d487bf27150f6e716a5f8ed00-1024x768-jpg
-    - _type: figure
+    - src: /images/ddebaa6e7fa3828ae35f8c2dda025cfcf4a8f748.jpg
+      width: 1024
+      height: 768
       alt: Hotplate
       caption: Hotplate
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-ddebaa6e7fa3828ae35f8c2dda025cfcf4a8f748-1024x768-jpg
 name: null
 url: null
 weight: 101

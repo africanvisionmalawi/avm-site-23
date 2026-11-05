@@ -15,14 +15,11 @@ tags:
 photoGallery:
   _type: photoGallery
   photos:
-    - _type: figure
+    - src: /images/2cc6132782e4b6ca9238daeb0305884c3c5dfd39.jpg
+      width: 1023
+      height: 554
       alt: leaf bowls
       caption: Leaf Bowls
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-2cc6132782e4b6ca9238daeb0305884c3c5dfd39-1023x554-jpg
 name: null
 url: null
 weight: 40

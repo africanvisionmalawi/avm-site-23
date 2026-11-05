@@ -1,0 +1,56 @@
+/* Ported from the Next.js component components/gallery/galleryModal.module.css (styles extracted from its Emotion styled blocks). */
+.gallery-modal-m__content {
+  width: 95vw;
+  margin: 5vh auto;
+  background: white;
+  padding: 0.5rem;
+  outline: none;
+}
+
+.gallery-modal-m__overlay {
+  background: hsla(0, 0%, 0%, 0.33);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: auto;
+  z-index: 1000;
+}
+
+.gallery-modal-m__leftarrow {
+  border-bottom: 20px solid transparent;
+  border-top: 20px solid transparent;
+  color: #fff;
+  cursor: pointer;
+  height: 0;
+  position: fixed;
+  top: 45%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 0;
+  border-right: 30px solid #fff;
+  left: 30px;
+}
+
+.gallery-modal-m__rightarrow {
+  border-bottom: 20px solid transparent;
+  border-top: 20px solid transparent;
+  color: #fff;
+  cursor: pointer;
+  height: 0;
+  position: fixed;
+  top: 45%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 0;
+  border-left: 30px solid #fff;
+  right: 30px;
+}
+
+.gallery-modal-m__arrowdisabled {
+  cursor: default;
+  opacity: 0.6;
+}

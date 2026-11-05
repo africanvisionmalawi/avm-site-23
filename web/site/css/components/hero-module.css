@@ -1,0 +1,7 @@
+/* Ported from the Next.js component components/Hero/hero.module.css (styles extracted from its Emotion styled blocks). */
+.hero-m__picture {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}

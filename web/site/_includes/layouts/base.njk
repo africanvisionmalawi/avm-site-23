@@ -1,0 +1,41 @@
+{%- from "components/shell.njk" import navMain, navSub, ourWorkTiles -%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+{%- set pageTitle = fullTitle or ((title + " |  African Vision Malawi") if title else site.title) %}
+{%- set pageDescription = description or site.description %}
+<title>{{ pageTitle }}</title>
+{%- if not bareHead %}
+<meta name="robots" content="index,follow">
+<meta name="description" content="{{ pageDescription }}">
+<meta property="og:title" content="{{ pageTitle }}">
+<meta property="og:description" content="{{ pageDescription }}">
+{%- if canonical is defined and canonical !== null %}
+<link rel="canonical" href="{{ site.baseUrl }}{{ canonical }}">
+{%- endif %}
+{%- endif %}
+{%- for size in ["57x57", "60x60", "72x72", "76x76", "114x114", "120x120", "144x144", "152x152", "180x180"] %}
+<link rel="apple-touch-icon" sizes="{{ size }}" href="/img/apple-icon-{{ size }}.png">
+{%- endfor %}
+<link rel="icon" type="image/png" sizes="192x192" href="/img/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/img/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+<link rel="preload" href="/fonts/b5c95a22b4347906-s.p.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" href="/fonts/630c17af355fa44e-s.p.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/site.css">
+<script defer src="https://app.tinyanalytics.io/pixel/xCGm0jsyv06tq4hy"></script>
+<script defer src="/js/site.js"></script>
+</head>
+<body>
+<div class="font-vars">
+<div class="layout__header"><div class="layout__header-inner">{{ navMain(navLinks) }}</div></div>
+{{ navSub(navLinks) }}
+<div class="layout__wrapper"><div class="main-body"><main>{{ content | safe }}</main>{{ ourWorkTiles(true) }}</div><div class="layout-m__container-lower">{% include "partials/footer.njk" %}</div></div>
+</div>
+<script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
+{% include "partials/snipcart.njk" %}
+</body>
+</html>

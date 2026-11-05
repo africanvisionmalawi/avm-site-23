@@ -23,5 +23,5 @@ Most Malawians rely on subsistence farming, but often fail to have food security
 
 Our focus area is 30km NW from the capital, Lilongwe. We started here because we saw they had a desperate need with no-one to help them. This primary area we support is about 400 km² with a population of 45,000. We have nearly 3000 orphans on our beneficiary list and 300 people on our disability register.
 
-![Our focus area](https://cdn.sanity.io/images/hh4wbbfo/production/12058c03239dd50d412c8c546c34896d90955060-750x477.png?auto=format)
+![Our focus area](/images/12058c03239dd50d412c8c546c34896d90955060.png)
 *Our focus area*

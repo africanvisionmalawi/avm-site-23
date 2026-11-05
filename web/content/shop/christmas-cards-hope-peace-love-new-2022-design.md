@@ -17,14 +17,11 @@ tags:
 photoGallery:
   _type: photoGallery
   photos:
-    - _type: figure
+    - src: /images/736a1880071eda30f13e6314d55e2529d9064a52.jpg
+      width: 1724
+      height: 1838
       alt: Christmas Card 2022
       caption: Christmas Card 2022
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-736a1880071eda30f13e6314d55e2529d9064a52-1724x1838-jpg
 name: null
 url: null
 weight: 185

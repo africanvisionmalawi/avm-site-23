@@ -17,62 +17,36 @@ tags:
 photoGallery:
   _type: photoGallery
   photos:
-    - _type: figure
+    - src: /images/d381ff1ba1dd6b3c9da87dee33808ea28f6f6fb0.jpg
+      width: 768
+      height: 1024
       alt: Pennsylvanian vintage quilt
       caption: Quilt on bed
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-d381ff1ba1dd6b3c9da87dee33808ea28f6f6fb0-768x1024-jpg
-    - _type: figure
+    - src: /images/af3312f792f226866475aad5576debcc6731e0f4.jpg
+      width: 768
+      height: 1024
       alt: Pennsylvanian vintage quilt 2
       caption: Quilt closeup
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-af3312f792f226866475aad5576debcc6731e0f4-768x1024-jpg
-    - _type: figure
+    - src: /images/8d8af240924041964dfdba0abb47b98ce2c7b8b9.jpg
+      width: 768
+      height: 1024
       alt: yellow quilt
-      caption: null
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-8d8af240924041964dfdba0abb47b98ce2c7b8b9-768x1024-jpg
-    - _type: figure
+    - src: /images/a9ae5953c805f39fdd637798b54eb56be581fc19.jpg
+      width: 768
+      height: 1024
       alt: oblong quilt
-      caption: null
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-a9ae5953c805f39fdd637798b54eb56be581fc19-768x1024-jpg
-    - _type: figure
+    - src: /images/d1d3345bd1763df1988aee47058d2d9638c00ea1.jpg
+      width: 768
+      height: 1024
       alt: hexagon quilt
-      caption: null
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-d1d3345bd1763df1988aee47058d2d9638c00ea1-768x1024-jpg
-    - _type: figure
+    - src: /images/061845a7c81e6bb0a80005476ac08419cd7b6caf.jpg
+      width: 768
+      height: 1024
       alt: rose quilt
-      caption: null
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-061845a7c81e6bb0a80005476ac08419cd7b6caf-768x1024-jpg
-    - _type: figure
+    - src: /images/28014d82cfee24a5b6d43c66d5d3bdf2e6dd56be.jpg
+      width: 768
+      height: 1024
       alt: multicolour quilt
-      caption: null
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-28014d82cfee24a5b6d43c66d5d3bdf2e6dd56be-768x1024-jpg
 name: null
 url: null
 weight: 5000

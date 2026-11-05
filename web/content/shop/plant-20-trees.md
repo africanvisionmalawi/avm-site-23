@@ -17,14 +17,10 @@ tags:
 photoGallery:
   _type: photoGallery
   photos:
-    - _type: figure
+    - src: /images/11a5701361c25b9e27ba4c5d0675a74efd730587.jpg
+      width: 337
+      height: 450
       alt: Plant 20 trees
-      caption: null
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-11a5701361c25b9e27ba4c5d0675a74efd730587-337x450-jpg
 name: null
 url: null
 weight: 4
@@ -36,4 +32,4 @@ We have tree nurseries growing in Malawi so why not give a friend a gift of tree
 
 We will send you the gift card/s
 
-![](https://cdn.sanity.io/images/hh4wbbfo/production/7ede27751144e451215359ac948bd5d3bc3a6916-291x197.jpg?auto=format)
+![](/images/7ede27751144e451215359ac948bd5d3bc3a6916.jpg)

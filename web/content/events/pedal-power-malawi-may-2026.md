@@ -16,14 +16,9 @@ endDate: '2026-05-10T16:00:00.000Z'
 allDay: true
 hideTime: true
 featured_image:
-  _type: image
-  alt: null
-  caption: null
-  crop: null
-  hotspot: null
-  asset:
-    _type: reference
-    _ref: image-ebf22f1538d89c81aaaeda743c9b302928159c98-480x640-jpg
+  src: /images/ebf22f1538d89c81aaaeda743c9b302928159c98.jpg
+  width: 480
+  height: 640
 noHero: true
 tag: null
 location: null
@@ -56,4 +51,4 @@ Highlights of the trip include:
 
 There are two films about the trip. [A quick overview here](https://youtu.be/z8qqTZ03Q8U?si=7E9vZQBE_QvqSMdP) and a longer [3 minute version here](https://youtu.be/yofSHzfzbc4?si=Ai737rSA7pCDMTV8)
 
-[Pedal Power 2026](https://cdn.sanity.io/files/hh4wbbfo/production/f585c236db58714bc3434c68a969d903525840dc.pdf)
+[Pedal Power 2026](/files/f585c236db58714bc3434c68a969d903525840dc.pdf)

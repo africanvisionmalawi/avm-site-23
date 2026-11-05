@@ -15,102 +15,66 @@ content:
     _type: photoGallery
     disabled: false
     photos:
-      - _type: figure
+      - src: /images/0c6b52a1d0b58393ed3ed83f36569410866519fa.jpg
+        width: 2400
+        height: 1800
         alt: Container delivery
         caption: Container being delivered to empty site
-        crop: null
-        hotspot: null
-        asset:
-          _type: reference
-          _ref: image-0c6b52a1d0b58393ed3ed83f36569410866519fa-2592x1944-jpg
-      - _type: figure
+      - src: /images/107aaf080f831ea2ffc3df670dfd1a5ab420fe43.jpg
+        width: 2400
+        height: 1800
         alt: Container on empty site
         caption: Site before building commenced
-        crop: null
-        hotspot: null
-        asset:
-          _type: reference
-          _ref: image-107aaf080f831ea2ffc3df670dfd1a5ab420fe43-3648x2736-jpg
-      - _type: figure
+      - src: /images/36c8c73edf595b33291bc458ccc778d63471207b.jpg
+        width: 2048
+        height: 1536
         alt: Perimeter fence
         caption: Perimeter to the property
-        crop: null
-        hotspot: null
-        asset:
-          _type: reference
-          _ref: image-36c8c73edf595b33291bc458ccc778d63471207b-2048x1536-jpg
-      - _type: figure
+      - src: /images/ac0c9c90accf74daaf8d973cdeff242cb4eb7c44.jpg
+        width: 2400
+        height: 1800
         alt: Building underway
         caption: Building underway
-        crop: null
-        hotspot: null
-        asset:
-          _type: reference
-          _ref: image-ac0c9c90accf74daaf8d973cdeff242cb4eb7c44-4000x3000-jpg
-      - _type: figure
+      - src: /images/3a8be6c365af7ec502517ce75c622c0600f442c1.jpg
+        width: 2400
+        height: 1800
         alt: View from nearby field
         caption: View from nearby field
-        crop: null
-        hotspot: null
-        asset:
-          _type: reference
-          _ref: image-3a8be6c365af7ec502517ce75c622c0600f442c1-3648x2736-jpg
-      - _type: figure
+      - src: /images/e6fb40e6a8a457777e1d8737fe534805a30508bd.jpg
+        width: 1286
+        height: 612
         alt: The New Office!
         caption: The New Office!
-        crop: null
-        hotspot: null
-        asset:
-          _type: reference
-          _ref: image-e6fb40e6a8a457777e1d8737fe534805a30508bd-1286x612-jpg
-      - _type: figure
+      - src: /images/ea982629c3727b8517626663b5d40fff30670d24.jpg
+        width: 2048
+        height: 1536
         alt: Office views
         caption: Office views
-        crop: null
-        hotspot: null
-        asset:
-          _type: reference
-          _ref: image-ea982629c3727b8517626663b5d40fff30670d24-2048x1536-jpg
-      - _type: figure
+      - src: /images/07ec42c06701bdf74e184d03487711a1c4fda17d.jpg
+        width: 2048
+        height: 1536
         alt: Office views
         caption: Office views
-        crop: null
-        hotspot: null
-        asset:
-          _type: reference
-          _ref: image-07ec42c06701bdf74e184d03487711a1c4fda17d-2048x1536-jpg
-      - _type: figure
+      - src: /images/26b87a9047ee361020135963d39a5f509dd22961.jpg
+        width: 2400
+        height: 1800
         alt: Front entrance
         caption: Front Entrance
-        crop: null
-        hotspot: null
-        asset:
-          _type: reference
-          _ref: image-26b87a9047ee361020135963d39a5f509dd22961-4000x3000-jpg
-      - _type: figure
+      - src: /images/9036dd50b67b03f50473a559022011c944852660.png
+        width: 607
+        height: 455
         alt: Inside the office
         caption: Inside the office
-        crop: null
-        hotspot: null
-        asset:
-          _type: reference
-          _ref: image-9036dd50b67b03f50473a559022011c944852660-607x455-png
-      - _type: figure
+      - src: /images/20fd28b34b601d47dea68ce16d2129b55b08e306.jpg
+        width: 2048
+        height: 1536
         alt: Office views
         caption: Office views
-        crop: null
-        hotspot: null
-        asset:
-          _type: reference
-          _ref: image-20fd28b34b601d47dea68ce16d2129b55b08e306-2048x1536-jpg
-      - _type: figure
+      - src: /images/a39e88854f096f4425157d9f022a3db5fd860d99.jpg
+        width: 1536
+        height: 2048
         alt: Planting around the office
         caption: Planting around the office
-        crop: null
-        hotspot: null
-        asset:
-          _type: reference
-          _ref: image-a39e88854f096f4425157d9f022a3db5fd860d99-1536x2048-jpg
 ---
 We have built our own offices in the Njewa suburb of Lilongwe (Malawi’s capital city) to showcase sustainable building techniques and permaculture gardens.
 

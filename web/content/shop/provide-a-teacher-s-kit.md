@@ -17,14 +17,10 @@ tags:
 photoGallery:
   _type: photoGallery
   photos:
-    - _type: figure
+    - src: /images/ad7fffa0a75740ef26f4e8e5ce904b6d07688afb.jpg
+      width: 450
+      height: 300
       alt: Provide a teacher's kit
-      caption: null
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-ad7fffa0a75740ef26f4e8e5ce904b6d07688afb-450x300-jpg
 name: null
 url: null
 weight: 4

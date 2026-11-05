@@ -12,7 +12,7 @@ hero: null
 bannerMsg: null
 content: []
 ---
-![La Guimarderie in France](https://cdn.sanity.io/images/hh4wbbfo/production/91dd29faea43e2f3e9a811f94e41db2d96dfa9c5-400x266.jpg?auto=format)
+![La Guimarderie in France](/images/91dd29faea43e2f3e9a811f94e41db2d96dfa9c5.jpg)
 *La Guimarderie in France*
 
 Two of our supporters own a beautiful holiday home in the Loire Valley in France and all proceeds raised from renting it, goes to African Vision Malawi.

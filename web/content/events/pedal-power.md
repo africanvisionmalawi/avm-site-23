@@ -16,14 +16,9 @@ endDate: '2024-05-21T23:00:00.000Z'
 allDay: true
 hideTime: true
 featured_image:
-  _type: image
-  alt: null
-  caption: null
-  crop: null
-  hotspot: null
-  asset:
-    _type: reference
-    _ref: image-d327df3b33480768164b42a6c6bccbbc5c4cb833-4608x3456-jpg
+  src: /images/d327df3b33480768164b42a6c6bccbbc5c4cb833.jpg
+  width: 2400
+  height: 1800
 noHero: true
 tag: null
 location: 'Sam’s Village, Lilongwe, Malawi'
@@ -40,8 +35,8 @@ They have 6 cycle days and 2 off-days, one on safari (lions, cheetah, elephant, 
 
 £1,650 per person is all inclusive for the cycle ride (accommodation, food, transport, cycle hire, safari) but doesn’t include flights, insurance, hike, vaccinations and visa. We ask you to raise at least £1,000 which will go towards our projects. Here are the details of the trip:
 
-[PDF](https://cdn.sanity.io/files/hh4wbbfo/production/05ba361fc5f27f7061048357c633def25f063537.pdf)
+[PDF](/files/05ba361fc5f27f7061048357c633def25f063537.pdf)
 
 If you are interested, please contact [heather.palmer@africanvision.org.uk](mailto:heather.palmer@africanvision.org.uk) for further information.
 
-![](https://cdn.sanity.io/images/hh4wbbfo/production/a0d84423c1c5260706d999684eb3b86a8e508192-1654x2339.jpg?auto=format)
+![](/images/a0d84423c1c5260706d999684eb3b86a8e508192.jpg)

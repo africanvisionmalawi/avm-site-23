@@ -16,14 +16,9 @@ endDate: '2024-11-15T23:30:00.000Z'
 allDay: false
 hideTime: false
 featured_image:
-  _type: image
-  alt: null
-  caption: null
-  crop: null
-  hotspot: null
-  asset:
-    _type: reference
-    _ref: image-68e60f904fb3c0f151118b621eb80880a4b88964-1280x720-jpg
+  src: /images/68e60f904fb3c0f151118b621eb80880a4b88964.jpg
+  width: 1280
+  height: 720
 noHero: true
 tag: null
 location: 'The Waggon and Horses Pub,  1 Surbiton Hill Road, Surbiton, KT6 4TW'
@@ -32,19 +27,19 @@ telephone: 07798 695287
 cost: 40
 url: 'https://www.africanvision.org.uk/shop/tickets-to-avm-ladies-night-2024'
 ---
-![](https://cdn.sanity.io/images/hh4wbbfo/production/68e60f904fb3c0f151118b621eb80880a4b88964-1280x720.jpg?auto=format)
+![](/images/68e60f904fb3c0f151118b621eb80880a4b88964.jpg)
 
 **Join us for a Night of Giving and Fun!**
 
-Support our women-focused programmes in Malawi at our fundraising event on** Friday, November 15th at 6 pm – 11:30pm. **Enjoy a delicious 3-course meal, a welcome drink, and great company all while making a difference.
+Support our women-focused programmes in Malawi at our fundraising event on **Friday, November 15th at 6 pm – 11:30pm.** Enjoy a delicious 3-course meal, a welcome drink, and great company all while making a difference.
 
-**Venue: **The Waggon and Horses Pub: 1, Surbiton Hill Road, Surbiton, KT6 4TW
+**Venue:** The Waggon and Horses Pub: 1, Surbiton Hill Road, Surbiton, KT6 4TW
 
 **Menu choice:** We <u>must pass on your menu choice</u> by October 31st. If you have booked, please look at the menu below and give us your three choices by email **[here.](mailto:tina.walker@africanvision.org.uk; heather.palmer@africanvision.org.uk)**
 
-[PDF](https://cdn.sanity.io/files/hh4wbbfo/production/3c49a693147667155bbbe111293916f5f1df9676.pdf)
+[PDF](/files/3c49a693147667155bbbe111293916f5f1df9676.pdf)
 
-#### **Limited Tickets Available: Only 50 tickets are available at £40 each. **[**Book tickets here**](https://www.africanvision.org.uk/shop/tickets-to-avm-ladies-night-2024)
+#### **Limited Tickets Available: Only 50 tickets are available at £40 each.** [**Book tickets here**](https://www.africanvision.org.uk/shop/tickets-to-avm-ladies-night-2024)
 
 **Why support women?** It is women who are the main carers in Malawi, many struggle to make ends meet to look after their family.
 

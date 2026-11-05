@@ -17,14 +17,10 @@ tags:
 photoGallery:
   _type: photoGallery
   photos:
-    - _type: figure
+    - src: /images/6ec42403f8d8f33cd436936d51398b5581b4833d.jpg
+      width: 450
+      height: 337
       alt: Feed an orphan for a year
-      caption: null
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-6ec42403f8d8f33cd436936d51398b5581b4833d-450x337-jpg
 name: null
 url: null
 weight: 4

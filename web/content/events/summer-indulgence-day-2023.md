@@ -15,14 +15,9 @@ endDate: '2023-06-17T17:00:00.000Z'
 allDay: true
 hideTime: false
 featured_image:
-  _type: image
-  alt: null
-  caption: null
-  crop: null
-  hotspot: null
-  asset:
-    _type: reference
-    _ref: image-dccf4625a4cb14fa2d8916326858ea7a904c3f2a-1654x2339-jpg
+  src: /images/dccf4625a4cb14fa2d8916326858ea7a904c3f2a.jpg
+  width: 1654
+  height: 2339
 noHero: true
 tag: null
 location: '31 Upper Brighton Road, Surbiton, Surrey KT6 6QX '
@@ -35,7 +30,7 @@ COME AND JOIN US FROM 10:00 – 6:00PM IN OUR BEAUTIFUL GARDEN
 
 31 Upper Brighton Road, Surbiton, Surrey KT6 6QX
 
-### You can book [**HERE **](https://www.signupgenius.com/go/60b0c4aa4ad2fa3fb6-indulgence#/)
+### You can book [**HERE** ](https://www.signupgenius.com/go/60b0c4aa4ad2fa3fb6-indulgence#/)
 
 Massage & reflexology treatments, live music, raffle, bar, lunches & homemade cake, facials, yoga sessions, piano recital, gong bath, Malawi artefacts
 
@@ -47,4 +42,4 @@ All proceeds go to supporting orphan and disabled people in Malawi
 
 You can book your treatment or the piano recitals [Here](https://www.signupgenius.com/go/60b0c4aa4ad2fa3fb6-indulgence#/) or for more information, contact: [info@africanvision.org.uk](mailto:info@africanvision.org.uk) Phone: 07798 695287 or 020 8287 8169
 
-![](https://cdn.sanity.io/images/hh4wbbfo/production/dccf4625a4cb14fa2d8916326858ea7a904c3f2a-1654x2339.jpg?auto=format)
+![](/images/dccf4625a4cb14fa2d8916326858ea7a904c3f2a.jpg)

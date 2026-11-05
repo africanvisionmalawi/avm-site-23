@@ -1,0 +1,111 @@
+/* Ported from the Next.js component components/ourwork/OurWorkTiles.js (styles extracted from its Emotion styled blocks). */
+.our-work-tiles__container {
+  margin: 0 auto 3rem;
+  max-width: 1080px;
+  padding: 0;
+  position: relative;
+  width: 100%;
+}
+
+.our-work-tiles__tile-cont {
+  display: flex;
+  flex-wrap: wrap;
+  @media (min-width: 480px) {
+    display: grid;
+    grid-gap: 8px;
+    template-columns: 1fr 1fr;
+    padding: 0 8px;
+  }
+}
+
+.our-work-tiles__tile {
+  height: 228px;
+  overflow: hidden;
+  padding: 4px;
+  position: relative;
+  & img {
+    border-radius: 4px;
+  }
+  width: 100%;
+  @media (min-width: 480px) {
+    padding: 0;
+    &.fullWidth {
+      grid-column: 1 / 3;
+    }
+    &.halfSize {
+    }
+  }
+  & a {
+    border-radius: 4px;
+    display: block;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    img {
+      border-radius: 4px;
+      height: 100%;
+      width: 100%;
+    }
+  }
+  & a.health {
+    background: url(/img/mainphoto_health.jpg) 0 0 no-repeat;
+    background-size: cover;
+  }
+  & a.village {
+    background: url(/img/mainphoto_village-ver3.jpg) 0 0 no-repeat;
+    background-size: cover;
+  }
+  & a.water {
+    background: url(/img/mainphoto_water.jpg) 0 0 no-repeat;
+    background-size: cover;
+  }
+  & a.education {
+    background: url(/img/mainphoto_education.jpg) 0 0 no-repeat;
+    background-size: cover;
+  }
+  & a.environment {
+    background: url(/img/mainphoto_environment.jpg) 0 0 no-repeat;
+    background-size: cover;
+  }
+  & a.celebrate {
+    background: url(/img/mainphoto_celebrate.jpg) 0 0 no-repeat;
+    background-size: cover;
+  }
+}
+
+.our-work-tiles__heading {
+  margin: 0 0 0.5em;
+  text-align: center;
+}
+
+.our-work-tiles__sub-heading {
+  color: #fff;
+  display: inline-block;
+  font-size: 2.4rem;
+  margin: 0 9px;
+  padding: 0 0.6em;
+  text-align: center;
+  text-shadow: 5px 0px 15px rgba(150, 150, 150, 0.84);
+  z-index: 3;
+}
+
+.our-work-tiles__overlay {
+  align-items: center;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  top: left;
+  width: 100%;
+  z-index: 2;
+  &:hover {
+    span {
+      font-size: 2.8rem;
+      border-bottom: 1px solid #fff;
+      transition: all 0.5s ease-in-out;
+    }
+  }
+}
+

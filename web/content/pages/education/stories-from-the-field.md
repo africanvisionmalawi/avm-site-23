@@ -24,14 +24,10 @@ content:
         linkTitle: Loness Eliya's Story
         extUrl: null
         photo:
-          _type: figure
+          src: /images/b1956647525c588b8451e8cbd74328e00682a332.jpg
+          width: 1140
+          height: 510
           alt: Loness Eliya's Story
-          caption: null
-          crop: null
-          hotspot: null
-          asset:
-            _type: reference
-            _ref: image-b1956647525c588b8451e8cbd74328e00682a332-1140x510-jpg
         linkTextMarkdown: Nursing student at Kamuzu College of Nursing
         url:
           slug:
@@ -50,14 +46,10 @@ content:
         linkTitle: Lobiner Kanthenga's story
         extUrl: null
         photo:
-          _type: figure
+          src: /images/b1956647525c588b8451e8cbd74328e00682a332.jpg
+          width: 1140
+          height: 510
           alt: Lobiner Kanthenga's story
-          caption: null
-          crop: null
-          hotspot: null
-          asset:
-            _type: reference
-            _ref: image-b1956647525c588b8451e8cbd74328e00682a332-1140x510-jpg
         linkTextMarkdown: >-
           Studying at Kamuzu College of Nursing for a BSc in Nursing and
           Midwifer

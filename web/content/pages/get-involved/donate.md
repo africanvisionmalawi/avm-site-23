@@ -30,7 +30,7 @@ Do you pay UK tax? If so we can increase your donation by 25% at no extra cost t
 
 Or you may prefer to fill in a **Regular Payments** form below and post it to your bank to give a regular donation.
 
-[PDF](https://cdn.sanity.io/files/hh4wbbfo/production/30da9a8b1b812045f7ec43cfe82a59db64279dd1.pdf)
+[PDF](/files/30da9a8b1b812045f7ec43cfe82a59db64279dd1.pdf)
 
 ## 
 

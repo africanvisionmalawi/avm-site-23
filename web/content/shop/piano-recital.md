@@ -15,14 +15,10 @@ tags:
 photoGallery:
   _type: photoGallery
   photos:
-    - _type: figure
+    - src: /images/47a98502d61e489c142f4eb9c06a76d37e74bbc4.jpg
+      width: 820
+      height: 820
       alt: A Private Classical Piano Recital
-      caption: null
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-47a98502d61e489c142f4eb9c06a76d37e74bbc4-820x820-jpg
 name: null
 url: null
 weight: null

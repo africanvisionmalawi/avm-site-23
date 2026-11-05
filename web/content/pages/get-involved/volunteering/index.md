@@ -36,7 +36,7 @@ We like to use volunteers to do research, programme proposals, evaluations, impl
 
 1. Complete our Volunteer evaluation, so we can make the most of future volunteers’ time and skills in making a difference.
 
-![Literacy session in the Library](https://cdn.sanity.io/images/hh4wbbfo/production/3cbf44eb7c8f781ec2cb40ef296634b58239c041-640x852.jpg?auto=format)
+![Literacy session in the Library](/images/3cbf44eb7c8f781ec2cb40ef296634b58239c041.jpg)
 *Literacy session in the Library*
 
 ## Downloadable information:
@@ -91,7 +91,7 @@ It is important to read the Staff Handbook and Volunteer Pack, which will give y
 
 ## Example volunteer costs
 
-![Example volunteer costs](https://cdn.sanity.io/images/hh4wbbfo/production/eea9797d0572787588c2f08e4d59d6e5586a9509-761x597.jpg?auto=format)
+![Example volunteer costs](/images/eea9797d0572787588c2f08e4d59d6e5586a9509.jpg)
 *Example volunteer costs*
 
 The above is an indicative table – Please use the volunteer calculator excel file to do your own calculations.

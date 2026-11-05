@@ -18,7 +18,7 @@ Jack is the Education Manager for African Vision Malawi (aka Landirani Trust). H
 
 Growing up with a single parent and three older siblings in sub-Saharan region Malawi in a very remote southern part -Thyolo district – I have encountered lots of challenges. Divorce might be an answer to a troubled marriage but it leaves lots of scars in children. My parents divorced when I was about two -so I was told. My father took good care of us but I missed motherly love. For many years I used to believe that I didn’t have a mother and that was the biggest scar divorce left me.
 
-![Jack Maduka](https://cdn.sanity.io/images/hh4wbbfo/production/b8dbd7413d2a0618270b468a9c276af8802dd136-1855x2105.jpg?auto=format)
+![Jack Maduka](/images/b8dbd7413d2a0618270b468a9c276af8802dd136.jpg)
 *Jack Maduka*
 
 I never had opportunity for kindergarten as there was none – just village life. At age six, I started primary school. I felt great and safe being at school because my older siblings were there in upper classes. Shortly afterwards, my father developed chronic illness that hampered his farming activities. Support for us slowed, which lead to my two sisters dropping out of school and opting for marriages. This was the time my brother and I were made to grow faster than our ages because of responsibilities to look after our sickly father and to manage farms. Unfortunately, my father died in 1995 while I was in standard five and my brother was in form two at Zomba Catholic National Secondary, one of the prestigious schools in the old capital city of Malawi. Then my brother remained the only encouragement/support and my role model.

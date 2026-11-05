@@ -16,10 +16,10 @@ content: []
 
 We link schools in Malawi with schools in the UK to establish a relationship between the two countries through correspondence. We want the schools in Malawi to learn about and learn from the schools, teachers and children in the UK, and likewise the students in the UK can learn a lot from those in Malawi.
 
-![School Children at Chitedze](https://cdn.sanity.io/images/hh4wbbfo/production/0e759bc236dbd7edec6a3aa2227393956f57c8c4-1000x667.jpg?auto=format)
+![School Children at Chitedze](/images/0e759bc236dbd7edec6a3aa2227393956f57c8c4.jpg)
 *School Children at Chitedze*
 
-![M’bang’ombe School Boy](https://cdn.sanity.io/images/hh4wbbfo/production/44fe9034c8010fa586756c641507782da8abd6c4-1000x1500.jpg?auto=format)
+![M’bang’ombe School Boy](/images/44fe9034c8010fa586756c641507782da8abd6c4.jpg)
 *M’bang’ombe School Boy*
 
 We currently have 20 Malawian schools partnered with 23 schools in the UK. Out of 20, three have double partnerships (M’bang’ombe primary in Mteza Zone and Masiye primary and Kafutwe both in Chikhutu Zone).
@@ -76,7 +76,7 @@ Songwe & [Twickenham Prep School](https://twickenhamprep.org.uk/about-us/headmas
 
 We do school partnership updates twice a year where we go to the schools in the UK and collect information to take to Malawi; we then collect similar information from the schools in Malawi to bring back to their partners in the UK.
 
-![Update presentation at M'bang'ombe](https://cdn.sanity.io/images/hh4wbbfo/production/e22177cf76b4e5be22857d739fba513fda861a0a-1000x667.jpg?auto=format)
+![Update presentation at M'bang'ombe](/images/e22177cf76b4e5be22857d739fba513fda861a0a.jpg)
 *Update presentation at M'bang'ombe*
 
 The Schools Partnership Programme has been so successful that in 2015 we began linking our Malawian pre-schools (Community Based Children’s Centres) with UK pre-schools.

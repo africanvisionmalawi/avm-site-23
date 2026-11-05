@@ -1,5 +1,9 @@
-[[redirects]]
-from = "/avm-studio/*"
-to = "https://avm.sanity.studio/desk/"
-status = 200
-force = true
+# Netlify settings for the Eleventy site (paths are relative to this web/ folder).
+[build]
+  command = "yarn build"
+  publish = "_site"
+
+[build.environment]
+  NODE_VERSION = "20"
+  # Event dates/times and the upcoming/past split are calculated in UK time.
+  TZ = "Europe/London"

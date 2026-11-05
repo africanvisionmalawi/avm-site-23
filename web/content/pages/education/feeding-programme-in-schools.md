@@ -16,7 +16,7 @@ We have set up 9 feeding centres in our area at our Community Based Children Cen
 
 The under 5’s are the most vulnerable group in our area. Providing a nutritional meal at our pre-schools not only encourages the children to come to school, it helps them learn more effectively. Their bodies are stronger to fight any infections and diseases and their bodies are not stunted, as many are in our area, due to poor nutrition.
 
-![Boy at M’teza feeding programme](https://cdn.sanity.io/images/hh4wbbfo/production/1390df49a5a1e7c824213b075ac7ffa8d31cb1fe-640x852.jpg?auto=format)
+![Boy at M’teza feeding programme](/images/1390df49a5a1e7c824213b075ac7ffa8d31cb1fe.jpg)
 *Boy at M’teza feeding programme*
 
 We have been working in partnership with Feed The Children and are using new fuel saving ovens. This helps to use less firewood, which is part of our reforestation programme. Feed The Children has been providing the food and African Vision Malawi orgainses the training and operation of the feeding programme. We also provide the fuel saving oven and the bowls and spoons.
@@ -31,7 +31,7 @@ Can you donate to help feed the under 5’s at pre-school?
 
 ## To set up a feeding programme:
 
-![Children at M’teza feeding programme](https://cdn.sanity.io/images/hh4wbbfo/production/ab108d817696c21cc394f3c629fc7096ac9d57c8-640x852.jpg?auto=format)
+![Children at M’teza feeding programme](/images/ab108d817696c21cc394f3c629fc7096ac9d57c8.jpg)
 *Children at M’teza feeding programme*
 
 The fuel saving oven costs 75,000 MWK which is around £320.

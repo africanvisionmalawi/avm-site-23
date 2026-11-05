@@ -34,10 +34,10 @@ Here Heather Palmer describes a visit in September 2015 with our disability outr
 
 > We are soooooo lucky to have the NHS in the UK and if people could see what I have witnessed today, they would realise they have nothing to complain about!”
 
-![Jennifa – proud of her prosthetic leg!](https://cdn.sanity.io/images/hh4wbbfo/production/5ff92c00e04269bfcd73856b79b00ce9db2744be-1000x1333.jpg?auto=format)
+![Jennifa – proud of her prosthetic leg!](/images/5ff92c00e04269bfcd73856b79b00ce9db2744be.jpg)
 *Jennifa – proud of her prosthetic leg!*
 
-![Lewis – learning to walk](https://cdn.sanity.io/images/hh4wbbfo/production/076fe1d827b13df03b9873a8fbc19ea437a46b2a-1000x1333.jpg?auto=format)
+![Lewis – learning to walk](/images/076fe1d827b13df03b9873a8fbc19ea437a46b2a.jpg)
 *Lewis – learning to walk*
 
 If you would like to help more children like Jennifa and Lewis then please do get in touch or simply donate.

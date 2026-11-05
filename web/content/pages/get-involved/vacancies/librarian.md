@@ -20,9 +20,9 @@ African Vision Malawi is a charitable organization which was established in 2005
 
 Sam’s Village a training facility of African Vision Malawi is seeking a dedicated Librarian to support our community and school children.The library serves are a vital resource for learning and development in the area.
 
-**Vacancy: **Librarian
+**Vacancy:** Librarian
 
-**Location: **Sam’s Village, Chigonthi Village near M’bang’ombe Trading Centre, Lilongwe District
+**Location:** Sam’s Village, Chigonthi Village near M’bang’ombe Trading Centre, Lilongwe District
 
 **Key Responsibilities:**
 

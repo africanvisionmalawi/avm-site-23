@@ -15,14 +15,10 @@ tags:
 photoGallery:
   _type: photoGallery
   photos:
-    - _type: figure
+    - src: /images/bc164fe4e3b15d459d69eb8af0a0147c8c088cf9.jpg
+      width: 640
+      height: 480
       alt: Aeroplane
-      caption: null
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-bc164fe4e3b15d459d69eb8af0a0147c8c088cf9-640x480-jpg
 name: null
 url: null
 weight: 350

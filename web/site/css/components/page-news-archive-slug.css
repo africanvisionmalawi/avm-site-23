@@ -1,0 +1,11 @@
+/* Ported from the Next.js component pages/news/archive/[...slug].jsx (styles extracted from its Emotion styled blocks). */
+.page-news-archive-slug__post-inner {
+  padding: 0 1rem;
+}
+
+.page-news-archive-slug__news-footer {
+  border-top: 1px solid #b75906;
+  margin-top: 2rem;
+  text-align: right;
+}
+

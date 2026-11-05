@@ -17,14 +17,9 @@ endDate: '2024-01-07T16:30:00.000Z'
 allDay: false
 hideTime: false
 featured_image:
-  _type: image
-  alt: null
-  caption: null
-  crop: null
-  hotspot: null
-  asset:
-    _type: reference
-    _ref: image-a448c47d9f4a52c2e1e706d4c52a4f030a084065-4032x3024-jpg
+  src: /images/a448c47d9f4a52c2e1e706d4c52a4f030a084065.jpg
+  width: 2400
+  height: 1800
 noHero: true
 tag: null
 location: 'St. Matthew''s Church, Surbiton, KT6 6JQ'

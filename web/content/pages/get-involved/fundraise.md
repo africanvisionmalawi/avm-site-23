@@ -22,7 +22,7 @@ Have a look at who is fundraising for us right now:
 
 In the past supporters have organised table top fairs and supermarket bucket collections, abseiled, climbed Mt Kilimangaro, run 10km races, competed in the Lilongwe Triathlon, run the North London Half Marathon and even the London Marathon for us.
 
-![Shaughan Hawks, our London Marathon runner](https://cdn.sanity.io/images/hh4wbbfo/production/971a0e67688019a69f7a7edad4898c07ce3afeed-1200x1600.jpg?auto=format)
+![Shaughan Hawks, our London Marathon runner](/images/971a0e67688019a69f7a7edad4898c07ce3afeed.jpg)
 *Shaughan Hawks in training for the London Marathon*
 
 ## What can YOU do?
@@ -47,7 +47,7 @@ Maybe you’d like to run an activity for kids to raise money, or maybe your chi
 
 Get in touch with us at [info@africanvision.org.uk](mailto:info@africanvision.org.uk) for a fundraising welcome pack!
 
-![Heather Palmer finishing her first ever 10km race](https://cdn.sanity.io/images/hh4wbbfo/production/43e15abcc719e9392649d78c0bfc0b0e7f3838f4-365x553.jpg?auto=format)
+![Heather Palmer finishing her first ever 10km race](/images/43e15abcc719e9392649d78c0bfc0b0e7f3838f4.jpg)
 *Heather Palmer finishing her first ever 10km race*
 
 ## Resources
@@ -62,5 +62,5 @@ We have good links with the cornerHOUSE in Surbiton if you need a venue.
 
 Your support will make a direct difference to the lives of orphans and vulnerable people in rural Malawi – some of the poorest people in the world. Thank you for making a difference.
 
-![School Children at Chitedze](https://cdn.sanity.io/images/hh4wbbfo/production/20e9f84719af64a05ad8f4ddf750f8686b26b40a-3264x2176.jpg?auto=format)
+![School Children at Chitedze](/images/20e9f84719af64a05ad8f4ddf750f8686b26b40a.jpg)
 *School Children at Chitedze*

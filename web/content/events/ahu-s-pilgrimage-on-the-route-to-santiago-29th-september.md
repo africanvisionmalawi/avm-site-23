@@ -13,14 +13,9 @@ endDate: null
 allDay: true
 hideTime: true
 featured_image:
-  _type: image
-  alt: null
-  caption: null
-  crop: null
-  hotspot: null
-  asset:
-    _type: reference
-    _ref: image-132f0eaac122f19b83e8e78ad71f3cfd99f9797a-599x825-jpg
+  src: /images/132f0eaac122f19b83e8e78ad71f3cfd99f9797a.jpg
+  width: 599
+  height: 825
 noHero: false
 tag: null
 location: ' Cathedral of Santiago de Compostela Praza do Obradoiro, s/n, 15704 Santiago de Compostela, A Coruña Spain'

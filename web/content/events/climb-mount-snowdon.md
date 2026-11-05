@@ -13,14 +13,9 @@ endDate: '2025-09-06T13:45:00.000Z'
 allDay: true
 hideTime: true
 featured_image:
-  _type: image
-  alt: null
-  caption: null
-  crop: null
-  hotspot: null
-  asset:
-    _type: reference
-    _ref: image-36ac44bee6aaf7c8330b80c16b2c2de1af056131-619x747-jpg
+  src: /images/36ac44bee6aaf7c8330b80c16b2c2de1af056131.jpg
+  width: 619
+  height: 747
 noHero: false
 tag: null
 location: Mount Snowdon
@@ -49,4 +44,4 @@ Don’t miss this unforgettable adventure!
 
 **Email us directly on** [hello@lovesupportunite.org](mailto:hello@lovesupportunite.org?cc=heather.palmer@africanvision.org.uk&subject=Snowdon%202025) copying [heather.palmer@africanvision.org.uk](mailto:hello@lovesupportunite.org?cc=heather.palmer@africanvision.org.uk&subject=Snowdon%202025) so we know you want to join the team!
 
-[Snowdon 'Everything You need to Know' Guidebook](https://cdn.sanity.io/files/hh4wbbfo/production/740a9c2f96b73f0b5b1ca813c830d49a469aa669.pdf)
+[Snowdon 'Everything You need to Know' Guidebook](/files/740a9c2f96b73f0b5b1ca813c830d49a469aa669.pdf)

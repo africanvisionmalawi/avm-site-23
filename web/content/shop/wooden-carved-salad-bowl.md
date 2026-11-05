@@ -15,14 +15,10 @@ tags:
 photoGallery:
   _type: photoGallery
   photos:
-    - _type: figure
+    - src: /images/70b6f222d580c57a842429d6878a1e1258d61903.jpg
+      width: 2400
+      height: 2030
       alt: salad bowl
-      caption: null
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-70b6f222d580c57a842429d6878a1e1258d61903-3575x3024-jpg
 name: null
 url: null
 weight: 1100

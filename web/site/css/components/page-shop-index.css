@@ -1,0 +1,36 @@
+/* Ported from the Next.js component pages/shop/index.jsx (styles extracted from its Emotion styled blocks). */
+.page-shop-index__container {
+  margin: 0 auto;
+  max-width: 1080px;
+  padding: 3em 0;
+}
+
+.page-shop-index__heading {
+  font-family: Raleway, "Helvetica Neue", "Segoe UI", "Helvetica", "Arial",
+    "sans-serif";
+  padding: 0 1rem;
+  @media (min-width: 768px) {
+    padding: 0 5rem;
+  }
+}
+
+.page-shop-index__shop-index-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 280px);
+  grid-gap: 40px;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  & li {
+    list-style-type: none;
+    margin: 8px 0;
+    opacity: 0.9;
+    padding: 0;
+    position: relative;
+  }
+  & li:hover {
+    opacity: 1;
+  }
+}
+

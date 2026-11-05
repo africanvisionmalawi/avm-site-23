@@ -1,0 +1,25 @@
+/* Ported from the Next.js component components/CartLink.js (styles extracted from its Emotion styled blocks). */
+.cart-link__cart-top {
+  cursor: pointer;
+  display: flex;
+  position: relative;
+}
+
+.cart-link__total-items {
+  color: #fff;
+  display: inline-block;
+  font-size: 0.8em;
+  font-weight: bold;
+  height: 18px;
+  margin-right: 4px;
+  text-align: center;
+  &.orange {
+    color: #c17d3d;
+  }
+}
+
+.cart-link__icon {
+  height: auto;
+  width: 26px;
+}
+

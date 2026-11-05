@@ -15,14 +15,10 @@ tags:
 photoGallery:
   _type: photoGallery
   photos:
-    - _type: figure
+    - src: /images/ca06d813fd102c5239654f4fd7f99ba1d8159ca2.jpg
+      width: 300
+      height: 450
       alt: Train a carer
-      caption: null
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-ca06d813fd102c5239654f4fd7f99ba1d8159ca2-300x450-jpg
 name: null
 url: null
 weight: 4

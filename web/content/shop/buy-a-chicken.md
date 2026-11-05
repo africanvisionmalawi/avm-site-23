@@ -15,14 +15,10 @@ tags:
 photoGallery:
   _type: photoGallery
   photos:
-    - _type: figure
+    - src: /images/a756e8216c4f1cf7b2ac1eaa37e2d39848cc79d3.jpg
+      width: 450
+      height: 300
       alt: Buy a chicken
-      caption: null
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-a756e8216c4f1cf7b2ac1eaa37e2d39848cc79d3-450x300-jpg
 name: null
 url: null
 weight: 9

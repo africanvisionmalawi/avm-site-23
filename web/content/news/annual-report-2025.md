@@ -10,17 +10,13 @@ excerptMarkdown: >-
   transitioning our core youth and education work to gold-youth, while
   continuing our vital healthcare services and sustainable feeding programmes.
   Read our latest [Annual Report
-  2025](https://avm.sanity.studio/desk/news;9e672186-8bc4-4b60-88a0-21955e9b88d3)
+  2025](/news/annual-report-2025)
 hideHeaderPhoto: true
 photo:
-  _type: figure
+  src: /images/a35763cb6eb526bfda1e046156d8b7308d98fe5c.jpg
+  width: 1240
+  height: 1754
   alt: Final Report
-  caption: null
-  crop: null
-  hotspot: null
-  asset:
-    _type: reference
-    _ref: image-a35763cb6eb526bfda1e046156d8b7308d98fe5c-1240x1754-jpg
 tags: []
 pageHeading: null
 content: []
@@ -30,4 +26,4 @@ In the coming year, African Vision Malawi is entering an exciting new chapter as
 
 We are proud to have officially opened the Special Educational Needs and Disability (SEND) unit and the new Safe Motherhood facility, which provides vital care for mums and babies. We have also made great progress with our "Sustainable Feeding" programme, helping local communities grow their own organic food and become more self-reliant. More details in the report below ...
 
-[Annual Report 2025](https://cdn.sanity.io/files/hh4wbbfo/production/94ef5f50eb5aaefbc38dfec7ab628fe67f30e408.pdf)
+[Annual Report 2025](/files/94ef5f50eb5aaefbc38dfec7ab628fe67f30e408.pdf)

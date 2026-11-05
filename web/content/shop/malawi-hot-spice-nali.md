@@ -15,14 +15,10 @@ tags:
 photoGallery:
   _type: photoGallery
   photos:
-    - _type: figure
+    - src: /images/addb7e69c9956b971a1d3f8003ca4c716c2e95f8.jpg
+      width: 640
+      height: 432
       alt: Nali - the famous spiced sauce of Malawi
-      caption: null
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-addb7e69c9956b971a1d3f8003ca4c716c2e95f8-640x432-jpg
 name: null
 url: null
 weight: 1025

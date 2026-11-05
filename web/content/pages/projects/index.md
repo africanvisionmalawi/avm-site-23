@@ -24,14 +24,10 @@ content:
         linkTitle: Bicycle ambulances
         extUrl: null
         photo:
-          _type: figure
+          src: /images/56611a492597a27ba858b33dca3897a6c3a6ff45.jpg
+          width: 1140
+          height: 510
           alt: Bicycle ambulances
-          caption: null
-          crop: null
-          hotspot: null
-          asset:
-            _type: reference
-            _ref: image-56611a492597a27ba858b33dca3897a6c3a6ff45-1140x510-jpg
         linkTextMarkdown: >-
           Ensuring people can get to a health service In our area of support
           there is a huge issue with lack of transport to hospital/clinics.
@@ -54,14 +50,10 @@ content:
         linkTitle: Building schools
         extUrl: null
         photo:
-          _type: figure
+          src: /images/4b4b50b4615e87b7bf7ec0814d64435a4a5fc972.jpg
+          width: 2400
+          height: 1800
           alt: Building schools
-          caption: null
-          crop: null
-          hotspot: null
-          asset:
-            _type: reference
-            _ref: image-4b4b50b4615e87b7bf7ec0814d64435a4a5fc972-4032x3024-jpg
         linkTextMarkdown: >-
           Since 2006 we have completed a number of school building projects
           including a number of school blocks (typically with 6 classrooms) at
@@ -84,14 +76,10 @@ content:
         linkTitle: Community Based Childcare Centres (CBCCs)
         extUrl: null
         photo:
-          _type: figure
+          src: /images/6e13a8790280f2272513a624ddb0c1bc104c23b7.jpg
+          width: 1839
+          height: 1399
           alt: Community Based Childcare Centres (CBCCs)
-          caption: null
-          crop: null
-          hotspot: null
-          asset:
-            _type: reference
-            _ref: image-6e13a8790280f2272513a624ddb0c1bc104c23b7-1839x1399-jpg
         linkTextMarkdown: >-
           What is a CBCC? A CBCC is a building with a multiple use - as a
           pre-school and as a feeding station for children 3-5 years old. Most
@@ -114,14 +102,10 @@ content:
         linkTitle: Distributions
         extUrl: null
         photo:
-          _type: figure
+          src: /images/7a314c8712c77eb9ca850cb6856702c6779dac1e.jpg
+          width: 560
+          height: 280
           alt: Distributions
-          caption: null
-          crop: null
-          hotspot: null
-          asset:
-            _type: reference
-            _ref: image-7a314c8712c77eb9ca850cb6856702c6779dac1e-560x280-jpg
         linkTextMarkdown: >-
           Although we aim to build sustainable communities, unfortunately
           sometimes distributions, linked with our health projects are
@@ -144,14 +128,10 @@ content:
         linkTitle: Feeding Programme in Schools
         extUrl: null
         photo:
-          _type: figure
+          src: /images/2b52f6917b4dffafc7967f4e745f048ef0625977.jpg
+          width: 249
+          height: 125
           alt: Feeding Programme in Schools
-          caption: null
-          crop: null
-          hotspot: null
-          asset:
-            _type: reference
-            _ref: image-2b52f6917b4dffafc7967f4e745f048ef0625977-249x125-jpg
         linkTextMarkdown: >-
           We have been working in partnership with ‘Feed The Children’
           (www.feedthechildren.org) who provide the food and we organise the
@@ -173,14 +153,10 @@ content:
         linkTitle: Funsani - Rammed Earth Community Based Childcare Centre (CBCC)
         extUrl: null
         photo:
-          _type: figure
+          src: /images/3ba41076d6647f0d314a2aa9e1d3011817c02aab.jpg
+          width: 250
+          height: 125
           alt: Funsani - Rammed Earth Community Based Childcare Centre (CBCC)
-          caption: null
-          crop: null
-          hotspot: null
-          asset:
-            _type: reference
-            _ref: image-3ba41076d6647f0d314a2aa9e1d3011817c02aab-250x125-jpg
         linkTextMarkdown: >-
           Gandys ‘Orphans for Orphans’ has funded a pre-school at Funsani,
           Lumbadzi Centre. The building was completed in September 2017 and was
@@ -202,14 +178,10 @@ content:
         linkTitle: Maternity
         extUrl: null
         photo:
-          _type: figure
+          src: /images/2630c795854782f16f2d055ee7855c1f4b9e9bc8.jpg
+          width: 250
+          height: 125
           alt: Maternity
-          caption: null
-          crop: null
-          hotspot: null
-          asset:
-            _type: reference
-            _ref: image-2630c795854782f16f2d055ee7855c1f4b9e9bc8-250x125-jpg
         linkTextMarkdown: >-
           1 in 6 women die in childbirth in Malawi. In April 2010 we filmed in
           our local Clinic and Maternity unit with 8 beds. These serve 13,569
@@ -232,14 +204,10 @@ content:
         linkTitle: Project4Africa
         extUrl: null
         photo:
-          _type: figure
+          src: /images/1ae1255efe4ffd9716183acb784b799267b769d5.jpg
+          width: 252
+          height: 125
           alt: Project4Africa
-          caption: null
-          crop: null
-          hotspot: null
-          asset:
-            _type: reference
-            _ref: image-1ae1255efe4ffd9716183acb784b799267b769d5-252x125-jpg
         linkTextMarkdown: >-
           Project4Africa is a group who raise funds to help various projects in
           Africa. In 2022, we are delighted to announce they will provide
@@ -262,14 +230,10 @@ content:
         linkTitle: Njewa New Office
         extUrl: null
         photo:
-          _type: figure
+          src: /images/313d0622bef8ced6da6a0fdb178963f021114799.jpg
+          width: 250
+          height: 125
           alt: Njewa New Office
-          caption: null
-          crop: null
-          hotspot: null
-          asset:
-            _type: reference
-            _ref: image-313d0622bef8ced6da6a0fdb178963f021114799-250x125-jpg
         linkTextMarkdown: ''
         url:
           slug:
@@ -288,14 +252,10 @@ content:
         linkTitle: Rammed Earth Building
         extUrl: null
         photo:
-          _type: figure
+          src: /images/07653b109118388284d434aaa0b50b0169e28f28.jpg
+          width: 250
+          height: 125
           alt: Rammed Earth Building
-          caption: null
-          crop: null
-          hotspot: null
-          asset:
-            _type: reference
-            _ref: image-07653b109118388284d434aaa0b50b0169e28f28-250x125-jpg
         linkTextMarkdown: ''
         url:
           slug:
@@ -314,14 +274,10 @@ content:
         linkTitle: Permaculture
         extUrl: null
         photo:
-          _type: figure
+          src: /images/4426ac695a0975149e1d8f2ddb5b93a1dd65c8d7.jpg
+          width: 250
+          height: 125
           alt: Permaculture
-          caption: null
-          crop: null
-          hotspot: null
-          asset:
-            _type: reference
-            _ref: image-4426ac695a0975149e1d8f2ddb5b93a1dd65c8d7-250x125-jpg
         linkTextMarkdown: ''
         url:
           slug:
@@ -340,14 +296,10 @@ content:
         linkTitle: Training Programme
         extUrl: null
         photo:
-          _type: figure
+          src: /images/3ba41076d6647f0d314a2aa9e1d3011817c02aab.jpg
+          width: 250
+          height: 125
           alt: Training Programme
-          caption: null
-          crop: null
-          hotspot: null
-          asset:
-            _type: reference
-            _ref: image-3ba41076d6647f0d314a2aa9e1d3011817c02aab-250x125-jpg
         linkTextMarkdown: ''
         url:
           slug:
@@ -366,14 +318,10 @@ content:
         linkTitle: Secondary School Sponsorship
         extUrl: null
         photo:
-          _type: figure
+          src: /images/3b77cd3bb9399ddef64ed6083ce9c6d828ee921f.jpg
+          width: 250
+          height: 125
           alt: Secondary School Sponsorship
-          caption: null
-          crop: null
-          hotspot: null
-          asset:
-            _type: reference
-            _ref: image-3b77cd3bb9399ddef64ed6083ce9c6d828ee921f-250x125-jpg
         linkTextMarkdown: >-
           Education is free to children up to the end of primary school but if
           theywant to go on and get a full education (and hopefully go onto
@@ -398,14 +346,10 @@ content:
         linkTitle: University Scholarships
         extUrl: null
         photo:
-          _type: figure
+          src: /images/7988697cf93d209425d6301b5000b08b79a7f7e6.jpg
+          width: 249
+          height: 125
           alt: University Scholarships
-          caption: null
-          crop: null
-          hotspot: null
-          asset:
-            _type: reference
-            _ref: image-7988697cf93d209425d6301b5000b08b79a7f7e6-249x125-jpg
         linkTextMarkdown: ''
         url:
           slug:
@@ -424,14 +368,10 @@ content:
         linkTitle: Lobiner Kanthenga - story of a University Student
         extUrl: null
         photo:
-          _type: figure
+          src: /images/3ba41076d6647f0d314a2aa9e1d3011817c02aab.jpg
+          width: 250
+          height: 125
           alt: Lobiner Kanthenga - story of a University Student
-          caption: null
-          crop: null
-          hotspot: null
-          asset:
-            _type: reference
-            _ref: image-3ba41076d6647f0d314a2aa9e1d3011817c02aab-250x125-jpg
         linkTextMarkdown: ''
         url:
           slug:
@@ -450,14 +390,10 @@ content:
         linkTitle: Loness Eliya - story of a sponsored University
         extUrl: null
         photo:
-          _type: figure
+          src: /images/3ba41076d6647f0d314a2aa9e1d3011817c02aab.jpg
+          width: 250
+          height: 125
           alt: Loness Eliya - story of a sponsored University
-          caption: null
-          crop: null
-          hotspot: null
-          asset:
-            _type: reference
-            _ref: image-3ba41076d6647f0d314a2aa9e1d3011817c02aab-250x125-jpg
         linkTextMarkdown: ''
         url:
           slug:
@@ -476,14 +412,10 @@ content:
         linkTitle: Water and Sanitation
         extUrl: null
         photo:
-          _type: figure
+          src: /images/232a2e85dae27f8f3b283c6ed217839fbd5c0ac0.jpg
+          width: 250
+          height: 125
           alt: Water and Sanitation
-          caption: null
-          crop: null
-          hotspot: null
-          asset:
-            _type: reference
-            _ref: image-232a2e85dae27f8f3b283c6ed217839fbd5c0ac0-250x125-jpg
         linkTextMarkdown: >-
           It only costs £150 to build up a well to make it safe a free from
           contamination. This is a great present for your friends and family as
@@ -507,14 +439,10 @@ content:
         linkTitle: Water boreholes
         extUrl: null
         photo:
-          _type: figure
+          src: /images/3ba41076d6647f0d314a2aa9e1d3011817c02aab.jpg
+          width: 250
+          height: 125
           alt: Water boreholes
-          caption: null
-          crop: null
-          hotspot: null
-          asset:
-            _type: reference
-            _ref: image-3ba41076d6647f0d314a2aa9e1d3011817c02aab-250x125-jpg
         linkTextMarkdown: ''
         url:
           slug:

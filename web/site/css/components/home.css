@@ -1,0 +1,138 @@
+/* Ported from the Next.js component components/homepage/PageIndex.jsx (styles extracted from its Emotion styled blocks). */
+.home__container {
+  margin: 0 auto;
+  max-width: 1180px;
+  padding: 3em 0;
+}
+
+.home__heading {
+  font-family: Raleway, "Helvetica Neue", "Segoe UI", "Helvetica", "Arial",
+    "sans-serif";
+  text-align: center;
+}
+
+.home__top-section {
+  font-family: Raleway, "Helvetica Neue", "Segoe UI", "Helvetica", "Arial";
+  margin: 0 auto;
+  max-width: 885px;
+  padding: 3rem 1rem 0;
+  position: relative;
+  text-align: center;
+  @media (min-width: 768px) {
+    padding-top: 1rem;
+  }
+}
+
+.home__text-section {
+  background: #fff;
+  min-height: 24rem;
+  margin: 0 auto;
+  max-width: 1180px;
+  padding: 1rem;
+  position: relative;
+}
+
+.home__latest-news {
+  background: #f7f7f7;
+  min-height: 24rem;
+  margin: 0 auto;
+  padding: 1rem;
+  @media (min-width: 768px) {
+    padding: 2rem 4em 2rem;
+  }
+  @media (min-width: 1040px) {
+    padding: 2rem 8em 2rem;
+  }
+  h2 {
+    text-align: center;
+  }
+}
+
+.home__latest-news-inner {
+  margin: 0 auto;
+  max-width: 1180px;
+  position: relative;
+}
+
+.home__post-list {
+  display: flex;
+  margin: 2rem auto;
+  max-width: 1180px;
+}
+
+.home__card-cont {
+  align-items: grid-start;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(0, 280px));
+  grid-gap: 30px;
+  flex-shrink: 2;
+  justify-content: center;
+  max-width: 1525px;
+  width: 100%;
+  @media (min-width: 414px) {
+    grid-template-columns: repeat(auto-fill, 373px);
+  }
+}
+
+.home__video-section {
+  width: 100%;
+  @media (min-width: 768px) {
+    width: 50%;
+  }
+}
+
+.home__top-video-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  text-align: center;
+  @media (min-width: 778px) {
+    text-align: left;
+  }
+}
+
+.home__top-video-section-inner {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 1280px;
+  padding: 3em 1em 1em;
+  width: 100%;
+}
+
+.home__main {
+  background: #fff;
+  border-radius: 2px;
+}
+
+.home__posts-footer {
+  height: 50px;
+  margin: 0 auto 3rem;
+  max-width: 1180px;
+  position: relative;
+  &::before {
+    bottom: 50%;
+    content: "";
+    border-bottom: 1px solid #b75906;
+    position: absolute;
+    width: 100%;
+    z-index: 6;
+  }
+  & a {
+    background: #fff;
+    border: 2px solid #b75906;
+    border-radius: 12px;
+    display: inline-block;
+    font-size: 0.8em;
+    left: 50%;
+    margin-left: -107px;
+    padding: 4px 24px;
+    position: absolute;
+    text-align: center;
+    top: 10%;
+    width: 160px;
+    z-index: 20;
+  }
+}
+

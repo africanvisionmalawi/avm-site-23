@@ -17,14 +17,10 @@ tags:
 photoGallery:
   _type: photoGallery
   photos:
-    - _type: figure
+    - src: /images/9ccb5d22c8270cd48ecd924e202f228f7106577f.jpg
+      width: 507
+      height: 640
       alt: Zip bags
-      caption: null
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-9ccb5d22c8270cd48ecd924e202f228f7106577f-507x640-jpg
 name: null
 url: null
 weight: null

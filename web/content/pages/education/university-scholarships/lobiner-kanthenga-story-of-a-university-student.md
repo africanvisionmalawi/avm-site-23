@@ -12,7 +12,7 @@ hero: null
 bannerMsg: null
 content: []
 ---
-![Lobiner Kanthenga](https://cdn.sanity.io/images/hh4wbbfo/production/e8a8b4fed7c40ed0c16e385a3883181391d54719-602x451.jpg?auto=format)
+![Lobiner Kanthenga](/images/e8a8b4fed7c40ed0c16e385a3883181391d54719.jpg)
 
 I am Lobiner Kanthenga, twenty years of age and second born in the family of four children. My home village is Chiwoko Traditional Authority (T/A) Mtema in Lilongwe district. I started my primary school at Mtemambalame in 2000. I repeated two classes, standard one and seven. In standard one, I just followed my friends because I did not know what I was doing and standard seven I didn’t do well especially in English, so, with advice from the teachers, I wanted to make a good foundation in preparation for standard eight examination which is final at a primary school level.
 
@@ -26,7 +26,7 @@ Fortunately, Landirani Trust came in with financial aid for me to attend seconda
 
 I wrote Malawi School Certificate of Education (MSCE) in 2014. Although Landirani was beside me, I was still in need of pocket money for other personal requirements which was the responsibility of my parents who were not able to provide so many times. Despite these challenges, I managed to come up with fourteen points that made me very happy. This was just a manifestation that Landirani Trust did not spend its money in vain. I then applied for University of Malawi (UNIMA) in 2015. I was selected to pursue my studies at Kamuzu College of Nursing (KCN), thus Bachelor of Science in Nursing and Midwifery.
 
-![Lobiner Kantenga at the KCN Lilongwe campus](https://cdn.sanity.io/images/hh4wbbfo/production/7ea38b65dc5decca341156f1884cff5eb64185f0-582x437.jpg?auto=format)
+![Lobiner Kantenga at the KCN Lilongwe campus](/images/7ea38b65dc5decca341156f1884cff5eb64185f0.jpg)
 *Lobiner Kantenga at the KCN Lilongwe campus*
 
 It's something great being at Kamuzu College of Nursing, first year and in second semester now and still in the hands of Landirani Trust. Challenges are still there especially in the area of living expenses and this is very serious indeed. Although things are like that, I have to bear in mind that challenges will still be on my way but I promise myself never to regress. I know I have potential to do something great and be able to support other people, especially my siblings. Being the first child in my family to be at the university, I would want to be a good role model to my siblings and even to the other girls in my community for I am aware of the responsibility I will have once I finish my studies.

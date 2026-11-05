@@ -17,14 +17,10 @@ tags:
 photoGallery:
   _type: photoGallery
   photos:
-    - _type: figure
+    - src: /images/8d14dd473885fb929ad2691a73f8f2dd6cb3cdb0.jpg
+      width: 450
+      height: 300
       alt: Provide student equipment
-      caption: null
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-8d14dd473885fb929ad2691a73f8f2dd6cb3cdb0-450x300-jpg
 name: null
 url: null
 weight: 4

@@ -1,0 +1,23 @@
+/* Ported from the Next.js component components/common/EventDate.jsx (styles extracted from its Emotion styled blocks). */
+.common-event-date__notice {
+  background: #fff;
+  border: 1px solid #c07d44;
+  border-radius: 8px;
+  color: #c07d44;
+  font-size: 1.2em;
+  padding: 12px;
+  text-align: center;
+  width: 300px;
+}
+
+.common-event-date__dates-sub-heading {
+  color: #ababad;
+  font-size: 0.9rem;
+}
+
+.common-event-date__dates-heading {
+  color: #000;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+

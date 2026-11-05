@@ -20,7 +20,7 @@ We asked some of the Landirani Trust / African Vision Malawi team in Malawi abou
 
 My name is Anold Mankhambira, working with Landirani Trust as the Project Accountant. I joined the charity on 17th March, 2014.
 
-![Anold Mankhambira – Project Accountant](https://cdn.sanity.io/images/hh4wbbfo/production/fafe061dfc57ef4d2c3b150609ca7f7a2035650a-2000x3008.jpg?auto=format)
+![Anold Mankhambira – Project Accountant](/images/fafe061dfc57ef4d2c3b150609ca7f7a2035650a.jpg)
 *Anold Mankhambira – Project Accountant*
 
 ## Can you tell us a few things you have learned since working for Landirani that have helped you grow and develop, Anold?

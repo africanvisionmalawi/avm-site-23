@@ -15,14 +15,10 @@ tags:
 photoGallery:
   _type: photoGallery
   photos:
-    - _type: figure
+    - src: /images/58fd1dcdd55d4ce7756651d56dfd66d6cb52f9ea.jpg
+      width: 450
+      height: 301
       alt: Buy a sleeping mat
-      caption: null
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-58fd1dcdd55d4ce7756651d56dfd66d6cb52f9ea-450x301-jpg
 name: null
 url: null
 weight: 4

@@ -15,14 +15,10 @@ tags:
 photoGallery:
   _type: photoGallery
   photos:
-    - _type: figure
+    - src: /images/40814864f31439779380c0d766c3cc6fdf1449cf.jpg
+      width: 346
+      height: 450
       alt: Brother postcard
-      caption: null
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-40814864f31439779380c0d766c3cc6fdf1449cf-346x450-jpg
 name: null
 url: null
 weight: 4

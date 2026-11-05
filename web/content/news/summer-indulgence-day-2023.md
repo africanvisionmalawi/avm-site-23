@@ -12,14 +12,10 @@ excerptMarkdown: >-
   vulnerable.
 hideHeaderPhoto: false
 photo:
-  _type: figure
+  src: /images/9f25c352e933e52f8101a614cbb2a40d613ca702.jpg
+  width: 2319
+  height: 2400
   alt: Indulgence Day 2023
-  caption: null
-  crop: null
-  hotspot: null
-  asset:
-    _type: reference
-    _ref: image-9f25c352e933e52f8101a614cbb2a40d613ca702-3024x3130-jpg
 tags: []
 pageHeading: null
 content: []
@@ -29,4 +25,4 @@ event:
 ---
 On the 17 JUNE 2023, we are once again holding our fantastic INDULGENCE DAY in Surbiton where therapists will be coming to donate their time and skill to help AVM raise some much-needed funds for the orphan & vulnerable in our area in Malawi. Scroll down for more information including the booking form...
 
-![Indulgence Day 2022](https://cdn.sanity.io/images/hh4wbbfo/production/726f43c9b2dbd009b4e722dd77bab216c7ad3602-4032x3024.jpg?auto=format)
+![Indulgence Day 2022](/images/726f43c9b2dbd009b4e722dd77bab216c7ad3602.jpg)

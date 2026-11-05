@@ -12,7 +12,7 @@ hero: null
 bannerMsg: null
 content: []
 ---
-![P4A1](https://cdn.sanity.io/images/hh4wbbfo/production/b41501efb186b104f547a021a3e5f958b152ecbf-506x395.jpg?auto=format)
+![P4A1](/images/b41501efb186b104f547a021a3e5f958b152ecbf.jpg)
 
 Project4Africa's Vision is "**_Making a difference to children’s lives"_**
 
@@ -26,11 +26,11 @@ P4A was set up in 2008 and has so far raised funds for two projects in Malawi le
 
 Both are going from strength to strength and involved the local community in their construction. P4A now provides funding towards the maintenance of both the school and the maternity unit. 
 
-![P4A Namanyanga](https://cdn.sanity.io/images/hh4wbbfo/production/8d23ee123600fd91531b22de4419129a49903f76-1280x720.jpg?auto=format)
+![P4A Namanyanga](/images/8d23ee123600fd91531b22de4419129a49903f76.jpg)
 
-![P4A Maternity Unit](https://cdn.sanity.io/images/hh4wbbfo/production/9dac26c8d4cccf25966dd9344910652bf1e40c8b-1280x720.jpg?auto=format)
+![P4A Maternity Unit](/images/9dac26c8d4cccf25966dd9344910652bf1e40c8b.jpg)
 
-![Project4Africa team – Steve, Heather, Liz and Tony](https://cdn.sanity.io/images/hh4wbbfo/production/5dcce39034a366b079206afc45734cad03258da5-3264x2448.jpg?auto=format)
+![Project4Africa team – Steve, Heather, Liz and Tony](/images/5dcce39034a366b079206afc45734cad03258da5.jpg)
 *Project4Africa team – Steve, Heather, Liz and Tony*
 
 **How we did it**
@@ -47,34 +47,34 @@ To be successful, the project requires an approach which encompasses the health 
 
 Currently we are identifying and applying for various funding streams which will enable the building work needed at TDC and the Health Clinic.
 
-![P4A 2](https://cdn.sanity.io/images/hh4wbbfo/production/a2e2322cdd3a1783327f817fe19ed5dd0f720a3b-503x382.jpg?auto=format)
+![P4A 2](/images/a2e2322cdd3a1783327f817fe19ed5dd0f720a3b.jpg)
 
-![P4A 3](https://cdn.sanity.io/images/hh4wbbfo/production/5e0e3bc7d6e1042aee6bbb51f0c219dd2429a967-504x349.jpg?auto=format)
+![P4A 3](/images/5e0e3bc7d6e1042aee6bbb51f0c219dd2429a967.jpg)
 
-![Liz and the newborn baby!](https://cdn.sanity.io/images/hh4wbbfo/production/eccb39adf135dac8f042c89ae778df019324fe08-2448x3264.jpg?auto=format)
+![Liz and the newborn baby!](/images/eccb39adf135dac8f042c89ae778df019324fe08.jpg)
 *Liz and the newborn baby!*
 
 ## 
 
 Here are some photos to show you what it was like building Namanyanga school:
 
-![Building Namanyanga School](https://cdn.sanity.io/images/hh4wbbfo/production/96565847cbeaa0dfbf5a1f7074da0df2a39d57aa-450x315.jpg?auto=format)
+![Building Namanyanga School](/images/96565847cbeaa0dfbf5a1f7074da0df2a39d57aa.jpg)
 
-![Building Namanyanga School](https://cdn.sanity.io/images/hh4wbbfo/production/9b73bef87b5e1cd0c35e125f81e2dd8b1cd36786-450x317.jpg?auto=format)
+![Building Namanyanga School](/images/9b73bef87b5e1cd0c35e125f81e2dd8b1cd36786.jpg)
 
-![Building Namanyanga School](https://cdn.sanity.io/images/hh4wbbfo/production/9c9b7368643b2fdf3dfb2492d66c0efc493b2778-450x292.jpg?auto=format)
+![Building Namanyanga School](/images/9c9b7368643b2fdf3dfb2492d66c0efc493b2778.jpg)
 
-![Building Namanyanga School](https://cdn.sanity.io/images/hh4wbbfo/production/312be7f718328d58d10469e6f6e92fa36269030f-450x369.jpg?auto=format)
+![Building Namanyanga School](/images/312be7f718328d58d10469e6f6e92fa36269030f.jpg)
 
-![Building Namanyanga School](https://cdn.sanity.io/images/hh4wbbfo/production/57b7e3fa165b41a855fdc1871225eb06f486a539-450x371.jpg?auto=format)
+![Building Namanyanga School](/images/57b7e3fa165b41a855fdc1871225eb06f486a539.jpg)
 
 The finished buildings:
 
-![Building Namanyanga School](https://cdn.sanity.io/images/hh4wbbfo/production/8df99235e8e963ff1abb128469a9e6c5bccc6486-450x338.jpg?auto=format)
+![Building Namanyanga School](/images/8df99235e8e963ff1abb128469a9e6c5bccc6486.jpg)
 
-![Building Namanyanga School](https://cdn.sanity.io/images/hh4wbbfo/production/422912c58b0002ac76c40ab96fa878214c2fe1c6-450x338.jpg?auto=format)
+![Building Namanyanga School](/images/422912c58b0002ac76c40ab96fa878214c2fe1c6.jpg)
 
-![Building Namanyanga School](https://cdn.sanity.io/images/hh4wbbfo/production/ad3e14126bbc90b60460fd2bba44b02c9d49994a-450x337.jpg?auto=format)
+![Building Namanyanga School](/images/ad3e14126bbc90b60460fd2bba44b02c9d49994a.jpg)
 
 If you would like to donate to projects like our new SEND units and make a contribution to health development in Malawi, please Donate above.
 

@@ -15,14 +15,10 @@ tags:
 photoGallery:
   _type: photoGallery
   photos:
-    - _type: figure
+    - src: /images/a556d9fe4239d50533471aeb10e0508b17992a75.jpg
+      width: 450
+      height: 300
       alt: Buy a goat
-      caption: null
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-a556d9fe4239d50533471aeb10e0508b17992a75-450x300-jpg
 name: null
 url: null
 weight: 9

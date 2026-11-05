@@ -15,14 +15,11 @@ tags:
 photoGallery:
   _type: photoGallery
   photos:
-    - _type: figure
+    - src: /images/03ff3293ff5aa517eaecd65553525f52f35ddf1f.jpg
+      width: 768
+      height: 1024
       alt: Handmade quilt
       caption: Handmade quilt
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-03ff3293ff5aa517eaecd65553525f52f35ddf1f-768x1024-jpg
 name: null
 url: null
 weight: 5000

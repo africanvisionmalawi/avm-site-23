@@ -1,0 +1,82 @@
+/* Ported from the Next.js component components/search/Search.js (styles extracted from its Emotion styled blocks). */
+.search__search-cont {
+  position: relative;
+  display: flex;
+  padding-left: 20px;
+  @media (min-width: 768px) {
+    padding-left: 0;
+  }
+  @media (min-width: 900px) {
+    display: block;
+  }
+  & button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    margin: 8px 5px 0 0;
+    @media (min-width: 900px) {
+      display: none;
+    }
+  }
+  & input {
+    border-radius: 8px;
+    display: inline-block;
+    padding: 4px;
+    transition: all 0.3s ease-out;
+    @media (min-width: 768px) {
+      bottom: 2px;
+      padding: 6px;
+      right: 35px;
+      position: absolute;
+      width: 120px;
+    }
+    @media (min-width: 900px) {
+      bottom: -15px;
+      right: 15px;
+      width: 150px;
+    }
+  }
+  & input.searchHidden {
+    @media (min-width: 768px) {
+      bottom: 100px;
+    }
+    @media (min-width: 900px) {
+      bottom: -15px;
+    }
+  }
+  & svg {
+    fill: #f99d1c;
+    @media (min-width: 768px) {
+      fill: white;
+    }
+  }
+}
+
+.search__search-list {
+  left: 20px;
+  padding: 1rem;
+  position: absolute;
+  top: 20px;
+  @media (min-width: 768px) {
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    left: initial;
+    min-width: 300px;
+    right: 20px;
+    text-transform: none;
+    z-index: 8;
+  }
+  & > li,
+  & {
+    list-style-type: none;
+  }
+  & a {
+    border-bottom: 1px solid #c27e34;
+    display: block;
+    line-height: 1.3;
+    margin: 5px 0;
+    padding-bottom: 8px;
+  }
+}
+

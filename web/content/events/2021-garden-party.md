@@ -11,14 +11,9 @@ endDate: '2021-07-10T17:00:00.000Z'
 allDay: false
 hideTime: false
 featured_image:
-  _type: image
-  alt: null
-  caption: null
-  crop: null
-  hotspot: null
-  asset:
-    _type: reference
-    _ref: image-9f25c352e933e52f8101a614cbb2a40d613ca702-3024x3130-jpg
+  src: /images/9f25c352e933e52f8101a614cbb2a40d613ca702.jpg
+  width: 2319
+  height: 2400
 noHero: false
 tag: null
 location: '31 Upper Brighton Road, Surbiton, Surrey KT6 6QX '
@@ -37,6 +32,6 @@ If you would like to volunteer and give us a hand, please choose a slot [here](h
 
 Call: 020 8287 8169 or email: info@africanvision.org.uk
 
-![2021 Garden Party Flyer](https://cdn.sanity.io/images/hh4wbbfo/production/d5bd01343d48569dc51533a7631e812f21a08a33-1240x1754.jpg?auto=format)
+![2021 Garden Party Flyer](/images/d5bd01343d48569dc51533a7631e812f21a08a33.jpg)
 
-[Download 2021 Garden Party Flyer](https://cdn.sanity.io/files/hh4wbbfo/production/537e9991849dd86c1180d3e86fc0b78893408ad3.pdf)
+[Download 2021 Garden Party Flyer](/files/537e9991849dd86c1180d3e86fc0b78893408ad3.pdf)

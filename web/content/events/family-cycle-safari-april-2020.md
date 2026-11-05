@@ -15,14 +15,9 @@ endDate: '2020-04-16T20:42:00.000Z'
 allDay: true
 hideTime: true
 featured_image:
-  _type: image
-  alt: null
-  caption: null
-  crop: null
-  hotspot: null
-  asset:
-    _type: reference
-    _ref: image-57ffd8535b5d8c194fdcd2c8e3dfdcdc2bf02c60-429x310-jpg
+  src: /images/57ffd8535b5d8c194fdcd2c8e3dfdcdc2bf02c60.jpg
+  width: 429
+  height: 310
 noHero: false
 tag: null
 location: Sam’s Village 13°44'55.7"S 33°43'45.4"E Lilongwe Malawi

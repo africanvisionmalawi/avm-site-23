@@ -12,14 +12,11 @@ ourWork:
       17-acre site. The objective is to support a move away from hand-outs and
       to train thousands of local people out of poverty.
     photo:
-      _type: figure
+      src: /images/dd66ed054cb1f9e1213e0c033ad288fe5be795f0.jpg
+      width: 1140
+      height: 510
       alt: Sams Village
       caption: Sams Village
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-dd66ed054cb1f9e1213e0c033ad288fe5be795f0-1140x510-jpg
     url:
       category:
         slug: sams-village
@@ -37,14 +34,11 @@ ourWork:
       50% of under 5's deaths are due to Malaria.
       11% of Malawians are living with HIV/AIDS. _(WHO)_
     photo:
-      _type: figure
+      src: /images/56611a492597a27ba858b33dca3897a6c3a6ff45.jpg
+      width: 1140
+      height: 510
       alt: Health
       caption: Health
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-56611a492597a27ba858b33dca3897a6c3a6ff45-1140x510-jpg
     url:
       category:
         slug: health
@@ -62,14 +56,11 @@ ourWork:
       Secondary and Further Education, typically 40 secondary and 20 university
       students at any given time.
     photo:
-      _type: figure
+      src: /images/b1956647525c588b8451e8cbd74328e00682a332.jpg
+      width: 1140
+      height: 510
       alt: Education
       caption: Education
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-b1956647525c588b8451e8cbd74328e00682a332-1140x510-jpg
     url:
       category:
         slug: education
@@ -127,4 +118,4 @@ ourWork:
     photo: null
     url: null
 ---
-We work with and through communities to develop long-term and sustainable solutions to the welfare of orphans and vulnerable people in four key areas: self-sufficiency, health, education and water and sanitation. Additionally we are passionate about the environment, paying close attention to ecological building, reforestation and permaculture. If you would like to read our latest Annual Report you can find it [here...](https://cdn.sanity.io/files/hh4wbbfo/production/f00e1addf9068aaac48b35808dda3620c5e54be6.pdf)
+We work with and through communities to develop long-term and sustainable solutions to the welfare of orphans and vulnerable people in four key areas: self-sufficiency, health, education and water and sanitation. Additionally we are passionate about the environment, paying close attention to ecological building, reforestation and permaculture. If you would like to read our latest Annual Report you can find it [here...](/files/f00e1addf9068aaac48b35808dda3620c5e54be6.pdf)

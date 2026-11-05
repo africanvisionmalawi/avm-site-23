@@ -1,0 +1,34 @@
+---js
+{
+  layout: "layouts/base.njk",
+  pagination: { data: "db.products", size: 1, alias: "doc" },
+  permalink: (data) => `/shop/${data.doc.slug.current}.html`,
+  eleventyComputed: {
+    title: (data) => `Shop - ${data.doc.title}`,
+    description: (data) => data.doc.description,
+    canonical: (data) => `/shop/${data.doc.slug.current}`,
+  },
+}
+---
+{%- from "components/content.njk" import breadcrumbs, markdown -%}
+{%- from "components/shop.njk" import photo, shopListItem, buyButton, tagsList, carousel -%}
+{%- set pp = doc.salePrice or doc.price or none -%}
+{%- set gallery = doc.photoGallery -%}
+{%- set related = [] -%}
+{%- for prod in db.products -%}
+{%- if prod.slug.current != doc.slug.current and prod.tags and prod.tags.length and prod.tags[0].value == doc.tags[0].value %}{% set related = (related.push(prod), related) %}{% endif -%}
+{%- endfor -%}
+{{ breadcrumbs([{ title: "Shop", slug: "shop" }, { title: doc.title, slug: doc.slug }]) }}<article><section class="page-shop__shop-section"><article class="content"><h1 class="page-shop__heading">Shop - <!-- -->{{ doc.title }}</h1><div class="page-shop__columns"><div class="page-shop__column-main">
+{%- if gallery and gallery.photos.length > 1 -%}<div class="page-shop__carousel-cont">{{ carousel(gallery, "featured") }}</div>{%- endif -%}
+{%- if gallery and gallery.photos.length == 1 -%}<div class="page-shop__photo-cont">{{ photo(gallery.photos[0], "featured") }}</div>{%- endif -%}
+</div><div class="page-shop__column-aside"><div><section class="section-inner__section"><span class="page-shop__price">{% if pp > 0 %}£<!-- -->{{ pp | price }}{% else %}Donation{% endif %}</span>
+{%- if doc.inStock > 0 and pp > 0 -%}{{ buyButton(doc, pp) }}{%- elif pp > 0 -%}<p><strong>Out of stock</strong></p>{%- endif -%}
+{%- if doc.tags and doc.tags.length -%}{{ tagsList(doc.tags) }}{%- endif -%}
+</section><section class="section-inner__section">{{ markdown(doc.body) }}</section></div></div></div>
+{%- if related.length -%}
+<h2 class="page-shop__sub-heading">Related products</h2><div class="page-shop__shop-index-list">
+{%- for item in related -%}{%- if loop.index0 < 3 -%}{{ shopListItem(item, item.photoGallery.photos[0]) }}{%- endif -%}{%- endfor -%}
+</div>
+{%- endif -%}
+</article></section></article>
+{%- if gallery and gallery.photos.length > 1 %}<script defer src="/js/carousel.js"></script>{% endif -%}

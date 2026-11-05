@@ -19,14 +19,10 @@ tags:
 photoGallery:
   _type: photoGallery
   photos:
-    - _type: figure
+    - src: /images/e657586c94693ca5d7c2928437764586c4b9d720.jpg
+      width: 450
+      height: 299
       alt: School pack with resources and curriculum links for Key Stage 1 and 2
-      caption: null
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-e657586c94693ca5d7c2928437764586c4b9d720-450x299-jpg
 name: null
 url: null
 weight: 700

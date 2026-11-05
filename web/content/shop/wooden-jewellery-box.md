@@ -15,14 +15,10 @@ tags:
 photoGallery:
   _type: photoGallery
   photos:
-    - _type: figure
+    - src: /images/a37b56e8b027e16ded492a75dca95f8cc27507dc.jpg
+      width: 2400
+      height: 1800
       alt: jewellery box
-      caption: null
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-a37b56e8b027e16ded492a75dca95f8cc27507dc-4032x3024-jpg
 name: null
 url: null
 weight: 360

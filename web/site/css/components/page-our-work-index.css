@@ -1,0 +1,21 @@
+/* Ported from the Next.js component pages/our-work/index.jsx (styles extracted from its Emotion styled blocks). */
+.page-our-work-index__container {
+  margin: 0 auto;
+  padding: 0 0 3rem;
+}
+
+.page-our-work-index__heading {
+  font-family: Raleway, "Helvetica Neue", "Segoe UI", "Helvetica", "Arial",
+    "sans-serif";
+}
+
+.page-our-work-index__top-section {
+  margin: 0 auto;
+  max-width: 1080px;
+  padding: 3rem 1rem 0;
+  position: relative;
+  @media (min-width: 768px) {
+    padding: 1rem 0 0;
+  }
+}
+

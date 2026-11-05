@@ -15,14 +15,10 @@ tags:
 photoGallery:
   _type: photoGallery
   photos:
-    - _type: figure
+    - src: /images/a1ed7475e39ec5306fa9ad2afaa031cc18722cf4.jpg
+      width: 2400
+      height: 1800
       alt: Wooden small oval
-      caption: null
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-a1ed7475e39ec5306fa9ad2afaa031cc18722cf4-4032x3024-jpg
 name: null
 url: null
 weight: 210

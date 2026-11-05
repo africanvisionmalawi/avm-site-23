@@ -15,24 +15,12 @@ excerptMarkdown: >-
   May.
 hideHeaderPhoto: true
 photo:
-  _type: figure
+  src: /images/147921b8a1d684e7cedca2ada3811925d0eadb0e-59-0-1595-1064.jpg
+  width: 1595
+  height: 1064
   alt: Winter 2021 Newsletter
   caption: Winter 2021 Newsletter
-  crop:
-    _type: sanity.imageCrop
-    bottom: 0.5452028469750894
-    left: 0.03558718861209965
-    right: 0
-    top: 0
-  hotspot:
-    _type: sanity.imageHotspot
-    height: 0.45479715302491064
-    width: 0.9644128113879004
-    x: 0.5177935943060499
-    'y': 0.22739857651245532
-  asset:
-    _type: reference
-    _ref: image-147921b8a1d684e7cedca2ada3811925d0eadb0e-1654x2339-jpg
+  focus: 50% 50%
 tags:
   - label: newsletters
     value: newsletters
@@ -44,7 +32,7 @@ event: null
 ---
 Our new Winter 2021 Newsletter is now out and contains articles on Sam's Village, our Health programmes and an introduction to Marie Brown, our new country manager who has been with us since May, 
 
-[PDF](https://cdn.sanity.io/files/hh4wbbfo/production/6d578de4a771203139b903e90f0bb01c8841de96.pdf)
+[PDF](/files/6d578de4a771203139b903e90f0bb01c8841de96.pdf)
 
-![Winter 2021 Newsletter](https://cdn.sanity.io/images/hh4wbbfo/production/147921b8a1d684e7cedca2ada3811925d0eadb0e-1654x2339.jpg?auto=format)
+![Winter 2021 Newsletter](/images/147921b8a1d684e7cedca2ada3811925d0eadb0e.jpg)
 *Winter 2021 Newsletter*

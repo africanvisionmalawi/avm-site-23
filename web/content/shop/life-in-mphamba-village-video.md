@@ -17,14 +17,10 @@ tags:
 photoGallery:
   _type: photoGallery
   photos:
-    - _type: figure
+    - src: /images/8527dae41544a4cc8bd326d662b9ff24f665750d.jpg
+      width: 450
+      height: 324
       alt: Life in MPhamba Village (Video)
-      caption: null
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-8527dae41544a4cc8bd326d662b9ff24f665750d-450x324-jpg
 name: null
 url: null
 weight: 84

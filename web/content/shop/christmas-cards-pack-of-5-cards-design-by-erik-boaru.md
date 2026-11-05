@@ -15,22 +15,16 @@ tags:
 photoGallery:
   _type: photoGallery
   photos:
-    - _type: figure
+    - src: /images/2cf70b59fb41b62ad64be2bdf3293be1cb0a5a3f.jpg
+      width: 600
+      height: 601
       alt: 'Christmas Cards pack of 5 cards, design by Erik Boaru'
       caption: Front cover
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-2cf70b59fb41b62ad64be2bdf3293be1cb0a5a3f-600x601-jpg
-    - _type: figure
+    - src: /images/6d50740ceb4ee986c571a460ecc2b9e0e58e9681.jpg
+      width: 600
+      height: 601
       alt: 'Christmas Cards pack of 5 cards, design by Erik Boaru'
       caption: Back cover
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-6d50740ceb4ee986c571a460ecc2b9e0e58e9681-600x601-jpg
 name: null
 url: null
 weight: 107

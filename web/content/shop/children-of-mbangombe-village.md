@@ -15,14 +15,10 @@ tags:
 photoGallery:
   _type: photoGallery
   photos:
-    - _type: figure
+    - src: /images/d62818df71240e9a24d95325eb539d18cfa1913e.jpg
+      width: 450
+      height: 446
       alt: Children of M'Bang'ombe village (Music CD)
-      caption: null
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-d62818df71240e9a24d95325eb539d18cfa1913e-450x446-jpg
 name: null
 url: null
 weight: 84

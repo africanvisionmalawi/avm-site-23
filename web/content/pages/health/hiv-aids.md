@@ -18,8 +18,8 @@ We are encouraging HIV+ support groups to have good nutrition with our ‘well-b
 
 Here are some photos of one of the HIV+ support groups in their vegetable garden. They both eat the vegetables and sell them, making this a truly sustainable project.
 
-![HIV+ support group in their vegetable garden](https://cdn.sanity.io/images/hh4wbbfo/production/2c73ca25bd15a44998b211a57fc9e9a704064c48-1000x1333.jpg?auto=format)
+![HIV+ support group in their vegetable garden](/images/2c73ca25bd15a44998b211a57fc9e9a704064c48.jpg)
 *HIV+ support group in their vegetable garden*
 
-![HIV+ support vegetable garden](https://cdn.sanity.io/images/hh4wbbfo/production/be675556ebc1d35a04b425619443770dd9b160bf-1000x1333.jpg?auto=format)
+![HIV+ support vegetable garden](/images/be675556ebc1d35a04b425619443770dd9b160bf.jpg)
 *HIV+ support vegetable garden*

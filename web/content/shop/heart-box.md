@@ -15,14 +15,10 @@ tags:
 photoGallery:
   _type: photoGallery
   photos:
-    - _type: figure
+    - src: /images/e6ba5c131ffe23d27b32d53b66444b4699a7db02.jpg
+      width: 1800
+      height: 2400
       alt: heart box
-      caption: null
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-e6ba5c131ffe23d27b32d53b66444b4699a7db02-3024x4032-jpg
 name: null
 url: null
 weight: 90

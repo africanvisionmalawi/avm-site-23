@@ -1,0 +1,15 @@
+---js
+{
+  layout: "layouts/base.njk",
+  permalink: "/news.html",
+  description: "Latest News from African Vision Malawi",
+  canonical: "/news",
+  fullTitle: "Latest News",
+}
+---
+{%- from "components/posts.njk" import cardPostAlt -%}
+<article><div class="page-news-index__top-section"><h1 class="page-news-index__heading">Latest News</h1></div><main class="page-news-index__main"><div class="page-news-index__post-list">
+{%- for post in db.news -%}
+{{ cardPostAlt(newsEvents, "post", post.title, post.excerpt, post.slug, post.publishDate, post.photo) }}
+{%- endfor -%}
+</div></main></article><aside><section class="page-news-index__news-footer articleInner"><p><a href="/news/archive">News Archive</a></p></section></aside>

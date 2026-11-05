@@ -13,14 +13,9 @@ endDate: '2021-10-13T22:00:00.000Z'
 allDay: false
 hideTime: false
 featured_image:
-  _type: image
-  alt: null
-  caption: null
-  crop: null
-  hotspot: null
-  asset:
-    _type: reference
-    _ref: image-4e5bece36f8ecf66344798be74c2aed513680029-1839x1399-jpg
+  src: /images/4e5bece36f8ecf66344798be74c2aed513680029.jpg
+  width: 1839
+  height: 1399
 noHero: false
 tag: null
 location: 'Langleys Restaurant & Wine Bar, Surbiton'

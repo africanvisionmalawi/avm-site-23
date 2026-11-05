@@ -14,14 +14,9 @@ endDate: null
 allDay: false
 hideTime: false
 featured_image:
-  _type: image
-  alt: null
-  caption: null
-  crop: null
-  hotspot: null
-  asset:
-    _type: reference
-    _ref: image-c6b1267c68c4f0dc7132ce1da5f1c5ec658e8b5d-640x480-jpg
+  src: /images/c6b1267c68c4f0dc7132ce1da5f1c5ec658e8b5d.jpg
+  width: 640
+  height: 480
 noHero: false
 tag: null
 location: 'St Johns Hall in Grove Lane, Kingston, KT1 2ST'

@@ -15,14 +15,10 @@ tags:
 photoGallery:
   _type: photoGallery
   photos:
-    - _type: figure
+    - src: /images/a83353ce57a883e57ff6a0fefbff3b46f849cee1.jpg
+      width: 1542
+      height: 1565
       alt: Hope Joy Peace
-      caption: null
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-a83353ce57a883e57ff6a0fefbff3b46f849cee1-1542x1565-jpg
 name: null
 url: null
 weight: 185

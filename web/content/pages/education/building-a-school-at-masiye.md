@@ -18,13 +18,13 @@ Back in 2006, the very first project of African Vision Malawi was to build a sch
 
 Here you can see photos of the initial building work, and of the completed school:
 
-![School at Masiye](https://cdn.sanity.io/images/hh4wbbfo/production/f8c0f397bbe9493fa02417be3423a3181ca748be-450x299.jpg?auto=format)
+![School at Masiye](/images/f8c0f397bbe9493fa02417be3423a3181ca748be.jpg)
 *School at Masiye*
 
-![Masiye School](https://cdn.sanity.io/images/hh4wbbfo/production/cd1cd62fda63bf673ab3860e0b96ee5001bfcd4c-3264x2448.jpg?auto=format)
+![Masiye School](/images/cd1cd62fda63bf673ab3860e0b96ee5001bfcd4c.jpg)
 *Masiye School*
 
-![Masiye School completed](https://cdn.sanity.io/images/hh4wbbfo/production/a1695108b5469d15224c5c7bbe73cdacf01cdf1e-2448x3264.jpg?auto=format)
+![Masiye School completed](/images/a1695108b5469d15224c5c7bbe73cdacf01cdf1e.jpg)
 *Masiye School completed*
 
 ## Chitsime School Block

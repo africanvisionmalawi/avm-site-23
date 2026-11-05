@@ -17,80 +17,46 @@ tags:
 photoGallery:
   _type: photoGallery
   photos:
-    - _type: figure
+    - src: /images/77677c69bfac555053df3e640c46436ce19f6702.jpg
+      width: 854
+      height: 854
       alt: Dom Perignon 1990 in original box (guide price £450)
       caption: Dom Perignon 1990 in original box (guide price £450)
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-77677c69bfac555053df3e640c46436ce19f6702-854x854-jpg
-    - _type: figure
+    - src: /images/672f4caa7e9da20e34d71ea845192dbd8bc1636d.jpg
+      width: 1800
+      height: 2400
       alt: Dom cases
-      caption: null
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-672f4caa7e9da20e34d71ea845192dbd8bc1636d-3024x4032-jpg
-    - _type: figure
+    - src: /images/4838cf01a016c8452eb81fc269cecd4969580a10.jpg
+      width: 2400
+      height: 2400
       alt: Dom Perignon 2000
-      caption: null
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-4838cf01a016c8452eb81fc269cecd4969580a10-4032x4032-jpg
-    - _type: figure
+    - src: /images/2758b3a4fc2c31de03e2b52d43d1b53a3b852e1f.jpg
+      width: 792
+      height: 792
       alt: >-
         An exceptional Haut Brion 82 Premier Grand Cru Classé  (guide price
         £946)
       caption: Château Haut-Brion 1982
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-2758b3a4fc2c31de03e2b52d43d1b53a3b852e1f-792x792-jpg
-    - _type: figure
+    - src: /images/510c746621ac021051435b6fec9a18c2cd6001fc.jpg
+      width: 2400
+      height: 2400
       alt: Henriques Sucs
-      caption: null
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-510c746621ac021051435b6fec9a18c2cd6001fc-4032x4032-jpg
-    - _type: figure
+    - src: /images/68ec5ca9fd9fa1c7b6a71f9fdaba20121017a317.jpg
+      width: 2400
+      height: 2400
       alt: Churchills 1984
-      caption: null
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-68ec5ca9fd9fa1c7b6a71f9fdaba20121017a317-4032x4032-jpg
-    - _type: figure
+    - src: /images/5e2cddb392bcca1e2f3c12b7bff477d68a2aa340.jpg
+      width: 2400
+      height: 2400
       alt: Malmsey Sweet
-      caption: null
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-5e2cddb392bcca1e2f3c12b7bff477d68a2aa340-4032x4032-jpg
-    - _type: figure
+    - src: /images/c7fd777503d3c84290534c05e3b10e73aec513c1.jpg
+      width: 2400
+      height: 2400
       alt: Warre's 1976
-      caption: null
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-c7fd777503d3c84290534c05e3b10e73aec513c1-4032x4032-jpg
-    - _type: figure
+    - src: /images/72b6ce8c804305d711f6ce8b9d49fe74fc7bc682.jpg
+      width: 1024
+      height: 1024
       alt: Ferreira Port
-      caption: null
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-72b6ce8c804305d711f6ce8b9d49fe74fc7bc682-1024x1024-jpg
 name: null
 url: null
 weight: null

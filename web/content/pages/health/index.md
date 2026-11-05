@@ -11,14 +11,10 @@ categorySlug: health
 hero:
   _type: hero
   image:
-    _type: mainImage
+    src: /images/56611a492597a27ba858b33dca3897a6c3a6ff45.jpg
+    width: 1140
+    height: 510
     alt: Health
-    caption: null
-    crop: null
-    hotspot: null
-    asset:
-      _type: reference
-      _ref: image-56611a492597a27ba858b33dca3897a6c3a6ff45-1140x510-jpg
   mobileImage: null
 bannerMsg:
   source: World Health Organisation (2009 statistics)
@@ -70,14 +66,10 @@ content:
         linkTitle: SEND Unit (Special Educational Needs)
         extUrl: null
         photo:
-          _type: figure
+          src: /images/691931494fc95234c23664ccab9dc9dae4ff2434.png
+          width: 536
+          height: 402
           alt: Special Educational Needs
-          caption: null
-          crop: null
-          hotspot: null
-          asset:
-            _type: reference
-            _ref: image-691931494fc95234c23664ccab9dc9dae4ff2434-536x402-png
         linkTextMarkdown: >-
           A network of three centres in M'bang'ombe, Malawi, will significantly
           improve the lives of people with special needs.
@@ -98,14 +90,10 @@ content:
         linkTitle: Safe Motherhood Unit
         extUrl: null
         photo:
-          _type: figure
+          src: /images/2630c795854782f16f2d055ee7855c1f4b9e9bc8.jpg
+          width: 250
+          height: 125
           alt: Safe Motherhood Unit
-          caption: null
-          crop: null
-          hotspot: null
-          asset:
-            _type: reference
-            _ref: image-2630c795854782f16f2d055ee7855c1f4b9e9bc8-250x125-jpg
         linkTextMarkdown: >-
           We work in an area of 45,000 people of which 16,000 go to M'bang'ombe
           Maternity and 29,000 access N'goni Clinic. Both are very poorly
@@ -127,14 +115,10 @@ content:
         linkTitle: Bicycle Ambulances
         extUrl: null
         photo:
-          _type: figure
+          src: /images/842e319c7608ed795b8af60219500159f169c9c5.jpg
+          width: 250
+          height: 125
           alt: Bicycle Ambulances
-          caption: null
-          crop: null
-          hotspot: null
-          asset:
-            _type: reference
-            _ref: image-842e319c7608ed795b8af60219500159f169c9c5-250x125-jpg
         linkTextMarkdown: >-
           We have introduced bicycle ambulances as we found one of the major
           difficulties for people getting to clinics, was lack of transport.
@@ -155,14 +139,10 @@ content:
         linkTitle: Disability
         extUrl: null
         photo:
-          _type: figure
+          src: /images/976e27c32c6362517524c204cf4fd2d91283289e.jpg
+          width: 250
+          height: 125
           alt: Disability
-          caption: null
-          crop: null
-          hotspot: null
-          asset:
-            _type: reference
-            _ref: image-976e27c32c6362517524c204cf4fd2d91283289e-250x125-jpg
         linkTextMarkdown: >-
           We have found over the years that people with disabilities are the
           mostpoverty stricken and often outcast from their community.
@@ -183,14 +163,10 @@ content:
         linkTitle: HIV/AIDS
         extUrl: null
         photo:
-          _type: figure
+          src: /images/8e06a3f64db006aa6235eb8c33a2fe654a0be0d7.jpg
+          width: 250
+          height: 125
           alt: HIV/AIDS
-          caption: null
-          crop: null
-          hotspot: null
-          asset:
-            _type: reference
-            _ref: image-8e06a3f64db006aa6235eb8c33a2fe654a0be0d7-250x125-jpg
         linkTextMarkdown: >-
           Many children are orphaned due to HIV/AIDS and are left to be looked
           afterby their extended family, often grandparents.
@@ -211,14 +187,10 @@ content:
         linkTitle: Feeding Programmes
         extUrl: null
         photo:
-          _type: figure
+          src: /images/2b52f6917b4dffafc7967f4e745f048ef0625977.jpg
+          width: 249
+          height: 125
           alt: Feeding Programmes
-          caption: null
-          crop: null
-          hotspot: null
-          asset:
-            _type: reference
-            _ref: image-2b52f6917b4dffafc7967f4e745f048ef0625977-249x125-jpg
         linkTextMarkdown: >-
           The under 5's are one of our most vulnerable groups where 11% often
           diethrough dysentery or malaria, from drinking dirty water

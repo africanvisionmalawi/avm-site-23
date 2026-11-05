@@ -15,14 +15,11 @@ tags:
 photoGallery:
   _type: photoGallery
   photos:
-    - _type: figure
+    - src: /images/19707f6cc62d4dc056b0e395f1f8066e745729c9.jpg
+      width: 865
+      height: 1024
       alt: Paper notebooks
       caption: Notebooks
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-19707f6cc62d4dc056b0e395f1f8066e745729c9-865x1024-jpg
 name: null
 url: null
 weight: 148

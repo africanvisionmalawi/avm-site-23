@@ -17,14 +17,10 @@ tags:
 photoGallery:
   _type: photoGallery
   photos:
-    - _type: figure
+    - src: /images/76505f7ae0abe8574feaaa844cddb70a802b2ab2.jpg
+      width: 299
+      height: 450
       alt: Provide a school uniform
-      caption: null
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-76505f7ae0abe8574feaaa844cddb70a802b2ab2-299x450-jpg
 name: null
 url: null
 weight: 4

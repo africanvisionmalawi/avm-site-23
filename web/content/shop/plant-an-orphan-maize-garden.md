@@ -17,14 +17,10 @@ tags:
 photoGallery:
   _type: photoGallery
   photos:
-    - _type: figure
+    - src: /images/1197c25fcfe3e8711915bec8dccd9f7d846a61c5.jpg
+      width: 450
+      height: 337
       alt: Plant an orphan maize garden
-      caption: null
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-1197c25fcfe3e8711915bec8dccd9f7d846a61c5-450x337-jpg
 name: null
 url: null
 weight: 4

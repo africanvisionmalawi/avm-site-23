@@ -1,0 +1,168 @@
+/* Ported from the Next.js component components/nav/sub.js (styles extracted from its Emotion styled blocks). */
+.nav-sub__close-btn {
+  color: #aaa;
+  cursor: pointer;
+  font-family: var(--font-raleway);
+  font-size: 2rem;
+  font-weight: 100;
+  opacity: 1;
+  position: absolute;
+  right: 8px;
+  top: -3px;
+}
+
+.nav-sub__drawer-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  height: 100%;
+  opacity: 0;
+  width: 100%;
+  z-index: 1300;
+  &.open {
+    opacity: 100;
+    transition: opacity 0.4s ease-in-out;
+  }
+}
+
+.nav-sub__drawer {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: translateX(200%);
+  transition: transform 0.4s ease-in-out 0.4s;
+  z-index: 100;
+  &.open {
+    transform: translateX(0);
+    transition: transform 0ms ease-in-out;
+  }
+}
+
+.nav-sub__drawer-content {
+  background-color: #fff;
+  height: 100%;
+  overflow-y: auto;
+  position: absolute;
+  right: 0;
+  transform: translateX(100%);
+  transition: all 0.4s ease-in-out;
+  z-index: 1400;
+  &.open {
+    min-width: 50vw;
+    max-width: calc(100vw - 20px);
+    width: 300px;
+    transform: translateX(0);
+    transition: transform 0.4s ease-in-out;
+  }
+}
+
+.nav-sub__nav-inner {
+  display: none;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  @media (min-width: 768px) {
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 0 0 6px 6px;
+    display: flex;
+  }
+}
+
+.nav-sub__nav-icons-inner {
+  background: rgba(255, 255, 255, 0.7);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.nav-sub__inner-flex {
+  display: none;
+  @media (min-width: 576px) {
+    display: flex;
+  }
+}
+
+.nav-sub__nav-cont {
+  position: sticky;
+  top: 0;
+  z-index: 7;
+}
+
+.nav-sub__nav {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  margin: 0 auto;
+  max-width: 1060px;
+  width: 100%;
+}
+
+.nav-sub__icons-cont {
+  align-items: center;
+  background: rgba(255, 255, 255, 0.7);
+  display: flex;
+  height: 48px;
+  justify-content: center;
+  padding: 0 4px;
+}
+
+.nav-sub__menu {
+  font-size: 1em;
+  padding: 1em;
+  &,
+  & ul {
+    list-style-type: none;
+  }
+  & ul {
+    max-height: 0;
+    opacity: 0;
+    transition: all 0.5s;
+    visibility: hidden;
+  }
+  & li {
+    margin-bottom: 0.5em;
+  }
+  & label {
+    color: #b75906;
+    cursor: pointer;
+  }
+  & input[type="checkbox"] {
+    display: none;
+  }
+  & input:checked + ul {
+    max-height: 999px;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.nav-sub__mobile-nav {
+  align-items: flex-end;
+  height: 48px;
+  justify-content: flex-end;
+  margin: 4px 16px 0 0;
+  position: sticky;
+  text-transform: uppercase;
+  top: 10px;
+  width: 100%;
+  @media (min-width: 370px) {
+    flex-direction: row;
+  }
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.nav-sub__nav-icons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-sub__mobile-nav-icon {
+  cursor: pointer;
+  display: block;
+  fill: #fff;
+  height: 28px;
+  width: 28px;
+}
+

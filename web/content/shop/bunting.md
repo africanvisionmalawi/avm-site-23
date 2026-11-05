@@ -15,14 +15,10 @@ tags:
 photoGallery:
   _type: photoGallery
   photos:
-    - _type: figure
+    - src: /images/c5de2ff5ad2983cdc6bb37c185998670a28fec21.jpg
+      width: 480
+      height: 640
       alt: Bunting
-      caption: null
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-c5de2ff5ad2983cdc6bb37c185998670a28fec21-480x640-jpg
 name: null
 url: null
 weight: 125

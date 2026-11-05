@@ -13,14 +13,9 @@ endDate: null
 allDay: true
 hideTime: true
 featured_image:
-  _type: image
-  alt: null
-  caption: null
-  crop: null
-  hotspot: null
-  asset:
-    _type: reference
-    _ref: image-37928c30924d823a013540ff5853707fd4944b0b-1140x512-jpg
+  src: /images/37928c30924d823a013540ff5853707fd4944b0b.jpg
+  width: 1140
+  height: 512
 noHero: false
 tag: null
 location: Hampton Court Flower Show

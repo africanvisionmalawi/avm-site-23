@@ -12,7 +12,7 @@ hero: null
 bannerMsg: null
 content: []
 ---
-![Landirani Launch](https://cdn.sanity.io/images/hh4wbbfo/production/2f248dd26dea0b426ddf9e85ddf479713e96dfd5-300x199.jpg?auto=format)
+![Landirani Launch](/images/2f248dd26dea0b426ddf9e85ddf479713e96dfd5.jpg)
 *Landirani Launch*
 
 Heather Palmer, co-founder and CEO, explains how African Vision Malawi started out:

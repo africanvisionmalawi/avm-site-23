@@ -11,14 +11,9 @@ endDate: null
 allDay: false
 hideTime: false
 featured_image:
-  _type: image
-  alt: null
-  caption: null
-  crop: null
-  hotspot: null
-  asset:
-    _type: reference
-    _ref: image-44b31881fa43ab2632f03e173ee64680f2e9f215-1075x1579-jpg
+  src: /images/44b31881fa43ab2632f03e173ee64680f2e9f215.jpg
+  width: 1075
+  height: 1579
 noHero: false
 tag: null
 location: 'Masamba Gardens, Bwaila Road (opp. Simso Filling Station) Lilongwe 2, Malawi'

@@ -15,14 +15,10 @@ tags:
 photoGallery:
   _type: photoGallery
   photos:
-    - _type: figure
+    - src: /images/9e7cb7c7bc069bc7d078bd579d451001afd76046.jpg
+      width: 640
+      height: 480
       alt: Wooden Land Rover Car (medium)
-      caption: null
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-9e7cb7c7bc069bc7d078bd579d451001afd76046-640x480-jpg
 name: null
 url: null
 weight: 400

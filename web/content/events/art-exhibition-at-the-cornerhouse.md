@@ -15,14 +15,9 @@ endDate: '2023-02-26T12:00:00.000Z'
 allDay: true
 hideTime: true
 featured_image:
-  _type: image
-  alt: null
-  caption: null
-  crop: null
-  hotspot: null
-  asset:
-    _type: reference
-    _ref: image-830942bd0ed124a88296507067f6ee1a0834785f-1507x1592-jpg
+  src: /images/830942bd0ed124a88296507067f6ee1a0834785f.jpg
+  width: 1507
+  height: 1592
 noHero: false
 tag: null
 location: 'The Cornerhouse, 116 Douglas Road, Surbiton KT6 7SB'
@@ -37,4 +32,4 @@ In our present time, women are in a battle to be heard, to be respected and valu
 
 This body of works arises, mostly subconsciously, as a visual voice, an underground rumble, which hopes to express the beautiful desire and sad longing for freedom of expression, in flight.. as when we women were birds.
 
-![](https://cdn.sanity.io/images/hh4wbbfo/production/b3a1ae7c3ea71851ae5d04c7cb1823abace76e84-2480x3508.jpg?auto=format)
+![](/images/b3a1ae7c3ea71851ae5d04c7cb1823abace76e84.jpg)

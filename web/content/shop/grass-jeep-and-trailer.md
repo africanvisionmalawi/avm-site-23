@@ -15,14 +15,10 @@ tags:
 photoGallery:
   _type: photoGallery
   photos:
-    - _type: figure
+    - src: /images/cbab56b2835a220d8c65c6e958eade4d34abd48c.jpg
+      width: 2400
+      height: 1800
       alt: grass jeep trailer
-      caption: null
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-cbab56b2835a220d8c65c6e958eade4d34abd48c-4032x3024-jpg
 name: null
 url: null
 weight: 250

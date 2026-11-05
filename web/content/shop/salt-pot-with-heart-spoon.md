@@ -15,14 +15,11 @@ tags:
 photoGallery:
   _type: photoGallery
   photos:
-    - _type: figure
+    - src: /images/39cb48af532d5d4fefd289a551e32fb3f924f883.jpg
+      width: 768
+      height: 1024
       alt: Salt pot
       caption: salt pot
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-39cb48af532d5d4fefd289a551e32fb3f924f883-768x1024-jpg
 name: null
 url: null
 weight: 76

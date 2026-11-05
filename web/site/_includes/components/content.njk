@@ -1,0 +1,135 @@
+{# Building blocks for content pages, ported from the React components of the same names. #}
+{% from "components/shell.njk" import divider %}
+
+{% macro hero(image, mobileImage, heroHeading, heroSubHeading, children) -%}
+<div class="hero__hero-container{{ ' lowerPage' if children }}"><div class="hero__hero-cont">
+{%- if heroHeading -%}<div class="hero__hero-msg-cont">{% if heroSubHeading %}<p class="hero__hero-msg">{{ heroSubHeading }}</p>{% endif %}</div>{%- endif -%}
+{%- if children -%}<div class="hero__children-cont">{{ children | safe }}</div>{%- endif -%}
+{%- if image.src and mobileImage.src -%}
+<picture class="hero-m__picture"><source srcset="{{ image.src | srcset([1080, 1920, 2048, 3840], image.width) }}" media="(min-width: 768px)" sizes="(min-width: 2300px) 2180px, calc(94.95vw + 15px)"><img src="{{ mobileImage.src | resizedUrl(1200, mobileImage.width) }}" srcset="{{ mobileImage.src | srcset([640, 828, 1200], mobileImage.width) }}" sizes="100vw" alt="" style="width:100%;height:100%;object-fit:cover;object-position:{{ mobileImage.focus or '50% 50%' }}"></picture>
+{%- else -%}
+{{ image | img({ className: "desktopImage" if mobileImage else "", alt: "", maxWidth: 2180, maxHeight: 650, fill: true, style: { objectFit: "cover" }, priority: true, sizes: "(min-width: 2300px) 2180px, 100vw" }) | safe }}
+{%- endif -%}
+{%- if not children -%}<div class="hero__overlay"></div>{%- endif -%}
+</div>{% if not children %}{{ divider() }}{% endif %}</div>
+{%- endmacro %}
+
+{% macro breadcrumbs(path, indexPage) -%}
+{%- set crumbs = path.slice(0, -1) if indexPage else path -%}
+<div class="breadcrumbs__container"><div class="breadcrumbs__links"><a href="/">Home</a>
+{%- for c in crumbs -%}
+{%- if not loop.last -%}<a href="/{{ c.slug }}">{{ c.title }}</a>{%- else -%}<span class="breadcrumbs__crumb-current">{{ c.title }}</span>{%- endif -%}
+{%- endfor -%}
+</div></div>
+{%- endmacro %}
+
+{% macro bannerMsg(msg, source) -%}
+<div class="banner-msg__hero-msg-div">{% if msg %}<div>{{ msg | md | safe }}</div>{% endif %}{% if source %}<div class="banner-msg__citation">{{ source }}</div>{% endif %}</div>
+{%- endmacro %}
+
+{% macro markdown(content, className) -%}
+{%- if content -%}<div{% if className %} class="{{ className }}"{% endif %}>{{ content | md | safe }}</div>{%- endif -%}
+{%- endmacro %}
+
+{# Sizes used by the card photo component (PhotoCont). #}
+{% set photoSizes = {
+  default: { w: 280, h: 125, sizes: "280px" },
+  featured: { w: 560, h: 280, sizes: "560px" },
+  news: { w: 371, h: 222, sizes: "371px" },
+  event: { w: 371, h: 222, sizes: "371px" },
+  ourWork: { w: 381, h: 240, sizes: "(max-width: 480px) 100vw, 480px" },
+  shop: { w: 600, h: 600, sizes: "600px" }
+} %}
+
+{% macro photoCont(photo, photoType) -%}
+{%- set s = photoSizes[photoType] -%}
+{%- if photo -%}{{ photo | img({ maxWidth: s.w, maxHeight: s.h, alt: photo.alt, style: { height: "auto", objectFit: "cover", width: "100%" }, sizes: s.sizes }) | safe }}{%- endif -%}
+{%- endmacro %}
+
+{% macro moreButton(url) -%}
+{%- if url -%}<a href="{{ url }}" class="page-links-m__btn">Find out more</a>{%- endif -%}
+{%- endmacro %}
+
+{% macro cardContent(title, url, linkText) -%}
+<div class="card-content__content">{% if title %}<h3 class="card-content__heading">{{ title }}</h3>{% endif %}{{ markdown(linkText) }}{{ moreButton(url) }}</div>
+{%- endmacro %}
+
+{% macro cardSingle(url, extUrl, title, linkText, photo, featured) -%}
+{%- set photoType = "featured" if featured else "default" -%}
+<div>
+{%- if photo.src -%}
+{%- if url or extUrl -%}<a href="{{ url or extUrl }}" class="card-image">{{ photoCont(photo, photoType) }}</a>{%- else -%}{{ photoCont(photo, photoType) }}{%- endif -%}
+{%- endif -%}
+{{ cardContent(title, extUrl or url, linkText) }}</div>
+{%- endmacro %}
+
+{% macro pageLinkCards(links) -%}
+{%- for pageLink in links -%}
+{%- set categoryUrl = (pageLink.url.category.slug.current + "/") if (pageLink.url and pageLink.url.category and pageLink.url.category.slug and pageLink.url.category.slug.current) else "" -%}
+{%- set pageUrl = pageLink.url.slug.current if (pageLink.url and pageLink.url.slug and pageLink.url.slug.current) else "" -%}
+{%- set url = ("/" + pageUrl) if categoryUrl == pageUrl else ("/" + categoryUrl + pageUrl) -%}
+{%- if not pageLink.hideLink and (pageLink.extUrl or (url and url != "/")) -%}
+{{ cardSingle(url, pageLink.extUrl, pageLink.linkTitle, pageLink.linkText, pageLink.photo, pageLink.featured) }}
+{%- endif -%}
+{%- endfor -%}
+{%- endmacro %}
+
+{% macro pageLinks(section) -%}
+{%- set featuredLinks = section.pageLinks | featured(true) -%}
+{%- set otherLinks = section.pageLinks | featured(false) -%}
+<div>{% if section.displayHeading %}<h2 class="page-links__heading">{{ section.heading }}</h2>{% endif %}
+{%- if featuredLinks.length -%}<div class="page-links-m__card-cont-wide">{{ pageLinkCards(featuredLinks) }}</div>{%- endif -%}
+{%- if otherLinks.length -%}<div class="page-links-m__card-cont">{{ pageLinkCards(otherLinks) }}</div>{%- endif -%}
+</div>
+{%- endmacro %}
+
+{% macro teamList(section) -%}
+<h2 class="team-list__heading">{{ section.heading }}</h2><ul class="team-list__list">
+{%- for t in section.team -%}
+<li>{% if t.photo %}<div class="team-list__team-photo">{{ t.photo | img({ maxWidth: 150, maxHeight: 150, alt: t.photo.alt, sizes: "150px", style: { width: "150px", height: "150px" } }) | safe }}</div>{% endif %}
+{%- if t.name %}<h4 class="team-list__sub-heading">{{ t.name }}</h4>{% endif -%}
+{%- if t.role %}<p class="team-list__about">{{ t.role }}</p>{% endif %}</li>
+{%- endfor -%}
+</ul>
+{%- endmacro %}
+
+{% macro googleMap(section) -%}
+<div class="google-map__map-container"><div>{% if section.url %}<iframe src={{ section.url | safe }} width="100%" height="550"></iframe>{% endif %}</div></div>
+{%- endmacro %}
+
+{% macro gallery(section) -%}
+<div class="gallery-m__container"><div class="gallery-m__gallery-inner"><h2 class="gallery__heading">Photo updates</h2><div class="gallery-m__gallery" data-gallery>
+{%- for photo in section.photos -%}
+<div class="gallery-m__grid-cell" role="button" tabindex="0" data-gallery-item data-caption="{{ photo.caption or '' }}" data-alt="{{ photo.alt or '' }}" data-src="{{ photo.src | resizedUrl(1600, photo.width) }}" data-srcset="{{ photo.src | srcset([640, 750, 828, 1080, 1200, 1920], photo.width) }}" data-focus="{{ photo.focus or '' }}">{{ photo | img({ maxWidth: 280, maxHeight: 160, alt: photo.alt }) | safe }}</div>
+{%- endfor -%}
+</div></div></div>
+{%- endmacro %}
+
+{% macro player(url, videos) -%}
+{%- set v = videos[url] -%}
+<div class="player__vid-cont" data-video-embed="{{ v.baseUrl }}{{ v.id }}?autoplay=1"><div class="player__icon-wrapper"><svg height="100%" version="1.1" viewBox="0 0 68 48" width="100%"><path class="ytp-large-play-button-bg" d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z" fill="#f00"></path><path d="M 45,24 27,14 27,34" fill="#fff"></path></svg></div><img loading="lazy" src="{{ v.thumbnail }}" alt="{{ 'Youtube video' if v.type == 'youtube' else 'Vimeo video' }}"></div>
+{%- endmacro %}
+
+{% macro videoGallery(section, videos) -%}
+<div class="videos__container"><h2 class="videos__heading">Videos</h2><div class="videos__videos-cont">
+{%- for video in section.videos -%}
+<div>{% if video.url %}{{ player(video.url, videos) }}{% endif %}<p>{{ video.text or "" }}</p></div>
+{%- endfor -%}
+</div></div>
+{%- endmacro %}
+
+{# Renders the `content:` sections of a page. #}
+{% macro sections(content, videos) -%}
+{%- for c in content -%}
+{%- if not c.disabled -%}
+{%- if c._type == "hero" -%}{{ hero(c.image, c.mobileImage, c.title) }}
+{%- elif c._type == "videoGallery" -%}<div class="videosWrapper"><div class="videosWrapper-inner">{{ videoGallery(c, videos) }}</div></div>
+{%- elif c._type == "pageLinks" -%}<section class="page-common__content-section">{{ pageLinks(c) }}</section>
+{%- elif c._type == "photoGallery" -%}{{ gallery(c) }}
+{%- elif c._type == "blockPortableText" -%}<section class="page-common__text-section">{{ markdown(c.markdown) }}</section>
+{%- elif c._type == "team" -%}<section class="page-common__text-section">{{ teamList(c) }}</section>
+{%- elif c._type == "googlemap" -%}{{ googleMap(c) }}
+{%- endif -%}
+{%- endif -%}
+{%- endfor -%}
+{%- endmacro %}

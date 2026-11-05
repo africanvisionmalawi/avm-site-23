@@ -17,14 +17,10 @@ tags:
 photoGallery:
   _type: photoGallery
   photos:
-    - _type: figure
+    - src: /images/ddde089cab7e5eae0c564eb0f77d612fff0db30a.jpg
+      width: 450
+      height: 300
       alt: Build a well and pump
-      caption: null
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-ddde089cab7e5eae0c564eb0f77d612fff0db30a-450x300-jpg
 name: null
 url: null
 weight: 147

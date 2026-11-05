@@ -24,14 +24,11 @@ content:
         linkTitle: Team
         extUrl: null
         photo:
-          _type: figure
+          src: /images/f21474c20c9a5335e9685b552209e31009ec26cc.jpg
+          width: 1024
+          height: 768
           alt: Team
           caption: Team
-          crop: null
-          hotspot: null
-          asset:
-            _type: reference
-            _ref: image-f21474c20c9a5335e9685b552209e31009ec26cc-1024x768-jpg
         linkTextMarkdown: >-
           We have around 30 staff in Malawi, supported by 100 volunteers from
           the community. We have no paid staff in the UK but a core team of
@@ -53,24 +50,12 @@ content:
         linkTitle: Where we work
         extUrl: null
         photo:
-          _type: figure
+          src: /images/acccc623e09c5ac793c4716f770cc5c1bad3af19-0-0-400-350.jpg
+          width: 400
+          height: 350
           alt: Where we work
           caption: Where we work
-          crop:
-            _type: sanity.imageCrop
-            bottom: 0.34408602150537626
-            left: 0
-            right: 0
-            top: 0
-          hotspot:
-            _type: sanity.imageHotspot
-            height: 0.6559139784946237
-            width: 1
-            x: 0.5
-            'y': 0.32795698924731187
-          asset:
-            _type: reference
-            _ref: image-acccc623e09c5ac793c4716f770cc5c1bad3af19-400x533-jpg
+          focus: 50% 50%
         linkTextMarkdown: >-
           We work in an area some 30km from the capital city, Lilongwe which
           is400km squared and with 45,000 population.
@@ -91,14 +76,11 @@ content:
         linkTitle: How we started
         extUrl: null
         photo:
-          _type: figure
+          src: /images/045fd32f2c08536eb440fe118ceb480703a7cadd.jpg
+          width: 2400
+          height: 1596
           alt: Mau Apsula
           caption: Mau Apsula
-          crop: null
-          hotspot: null
-          asset:
-            _type: reference
-            _ref: image-045fd32f2c08536eb440fe118ceb480703a7cadd-3008x2000-jpg
         linkTextMarkdown: >-
           Heather Palmer our founder lived in Malawi as a child, for her first
           10 years. She talks about the inspiration behind the first trip, the
@@ -121,14 +103,11 @@ content:
         linkTitle: African Vision Malawi - our change of name
         extUrl: null
         photo:
-          _type: figure
+          src: /images/79032915110855c9bf4a4d3bde851854141652f5.jpg
+          width: 1024
+          height: 768
           alt: African Vision Malawi - our change of name
           caption: African Vision Malawi - our change of name
-          crop: null
-          hotspot: null
-          asset:
-            _type: reference
-            _ref: image-79032915110855c9bf4a4d3bde851854141652f5-1024x768-jpg
         linkTextMarkdown: >-
           Most of our fundraising takes place in the UK and we recognize we
           needto have a more memorable name which people can identify with ..
@@ -150,14 +129,11 @@ content:
         linkTitle: Thank yous
         extUrl: null
         photo:
-          _type: figure
+          src: /images/7d7f86789e2255a5c72506d92ab934e30d7efe13.jpg
+          width: 2400
+          height: 1590
           alt: Thank yous
           caption: Thank yous
-          crop: null
-          hotspot: null
-          asset:
-            _type: reference
-            _ref: image-7d7f86789e2255a5c72506d92ab934e30d7efe13-3696x2448-jpg
         linkTextMarkdown: >-
           This page celebrates the friends of African Vision Malawi who have
           been kind enough to support us in activities in the UK and Malawi. The

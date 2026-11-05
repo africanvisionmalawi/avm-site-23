@@ -15,14 +15,10 @@ tags:
 photoGallery:
   _type: photoGallery
   photos:
-    - _type: figure
+    - src: /images/112f4b3d233bd24fb811d2d75df8be4b5d820c45.jpg
+      width: 450
+      height: 346
       alt: Family postcard
-      caption: null
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-112f4b3d233bd24fb811d2d75df8be4b5d820c45-450x346-jpg
 name: null
 url: null
 weight: 4

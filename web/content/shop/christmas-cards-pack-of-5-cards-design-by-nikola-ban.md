@@ -15,14 +15,10 @@ tags:
 photoGallery:
   _type: photoGallery
   photos:
-    - _type: figure
+    - src: /images/14e51473313ffccc1cc7ffab4cb80d82e7fe287c.jpg
+      width: 300
+      height: 301
       alt: 'Christmas Cards pack of 5 cards, design by Nikola Ban'
-      caption: null
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-14e51473313ffccc1cc7ffab4cb80d82e7fe287c-300x301-jpg
 name: null
 url: null
 weight: 107

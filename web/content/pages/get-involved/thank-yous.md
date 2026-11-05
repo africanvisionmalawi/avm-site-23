@@ -24,14 +24,11 @@ content:
         linkTitle: UNESCO
         extUrl: 'https://www.stepmalawi.com/'
         photo:
-          _type: figure
+          src: /images/b4440c696f9b901370e781f7d2e2112654d927d0.jpg
+          width: 560
+          height: 280
           alt: UNESCO
           caption: UNESCO
-          crop: null
-          hotspot: null
-          asset:
-            _type: reference
-            _ref: image-b4440c696f9b901370e781f7d2e2112654d927d0-560x280-jpg
         linkTextMarkdown: >-
           Since 2018 we have been an International Partner with UNESCO who have
           already provided bursaries to train 216 marginalized people in
@@ -46,14 +43,11 @@ content:
         linkTitle: Love Support Unite
         extUrl: 'https://lovesupportunite.org/'
         photo:
-          _type: figure
+          src: /images/4ac3215280a8fbe6d3fdfd9fcb1504dae04fbea8.jpg
+          width: 560
+          height: 280
           alt: Love Support Unite
           caption: Love Support Unite
-          crop: null
-          hotspot: null
-          asset:
-            _type: reference
-            _ref: image-4ac3215280a8fbe6d3fdfd9fcb1504dae04fbea8-560x280-jpg
         linkTextMarkdown: >-
           is a key partner of AVM. They are wonderful organisation working in
           the same area as us, empowering communities to become self-sufficient.
@@ -68,14 +62,11 @@ content:
         linkTitle: Feed the Children
         extUrl: 'https://www.feedthechildren.org/'
         photo:
-          _type: figure
+          src: /images/c4add258ed5b3519877e7bb196701e640d207949.jpg
+          width: 560
+          height: 280
           alt: Feed the Children
           caption: Feed the Children
-          crop: null
-          hotspot: null
-          asset:
-            _type: reference
-            _ref: image-c4add258ed5b3519877e7bb196701e640d207949-560x280-jpg
         linkTextMarkdown: >-
           has worked with AVM for over 10 years, providing Vitameal a
           nutritional porridge, to 1000 pre-school children every day!
@@ -89,14 +80,11 @@ content:
         linkTitle: 500 Miles
         extUrl: 'https://www.500miles.co.uk/'
         photo:
-          _type: figure
+          src: /images/10c4ca6840caee0b5bf7d6d4aaeab09035e30615.jpg
+          width: 560
+          height: 280
           alt: 500 Miles
           caption: 500 Miles
-          crop: null
-          hotspot: null
-          asset:
-            _type: reference
-            _ref: image-10c4ca6840caee0b5bf7d6d4aaeab09035e30615-560x280-jpg
         linkTextMarkdown: >-
           helps people in our community with impaired mobility of all kinds to
           get moving, as well and as independently as possible, by helping them
@@ -111,14 +99,11 @@ content:
         linkTitle: Bryanston School
         extUrl: 'https://www.bryanston.co.uk/news/?pid=3&nid=57&storyid=1412'
         photo:
-          _type: figure
+          src: /images/319ce8e3cef9eba545f4cd54fd50a5712cb1c7f7.jpg
+          width: 1600
+          height: 1066
           alt: Bryanston School
           caption: Bryanston School
-          crop: null
-          hotspot: null
-          asset:
-            _type: reference
-            _ref: image-319ce8e3cef9eba545f4cd54fd50a5712cb1c7f7-1600x1066-jpg
         linkTextMarkdown: >-
           for raising funds to build a Safe Motherhood Unit in Malawi throughout
           2020/21 to create a safe and comfortable place for mothers and their
@@ -133,14 +118,11 @@ content:
         linkTitle: Think Malawi
         extUrl: 'https://www.thinkmalawi.org/'
         photo:
-          _type: figure
+          src: /images/efa83dfa27bc5fd24967ec922bab573ca8c5e6d8.jpg
+          width: 560
+          height: 280
           alt: Think Malawi
           caption: Think Malawi
-          crop: null
-          hotspot: null
-          asset:
-            _type: reference
-            _ref: image-efa83dfa27bc5fd24967ec922bab573ca8c5e6d8-560x280-jpg
         linkTextMarkdown: >-
           are a UK based charity who support educational projects in Malawi.
           Since 2019 we have been running a program with them called Girls
@@ -152,14 +134,11 @@ content:
         linkTitle: Project4Africa
         extUrl: null
         photo:
-          _type: figure
+          src: /images/89de017f8f42f20c278699200ef150661d5951d5.jpg
+          width: 450
+          height: 337
           alt: Project4Africa
           caption: Project4Africa
-          crop: null
-          hotspot: null
-          asset:
-            _type: reference
-            _ref: image-89de017f8f42f20c278699200ef150661d5951d5-450x337-jpg
         linkTextMarkdown: >-
           has funded a number of projects including 2 school blocks at
           Namanyanga (in the north-east of our area) and a Maternity Unit in
@@ -175,14 +154,11 @@ content:
         linkTitle: Senator Pens
         extUrl: null
         photo:
-          _type: figure
+          src: /images/2e0982798c710826eabf228d3a5462739cca256c.jpg
+          width: 512
+          height: 256
           alt: Senator logo
           caption: Senator Pens
-          crop: null
-          hotspot: null
-          asset:
-            _type: reference
-            _ref: image-2e0982798c710826eabf228d3a5462739cca256c-512x256-jpg
         linkTextMarkdown: >-
           have been great supporters over several years, providing thousands of
           pens to children in the support schools throughout our area. We
@@ -195,14 +171,11 @@ content:
         linkTitle: Aidcamps International
         extUrl: 'https://www.aidcamps.org/home.aspx'
         photo:
-          _type: figure
+          src: /images/47703798c3181a9c50cc72fa9092e682910ed05e.jpg
+          width: 560
+          height: 280
           alt: Aidcamps International
           caption: Aidcamps International
-          crop: null
-          hotspot: null
-          asset:
-            _type: reference
-            _ref: image-47703798c3181a9c50cc72fa9092e682910ed05e-560x280-jpg
         linkTextMarkdown: >-
           provide volunteers from the UK and elsewhere to participate in
           short-term voluntary projects including the library at Sam's Village.
@@ -213,14 +186,11 @@ content:
         linkTitle: The cornerHOUSE
         extUrl: 'https://www.thecornerhouse.org/'
         photo:
-          _type: figure
+          src: /images/e1d15df458a03286db1144a3b226810b5c63dcdb.jpg
+          width: 560
+          height: 280
           alt: The cornerHOUSE
           caption: The cornerHOUSE
-          crop: null
-          hotspot: null
-          asset:
-            _type: reference
-            _ref: image-e1d15df458a03286db1144a3b226810b5c63dcdb-560x280-jpg
         linkTextMarkdown: >-
           is a community arts centre who are very supportive for fundraising,
           photographic exhibitions and events.
@@ -231,14 +201,11 @@ content:
         linkTitle: Nigel Bunner
         extUrl: 'https://www.nigelbunner.co.uk'
         photo:
-          _type: figure
+          src: /images/30e3d806ef3958289dc745e5a0d6f0c950526384.jpg
+          width: 604
+          height: 457
           alt: Nigel Bunner
           caption: Nigel Bunner
-          crop: null
-          hotspot: null
-          asset:
-            _type: reference
-            _ref: image-30e3d806ef3958289dc745e5a0d6f0c950526384-604x457-jpg
         linkTextMarkdown: >-
           (web design & development) has supported us since the beginning with
           new and innovative designs and support. Thank you!
@@ -249,14 +216,11 @@ content:
         linkTitle: FOMA (Friends of Malawi Association)
         extUrl: 'https://www.foma.org.uk/'
         photo:
-          _type: figure
+          src: /images/55085d13d7bc70184feb3cb16ca649cc3fcbfe46.jpg
+          width: 957
+          height: 489
           alt: FOMA (Friends of Malawi Association)
           caption: FOMA (Friends of Malawi Association)
-          crop: null
-          hotspot: null
-          asset:
-            _type: reference
-            _ref: image-55085d13d7bc70184feb3cb16ca649cc3fcbfe46-957x489-jpg
         linkTextMarkdown: >-
           kindly helped fund the provision of a maize mill for the local
           community.

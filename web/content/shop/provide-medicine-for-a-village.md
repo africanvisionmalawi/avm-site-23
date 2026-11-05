@@ -15,14 +15,10 @@ tags:
 photoGallery:
   _type: photoGallery
   photos:
-    - _type: figure
+    - src: /images/e422954d4a754f59f86fe2967e86ac026509a567.jpg
+      width: 450
+      height: 337
       alt: Provide medicine for a village
-      caption: null
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-e422954d4a754f59f86fe2967e86ac026509a567-450x337-jpg
 name: null
 url: null
 weight: 4

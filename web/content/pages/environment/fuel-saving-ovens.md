@@ -42,7 +42,7 @@ You can read simple step-by-step instructions from Ripple Africa on how to build
 
 Here Green is showing the men and women at the New Office site at Njewa how to build a deluxe double version of the Changu Changu, suitable for mass catering:
 
-![Green builds a Changu Changu stove](https://cdn.sanity.io/images/hh4wbbfo/production/ff21ac854a4ba891c75da6ec486c8481e61b9b4c-2000x1125.jpg?auto=format)
+![Green builds a Changu Changu stove](/images/ff21ac854a4ba891c75da6ec486c8481e61b9b4c.jpg)
 *Green builds a Changu Changu stove*
 
 If you would like to fund Green’s work with the local communities please click here:

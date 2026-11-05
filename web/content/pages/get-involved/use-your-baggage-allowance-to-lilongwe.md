@@ -12,7 +12,7 @@ hero: null
 bannerMsg: null
 content: []
 ---
-![Blankets](https://cdn.sanity.io/images/hh4wbbfo/production/5d7b0042dddf24adf8a96427675676fc425c857a-2448x3264.jpg?auto=format)
+![Blankets](/images/5d7b0042dddf24adf8a96427675676fc425c857a.jpg)
 *Blankets*
 
  Many people travelling to Malawi often don’t need the full 46kg weight allowance offered by some airlines, including Ethiopian. African Vision Malawi supports around 3,000 orphaned and vulnerable children from schools and communities across Malawi. The charity runs sustainable projects including feeding stations in schools and building wells to reduce illness and death. Local people are encouraged to help the children within their villages, rather than sending them to orphanages.
@@ -23,7 +23,7 @@ In the UK we get wonderful donations every week, including hand-knitted blankets
 
 ## What do I have to do?
 
-![Blankets](https://cdn.sanity.io/images/hh4wbbfo/production/68f16c581f824ce5d86b0ead4a7677c452d99118-2448x3696.jpg?auto=format)
+![Blankets](/images/68f16c581f824ce5d86b0ead4a7677c452d99118.jpg)
 *Blankets*
 
 Very little! We can fill a bag for you and deliver it to you somewhere in London (opened so you can see the contents!) You take it to Mabuya Camp and we’ll collect it from you, our office is just around the corner.

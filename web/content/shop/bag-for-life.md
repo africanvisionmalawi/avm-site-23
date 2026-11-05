@@ -17,14 +17,10 @@ tags:
 photoGallery:
   _type: photoGallery
   photos:
-    - _type: figure
+    - src: /images/86b795d4fd117bb768544a54981d43355113c221.jpg
+      width: 480
+      height: 640
       alt: Bag for life
-      caption: null
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-86b795d4fd117bb768544a54981d43355113c221-480x640-jpg
 name: null
 url: null
 weight: null

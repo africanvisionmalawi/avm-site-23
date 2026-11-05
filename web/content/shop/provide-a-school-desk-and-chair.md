@@ -17,14 +17,10 @@ tags:
 photoGallery:
   _type: photoGallery
   photos:
-    - _type: figure
+    - src: /images/bb502e87e32baac20f61be11106261c59c8d6db5.jpg
+      width: 450
+      height: 337
       alt: Provide a school desk and chair
-      caption: null
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-bb502e87e32baac20f61be11106261c59c8d6db5-450x337-jpg
 name: null
 url: null
 weight: 4

@@ -13,14 +13,9 @@ endDate: '2019-04-22T20:35:00.000Z'
 allDay: true
 hideTime: true
 featured_image:
-  _type: image
-  alt: null
-  caption: null
-  crop: null
-  hotspot: null
-  asset:
-    _type: reference
-    _ref: image-a448c47d9f4a52c2e1e706d4c52a4f030a084065-4032x3024-jpg
+  src: /images/a448c47d9f4a52c2e1e706d4c52a4f030a084065.jpg
+  width: 2400
+  height: 1800
 noHero: false
 tag: null
 location: Malawi

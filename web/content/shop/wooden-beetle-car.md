@@ -15,14 +15,10 @@ tags:
 photoGallery:
   _type: photoGallery
   photos:
-    - _type: figure
+    - src: /images/85ca27e3b4b4381b7c4e81786ae3fe35c73f6c22.jpg
+      width: 640
+      height: 480
       alt: Wooden Beetle Car
-      caption: null
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-85ca27e3b4b4381b7c4e81786ae3fe35c73f6c22-640x480-jpg
 name: null
 url: null
 weight: 230

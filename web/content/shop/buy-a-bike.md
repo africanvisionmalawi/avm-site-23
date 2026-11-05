@@ -15,14 +15,10 @@ tags:
 photoGallery:
   _type: photoGallery
   photos:
-    - _type: figure
+    - src: /images/d05d26b0e2a7237697a545f8adcf409311568528.jpg
+      width: 450
+      height: 300
       alt: Buy a bike
-      caption: null
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-d05d26b0e2a7237697a545f8adcf409311568528-450x300-jpg
 name: null
 url: null
 weight: 4

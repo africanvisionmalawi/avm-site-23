@@ -24,24 +24,12 @@ content:
         linkTitle: Anold Mankhambira
         extUrl: null
         photo:
-          _type: figure
+          src: /images/fafe061dfc57ef4d2c3b150609ca7f7a2035650a-0-166-2000-2031.jpg
+          width: 2000
+          height: 2031
           alt: Anold Mankhambira
           caption: Anold Mankhambira
-          crop:
-            _type: sanity.imageCrop
-            bottom: 0.2694492753623188
-            left: 0
-            right: 0
-            top: 0.055333333333333325
-          hotspot:
-            _type: sanity.imageHotspot
-            height: 0.6752173913043479
-            width: 1
-            x: 0.5
-            'y': 0.3929420289855073
-          asset:
-            _type: reference
-            _ref: image-fafe061dfc57ef4d2c3b150609ca7f7a2035650a-2000x3008-jpg
+          focus: 50% 50%
         linkTextMarkdown: >-
           he first story is from Anold Mankhambira, Project Accountant. Anold
           sadly passed away at Chritmas 2017 aged only 37.
@@ -62,14 +50,11 @@ content:
         linkTitle: Jack Maduka
         extUrl: null
         photo:
-          _type: figure
+          src: /images/b8dbd7413d2a0618270b468a9c276af8802dd136.jpg
+          width: 1855
+          height: 2105
           alt: Jack Maduka
           caption: Jack Maduka
-          crop: null
-          hotspot: null
-          asset:
-            _type: reference
-            _ref: image-b8dbd7413d2a0618270b468a9c276af8802dd136-1855x2105-jpg
         linkTextMarkdown: >-
           Jack had a tough time himself getting his education in his early years
           and is currently completing his Masters in the USA. He’s glad to be
@@ -91,14 +76,11 @@ content:
         linkTitle: Ireen Mwale
         extUrl: null
         photo:
-          _type: figure
+          src: /images/c2dbb6b1cf26fb51349f65ab55af638d3616205d.jpg
+          width: 1721
+          height: 1825
           alt: Ireen Mwale
           caption: Ireen Mwale
-          crop: null
-          hotspot: null
-          asset:
-            _type: reference
-            _ref: image-c2dbb6b1cf26fb51349f65ab55af638d3616205d-1721x1825-jpg
         linkTextMarkdown: The Assistant Librarian at Sam’s Village.
         url:
           slug:
@@ -117,24 +99,12 @@ content:
         linkTitle: Bokela Gunda
         extUrl: null
         photo:
-          _type: figure
+          src: /images/dcd55a3b2d3b926da8789466974b127ab8e41abd-0-160-1815-2160.jpg
+          width: 1815
+          height: 2160
           alt: Bokela Gunda
           caption: Bokela Gunda
-          crop:
-            _type: sanity.imageCrop
-            bottom: 0.02403785488958987
-            left: 0
-            right: 0
-            top: 0.06730599369085173
-          hotspot:
-            _type: sanity.imageHotspot
-            height: 0.9086561514195584
-            width: 1
-            x: 0.5
-            'y': 0.521634069400631
-          asset:
-            _type: reference
-            _ref: image-dcd55a3b2d3b926da8789466974b127ab8e41abd-1815x2377-jpg
+          focus: 50% 50%
         linkTextMarkdown: >-
           Bokela Gunda is Site Support at Sam’s Village and our master thatcher,
           having learnt to thatch while working for us.

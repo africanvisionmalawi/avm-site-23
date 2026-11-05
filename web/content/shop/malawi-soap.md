@@ -15,22 +15,16 @@ tags:
 photoGallery:
   _type: photoGallery
   photos:
-    - _type: figure
+    - src: /images/89daf4a411e893ec8b8b4eab19a672382d5fb2e2.jpg
+      width: 2016
+      height: 1512
       alt: 'Individual soaps, made at Sam’s Village in Malawi'
       caption: Soaps
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-89daf4a411e893ec8b8b4eab19a672382d5fb2e2-2016x1512-jpg
-    - _type: figure
+    - src: /images/bc90345343658d18509d42c7200b5830a24ce0fa.jpg
+      width: 600
+      height: 800
       alt: 'Individual soaps, made at Sam’s Village in Malawi'
       caption: Kondwani soap making
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-bc90345343658d18509d42c7200b5830a24ce0fa-600x800-jpg
 name: null
 url: null
 weight: 133

@@ -15,22 +15,14 @@ tags:
 photoGallery:
   _type: photoGallery
   photos:
-    - _type: figure
+    - src: /images/9679e8591a8e069c8d5995228bc10f63e3117302.jpg
+      width: 640
+      height: 480
       alt: Grass jeep
-      caption: null
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-9679e8591a8e069c8d5995228bc10f63e3117302-640x480-jpg
-    - _type: figure
+    - src: /images/23aa431c51ca86815c5bb265917e3ab6c2906415.jpg
+      width: 2400
+      height: 1800
       alt: grass vehicles
-      caption: null
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-23aa431c51ca86815c5bb265917e3ab6c2906415-4032x3024-jpg
 name: null
 url: null
 weight: 250

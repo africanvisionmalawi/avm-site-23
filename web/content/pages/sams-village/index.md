@@ -14,23 +14,15 @@ categorySlug: sams-village
 hero:
   _type: hero
   image:
-    _type: mainImage
+    src: /images/dd66ed054cb1f9e1213e0c033ad288fe5be795f0.jpg
+    width: 1140
+    height: 510
     alt: Sams Village
-    caption: null
-    crop: null
-    hotspot: null
-    asset:
-      _type: reference
-      _ref: image-dd66ed054cb1f9e1213e0c033ad288fe5be795f0-1140x510-jpg
   mobileImage:
-    _type: mainImage
+    src: /images/1e7ce261468ff1d787508928709eb39669237ec0.jpg
+    width: 750
+    height: 510
     alt: Sam's Village
-    caption: null
-    crop: null
-    hotspot: null
-    asset:
-      _type: reference
-      _ref: image-1e7ce261468ff1d787508928709eb39669237ec0-750x510-jpg
 bannerMsg: null
 content:
   - _key: d58b0e26d547
@@ -66,24 +58,11 @@ content:
         linkTitle: Training programme
         extUrl: null
         photo:
-          _type: figure
+          src: /images/07653b109118388284d434aaa0b50b0169e28f28.jpg
+          width: 250
+          height: 125
           alt: Training programme
-          caption: null
-          crop:
-            _type: sanity.imageCrop
-            bottom: 0
-            left: 0
-            right: 0
-            top: 0
-          hotspot:
-            _type: sanity.imageHotspot
-            height: 0.6159999999999999
-            width: 0.5039999999999998
-            x: 0.508
-            'y': 0.476
-          asset:
-            _type: reference
-            _ref: image-07653b109118388284d434aaa0b50b0169e28f28-250x125-jpg
+          focus: 50.8% 47.6%
         linkTextMarkdown: >-
           Since 2018, working with UNESCO, over 200 bursaries have been funded
           for marginalized people teaching a variety of vocational skills.
@@ -104,14 +83,11 @@ content:
         linkTitle: Library
         extUrl: null
         photo:
-          _type: figure
+          src: /images/c6d834f3c26dce99bc8d1391b22b1473cb50f502.jpg
+          width: 250
+          height: 125
           alt: Library
           caption: Library
-          crop: null
-          hotspot: null
-          asset:
-            _type: reference
-            _ref: image-c6d834f3c26dce99bc8d1391b22b1473cb50f502-250x125-jpg
         linkTextMarkdown: >-
           The Sam's Village Library is now open to students and visitors -
           Monday to Friday all day and Saturday mornings. It has 1000+ books and
@@ -133,14 +109,11 @@ content:
         linkTitle: Permaculture
         extUrl: null
         photo:
-          _type: figure
+          src: /images/4426ac695a0975149e1d8f2ddb5b93a1dd65c8d7.jpg
+          width: 250
+          height: 125
           alt: Permaculture
           caption: Permaculture
-          crop: null
-          hotspot: null
-          asset:
-            _type: reference
-            _ref: image-4426ac695a0975149e1d8f2ddb5b93a1dd65c8d7-250x125-jpg
         linkTextMarkdown: >-
           Permaculture gardens cover the Sam's Village site. All trainees
           receive permaculture training during their stay with us.
@@ -161,14 +134,11 @@ content:
         linkTitle: Building Programme
         extUrl: null
         photo:
-          _type: figure
+          src: /images/6f638d9ea83f8c994bcadab32ab807713fbf7f65.jpg
+          width: 250
+          height: 125
           alt: Building Programme
           caption: Building Programme
-          crop: null
-          hotspot: null
-          asset:
-            _type: reference
-            _ref: image-6f638d9ea83f8c994bcadab32ab807713fbf7f65-250x125-jpg
         linkTextMarkdown: >-
           The building programme at Sam's Village uses thatching and sustainable
           rammed earth techniques in an environmental way.
@@ -189,14 +159,11 @@ content:
         linkTitle: Biogas
         extUrl: null
         photo:
-          _type: figure
+          src: /images/602b37c59ab38611ece2ea4c20174f47327dd768.jpg
+          width: 250
+          height: 125
           alt: Biogas
           caption: Biogas
-          crop: null
-          hotspot: null
-          asset:
-            _type: reference
-            _ref: image-602b37c59ab38611ece2ea4c20174f47327dd768-250x125-jpg
         linkTextMarkdown: >-
           There are future plans to fuel the Restaurant and Kitchen with biogas,
           produced from cows.
@@ -217,14 +184,11 @@ content:
         linkTitle: Njewa New Office
         extUrl: null
         photo:
-          _type: figure
+          src: /images/313d0622bef8ced6da6a0fdb178963f021114799.jpg
+          width: 250
+          height: 125
           alt: Njewa New Office
           caption: Njewa New Office
-          crop: null
-          hotspot: null
-          asset:
-            _type: reference
-            _ref: image-313d0622bef8ced6da6a0fdb178963f021114799-250x125-jpg
         linkTextMarkdown: >-
           We have built a rammed earth and permaculture showcase site in the
           Njewa suburb of Lilongwe. Contact us to visit it!
@@ -242,110 +206,69 @@ content:
     _type: photoGallery
     disabled: false
     photos:
-      - _type: figure
+      - src: /images/c2929f20bc7a9fca3eda55403aae95fd73ebae39.jpg
+        width: 1000
+        height: 668
         alt: Sams village update
-        caption: null
-        crop: null
-        hotspot: null
-        asset:
-          _type: reference
-          _ref: image-c2929f20bc7a9fca3eda55403aae95fd73ebae39-1000x668-jpg
-      - _type: figure
+      - src: /images/69b50634f5042c310c962573ca9baec266ef9759.jpg
+        width: 1000
+        height: 668
         alt: Sams village update
-        caption: null
-        crop: null
-        hotspot: null
-        asset:
-          _type: reference
-          _ref: image-69b50634f5042c310c962573ca9baec266ef9759-1000x668-jpg
-      - _type: figure
+      - src: /images/d39fcb5cef1cdd2ec9abd1519c4cf78771479378.jpg
+        width: 640
+        height: 480
         alt: Sams village update
         caption: Sams village update
-        crop: null
-        hotspot: null
-        asset:
-          _type: reference
-          _ref: image-d39fcb5cef1cdd2ec9abd1519c4cf78771479378-640x480-jpg
-      - _type: figure
+      - src: /images/2d21f04faf903d1d31270894b8b403f7c2afa4ef.jpg
+        width: 1000
+        height: 668
         alt: Sams village update
         caption: Sams village update
-        crop: null
-        hotspot: null
-        asset:
-          _type: reference
-          _ref: image-2d21f04faf903d1d31270894b8b403f7c2afa4ef-1000x668-jpg
-      - _type: figure
+      - src: /images/e0ad0b4c3872b01f581459f5bf8040bae71692c7.jpg
+        width: 450
+        height: 600
         alt: Sams village update
         caption: Sams village update
-        crop: null
-        hotspot: null
-        asset:
-          _type: reference
-          _ref: image-e0ad0b4c3872b01f581459f5bf8040bae71692c7-450x600-jpg
-      - _type: figure
+      - src: /images/4cc44169d271ccb3850ca021c20d22c5f9d4dff8.jpg
+        width: 640
+        height: 480
         alt: Sams village update
         caption: Sams village update
-        crop: null
-        hotspot: null
-        asset:
-          _type: reference
-          _ref: image-4cc44169d271ccb3850ca021c20d22c5f9d4dff8-640x480-jpg
-      - _type: figure
+      - src: /images/f81a71fc42110784242eb936a0972cb94fc6125d.jpg
+        width: 1000
+        height: 668
         alt: Sams village update
         caption: Sams village update
-        crop: null
-        hotspot: null
-        asset:
-          _type: reference
-          _ref: image-f81a71fc42110784242eb936a0972cb94fc6125d-1000x668-jpg
-      - _type: figure
+      - src: /images/33fdeb702403305108de4c6480611bac428908f1.jpg
+        width: 1000
+        height: 668
         alt: Sams village update
         caption: Sams village update
-        crop: null
-        hotspot: null
-        asset:
-          _type: reference
-          _ref: image-33fdeb702403305108de4c6480611bac428908f1-1000x668-jpg
-      - _type: figure
+      - src: /images/babd55b5aff46d488f13a55ff273a3e8f0f4b078.jpg
+        width: 640
+        height: 480
         alt: Sams village update
         caption: Sams village update
-        crop: null
-        hotspot: null
-        asset:
-          _type: reference
-          _ref: image-babd55b5aff46d488f13a55ff273a3e8f0f4b078-640x480-jpg
-      - _type: figure
+      - src: /images/4c05ed20b45c3dad5fff567681f585845de7e6cf.jpg
+        width: 1000
+        height: 668
         alt: Sams village update
         caption: Sams village update
-        crop: null
-        hotspot: null
-        asset:
-          _type: reference
-          _ref: image-4c05ed20b45c3dad5fff567681f585845de7e6cf-1000x668-jpg
-      - _type: figure
+      - src: /images/d40ae352607ad0caf2296efe2003e057abcbf2d2.jpg
+        width: 400
+        height: 533
         alt: Sams village update
         caption: Sams village update
-        crop: null
-        hotspot: null
-        asset:
-          _type: reference
-          _ref: image-d40ae352607ad0caf2296efe2003e057abcbf2d2-400x533-jpg
-      - _type: figure
+      - src: /images/acccc623e09c5ac793c4716f770cc5c1bad3af19.jpg
+        width: 400
+        height: 533
         alt: Sams village update
         caption: Sams village update
-        crop: null
-        hotspot: null
-        asset:
-          _type: reference
-          _ref: image-acccc623e09c5ac793c4716f770cc5c1bad3af19-400x533-jpg
-      - _type: figure
+      - src: /images/a8a51a974e0a56f168b145e408cded08427424f9.jpg
+        width: 1000
+        height: 668
         alt: Sams village update
         caption: Sams village update
-        crop: null
-        hotspot: null
-        asset:
-          _type: reference
-          _ref: image-a8a51a974e0a56f168b145e408cded08427424f9-1000x668-jpg
 ---
 Sam’s Village is a self-sustaining training village, built on a 17-acre site. The construction phase is now almost complete and the objective is to support a move away from hand-outs and to create self-sufficient training programmes that can support thousands of local people. This will improve their lives in terms of creating employment, organic farming, orphan support, reforestation, HIV prevention and many other important areas. Our first training programme took place in May 2017 followed by a series of one day courses. Residential training over several months started in Spring 2018. The activities are supported through the Skills and Technical Education Programme (STEP), an initiative funded by the European Union (EU) and partially implemented by UNESCO.
 

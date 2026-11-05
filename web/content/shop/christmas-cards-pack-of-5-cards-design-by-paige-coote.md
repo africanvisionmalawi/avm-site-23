@@ -15,26 +15,20 @@ tags:
 photoGallery:
   _type: photoGallery
   photos:
-    - _type: figure
+    - src: /images/a4494d2b0dedd8f57bd3acd10466e29f7155e2f2.jpg
+      width: 600
+      height: 601
       alt: >-
         A pack of 5 christmas cards, designed by Paige Coote from Kingston
         College.
       caption: Front
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-a4494d2b0dedd8f57bd3acd10466e29f7155e2f2-600x601-jpg
-    - _type: figure
+    - src: /images/5a44b2ce86a0ab7151b0b1741b8c68f06975d60c.jpg
+      width: 600
+      height: 601
       alt: >-
         A pack of 5 christmas cards, designed by Paige Coote from Kingston
         College.
       caption: back
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-5a44b2ce86a0ab7151b0b1741b8c68f06975d60c-600x601-jpg
 name: null
 url: null
 weight: 107

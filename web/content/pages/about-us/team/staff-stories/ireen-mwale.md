@@ -24,7 +24,7 @@ I have worked for Landirani Trust for 11 months. Since I started working for Lan
 
 Through working with Landirani I have been helped to support myself and the family mainly my kids, who are schooling learning in different schools, by providing resources like exercise books and school uniform, in support of my husband.
 
-![Ireen](https://cdn.sanity.io/images/hh4wbbfo/production/c2dbb6b1cf26fb51349f65ab55af638d3616205d-1721x1825.jpg?auto=format)
+![Ireen](/images/c2dbb6b1cf26fb51349f65ab55af638d3616205d.jpg)
 *Ireen*
 
 Without Landirani I would be growing poor in terms of money because I had nowhere to get money but just relying on my husband but for now we are assisting each other.

@@ -15,14 +15,9 @@ endDate: '2020-07-01T21:00:00.000Z'
 allDay: false
 hideTime: false
 featured_image:
-  _type: image
-  alt: null
-  caption: null
-  crop: null
-  hotspot: null
-  asset:
-    _type: reference
-    _ref: image-85cfc585e3ec3b28c16eaf399af262ae4829a605-1536x822-jpg
+  src: /images/85cfc585e3ec3b28c16eaf399af262ae4829a605.jpg
+  width: 1536
+  height: 822
 noHero: false
 tag: null
 location: 'the cornerHOUSE 116 Douglas Road Surbiton, Surrey KT6 7SB United Kingdom'

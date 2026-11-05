@@ -1,0 +1,41 @@
+/* Ported from the Next.js component components/page/PageCommon.jsx (styles extracted from its Emotion styled blocks). */
+.page-common__container {
+  margin: 0 auto;
+  padding: 0 0 3rem;
+}
+
+.page-common__heading {
+  font-family: Raleway, "Helvetica Neue", "Segoe UI", "Helvetica", "Arial",
+    "sans-serif";
+  text-align: center;
+}
+
+.page-common__top-section {
+  padding: 0 1rem;
+}
+
+.page-common__text-section {
+  background: #fff;
+  margin: 0 auto;
+  max-width: 1080px;
+  padding: 1rem;
+  position: relative;
+  @media (min-width: 768px) {
+    padding: 2rem 4em;
+  }
+  @media (min-width: 1040px) {
+    padding: 2rem 8em;
+  }
+}
+
+.page-common__content-section {
+  margin: 0 auto;
+  max-width: 1080px;
+  padding: 0 0 3rem;
+}
+
+.page-common__main {
+  background: #fff;
+  border-radius: 2px;
+}
+

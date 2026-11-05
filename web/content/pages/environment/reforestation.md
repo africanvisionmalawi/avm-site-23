@@ -30,9 +30,9 @@ Over the years, we have planted tens of thousands of trees in schools and commun
 
 Sam's Village is an eco-village specialising in Permaculture (see picture below) which is taught to all students who stay with us, no matter what else they are learning.
 
-![reforestation](https://cdn.sanity.io/images/hh4wbbfo/production/1b33e3f55c3904b6e882c472a593ba0dc4db8ec1-640x638.jpg?auto=format)
+![reforestation](/images/1b33e3f55c3904b6e882c472a593ba0dc4db8ec1.jpg)
 
 We have started ‘growing clubs’ in our area where members of the community grow trees from seed. We buy these seedlings as a form of income generating for the community. We have found this approach particularly successful in local communities.
 
-![Acacia trees growing around M'Bang'Ombe school](https://cdn.sanity.io/images/hh4wbbfo/production/4fd394d1c3ea483535668e2faa1b8eda9c9090dc-2320x1343.jpg?auto=format)
+![Acacia trees growing around M'Bang'Ombe school](/images/4fd394d1c3ea483535668e2faa1b8eda9c9090dc.jpg)
 *Acacia trees growing around M'Bang'Ombe school*

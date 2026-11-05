@@ -15,22 +15,14 @@ tags:
 photoGallery:
   _type: photoGallery
   photos:
-    - _type: figure
+    - src: /images/e754184ff404ac1965d461ac4768fcb3586b9328.jpg
+      width: 1024
+      height: 768
       alt: Whistle
-      caption: null
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-e754184ff404ac1965d461ac4768fcb3586b9328-1024x768-jpg
-    - _type: figure
+    - src: /images/7d2932235e60d75c5e230d5c2de1267e75de5247.jpg
+      width: 1024
+      height: 768
       alt: Whistle
-      caption: null
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-7d2932235e60d75c5e230d5c2de1267e75de5247-1024x768-jpg
 name: null
 url: null
 weight: 16

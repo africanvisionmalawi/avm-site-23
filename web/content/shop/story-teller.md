@@ -15,14 +15,10 @@ tags:
 photoGallery:
   _type: photoGallery
   photos:
-    - _type: figure
+    - src: /images/8a1e6aa49ff08323f22b9418c937bea020c8f110.jpg
+      width: 346
+      height: 450
       alt: Storyteller postcard
-      caption: null
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-8a1e6aa49ff08323f22b9418c937bea020c8f110-346x450-jpg
 name: null
 url: null
 weight: 4

@@ -13,14 +13,9 @@ endDate: '2022-06-18T17:00:00.000Z'
 allDay: false
 hideTime: false
 featured_image:
-  _type: image
-  alt: null
-  caption: null
-  crop: null
-  hotspot: null
-  asset:
-    _type: reference
-    _ref: image-63da73f8a9817b64115d586027d9a07e63c256b3-1654x2339-jpg
+  src: /images/63da73f8a9817b64115d586027d9a07e63c256b3.jpg
+  width: 1654
+  height: 2339
 noHero: false
 tag: null
 location: '31 Upper Brighton Road, Surbiton, Surrey KT6 6QX'

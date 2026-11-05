@@ -15,14 +15,10 @@ tags:
 photoGallery:
   _type: photoGallery
   photos:
-    - _type: figure
+    - src: /images/a63f4ac34252dba61a94c0a657c6bad460d3ffc7.jpg
+      width: 337
+      height: 450
       alt: Mosquito nets
-      caption: null
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-a63f4ac34252dba61a94c0a657c6bad460d3ffc7-337x450-jpg
 name: null
 url: null
 weight: 4

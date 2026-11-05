@@ -28,7 +28,7 @@ To sponsor a child through secondary school, please contact us by phone 020 8287
 
 ## An example of a Student Profile, Lonely Zefenia Banda:
 
-![Lonely Zefenia Banda](https://cdn.sanity.io/images/hh4wbbfo/production/3d7aa96ce3618587dd9fe8e119f29dcb55796c82-450x338.jpg?auto=format)
+![Lonely Zefenia Banda](/images/3d7aa96ce3618587dd9fe8e119f29dcb55796c82.jpg)
 *Lonely Zefenia Banda*
 
 Hello. My name is Lonely Zefenia Banda. I am 14 years old and am in form 1B at Lilongwe Girls’ Secondary School. I started here in January, and I am really enjoying my time here.

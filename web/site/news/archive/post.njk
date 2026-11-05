@@ -1,0 +1,13 @@
+---js
+{
+  layout: "layouts/base.njk",
+  pagination: { data: "newsEvents.archivePosts", size: 1, alias: "doc" },
+  permalink: (data) => `/news/archive/${data.doc.slug}.html`,
+  eleventyComputed: {
+    title: (data) => data.doc.frontmatter.title,
+    description: (data) => data.doc.frontmatter.excerpt,
+    canonical: (data) => data.doc.canonical,
+  },
+}
+---
+<article class="articleInner"><div class="page-news-archive-slug__post-inner"><h1>{{ doc.frontmatter.title }}</h1><div>{{ doc.html | safe }}</div></div></article><section class="page-news-archive-slug__news-footer articleInner"><p><a href="/news/">Recent News</a></p></section>

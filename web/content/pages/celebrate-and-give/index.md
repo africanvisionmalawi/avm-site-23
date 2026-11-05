@@ -11,14 +11,10 @@ categorySlug: celebrate-and-give
 hero:
   _type: hero
   image:
-    _type: mainImage
+    src: /images/0665dee5d8d92f37b8f5ea32b4eb4473c27fcb44.jpg
+    width: 1140
+    height: 510
     alt: Celebrate & Give
-    caption: null
-    crop: null
-    hotspot: null
-    asset:
-      _type: reference
-      _ref: image-0665dee5d8d92f37b8f5ea32b4eb4473c27fcb44-1140x510-jpg
   mobileImage: null
 bannerMsg: null
 content:
@@ -69,7 +65,7 @@ You can also email [legacy@africanvision.org.uk](mailto:legacy@africanvision.org
 
 You can also find useful information on leaving a gift in your will in the following PDF brochure:
 
-[Legacy Brochure](https://cdn.sanity.io/files/hh4wbbfo/production/05892c92b485ea9ea811e892cbf694252bcce7f6.pdf)
+[Legacy Brochure](/files/05892c92b485ea9ea811e892cbf694252bcce7f6.pdf)
 
 Many thanks!
 

@@ -24,14 +24,11 @@ content:
         linkTitle: Donate
         extUrl: null
         photo:
-          _type: figure
+          src: /images/35064031d4809389c9cd3e29c884ae8433ead523.jpg
+          width: 584
+          height: 386
           alt: Donate
           caption: Donate
-          crop: null
-          hotspot: null
-          asset:
-            _type: reference
-            _ref: image-35064031d4809389c9cd3e29c884ae8433ead523-584x386-jpg
         linkTextMarkdown: Look at the different ways people support us financially
         url:
           slug:
@@ -50,14 +47,11 @@ content:
         linkTitle: Holiday in France
         extUrl: null
         photo:
-          _type: figure
+          src: /images/d1e043cca1b3241bf98d4b01e6a416b1be717bc3.jpg
+          width: 488
+          height: 488
           alt: Holiday in France
           caption: Holiday in France
-          crop: null
-          hotspot: null
-          asset:
-            _type: reference
-            _ref: image-d1e043cca1b3241bf98d4b01e6a416b1be717bc3-488x488-jpg
         linkTextMarkdown: 'Rent this beautiful property in the Loire, France.'
         url:
           slug:
@@ -76,14 +70,11 @@ content:
         linkTitle: Thank Yous
         extUrl: null
         photo:
-          _type: figure
+          src: /images/7d7f86789e2255a5c72506d92ab934e30d7efe13.jpg
+          width: 2400
+          height: 1590
           alt: Thank Yous
           caption: Thank Yous
-          crop: null
-          hotspot: null
-          asset:
-            _type: reference
-            _ref: image-7d7f86789e2255a5c72506d92ab934e30d7efe13-3696x2448-jpg
         linkTextMarkdown: Thank you to all of our wonderful supporters.
         url:
           slug:
@@ -102,14 +93,11 @@ content:
         linkTitle: Baggage Allowance
         extUrl: null
         photo:
-          _type: figure
+          src: /images/7a7a2c6ca2dd97d98e94ade7536c2cc8c4bcdd28.jpg
+          width: 2400
+          height: 1590
           alt: Use your baggage allowance
           caption: Use your baggage allowance
-          crop: null
-          hotspot: null
-          asset:
-            _type: reference
-            _ref: image-7a7a2c6ca2dd97d98e94ade7536c2cc8c4bcdd28-3696x2448-jpg
         linkTextMarkdown: Please take a bag of clothes to Malawi for us.
         url:
           slug:

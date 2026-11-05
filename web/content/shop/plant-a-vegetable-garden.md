@@ -15,14 +15,10 @@ tags:
 photoGallery:
   _type: photoGallery
   photos:
-    - _type: figure
+    - src: /images/1929631c876e66ee0d3436646afb3de05bdfb02c.jpg
+      width: 337
+      height: 450
       alt: Plant a vegetable garden
-      caption: null
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-1929631c876e66ee0d3436646afb3de05bdfb02c-337x450-jpg
 name: null
 url: null
 weight: 4

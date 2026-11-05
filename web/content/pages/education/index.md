@@ -11,14 +11,10 @@ categorySlug: education
 hero:
   _type: hero
   image:
-    _type: mainImage
+    src: /images/b1956647525c588b8451e8cbd74328e00682a332.jpg
+    width: 1140
+    height: 510
     alt: Education
-    caption: null
-    crop: null
-    hotspot: null
-    asset:
-      _type: reference
-      _ref: image-b1956647525c588b8451e8cbd74328e00682a332-1140x510-jpg
   mobileImage: null
 bannerMsg:
   source: null
@@ -42,14 +38,10 @@ content:
         linkTitle: CBCC
         extUrl: null
         photo:
-          _type: figure
+          src: /images/3ba41076d6647f0d314a2aa9e1d3011817c02aab.jpg
+          width: 250
+          height: 125
           alt: CBCC
-          caption: null
-          crop: null
-          hotspot: null
-          asset:
-            _type: reference
-            _ref: image-3ba41076d6647f0d314a2aa9e1d3011817c02aab-250x125-jpg
         linkTextMarkdown: >-
           We support 13 Community Based Childcare Centres (CBCCs) or
           'pre-schools' , across our area, 11 of which are supported by Feed the
@@ -71,14 +63,10 @@ content:
         linkTitle: Primary Schools
         extUrl: null
         photo:
-          _type: figure
+          src: /images/49aee5a1f5ff4a58efe7aaea321d198e7c6b9a67.jpg
+          width: 250
+          height: 125
           alt: Primary Schools
-          caption: null
-          crop: null
-          hotspot: null
-          asset:
-            _type: reference
-            _ref: image-49aee5a1f5ff4a58efe7aaea321d198e7c6b9a67-250x125-jpg
         linkTextMarkdown: >-
           Primary Education is free in Malawi and we support 26 schools in our
           area. Since African Vision Malawi started we have 18 of them partnered
@@ -100,14 +88,10 @@ content:
         linkTitle: Secondary Schools
         extUrl: null
         photo:
-          _type: figure
+          src: /images/3b77cd3bb9399ddef64ed6083ce9c6d828ee921f.jpg
+          width: 250
+          height: 125
           alt: Secondary Schools
-          caption: null
-          crop: null
-          hotspot: null
-          asset:
-            _type: reference
-            _ref: image-3b77cd3bb9399ddef64ed6083ce9c6d828ee921f-250x125-jpg
         linkTextMarkdown: >-
           Only 25% of eligible children attend Secondary School. Orphans and
           ultra-poor are unable to go, although they may have received a place.
@@ -129,14 +113,10 @@ content:
         linkTitle: Further Education
         extUrl: null
         photo:
-          _type: figure
+          src: /images/7988697cf93d209425d6301b5000b08b79a7f7e6.jpg
+          width: 249
+          height: 125
           alt: Further Education
-          caption: null
-          crop: null
-          hotspot: null
-          asset:
-            _type: reference
-            _ref: image-7988697cf93d209425d6301b5000b08b79a7f7e6-249x125-jpg
         linkTextMarkdown: >-
           We typically support at least 20 university and further education
           students,who are studying nursing, teaching, journalism, medicine,
@@ -158,14 +138,10 @@ content:
         linkTitle: Adult Education
         extUrl: null
         photo:
-          _type: figure
+          src: /images/e956432f44e3ffd34455668aa46d83f95a4ad000.jpg
+          width: 250
+          height: 125
           alt: Adult Education
-          caption: null
-          crop: null
-          hotspot: null
-          asset:
-            _type: reference
-            _ref: image-e956432f44e3ffd34455668aa46d83f95a4ad000-250x125-jpg
         linkTextMarkdown: >-
           We have built a self-sustaining training village – Sam’s Village - ona
           17-acre site. We also provide Adult Literacy programmes.
@@ -186,14 +162,10 @@ content:
         linkTitle: Building Schools
         extUrl: null
         photo:
-          _type: figure
+          src: /images/58c82fa3af14e9a8d1bc6159e56bfe885a7c3acf.jpg
+          width: 250
+          height: 125
           alt: Building Schools
-          caption: null
-          crop: null
-          hotspot: null
-          asset:
-            _type: reference
-            _ref: image-58c82fa3af14e9a8d1bc6159e56bfe885a7c3acf-250x125-jpg
         linkTextMarkdown: >-
           From our very first project at Masiye in 2006, to forthcoming plans
           forSongwe, we have built a number of schools blocks and teachers'
@@ -215,14 +187,10 @@ content:
         linkTitle: Project4Africa
         extUrl: null
         photo:
-          _type: figure
+          src: /images/1ae1255efe4ffd9716183acb784b799267b769d5.jpg
+          width: 252
+          height: 125
           alt: Project4Africa
-          caption: null
-          crop: null
-          hotspot: null
-          asset:
-            _type: reference
-            _ref: image-1ae1255efe4ffd9716183acb784b799267b769d5-252x125-jpg
         linkTextMarkdown: >-
           We have raised funds to build Namanyanga School, a teacher's house and
           pre-schoolwith feeding centre. They have also funded a Maternity Unit.

@@ -20,13 +20,13 @@ Our University Students are writing their life stories down for us, so that our 
 
 ### Loness Eliya
 
-![Loness Eliya](https://cdn.sanity.io/images/hh4wbbfo/production/9979d30e11ad4b525839eff6bb7d726b02986016-720x960.jpg?auto=format)
+![Loness Eliya](/images/9979d30e11ad4b525839eff6bb7d726b02986016.jpg)
 
 Read the first of those stories here, from Loness Eliya, nursing student at Kamuzu College of Nursing: [Loness Eliya’s Story](/education/university-scholarships/loness-eliya-story-of-a-sponsored-university-student/)
 
 ### Lobiner Kanthenga
 
-![Lobiner outside Kamuzu College of Nursing (KCN) administration buildings Lilongwe campus](https://cdn.sanity.io/images/hh4wbbfo/production/e8a8b4fed7c40ed0c16e385a3883181391d54719-602x451.jpg?auto=format)
+![Lobiner outside Kamuzu College of Nursing (KCN) administration buildings Lilongwe campus](/images/e8a8b4fed7c40ed0c16e385a3883181391d54719.jpg)
 *Lobiner outside Kamuzu College of Nursing (KCN) administration buildings Lilongwe campus*
 
 The second of our students to tell us about themselves is Lobiner Kanthenga, who is also studying at Kamuzu College of Nursing, studying for a BSc in Nursing and Midwifery:
@@ -37,7 +37,7 @@ We are looking for new sponsors to support university and higher education stude
 
 ### Evelyn Dongolosi
 
-![Evelyn Dongolosi nursing student](https://cdn.sanity.io/images/hh4wbbfo/production/5274e882b1d0cdad73a0b4da51cb2d683d6e8ee6-539x960.jpg?auto=format)
+![Evelyn Dongolosi nursing student](/images/5274e882b1d0cdad73a0b4da51cb2d683d6e8ee6.jpg)
 *Evelyn Dongolosi nursing student*
 
 Evelyn Dongolosi is a third student at Kamuzu College of Nursing. Like the others, she is from humble beginnings and is now bearing fruit after hard work through their Secondary Scholarships. The stories of these girls show the amazing transformation that education can bring. Thanks to the generosity of their sponsors, who had faith and supported them, these young women are the future of health provision in Malawi.

@@ -12,7 +12,7 @@ hero: null
 bannerMsg: null
 content: []
 ---
-![Loness Eliya outside Nkhata-Bay district hospital in the Northern region of Malawi during practical work-second year at Kamuzu College of Nursing (KCN)](https://cdn.sanity.io/images/hh4wbbfo/production/922095d6a54a7633cf994a0a5b68bac623db9c01-1431x804.jpg?auto=format)
+![Loness Eliya outside Nkhata-Bay district hospital in the Northern region of Malawi during practical work-second year at Kamuzu College of Nursing (KCN)](/images/922095d6a54a7633cf994a0a5b68bac623db9c01.jpg)
 *Loness Eliya outside Nkhata-Bay district hospital in the Northern region of Malawi during practical work-second year at Kamuzu College of Nursing (KCN)*
 
 Loness is a student African Vision Malawi / The Landirani Trust has sponsored through secondary school and university studies. Here, in her own words, is her story:
@@ -43,5 +43,5 @@ We are thankful to Loness for sharing her life story with us. We are thankful th
 
 Please help us to support other students like Loness! £40 a month makes a massive difference to support a university student. Email us at [info@africanvision.org.uk](info@africanvision.org.uk) or you donate using the button below.
 
-![Second year during practical work at Nkhata-Bay district hospital.](https://cdn.sanity.io/images/hh4wbbfo/production/847c92181934db6b944dd6e9560dddba36be0f6d-1429x803.jpg?auto=format)
+![Second year during practical work at Nkhata-Bay district hospital.](/images/847c92181934db6b944dd6e9560dddba36be0f6d.jpg)
 *Second year during practical work at Nkhata-Bay district hospital.*

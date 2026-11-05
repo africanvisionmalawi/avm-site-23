@@ -14,14 +14,10 @@ excerptMarkdown: >-
   more information.
 hideHeaderPhoto: false
 photo:
-  _type: figure
+  src: /images/de5ba1365eff38a72da18139e10f17445e2e13a1.jpg
+  width: 504
+  height: 336
   alt: Retreat to the farm
-  caption: null
-  crop: null
-  hotspot: null
-  asset:
-    _type: reference
-    _ref: image-de5ba1365eff38a72da18139e10f17445e2e13a1-504x336-jpg
 tags: []
 pageHeading: null
 content: []

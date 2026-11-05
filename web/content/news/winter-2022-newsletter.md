@@ -11,24 +11,12 @@ excerptMarkdown: >-
   have already enjoyed great success.
 hideHeaderPhoto: true
 photo:
-  _type: figure
+  src: /images/03fa8f914670ab4dce6d3e293269d84ea980f086-57-75-1178-1133.jpg
+  width: 1178
+  height: 1133
   alt: African Vision Malawi Winter 2022 Newsletter
   caption: Winter 2022 Newsletter
-  crop:
-    _type: sanity.imageCrop
-    bottom: 0.31154448398576506
-    left: 0.046263345195729534
-    right: 0.003558718861209953
-    top: 0.04271174377224198
-  hotspot:
-    _type: sanity.imageHotspot
-    height: 0.63820640569395
-    width: 0.9501779359430605
-    x: 0.5213523131672598
-    'y': 0.3693523131672597
-  asset:
-    _type: reference
-    _ref: image-03fa8f914670ab4dce6d3e293269d84ea980f086-1240x1754-jpg
+  focus: 50% 50.6%
 tags:
   - label: newsletters
     value: newsletters
@@ -42,7 +30,7 @@ event: null
 ---
 Our new Winter Newsletter is now out and contains articles on the official opening of Sam's Village and a feature on Sustainable Agriculture where we have already enjoyed great success.
 
-[PDF](https://cdn.sanity.io/files/hh4wbbfo/production/dde982ab6b04e2ac182afd0fe695889097060dc2.pdf)
+[PDF](/files/dde982ab6b04e2ac182afd0fe695889097060dc2.pdf)
 
-![African Vision Malawi Winter 2022 Newsletter](https://cdn.sanity.io/images/hh4wbbfo/production/03fa8f914670ab4dce6d3e293269d84ea980f086-1240x1754.jpg?auto=format)
+![African Vision Malawi Winter 2022 Newsletter](/images/03fa8f914670ab4dce6d3e293269d84ea980f086.jpg)
 *Winter 2022 Newsletter*

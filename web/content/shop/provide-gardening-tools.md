@@ -15,14 +15,10 @@ tags:
 photoGallery:
   _type: photoGallery
   photos:
-    - _type: figure
+    - src: /images/98c5f7224bb7b7a0955250a54e2498ddf4d160fe.jpg
+      width: 450
+      height: 300
       alt: Provide gardening tools
-      caption: null
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-98c5f7224bb7b7a0955250a54e2498ddf4d160fe-450x300-jpg
 name: null
 url: null
 weight: 4

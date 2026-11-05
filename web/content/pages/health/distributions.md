@@ -16,16 +16,16 @@ Distributions are part of our work, and are vital to the orphans who have nothin
 
 We do regular distributions in our area, mainly food, mosquito nets, sleeping mats, clothes and toys.
 
-![Distribution of jeans, donated by Good News Mission](https://cdn.sanity.io/images/hh4wbbfo/production/a10597e1fa336a2449f6b7e03aba85cd3c1d88ea-2048x1536.jpg?auto=format)
+![Distribution of jeans, donated by Good News Mission](/images/a10597e1fa336a2449f6b7e03aba85cd3c1d88ea.jpg)
 *Distribution of jeans, donated by Good News Mission*
 
 One of our regular distributions is to provide some food to the most poverty stricken people during the ‘hungry months’ of February. We select 20 people from each of our 14 centres.
 
 We also do regular orphan lunch days, providing every orphan in a school with a nutritious lunch. We have donated wheelchairs, to those most in need in our area.
 
-![distributions](https://cdn.sanity.io/images/hh4wbbfo/production/0f93807c9ffaf8daa0c28fde58e38b552c657035-2000x3008.jpg?auto=format)
+![distributions](/images/0f93807c9ffaf8daa0c28fde58e38b552c657035.jpg)
 
-![jumpers distributions](https://cdn.sanity.io/images/hh4wbbfo/production/4411d36285c373091c16f471d2adef0084e85710-3696x2448.jpg?auto=format)
+![jumpers distributions](/images/4411d36285c373091c16f471d2adef0084e85710.jpg)
 *Distribution of jumpers to those most in need*
 
 You can buy blankets, sleeping mats, mosquito nets, food and other items through our online shop.

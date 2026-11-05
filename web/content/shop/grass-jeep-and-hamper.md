@@ -15,14 +15,10 @@ tags:
 photoGallery:
   _type: photoGallery
   photos:
-    - _type: figure
+    - src: /images/577fc3c8bb1d29b52055a505148eaf55b7840610.jpg
+      width: 2400
+      height: 1800
       alt: jeep hamper
-      caption: null
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-577fc3c8bb1d29b52055a505148eaf55b7840610-4032x3024-jpg
 name: null
 url: null
 weight: 351

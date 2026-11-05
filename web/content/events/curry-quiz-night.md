@@ -14,14 +14,9 @@ endDate: '2022-03-05T21:30:00.000Z'
 allDay: false
 hideTime: false
 featured_image:
-  _type: image
-  alt: null
-  caption: null
-  crop: null
-  hotspot: null
-  asset:
-    _type: reference
-    _ref: image-5234ec9e2a3fe9a4605ac9cf064e9004e6a4db13-1024x628-png
+  src: /images/5234ec9e2a3fe9a4605ac9cf064e9004e6a4db13.png
+  width: 1024
+  height: 628
 noHero: false
 tag: null
 location: 'Long Ditton Village Hall, KT6 5LE'

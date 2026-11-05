@@ -15,14 +15,10 @@ tags:
 photoGallery:
   _type: photoGallery
   photos:
-    - _type: figure
+    - src: /images/49b445f1a49317c42507b888dbaaf08e6d76c946.jpg
+      width: 1585
+      height: 1575
       alt: Holy Night (front)
-      caption: null
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-49b445f1a49317c42507b888dbaaf08e6d76c946-1585x1575-jpg
 name: null
 url: null
 weight: 185

@@ -15,14 +15,10 @@ tags:
 photoGallery:
   _type: photoGallery
   photos:
-    - _type: figure
+    - src: /images/deea834277229b0e1aa5f70744c4b7fe76428021.jpg
+      width: 450
+      height: 346
       alt: Signs postcard
-      caption: null
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-deea834277229b0e1aa5f70744c4b7fe76428021-450x346-jpg
 name: null
 url: null
 weight: 4

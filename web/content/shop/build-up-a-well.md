@@ -15,14 +15,10 @@ tags:
 photoGallery:
   _type: photoGallery
   photos:
-    - _type: figure
+    - src: /images/c5cd8bbb3298f936e2422d975229d2a9fe4d19d8.jpg
+      width: 450
+      height: 337
       alt: Build a well
-      caption: null
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-c5cd8bbb3298f936e2422d975229d2a9fe4d19d8-450x337-jpg
 name: null
 url: null
 weight: 4

@@ -15,14 +15,11 @@ tags:
 photoGallery:
   _type: photoGallery
   photos:
-    - _type: figure
+    - src: /images/6e138c52d30112aa0968d5efaf088e06e47bbde1.jpg
+      width: 1024
+      height: 768
       alt: Heart shaped bowls
       caption: Heart shaped bowls
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-6e138c52d30112aa0968d5efaf088e06e47bbde1-1024x768-jpg
 name: null
 url: null
 weight: 55

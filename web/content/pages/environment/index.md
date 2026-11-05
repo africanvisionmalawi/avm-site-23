@@ -11,14 +11,10 @@ categorySlug: environment
 hero:
   _type: hero
   image:
-    _type: mainImage
+    src: /images/571fdf32a5dabc17e84edccac529c2298b22561f.jpg
+    width: 1140
+    height: 510
     alt: Environment
-    caption: null
-    crop: null
-    hotspot: null
-    asset:
-      _type: reference
-      _ref: image-571fdf32a5dabc17e84edccac529c2298b22561f-1140x510-jpg
   mobileImage: null
 bannerMsg: null
 content:
@@ -35,14 +31,10 @@ content:
         linkTitle: Reforestation
         extUrl: null
         photo:
-          _type: figure
+          src: /images/146dd419abf05a265da5619216afc55ffad6a4c1.jpg
+          width: 250
+          height: 125
           alt: Reforestation
-          caption: null
-          crop: null
-          hotspot: null
-          asset:
-            _type: reference
-            _ref: image-146dd419abf05a265da5619216afc55ffad6a4c1-250x125-jpg
         linkTextMarkdown: >-
           Wood is the main source of fuel for keeping warm and cooking. Our
           Reforestation Project is promoting self-sufficiency within our area.
@@ -63,14 +55,10 @@ content:
         linkTitle: Vegetable Gardens
         extUrl: null
         photo:
-          _type: figure
+          src: /images/685e382ae47fc269c21d82d36b6f4119191d415f.jpg
+          width: 250
+          height: 125
           alt: Vegetable Gardens
-          caption: null
-          crop: null
-          hotspot: null
-          asset:
-            _type: reference
-            _ref: image-685e382ae47fc269c21d82d36b6f4119191d415f-250x125-jpg
         linkTextMarkdown: >-
           We are aiming to attach a vegetable garden to each school in our
           areawhich will be maintained by the children and teachers.
@@ -91,14 +79,10 @@ content:
         linkTitle: Groundnut Farming
         extUrl: null
         photo:
-          _type: figure
+          src: /images/99534ee65b03f58afea9d4a87b4f589047819722.jpg
+          width: 250
+          height: 125
           alt: Groundnut Farming
-          caption: null
-          crop: null
-          hotspot: null
-          asset:
-            _type: reference
-            _ref: image-99534ee65b03f58afea9d4a87b4f589047819722-250x125-jpg
         linkTextMarkdown: >-
           We deliver training on groundnut farming across our area. Training isa
           sustainable way of making a real difference to people's lives.
@@ -119,14 +103,10 @@ content:
         linkTitle: Fuel-Saving Ovens
         extUrl: null
         photo:
-          _type: figure
+          src: /images/214e6aee9144366513d0c6fe8a0aebc39144c337.jpg
+          width: 250
+          height: 125
           alt: Fuel-Saving Ovens
-          caption: null
-          crop: null
-          hotspot: null
-          asset:
-            _type: reference
-            _ref: image-214e6aee9144366513d0c6fe8a0aebc39144c337-250x125-jpg
         linkTextMarkdown: >-
           These ovens use less wood, preventing deforestation and saving
           money.And children and epileptic people are less likely to suffer
@@ -148,14 +128,10 @@ content:
         linkTitle: Food Mill
         extUrl: null
         photo:
-          _type: figure
+          src: /images/119a54ba804b03c21eb9f39173f8d474d1556cc0.jpg
+          width: 250
+          height: 125
           alt: Food Mill
-          caption: null
-          crop: null
-          hotspot: null
-          asset:
-            _type: reference
-            _ref: image-119a54ba804b03c21eb9f39173f8d474d1556cc0-250x125-jpg
         linkTextMarkdown: >-
           We are building a Food Mill at Kafutwe. This mill will help the
           localpeople to maintain a sustainable income. Millet, sorghum and
@@ -177,14 +153,10 @@ content:
         linkTitle: Fruit Trees
         extUrl: null
         photo:
-          _type: figure
+          src: /images/1ec4d03f7c40ba48f9e6fbaedb1ad97d4916771b.jpg
+          width: 250
+          height: 125
           alt: Fruit Trees
-          caption: null
-          crop: null
-          hotspot: null
-          asset:
-            _type: reference
-            _ref: image-1ec4d03f7c40ba48f9e6fbaedb1ad97d4916771b-250x125-jpg
         linkTextMarkdown: >-
           Hundreds of trees were planted back in 2008 and the trees in
           Chitsime,Masiye and M'bang'ombe are thriving, despite droughts.

@@ -1,0 +1,38 @@
+/* Ported from the Next.js component components/button.module.css (styles extracted from its Emotion styled blocks). */
+.button-m__cta-button {
+  display: block;
+
+  /* text-align: center;     */
+}
+.button-m__cta-button a {
+  background: #58b5d7;
+  border-radius: 8px;
+  display: inline-block;
+  font-weight: bold;
+  /* padding: 10px 20px; */
+  padding: 6px 12px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.button-m__cta-button-alt a {
+  background: #fff;
+  color: #58b5d7;
+}
+.button-m__cta-button a:link,
+.button-m__cta-button a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+.button-m__cta-button a:hover {
+  background: #6dbedc;
+}
+.button-m__cart-link {
+  padding: 4px;
+}
+.button-m__cart-link-icon {
+  height: 32px;
+  width: auto;
+}
+.button-m__cart-link-text {
+  color: #fff;
+}

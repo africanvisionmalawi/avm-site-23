@@ -15,14 +15,10 @@ tags:
 photoGallery:
   _type: photoGallery
   photos:
-    - _type: figure
+    - src: /images/571d5205d07a18f5acb6ec6074b209d208471d51.jpg
+      width: 450
+      height: 343
       alt: Buy a pig
-      caption: null
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-571d5205d07a18f5acb6ec6074b209d208471d51-450x343-jpg
 name: null
 url: null
 weight: 9

@@ -15,14 +15,11 @@ tags:
 photoGallery:
   _type: photoGallery
   photos:
-    - _type: figure
+    - src: /images/2d31d38965d3e656b82745f98b4080b38511ddca.jpg
+      width: 768
+      height: 1024
       alt: giraffe
       caption: Giraffe
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-2d31d38965d3e656b82745f98b4080b38511ddca-768x1024-jpg
 name: null
 url: null
 weight: 108

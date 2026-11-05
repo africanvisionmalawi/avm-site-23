@@ -15,14 +15,10 @@ tags:
 photoGallery:
   _type: photoGallery
   photos:
-    - _type: figure
+    - src: /images/a42560229535c19b9ecd42917b9ffed2eb7dac89.jpg
+      width: 640
+      height: 480
       alt: wooden carved bowls
-      caption: null
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-a42560229535c19b9ecd42917b9ffed2eb7dac89-640x480-jpg
 name: null
 url: null
 weight: 525

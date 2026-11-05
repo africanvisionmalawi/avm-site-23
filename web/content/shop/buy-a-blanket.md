@@ -15,14 +15,10 @@ tags:
 photoGallery:
   _type: photoGallery
   photos:
-    - _type: figure
+    - src: /images/cdecffe37bfec57bf7f9576f80958bb13b8513ba.jpg
+      width: 450
+      height: 299
       alt: Buy a blanket
-      caption: null
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-cdecffe37bfec57bf7f9576f80958bb13b8513ba-450x299-jpg
 name: null
 url: null
 weight: 4

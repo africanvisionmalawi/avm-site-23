@@ -13,14 +13,10 @@ excerptMarkdown: >-
   2005. **Read our latest updates here.**
 hideHeaderPhoto: true
 photo:
-  _type: figure
+  src: /images/a35763cb6eb526bfda1e046156d8b7308d98fe5c.jpg
+  width: 1240
+  height: 1754
   alt: January newsletter
-  caption: null
-  crop: null
-  hotspot: null
-  asset:
-    _type: reference
-    _ref: image-a35763cb6eb526bfda1e046156d8b7308d98fe5c-1240x1754-jpg
 tags: []
 pageHeading: null
 content: []
@@ -34,4 +30,4 @@ Now, in 2025, we're launching the '2025 Pedal Power 500 km Cycle Challenge' thro
 
 Our Safe Motherhood Unit (SMU) and SEND (Special Educational Needs & Disability) unit are nearing completion. You can read about these projects and our updated programmes in the newsletter below.
 
-[PDF](https://cdn.sanity.io/files/hh4wbbfo/production/8fb244d6cee741510538c0d3af8c264c8d9dde57.pdf)
+[PDF](/files/8fb244d6cee741510538c0d3af8c264c8d9dde57.pdf)

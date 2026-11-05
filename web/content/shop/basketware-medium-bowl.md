@@ -13,22 +13,16 @@ tags: []
 photoGallery:
   _type: photoGallery
   photos:
-    - _type: figure
+    - src: /images/6c081f3844b51874e6e65be68eaf46ff63b18652.jpg
+      width: 501
+      height: 1024
       alt: Medium grass bowls
       caption: Grass bowl
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-6c081f3844b51874e6e65be68eaf46ff63b18652-501x1024-jpg
-    - _type: figure
+    - src: /images/d29cf824372ae03833caab935084440f7ada9fa0.jpg
+      width: 1023
+      height: 1020
       alt: Grass bowls
       caption: Grass bowl
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-d29cf824372ae03833caab935084440f7ada9fa0-1023x1020-jpg
 name: null
 url: null
 weight: null

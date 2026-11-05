@@ -17,14 +17,9 @@ endDate: null
 allDay: false
 hideTime: false
 featured_image:
-  _type: image
-  alt: null
-  caption: null
-  crop: null
-  hotspot: null
-  asset:
-    _type: reference
-    _ref: image-e59914766c9554acd1123018941944512cd5e2a6-750x1000-jpg
+  src: /images/e59914766c9554acd1123018941944512cd5e2a6.jpg
+  width: 750
+  height: 1000
 noHero: false
 tag: null
 location: Langleys Restaurant & Wine Bar 158 Ewell Road Surbiton KT6 6HE

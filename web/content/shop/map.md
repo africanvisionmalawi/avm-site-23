@@ -15,14 +15,10 @@ tags:
 photoGallery:
   _type: photoGallery
   photos:
-    - _type: figure
+    - src: /images/6edcff4baaefb9642ccaaf0f29bb601067961d11.jpg
+      width: 450
+      height: 346
       alt: Back of postcard blank Illustrations by Adam Newton.
-      caption: null
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-6edcff4baaefb9642ccaaf0f29bb601067961d11-450x346-jpg
 name: null
 url: null
 weight: 4

@@ -15,22 +15,16 @@ tags:
 photoGallery:
   _type: photoGallery
   photos:
-    - _type: figure
+    - src: /images/ddf6ea7a7dde55b2e64e6fa9b7ca5f87d757c0db.jpg
+      width: 925
+      height: 1024
       alt: Grass bowl
       caption: Basketware large bowl
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-ddf6ea7a7dde55b2e64e6fa9b7ca5f87d757c0db-925x1024-jpg
-    - _type: figure
+    - src: /images/aa4f5a7dd5966e689c75ff90544cbb2d33ea3f65.jpg
+      width: 848
+      height: 1024
       alt: Grass bowl
       caption: Grass bowl
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-aa4f5a7dd5966e689c75ff90544cbb2d33ea3f65-848x1024-jpg
 name: null
 url: null
 weight: 335

@@ -15,14 +15,11 @@ tags:
 photoGallery:
   _type: photoGallery
   photos:
-    - _type: figure
+    - src: /images/b9a508bba99c5c2f345a03620e0801b4a61e70aa.jpg
+      width: 768
+      height: 1024
       alt: Mobile
       caption: Mobile
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-b9a508bba99c5c2f345a03620e0801b4a61e70aa-768x1024-jpg
 name: null
 url: null
 weight: 29

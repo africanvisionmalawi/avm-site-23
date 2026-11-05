@@ -17,14 +17,10 @@ tags:
 photoGallery:
   _type: photoGallery
   photos:
-    - _type: figure
+    - src: /images/7f77d6586a11e87cca73aa65176e5af1582d9259.jpg
+      width: 450
+      height: 300
       alt: Key stage 1 and 2 curriculum links
-      caption: null
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-7f77d6586a11e87cca73aa65176e5af1582d9259-450x300-jpg
 name: null
 url: null
 weight: 100

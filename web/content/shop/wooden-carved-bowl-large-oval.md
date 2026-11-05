@@ -15,14 +15,10 @@ tags:
 photoGallery:
   _type: photoGallery
   photos:
-    - _type: figure
+    - src: /images/d97dc8b8a74b498096123e1ba83c4ea1c99f9da1.jpg
+      width: 640
+      height: 480
       alt: Wooden Carved Bowl
-      caption: null
-      crop: null
-      hotspot: null
-      asset:
-        _type: reference
-        _ref: image-d97dc8b8a74b498096123e1ba83c4ea1c99f9da1-640x480-jpg
 name: null
 url: null
 weight: 1000
