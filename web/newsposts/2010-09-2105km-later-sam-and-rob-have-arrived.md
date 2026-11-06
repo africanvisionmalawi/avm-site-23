@@ -19,14 +19,11 @@ Beautiful scenery, pain, bike troubles and almost being robbed all contributed t
 
 We will be posting a first hand account from Sam and Rob as soon as they get back.
 
-![photo](https://www.landirani.org/image_library/news/full_size/4ca1f6da108dejourney.jpg)
-
 To sponsor the boys retrospectively please click on the "Paypal donate to Landirani" button on the right of this page.
 
 Sam and Rob have undergone this HUGE journey to raise money for bicycle ambulances.
 
-[Click here to read more about bicycle ambulances and how they are already saving lives in our area of support.](/projects/14-bicycle_ambulances.html)
+[Click here to read more about bicycle ambulances and how they are already saving lives in our area of support.](/health/bicycle-ambulances)
 
 We are all SO proud and impressed with Sam and Rob and so grateful for their efforts, dedication and passion to help so many people in Malawi...ZIKOMO KWAMBIRI (Thank you very much)
 
-![photo](https://www.landirani.org/image_library/news/full_size/4c88e8f38c67b_dsc2249.jpg.jpg)

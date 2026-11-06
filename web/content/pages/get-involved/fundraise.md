@@ -41,7 +41,7 @@ A cake stall
 
 A sponsored silence
 
-and many more from the internet [here](https://www.gapyear.com/articles/90420/a-to-z-of-fundraising-ideas)
+and many more ideas online!
 
 Maybe you’d like to run an activity for kids to raise money, or maybe your child would like to ask friends to donate to African Vision Malawi – perhaps to buy uniforms or books for our young friends in Malawi – instead of receiving presents for his or her birthday?
 

@@ -15,4 +15,4 @@ excerpt: "21 year old Alex Walker has signed up to run the Vitality North London
 
 That's 13.1 miles, and it's his first time running a half marathon.  The finish line is in Wembley Stadium, which sounds like it will be quite something!  Good luck, Alex, and thank you for choosing us.
 
-If you'd like to sponsor Alex, his fundraising page is [here](https://mydonate.bt.com/fundraisers/alexwalker1994).
+If you'd like to sponsor Alex, his fundraising page is here.

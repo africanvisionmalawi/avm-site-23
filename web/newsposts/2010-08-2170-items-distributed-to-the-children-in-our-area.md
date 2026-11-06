@@ -21,4 +21,3 @@ The remaining blankets and clothes were from our own supplies.
 
 This is a fantastic achievement and we are sending a huge thank you to Gift of the Givers, The Rotary, Lilongwe and our team in Malawi who have worked so hard securing the donations and ensuring the distributions have been successful.
 
-![photo](https://www.landirani.org/image_library/news/full_size/4b0bfdfd40edehpnx2124.jpg)

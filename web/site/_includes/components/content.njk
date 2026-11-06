@@ -67,7 +67,7 @@
 {%- for pageLink in links -%}
 {%- set categoryUrl = (pageLink.url.category.slug.current + "/") if (pageLink.url and pageLink.url.category and pageLink.url.category.slug and pageLink.url.category.slug.current) else "" -%}
 {%- set pageUrl = pageLink.url.slug.current if (pageLink.url and pageLink.url.slug and pageLink.url.slug.current) else "" -%}
-{%- set url = ("/" + pageUrl) if categoryUrl == pageUrl else ("/" + categoryUrl + pageUrl) -%}
+{%- set url = ("/" + pageUrl) if categoryUrl == (pageUrl + "/") else ("/" + categoryUrl + pageUrl) -%}
 {%- if not pageLink.hideLink and (pageLink.extUrl or (url and url != "/")) -%}
 {{ cardSingle(url, pageLink.extUrl, pageLink.linkTitle, pageLink.linkText, pageLink.photo, pageLink.featured) }}
 {%- endif -%}

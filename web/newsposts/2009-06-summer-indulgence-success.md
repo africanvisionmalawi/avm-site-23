@@ -19,4 +19,3 @@ Everyone had such a fantastic time and we raised £1048.80 for the new Landirani
 
 Zikomo kwambiri (thank you very much) to everyone involved in making the event such a huge success.
 
-![](https://www.landirani.org/image_library/news/full_size/4a2e4368cff39summer_indulgence_print-1.jpg)

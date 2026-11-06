@@ -19,8 +19,8 @@ UPDATE:
 
 If you would like to sponsor them, then find their sponsorship pages here:
 
-Ariana: [sponsorship page](https://mydonate.bt.com/fundraisers/arianaskipp1)
+Ariana: sponsorship page
 
-Jack: [sponsorship page](https://mydonate.bt.com/fundraisers/jackmorris2)
+Jack: sponsorship page
 
-Jane and Dan: [sponsorship page](https://mydonate.bt.com/fundraisers/danielcocks1)
+Jane and Dan: sponsorship page

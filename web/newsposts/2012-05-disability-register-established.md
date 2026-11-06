@@ -19,4 +19,4 @@ Last week (May 2012) we were out in the field and met Kondwani (see photo below)
 
 We can make a referral to an organisation in Lilongwe who will do a full assessment of his needs, which will include advise on physio and a wheelchair suitable to keep him in a sitting position, with head support.  For that to happen we need to pay for his transport to Lilongwe, supply him with some basics like soap, bowl, mug, etc. to have in hospital, where he will be provided with food, and then pay for transport home and for a wheelchair.  All that can be life changing for him and his family and cost approximately £300.
 
-[![](https://f000.backblazeb2.com/file/avm-wp-uploads/2012/05/Kondwani1.jpg "Kondwani")](https://www.landirani.org/news/2012/05/21/disability-register-established/kondwani-2/)
+![](https://f000.backblazeb2.com/file/avm-wp-uploads/2012/05/Kondwani1.jpg "Kondwani")

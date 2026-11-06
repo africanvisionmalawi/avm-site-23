@@ -11,8 +11,6 @@ tags: [fundraising]
 excerpt: '<span style="font-size: small;">Standard wall calendar with good sized boxes for each day. Monday...'
 ---
 
-![](https://www.landirani.org/image_library/news/full_size/4994592069e16calendar_all.jpg)
-
 <span style="font-size: small;">Standard wall calendar with good sized boxes for each day. Monday-Sunday layout
 All proceeds from the sale of this calendar go to the orphans in Malawi
 Photographs by Nicky Hobhouse</span>

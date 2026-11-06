@@ -11,8 +11,6 @@ tags: []
 excerpt: " photoHello everybodyMy name is Gift K Banda, I was born on 25th May 1984 in a family of six childr..."
 ---
 
-![photo](https://www.landirani.org/image_library/news/thumb-200x200/4e53d4c9a80f5gift.jpg)
-
 Hello everybody
 
 My name is Gift K Banda, I was born on 25th May 1984 in a family of six children. I have two sisters, two half-brothers and a half-sister. I come from Dowa district, T.A Chakhaza, Kabwinja village.  The beginning of my life was very good since my father was a good farmer but this lasted only for three years then my father sadly passed away. My hard life started because of property grabbing by his brothers. They took over his property and chased our family to my mum’s village. Because of problems my mum was facing, she married to another guy and she left me with my grandmother.  She took my sister to her help her look after the baby who was only a few months old when my father passed away.
@@ -55,4 +53,4 @@ Gift is not just a driver!  He runs our book rotation library, makes deliveries
 
 We are desperately looking for regular monthly donations (however small) to support our ever increasing projects.  If you can help, please pick up a form at the back of church or go through our website. Zikomo kwambiri - Many thanks
 
-Heather Palmer (Chairperson) www.landirani.org
+Heather Palmer (Chairperson)

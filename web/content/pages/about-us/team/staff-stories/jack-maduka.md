@@ -35,6 +35,6 @@ Life experience has taught me great lessons and, regardless of everything, I hav
 
 To the Landirani Trust supporters in UK, Malawi and beyond, I would say that what you have read about me is in part what the ‘Trust’ is doing through its secondary and university scholarship. In addition to other development projects such as school partnership, Early Childhood Development, Community Library and many others. I believe education is a backbone of development for every nation and I believe I am contributing to the development of my country ‘Malawi’ through what I am doing through the Trust, so, I am a good example of what education can do!
 
-You can read all the Education projects that Jack manages [here](/link/).
+You can read all the Education projects that Jack manages [here](/education).
 
 If you would like to donate to Jack’s education work, please donate below. Thank you!

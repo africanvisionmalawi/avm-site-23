@@ -19,6 +19,3 @@ The cliche stands - every penny really does count and we are so grateful to anyo
 
 Zikomo
 
-![photo](https://www.landirani.org/image_library/news/thumb-100x100/49b10c958a0e7images-1.jpeg.jpg)
-
-![photo](https://www.landirani.org/image_library/news/thumb-100x100/49b10c024984dimages.jpeg.jpg)

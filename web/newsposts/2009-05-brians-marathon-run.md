@@ -15,4 +15,4 @@ We'd like to send a huge thank you to Brian for running the London Marathon for 
 
 Thank you to everyone who has supported him and of course to Brian for having the dedication to complete it!
 
-![](<https://www.landirani.org/image_library/news/full_size/4a0996a365e12brian_s_marathon_photos.pdf_(1_page).jpg>)
+.jpg>)

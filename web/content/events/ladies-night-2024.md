@@ -25,7 +25,7 @@ location: 'The Waggon and Horses Pub,  1 Surbiton Hill Road, Surbiton, KT6 4TW'
 contact: Heather Palmer
 telephone: 07798 695287
 cost: 40
-url: 'https://www.africanvision.org.uk/shop/tickets-to-avm-ladies-night-2024'
+url: null
 ---
 ![](/images/68e60f904fb3c0f151118b621eb80880a4b88964.jpg)
 
@@ -39,7 +39,7 @@ Support our women-focused programmes in Malawi at our fundraising event on **Fr
 
 [PDF](/files/3c49a693147667155bbbe111293916f5f1df9676.pdf)
 
-#### **Limited Tickets Available: Only 50 tickets are available at £40 each.** [**Book tickets here**](https://www.africanvision.org.uk/shop/tickets-to-avm-ladies-night-2024)
+#### **Limited Tickets Available: Only 50 tickets are available at £40 each.**
 
 **Why support women?** It is women who are the main carers in Malawi, many struggle to make ends meet to look after their family.
 

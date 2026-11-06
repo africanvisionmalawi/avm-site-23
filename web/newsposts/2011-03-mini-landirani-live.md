@@ -19,4 +19,3 @@ Thank you to all who came and everyone who was involved in this magical evening.
 
 Zikomo
 
-![photo](https://www.landirani.org/image_library/news/full_size/4d5923134294eminilandiranilivefinal.jpg)

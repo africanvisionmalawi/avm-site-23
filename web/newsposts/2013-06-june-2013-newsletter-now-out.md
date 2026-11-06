@@ -15,4 +15,4 @@ Please read our latest newsletter following on from Heather's recent trip to Mal
 
 We are particularly raising funds for our Health Projects. We have just started to build a sorely-needed maternity unit and are looking to supporting people with disabilities
 
-Our very exciting project the Landirani Training Village will help bring people out of poverty by providing vocational and life skills training [read more here...](https://www.africanvision.org.uk/projects/landirani-training-village/)
+Our very exciting project the Landirani Training Village will help bring people out of poverty by providing vocational and life skills training [read more here...](/sams-village)

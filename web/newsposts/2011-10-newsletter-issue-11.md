@@ -11,6 +11,6 @@ tags: [newsletters]
 excerpt: "Please click here to see the latest issue of the Newsletterphoto.jpg)"
 ---
 
-[Please click here to see the latest issue of the Newsletter](/pdfs/newsletters/Newsletter_issue_11.pdf)
+Please click here to see the latest issue of the Newsletter
 
-[![photo](<https://www.landirani.org/image_library/news/full_size/4e9076e39d6b8newsletter_issue_11.pdf_(page_1_of_4).jpg>)](/pdfs/newsletters/Newsletter_issue_11.pdf)
+.jpg>)

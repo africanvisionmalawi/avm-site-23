@@ -16,4 +16,3 @@ If as most of us, you are shopping more and more online these days, you can give
 
 Link to [Easyfundraising](https://www.easyfundraising.org.uk/causes/avm/)
 
-Link to [AmazonSmile](https://smile.amazon.co.uk/ch/1113786-0) and Amazon donates to African Vision Malawi, at no cost to you.

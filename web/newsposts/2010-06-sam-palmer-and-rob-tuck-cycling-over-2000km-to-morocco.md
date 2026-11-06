@@ -17,13 +17,9 @@ Many people in the rural parts of Malawi that we support don't have the means to
 
 We are introducing bicycle ambulances into our area and we know this will make a huge difference to those in our area.
 
-![photo](https://www.landirani.org/image_library/news/full_size/4c153840d303bbicycle_ambulance_.jpg)
-
 These bicycles have a stretcher attached to the back, that is safe and secure. It also has a sun/rain shield for the patient.
 
 Sam and Rob will be riding over 2000km to Morocco to raise funds and awareness for this life-protecting project.
-
-![photo](https://www.landirani.org/image_library/news/full_size/4c153801ead80sam_trip.jpg)
 
 "We will do the hard work and cycle to Africa if you in return could please donate whatever you can spare to this worthy cause." -Sam Palmer
 

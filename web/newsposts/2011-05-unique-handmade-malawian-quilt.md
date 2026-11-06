@@ -13,8 +13,6 @@ excerpt: " Don't miss your chance to own the most beautiful and truly unique ha
 
 Don't miss your chance to own the most beautiful and truly unique handmade quilt
 
-![photo](https://www.landirani.org/image_library/news/full_size/4dc11ed3cb1a5complete_crop_3.jpg)
-
 Raffle Tickets only
 
 £1/ticket available through our online shop (see link above)
@@ -43,6 +41,3 @@ The Raffle for this quilt (and other prizes) will be drawn 2nd July at the Landi
 
 Thanks and congratulations to everyone who has contributed their skills and creativity so far.
 
-![photo](https://www.landirani.org/image_library/news/full_size/4dc11f12bfa44complete_crop_2.jpg)
-
-![photo](https://www.landirani.org/image_library/news/full_size/4dc11f2b9e05dborder_detail_4.jpg)

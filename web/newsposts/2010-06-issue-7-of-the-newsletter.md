@@ -11,6 +11,6 @@ tags: [newsletters]
 excerpt: "Click here to read issue 7 of the Newsletterphoto.jpg)"
 ---
 
-[Click here to read issue 7 of the Newsletter](https://landirani.org/pdfs/newsletters/Newsletter_7.pdf)
+Click here to read issue 7 of the Newsletter
 
-[![photo](<https://www.landirani.org/image_library/news/full_size/4c1f1553ca7fenewsletter_7.pdf_(page_1_of_4).jpg>)](https://landirani.org/pdfs/newsletters/Newsletter_7.pdf)
+.jpg>)

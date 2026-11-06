@@ -15,4 +15,3 @@ We had a brilliant day with kids aged 4 - 10. There were a number of different a
 
 Big thank you to Jodi, Naomi, Sophie, Shirley, Louise, Ros, Poppy, Kira, Gaynor, Heather, Gill and Yesl for giving up their time and making it run so smoothly; and to all the kids who came and made it the beautiful day it was.
 
-![photo](https://www.landirani.org/image_library/news/thumb-100x100/49945c37c8fc9dscn1557.jpg)![photo](https://www.landirani.org/image_library/news/thumb-100x100/49945c2d56404dscn1547.jpg)![photo](https://www.landirani.org/image_library/news/thumb-100x100/49945c2134e4bdscn1546.jpg)

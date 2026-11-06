@@ -15,4 +15,3 @@ It has been agreed that the Landirani Village will be called "Landirani Training
 
 We are in the process of arranging the move of the shipping container we bought 2yrs ago. This will be the first building project on site and will be opened as an information centre for the local communities.
 
-![photo](https://www.landirani.org/image_library/news/full_size/4cdd2dadd1e3asc_plans_101111.jpg)

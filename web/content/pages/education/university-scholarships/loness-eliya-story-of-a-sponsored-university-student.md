@@ -41,7 +41,7 @@ Lastly, I give my thanks to the education manager of Landirani Trust Mr Jack Mad
 
 We are thankful to Loness for sharing her life story with us. We are thankful that Patrick, Helen, Gaynor and Toni were and are able to support Loness.
 
-Please help us to support other students like Loness! £40 a month makes a massive difference to support a university student. Email us at [info@africanvision.org.uk](info@africanvision.org.uk) or you donate using the button below.
+Please help us to support other students like Loness! £40 a month makes a massive difference to support a university student. Email us at [info@africanvision.org.uk](mailto:info@africanvision.org.uk) or you donate using the button below.
 
 ![Second year during practical work at Nkhata-Bay district hospital.](/images/847c92181934db6b944dd6e9560dddba36be0f6d.jpg)
 *Second year during practical work at Nkhata-Bay district hospital.*

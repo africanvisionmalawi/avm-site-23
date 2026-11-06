@@ -50,7 +50,7 @@ We have completed 3 Adobe-built accommodation blocks and since 2018 we have been
 
 ![Photo](/images/f75994251a5e69e9357b506fdc87c2a96c3d89fc.jpg)
 
-All the buildings are built using rammed earth techniques. This is a traditional – and sustainable – method of building in Malawi and across the world. Formwork is made from timber and then an earth and lime mixed is rammed between the formwork to create the walls. The walls are plastered and the buildings can either be thatched or tiled. The formwork can be reused. (You can read more about the details of building in rammed earth [here](/sams-village/njewa-new-office/rammed-earth-building/).
+All the buildings are built using rammed earth techniques. This is a traditional – and sustainable – method of building in Malawi and across the world. Formwork is made from timber and then an earth and lime mixed is rammed between the formwork to create the walls. The walls are plastered and the buildings can either be thatched or tiled. The formwork can be reused. (You can read more about the details of building in rammed earth [here](/sams-village/rammed-earth-building).
 
 Another technique we sometimes use is superadobe, where you fill maize bags with earth and lime, ram the earth mix solid and use the filled maize bags as bricks. The walls are then plastered and can be painted.
 

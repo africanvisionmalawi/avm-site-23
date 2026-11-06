@@ -19,4 +19,3 @@ We raised £1246 for the orphans.
 
 Zikomo kwambiri (thank you very much)
 
-![](https://www.landirani.org/image_library/news/thumb-200x200/49957c05c24ccmum_n_dad.jpg)
