@@ -1,0 +1,14 @@
+/* Ported from the Next.js component components/card/CardDouble.js (styles extracted from its Emotion styled blocks). */
+.card-double__image-cont {
+  border-radius: 4px;
+  margin: 0;
+  position: relative;
+}
+
+.card-double__event-date-cont {
+  bottom: 12px;
+  left: calc(50% - 150px);
+  position: absolute;
+  z-index: 5;
+}
+

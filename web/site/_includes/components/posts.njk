@@ -1,0 +1,66 @@
+{# Cards and event pieces for the home, news and events pages, ported from the React components of the same names.
+   Macros that need date logic take `ne` (the newsEvents global data object) because macros can't see page data. #}
+{% from "components/content.njk" import photoCont, cardContent, markdown, moreButton, hero, videoGallery, gallery, pageLinks, teamList, googleMap %}
+
+{# components/common/EventDate.jsx (source "common") and components/events/EventDate.js (source "events"). #}
+{% macro eventDate(ne, source, date, endDate, allDay, hideTime, layout) -%}
+{%- set s = ne.eventDateString(date, endDate, allDay, hideTime) -%}
+{%- set p = source + "-event-date" -%}
+{%- if layout == "card" -%}<div class="{{ p }}__notice">{{ s }}</div>
+{%- elif layout -%}<div class="{{ p }}__dates-heading">Dates: {{ s }}</div>
+{%- else -%}<div class="{{ p }}__dates-sub-heading">Dates: {{ s }}</div>
+{%- endif -%}
+{%- endmacro %}
+
+{# components/card/CardPostAlt.js #}
+{% macro cardPostAlt(ne, type, title, excerpt, slug, publishDate, photo, date, endDate, hideTime, allDay) -%}
+{%- set url = "/" + ("events" if type == "event" else "news") + "/" + slug.current -%}
+<div class="card-post-alt__card"><div>
+{%- if slug -%}<a href="{{ url }}" class="card-image">{% if photo %}{{ photoCont(photo, "news") }}{% endif %}</a>
+{%- elif photo -%}{{ photoCont(photo, "news") }}{%- endif -%}
+<div class="card-post-alt__content">
+{%- if title -%}<h3 class="card-post-alt__heading">{% if slug %}<a href="{{ url }}">{{ title }}</a>{% else %}{{ title }}{% endif %}</h3>{%- endif -%}
+{%- if date -%}{{ eventDate(ne, "common", date, endDate or none, allDay or false, hideTime or false) }}{%- endif -%}
+{%- if publishDate -%}<div class="card-post-alt__sub-heading">{{ publishDate }}</div>{%- endif -%}
+{%- if excerpt -%}{% if type == "post" or type == "event" %}{{ markdown(excerpt) }}{% else %}<div>{{ excerpt }}</div>{% endif %}{%- endif -%}
+</div></div></div>
+{%- endmacro %}
+
+{# components/card/CardPost.js #}
+{% macro cardPost(post) -%}
+{%- set url = ("/news/" + post.slug.current) if (post.slug and post.slug.current) else none -%}
+<div>
+{%- if post.slug -%}<a{% if url %} href="{{ url }}"{% endif %} class="card-image">{% if post.photo %}{{ photoCont(post.photo, "news") }}{% endif %}</a>
+{%- elif post.photo -%}{{ photoCont(post.photo, "news") }}{%- endif -%}
+{{ cardContent(post.title, url, post.excerpt) }}</div>
+{%- endmacro %}
+
+{# components/events/EventSummary.jsx #}
+{% macro eventSummary(ne, data, displayTitle, displayLink) -%}
+<ul class="event-summary__event-details">
+{%- if displayTitle and data.title %}<li>{{ data.title }}</li>{% endif -%}
+<li>{{ eventDate(ne, "events", data.date, data.endDate, data.allDay, data.hideTime, "mainHeading") }}</li>
+{%- if data.location %}<li>Location: {{ data.location }}</li>{% endif -%}
+{%- if data.contact %}<li>Contact: {{ data.contact }}</li>{% endif -%}
+{%- if data.telephone %}<li>Telephone: {{ data.telephone }}</li>{% endif -%}
+{%- if data.cost %}<li>&pound;{{ data.cost }}</li>{% endif -%}
+{%- if displayLink and data.slug.current %}<li><a href="/events/{{ data.slug.current }}">More Info -&gt;</a></li>{% endif -%}
+</ul>
+{%- endmacro %}
+
+{# The `content` sections switch shared by pages/news/[...slug].jsx and components/events/PageEvent.jsx.
+   `prefix` is the styled-block prefix of the page (page-news-slug / page-event). #}
+{% macro postSections(content, videos, prefix) -%}
+{%- for c in content -%}
+{%- if not c.disabled -%}
+{%- if c._type == "hero" -%}{{ hero(c.image, none, c.title) }}
+{%- elif c._type == "videoGallery" -%}{{ videoGallery(c, videos) }}
+{%- elif c._type == "pageLinks" -%}<section class="{{ prefix }}__content-section">{{ pageLinks(c) }}</section>
+{%- elif c._type == "photoGallery" -%}{{ gallery(c) }}
+{%- elif c._type == "blockPortableText" -%}<section class="{{ prefix }}__text-section">{{ markdown(c.markdown or c.blocks) }}</section>
+{%- elif c._type == "team" -%}<section class="{{ prefix }}__text-section">{{ teamList(c) }}</section>
+{%- elif c._type == "googlemap" -%}{{ googleMap(c) }}
+{%- endif -%}
+{%- endif -%}
+{%- endfor -%}
+{%- endmacro %}

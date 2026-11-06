@@ -1,0 +1,39 @@
+/* Ported from the Next.js component components/common/NavTags.js (styles extracted from its Emotion styled blocks). */
+.nav-tags__tags-nav-cont {
+  margin: 0 auto 1rem;
+  overflow-x: scroll;
+  padding: 0 1rem;
+}
+
+.nav-tags__inner {
+  overflow-x: auto;
+  white-space: nowrap;
+  @media (min-width: 579px) {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow-x: visible;
+  }
+}
+
+.nav-tags__tag {
+  display: inline-block;
+  margin: 4px;
+  & a {
+    border: 1px solid #f99d1c;
+    border-radius: 20px;
+    color: #f99d1c;
+    cursor: pointer;
+    display: block;
+    padding: 3px 12px;
+    text-align: center;
+  }
+  &.active a {
+    background: #f99d1c;
+    color: #fff;
+  }
+  @media (min-width: 579px) {
+    margin: 8px;
+  }
+}
+

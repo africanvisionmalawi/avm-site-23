@@ -1,0 +1,79 @@
+/* Ported from the Next.js component components/footer/FooterForm.js (styles extracted from its Emotion styled blocks). */
+.footer-form__form-cont {
+  background: #f7f7f7;
+  border-top: 1px solid #d7dade;
+  border-bottom: 1px solid #d7dade;
+  margin: 30px 0;
+  padding: 30px 0;
+}
+
+.footer-form__form-cont-inner {
+  margin: 0 auto;
+  max-width: 980px;
+  text-align: center;
+  width: 100%;
+}
+
+.footer-form__form-inner {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-form__form-group {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 8px auto 2em;
+  width: 90%;
+  @media (min-width: 600px) {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: auto;
+  }
+}
+
+.footer-form__form-extra {
+  display: none;
+}
+
+.footer-form__text-input {
+  border: none;
+  display: inline-block;
+  font-size: 1rem;
+  padding: 0 8px;
+  width: 100%;
+  &#name {
+    margin-bottom: 6px;
+  }
+  @media (min-width: 600px) {
+    width: auto;
+    & {
+      margin-right: 8px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.footer-form__button {
+  background: #6cbede;
+  border: 1px solid #6cbede;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.9em;
+  font-weight: bold;
+  margin-top: 12px;
+  padding: 6px 20px;
+  text-align: center;
+  :hover {
+    background: #58b5d7;
+    color: #fff;
+  }
+  @media (min-width: 600px) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-top: 0;
+  }
+}
+

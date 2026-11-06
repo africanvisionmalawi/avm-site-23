@@ -1,0 +1,18 @@
+---js
+{
+  layout: "layouts/base.njk",
+  pagination: { data: "db.publishedPages", size: 1, alias: "doc" },
+  permalink: (data) => `/${data.doc.urlPath}.html`,
+  eleventyComputed: {
+    title: (data) => data.doc.title,
+    description: (data) => data.doc.description,
+    canonical: (data) => `/${data.doc.urlPath}`,
+  },
+}
+---
+{%- from "components/content.njk" import breadcrumbs, hero, bannerMsg, markdown, sections -%}
+{{ breadcrumbs([{ title: doc.categoryTitle, slug: doc.categorySlug }, { title: doc.title, slug: doc.slug }], doc.indexPage) }}
+<article><div class="page-common__top-section articleInner"><h1>{{ doc.title }}</h1></div>
+{%- if doc.hero %}{{ hero(doc.hero.image, doc.hero.mobileImage, doc.title) }}{% endif -%}
+{%- if doc.bannerMsg %}{{ bannerMsg(doc.bannerMsg.Message, doc.bannerMsg.source) }}{% endif -%}
+<div class="page-common__top-section articleInner">{{ markdown(doc.body) }}</div><section class="page-common__container">{{ sections(doc.content, db.videos) }}</section></article>

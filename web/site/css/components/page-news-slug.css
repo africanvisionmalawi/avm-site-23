@@ -1,0 +1,31 @@
+/* Ported from the Next.js component pages/news/[...slug].jsx (styles extracted from its Emotion styled blocks). */
+.page-news-slug__container {
+  margin: 0 auto;
+  padding: 0 0 3rem;
+}
+
+.page-news-slug__text-section {
+  background: #fff;
+  margin: 0 auto;
+  max-width: 1180px;
+  padding: 1rem;
+  position: relative;
+  width: 100%;
+  @media (min-width: 768px) {
+    padding: 2rem 4em;
+  }
+  @media (min-width: 1040px) {
+    padding: 2rem 8em;
+  }
+}
+
+.page-news-slug__content-section {
+  margin: 0 auto;
+  max-width: 1180px;
+  padding: 0 0 3rem;
+}
+
+.page-news-slug__post-inner {
+  padding: 0 1rem;
+}
+

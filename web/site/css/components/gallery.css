@@ -1,0 +1,66 @@
+/* Ported from the Next.js component components/gallery/Gallery.js (styles extracted from its Emotion styled blocks). */
+.gallery__heading {
+  text-align: center;
+}
+
+.gallery__caption {
+  font-size: 0.8em;
+  text-align: center;
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.gallery__close-icon {
+  cursor: pointer;
+  height: 30px;
+  position: absolute;
+  right: -12px;
+  top: -40px;
+  width: auto;
+  & svg {
+    height: 30px;
+    width: auto;
+  }
+  @media (min-width: 768px) {
+    right: -26px;
+    top: -34px;
+  }
+}
+
+.gallery__left-arrow {
+  border-bottom: 20px solid transparent;
+  border-top: 20px solid transparent;
+  color: #fff;
+  cursor: pointer;
+  height: 0;
+  position: fixed;
+  top: 45%;
+  transform: translateY(-50%);
+  width: 0;
+  &.disabled {
+    cursor: default;
+    opacity: 0.6;
+  }
+  border-right: 30px solid #fff;
+  left: 30px;
+}
+
+.gallery__right-arrow {
+  border-bottom: 20px solid transparent;
+  border-top: 20px solid transparent;
+  color: #fff;
+  cursor: pointer;
+  height: 0;
+  position: fixed;
+  top: 45%;
+  transform: translateY(-50%);
+  width: 0;
+  &.disabled {
+    cursor: default;
+    opacity: 0.6;
+  }
+  border-left: 30px solid #fff;
+  right: 30px;
+}
+

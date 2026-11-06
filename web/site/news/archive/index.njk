@@ -1,0 +1,14 @@
+---js
+{
+  layout: "layouts/base.njk",
+  permalink: "/news/archive.html",
+  title: "News Archive",
+  description: "An archive of older news posts from African Vision Malawi",
+  canonical: "/news/archive",
+}
+---
+<article><div class="page-news-archive-index__top-section"><h1 class="page-news-archive-index__heading">News Archive</h1></div><main class="page-news-archive-index__main articleInner"><ul>
+{%- for post in newsEvents.archive -%}
+<li><a href="/news/archive/{{ post.frontmatter.path }}">{{ post.frontmatter.title }}, <em>{{ post.frontmatter.date }}</em></a></li>
+{%- endfor -%}
+</ul></main><aside><section class="page-news-archive-index__news-footer articleInner"><p><a href="/news/">Recent News</a></p></section></aside></article>

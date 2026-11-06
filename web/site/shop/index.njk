@@ -1,0 +1,22 @@
+---js
+{
+  layout: "layouts/base.njk",
+  permalink: "/shop.html",
+  title: "Shop",
+  description: "Welcome to our online shop.",
+  canonical: "/shop",
+}
+---
+{%- from "components/content.njk" import breadcrumbs -%}
+{%- from "components/shop.njk" import shopListItem, buyButton, navTags -%}
+{{ breadcrumbs([{ title: "Shop", slug: "/shop/" }]) }}<article class="col-wide"><h1 class="page-shop-index__heading">Shop</h1>{{ navTags(db.settings.shopTags) }}<div class="page-shop-index__container"><div class="page-shop-index__shop-index-list">
+{%- for item in db.products -%}
+{%- set pp = item.salePrice or item.price or none -%}
+<div>
+{%- if item.slug -%}
+{{ shopListItem(item, item.photoGallery.photos[0] if (item.photoGallery and item.photoGallery.photos.length) else none) }}
+{%- if item.inStock and pp > 0 -%}{{ buyButton(item, pp) }}{%- elif pp > 0 -%}<p><strong>Out of stock</strong></p>{%- endif -%}
+{%- endif -%}
+</div>
+{%- endfor -%}
+</div></div></article>

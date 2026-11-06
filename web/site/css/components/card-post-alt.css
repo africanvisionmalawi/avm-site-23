@@ -1,0 +1,33 @@
+/* Ported from the Next.js component components/card/CardPostAlt.js (styles extracted from its Emotion styled blocks). */
+.card-post-alt__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-post-alt__content {
+  padding: 1rem 1rem 0;
+  @media (min-width: 576px) {
+    padding: 1rem 3px 0;
+  }
+}
+
+.card-post-alt__heading {
+  margin-top: 0;
+  margin-bottom: 0;
+  a:link,
+  a:visited {
+    color: #246a73;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+.card-post-alt__sub-heading {
+  color: #ababad;
+  display: block;
+  font-size: 0.9rem;
+  padding: 0 2px 8px;
+}
+

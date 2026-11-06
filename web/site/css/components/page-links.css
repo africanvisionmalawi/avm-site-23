@@ -1,0 +1,5 @@
+/* Ported from the Next.js component components/page-links/PageLinks.js (styles extracted from its Emotion styled blocks). */
+.page-links__heading {
+  text-align: center;
+}
+

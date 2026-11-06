@@ -1,0 +1,59 @@
+{# Shop building blocks, ported from components/shop/*, components/common/{BuyButton,NavTags,Carousel}.js #}
+
+{# Same escaping React uses for attribute values (' → &#x27;), so the Snipcart data-item-* bytes match the Next build. #}
+{% macro attr(v) -%}{{ v | escape | replace("&#39;", "&#x27;") | safe }}{%- endmacro %}
+
+{# components/shop/Photo.js #}
+{% set shopPhotoSizes = { default: 280, featured: 600 } %}
+{% macro photo(p, photoType) -%}
+{%- set s = shopPhotoSizes[photoType] -%}
+{%- if p -%}{{ p | img({ maxWidth: s, maxHeight: s, alt: p.alt, style: { width: "100%", height: "auto" } }) | safe }}{%- endif -%}
+{%- endmacro %}
+
+{# components/shop/ShopListItem.js #}
+{% macro shopListItem(item, p) -%}
+{%- set pp = item.salePrice or item.price or none -%}
+<li><a href="/shop/{{ item.slug.current }}">
+{%- if p %}<div class="shop-list-item__photo-cont">{{ photo(p, "default") }}</div>{% endif -%}
+<div class="shop-list-item__container"><h2 class="shop-list-item__heading">{{ item.title }}</h2><span>{% if pp > 0 %}£<!-- -->{{ pp | price }}{% else %}Donation{% endif %}</span></div></a></li>
+{%- endmacro %}
+
+{# components/common/BuyButton.js — attributes React omits when null/undefined are left out. #}
+{% macro buyButton(item, price) -%}
+<button class="snipcart-add-item buy-button__button"
+{%- if item._id %} data-item-id="{{ attr(item._id) }}"{% endif -%}
+{%- if item.title %} data-item-name="{{ attr(item.title) }}"{% endif -%}
+{%- if price != none %} data-item-price="{{ attr(price) }}"{% endif -%}
+{%- if item.description %} data-item-description="{{ attr(item.description) }}"{% endif -%}
+{%- if item.slug %} data-item-url="{{ attr('https://www.africanvision.org.uk/shop/' + item.slug.current) }}"{% endif -%}
+{%- if item.length %} data-item-length="{{ attr(item.length) }}"{% endif -%}
+{%- if item.weight %} data-item-weight="{{ attr(item.weight) }}"{% endif -%}
+{%- if item.width %} data-item-width="{{ attr(item.width) }}"{% endif -%}
+{%- if item.height %} data-item-height="{{ attr(item.height) }}"{% endif -%}
+>Add to basket</button>
+{%- endmacro %}
+
+{# components/common/NavTags.js (active is always null on the shop pages) #}
+{% macro navTags(tags) -%}
+<div class="nav-tags__tags-nav-cont"><div class="nav-tags__inner">
+{%- for tag in tags -%}<span class="nav-tags__tag"><a href="/shop/category/{{ tag.value.current | lower }}">{{ tag.title }}</a></span>{%- endfor -%}
+</div></div>
+{%- endmacro %}
+
+{# components/shop/TagsList.js #}
+{% macro tagsList(tags) -%}
+<h3 class="tags-list__tag-heading">Tags:</h3><div class="tags-list__stack">
+{%- for tag in tags -%}<span class="tags-list__tag">{{ tag.label }}</span>{%- endfor -%}
+</div>
+{%- endmacro %}
+
+{# components/common/Carousel.js — react-slick's server markup (non-infinite, no dots: dots="true" is a string).
+   /js/carousel.js reproduces what react-slick does after hydration. #}
+{% macro carousel(gallery, photoType) -%}
+{%- set n = gallery.photos.length -%}
+<div class="slick-slider gallery carousel__slider-styles slick-initialized" dir="ltr"><button type="button" data-role="none" class="slick-arrow slick-prev slick-disabled" style="display:block"> <!-- -->Previous</button><div class="slick-list"><div class="slick-track" style="width:{{ n * 100 }}%;left:0%">
+{%- for p in gallery.photos -%}
+<div data-index="{{ loop.index0 }}" class="slick-slide{{ ' slick-active slick-current' if loop.first }}" tabindex="-1" aria-hidden="{{ 'false' if loop.first else 'true' }}" style="outline:none;width:{{ 100 / n }}%"><div><div tabindex="-1" style="width:100%;display:inline-block">{{ photo(p, photoType) }}</div></div></div>
+{%- endfor -%}
+</div></div><button type="button" data-role="none" class="slick-arrow slick-next{{ ' slick-disabled' if n <= 1 }}" style="display:block"> <!-- -->Next</button></div>
+{%- endmacro %}

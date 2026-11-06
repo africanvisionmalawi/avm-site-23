@@ -1,0 +1,12 @@
+/* Ported from the Next.js component components/card/CardContent.js (styles extracted from its Emotion styled blocks). */
+.card-content__content {
+  padding: 1rem;
+  @media (min-width: 576px) {
+    padding: 1rem 3px;
+  }
+}
+
+.card-content__heading {
+  margin-bottom: 0.5rem;
+}
+

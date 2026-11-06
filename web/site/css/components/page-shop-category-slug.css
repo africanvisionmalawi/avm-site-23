@@ -1,0 +1,98 @@
+/* Ported from the Next.js component pages/shop/category/[slug].jsx (styles extracted from its Emotion styled blocks). */
+.page-shop-category-slug__container {
+  margin: 0 auto;
+  max-width: 1180px;
+  padding: 3em 0;
+}
+
+.page-shop-category-slug__carousel-cont {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 600px;
+  width: 85%;
+  @media (min-width: 768px) {
+    margin-left: 1rem;
+  }
+  @media (min-width: 1024px) {
+    margin-left: auto;
+  }
+}
+
+.page-shop-category-slug__photo-cont {
+  max-width: 600px;
+  margin-left: 0;
+  @media (min-width: 768px) {
+    margin-left: 1rem;
+  }
+}
+
+.page-shop-category-slug__shop-section {
+  margin: 0 auto;
+  max-width: 1180px;
+  padding: 0 1rem;
+  width: 100%;
+}
+
+.page-shop-category-slug__heading {
+  font-family: Raleway, "Helvetica Neue", "Segoe UI", "Helvetica", "Arial",
+    "sans-serif";
+  padding: 0 1rem;
+  @media (min-width: 768px) {
+    padding: 0 5rem;
+  }
+}
+
+.page-shop-category-slug__sub-heading {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.page-shop-category-slug__columns {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.page-shop-category-slug__column-main {
+  width: 100%;
+  @media (min-width: 768px) {
+    width: 66.66666%;
+  }
+}
+
+.page-shop-category-slug__column-aside {
+  width: 100%;
+  @media (min-width: 768px) {
+    width: 33.333333%;
+  }
+}
+
+.page-shop-category-slug__price {
+  display: block;
+  font-size: 2rem;
+  margin-bottom: 1.6rem;
+}
+
+.page-shop-category-slug__shop-index-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 280px);
+  grid-gap: 40px;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0 0 2rem;
+  & li {
+    list-style-type: none;
+    margin: 8px 0;
+    opacity: 0.9;
+    padding: 0;
+    position: relative;
+  }
+  & li:hover {
+    opacity: 1;
+  }
+}
+
+.page-shop-category-slug__no-results-container {
+  text-align: center;
+}
+

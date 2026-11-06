@@ -1,0 +1,64 @@
+/* Ported from the Next.js component components/gallery/gallery.module.css (styles extracted from its Emotion styled blocks). */
+.gallery-m__container {
+  background: #f7f7f7;
+  border-top: 1px solid #d7dade;
+  border-bottom: 1px solid #d7dade;
+  margin: 2em 0;
+  padding: 2em 0;
+  width: 100%;
+}
+
+.gallery-m__gallery-inner {
+  margin: 0 auto;
+  max-width: 1180px;
+  position: relative;
+  width: 100%;
+}
+.gallery-m__gallery {
+  background: #f7f7f7;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(120px, 1fr));
+  grid-gap: 1rem;
+  grid-auto-flow: dense;
+  padding: 1rem 0.5rem;
+}
+
+@media (min-width: 1180px) {
+  .gallery-m__gallery {
+    padding: 1rem 0;
+  }
+}
+.gallery-m__gallery .gallery-m__gatsby-image-wrapper {
+  height: 100%;
+}
+.gallery-m__grid-cell {
+  cursor: pointer;
+  display: inline-block;
+  max-height: 160px;
+  overflow: hidden;
+}
+.gallery-m__grid-cell img {
+  display: block;
+  margin: 0 auto;
+}
+/* .gallery-m__grid-cell {
+  border: 1px solid #cacaca;
+  max-width: 300px;
+} */
+.gallery-m__dialog-inner {
+  padding-bottom: 65%;
+  position: relative;
+}
+.gallery-m__closeicon {
+  cursor: pointer;
+  height: 30px;
+  position: absolute;
+  right: -30px;
+  top: -30px;
+  width: auto;
+}
+.gallery-m__left-right-cont {
+  display: flex;
+  justify-content: space-between;
+}

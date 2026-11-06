@@ -1,0 +1,70 @@
+/* Ported from the Next.js component components/gift-aid-form/GiftAidForm.jsx (styles extracted from its Emotion styled blocks). */
+.gift-aid-form__form-cont {
+  margin: 0 auto 3rem;
+  max-width: 500px;
+  width: 100%;
+}
+
+.gift-aid-form__form-extra {
+  display: none;
+}
+
+.gift-aid-form__text-input {
+  border: 1px solid #d7dade;
+  display: inline-block;
+  font-size: 1rem;
+  padding: 0 8px;
+  width: 100%;
+  @media (min-width: 768px) {
+    width: 70%;
+  }
+}
+
+.gift-aid-form__button {
+  background: #6cbede;
+  border: 1px solid #6cbede;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.9em;
+  font-weight: bold;
+  margin-top: 12px;
+  padding: 6px 20px;
+  text-align: center;
+  :hover {
+    background: #58b5d7;
+    color: #fff;
+  }
+  @media (min-width: 600px) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-top: 0;
+  }
+}
+
+.gift-aid-form__row {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  padding: 0 0.5rem;
+  @media (min-width: 768px) {
+    flex-wrap: nowrap;
+  }
+}
+
+.gift-aid-form__label {
+  padding-right: 0.5rem;
+  width: 100%;
+  @media (min-width: 768px) {
+    text-align: right;
+    width: 30%;
+  }
+}
+
+.gift-aid-form__text {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+

@@ -1,0 +1,21 @@
+---js
+{
+  layout: "layouts/base.njk",
+  permalink: "/our-work.html",
+  fullTitle: "\n          Our Work |  African Vision Malawi",
+  description: "We work with and through communities to develop long-term and sustainable solutions to the welfare of orphans and vulnerable people in four key areas: self-sufficiency, health, education and water and sanitation.",
+  canonical: "/our-work",
+}
+---
+{%- from "components/content.njk" import breadcrumbs, markdown, photoCont, moreButton -%}
+{%- set ourWork = db.ourWork.ourWork -%}
+{{ breadcrumbs([{ title: "Our Work", slug: "our-work" }], null) }}
+<article class="articleInner"><div class="page-our-work-index__top-section"><h1 class="page-our-work-index__heading">Our Work</h1>{% if ourWork %}{{ markdown(db.ourWork.body) }}{% endif %}</div>
+{%- if ourWork -%}
+<section class="page-our-work-index__container"><div class="ourwork__tile-grid">
+{%- for project in ourWork -%}
+<div class="ourwork__tile"><a href="/{{ project.slug.current }}">{% if project.photo.src %}{{ photoCont(project.photo, "ourWork") }}{% endif %}</a><div class="ourwork__text-cont"><div><h3 class="ourwork__title">{{ project.title }}</h3>{{ markdown(project.body) }}{{ moreButton("/" + project.slug.current) }}</div></div></div>
+{%- endfor -%}
+</div></section>
+{%- endif -%}
+</article>

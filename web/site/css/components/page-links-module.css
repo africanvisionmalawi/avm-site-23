@@ -1,0 +1,76 @@
+/* Ported from the Next.js component components/page-links/pageLinks.module.css (styles extracted from its Emotion styled blocks). */
+.page-links-m__card-cont,
+.page-links-m__card-cont-wide {
+  align-items: grid-start;
+  display: grid;
+  grid-gap: 3.2rem;
+  justify-content: center;
+  margin: 30px 0;
+}
+.page-links-m__card-cont {
+  grid-template-columns: repeat(auto-fill, 280px);
+}
+.page-links-m__card-cont-wide {
+  grid-template-columns: repeat(auto-fill, 1fr);
+}
+.page-links-m__card {
+  width: 250px;
+}
+.page-links-m__box-background {
+  text-align: center;
+}
+.page-links-m__card-wide {
+  padding: 0 8%;
+  width: 100%;
+}
+@media (min-width: 576px) {
+  .page-links-m__card-cont-wide {
+    grid-template-columns: repeat(auto-fill, 560px);
+  }
+  .page-links-m__card-wide {
+    padding: 0;
+    width: 560px;
+  }
+}
+.page-links-m__card-content {
+  /* background: #fff; */
+  padding: 1rem 3px;
+}
+
+.page-links-m__card-image {
+  margin: 0;
+}
+
+.page-links-m__link-row {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 2px;
+  margin: 0 0 3rem;
+  padding: 15px;
+}
+.page-links-m__link-heading a {
+  color: #565656;
+}
+.page-links-m__btn {
+  border: 1px solid #f99d1c;
+  border-radius: 4px;
+  color: #f99d1c;
+  display: block;
+  font-family: Raleway, "Helvetica Neue", "Segoe UI", "Helvetica", "Arial",
+    "sans-serif";
+  /* font-weight: bold; */
+  padding: 8px;
+  text-align: center;
+}
+
+/* @media (min-width: 1179px) {
+  .page-links-m__box-background {
+    background: #eee;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+  }
+  .page-links-m__card-content-back {
+    padding: 8px;
+  }
+} */

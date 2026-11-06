@@ -1,0 +1,29 @@
+---js
+{
+  layout: "layouts/base.njk",
+  pagination: { data: "db.settings.shopTags", size: 1, alias: "tag" },
+  permalink: (data) => `/shop/category/${data.tag.value.current.toLowerCase()}.html`,
+  eleventyComputed: {
+    title: (data) => `Shop - ${data.tag.title}`,
+    canonical: (data) => `/shop/category/${data.tag.value.current.toLowerCase()}`,
+  },
+}
+---
+{%- from "components/content.njk" import breadcrumbs -%}
+{%- from "components/shop.njk" import shopListItem, navTags -%}
+{%- set slug = tag.value.current | lower -%}
+{%- set filtered = [] -%}
+{%- for prod in db.products -%}
+{%- set tv = prod.tags[0].value if (prod.tags and prod.tags.length) else "" -%}
+{%- set tv = (tv if tv is string else (tv.current or "")) | lower -%}
+{%- if tv == slug %}{% set filtered = (filtered.push(prod), filtered) %}{% endif -%}
+{%- endfor -%}
+{{ breadcrumbs([{ title: "Shop", slug: "shop" }, { title: tag.title, slug: slug }]) }}<article class="col-wide"><h1 class="page-shop-category-slug__heading">Shop - <!-- -->{{ tag.title }}</h1>{{ navTags(db.settings.shopTags) }}<div class="page-shop-category-slug__container">
+{%- if filtered.length -%}
+<div class="page-shop-category-slug__shop-index-list">
+{%- for item in filtered -%}{{ shopListItem(item, item.photoGallery.photos[0] if (item.photoGallery and item.photoGallery.photos.length) else none) }}{%- endfor -%}
+</div>
+{%- else -%}
+<div class="page-shop-category-slug__no-results-container"><h2>Sorry, no items found for that category.</h2></div>
+{%- endif -%}
+</div></article>

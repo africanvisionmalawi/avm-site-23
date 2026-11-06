@@ -1,0 +1,18 @@
+---js
+{
+  layout: "layouts/base.njk",
+  pagination: { data: "db.events", size: 1, alias: "doc" },
+  permalink: (data) => `/events/${data.doc.slug.current}.html`,
+  eleventyComputed: {
+    title: (data) => data.doc.title,
+    description: (data) => data.doc.description,
+    canonical: (data) => `/events/${data.doc.slug && data.doc.slug.current}`,
+  },
+}
+---
+{%- from "components/content.njk" import hero, markdown -%}
+{%- from "components/posts.njk" import eventSummary, postSections -%}
+<article><section class="articleInner"><h1>{{ doc.title }}</h1></section>
+{%- if doc.featured_image and not doc.noHero -%}{{ hero(doc.featured_image) }}{%- endif -%}
+{%- if doc.date -%}<section class="articleInner">{{ eventSummary(newsEvents, doc) }}</section>{%- endif -%}
+<section class="articleInner">{% if doc.body %}{{ markdown(doc.body) }}{% endif %}</section><section class="articleInner"><section class="page-event__container">{{ postSections(doc.content, db.videos, "page-event") }}</section></section></article>

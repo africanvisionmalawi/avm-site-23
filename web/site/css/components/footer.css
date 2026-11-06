@@ -1,0 +1,71 @@
+/* Ported from the Next.js component components/footer/Footer.js (styles extracted from its Emotion styled blocks). */
+.footer__logo-img {
+  display: block;
+  height: 120px;
+  margin: 0 12px 1em 0;
+  width: 83px;
+}
+
+.footer__footer-main {
+  padding: 0 1rem;
+  width: 100%;
+}
+
+.footer__footer-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @media (min-width: 650px) {
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    margin-bottom: 45px;
+  }
+}
+
+.footer__footer-bottom-row {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  margin-bottom: 45px;
+}
+
+.footer__footer-inner-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer__footer-col {
+  margin-bottom: 45px;
+  width: 100%;
+  @media (min-width: 650px) {
+    flex: 0 0 33.33333333%;
+    margin-bottom: 0;
+    max-width: 33.33333333%;
+  }
+}
+
+.footer__footer-contact {
+  margin-bottom: 45px;
+}
+
+.footer__footer-social {
+  & p {
+    font-size: 0.8em;
+  }
+}
+
+.footer__cart-link {
+  cursor: pointer;
+}
+
+.footer__heading {
+  &,
+  & a:link,
+  & a:visited {
+    color: #246a73;
+  }
+  margin-bottom: 0.5rem;
+}
+

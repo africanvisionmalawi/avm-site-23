@@ -1,0 +1,17 @@
+---js
+{
+  layout: "layouts/base.njk",
+  permalink: "/events.html",
+  title: "Events",
+  canonical: "/events",
+}
+---
+{%- from "components/posts.njk" import cardPostAlt -%}
+{%- set split = newsEvents.splitEvents(db.events) -%}
+{#- Note: the Next page passes hideTime={post.endDate}, not post.hideTime. -#}
+{%- macro card(post) -%}{{ cardPostAlt(newsEvents, "event", post.title, post.excerpt, post.slug, post.publishDate, post.featured_image, post.date, post.endDate, post.endDate, post.allDay) }}{%- endmacro -%}
+<article><div class="page-events-index__top-section"><h2 class="page-events-index__heading">Events</h2></div><main class="page-events-index__main"><div class="page-events-index__post-list">
+{%- for post in split.future %}{{ card(post) }}{% endfor -%}
+</div><h2 class="page-events-index__heading">Past events</h2><div class="page-events-index__post-list">
+{%- if split.past.length -%}{%- for post in split.past %}{{ card(post) }}{% endfor -%}{%- else -%}0{%- endif -%}
+</div></main></article>

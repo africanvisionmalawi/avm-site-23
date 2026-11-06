@@ -1,0 +1,33 @@
+---js
+{
+  layout: "layouts/base.njk",
+  permalink: "/index.html",
+  canonical: "",
+  fullTitle: "Welcome to African Vision Malaw",
+}
+---
+{%- from "components/content.njk" import hero, markdown, player, photoCont, moreButton -%}
+{%- from "components/shell.njk" import ctaButton -%}
+{%- from "components/posts.njk" import cardPost, cardPostAlt -%}
+{%- set homePage = db.home -%}
+{%- set ourWork = db.ourWork -%}
+{%- set latestEvents = newsEvents.splitEvents(db.events).future.reverse() -%}
+<article>{{ hero(homePage.hero.image, homePage.hero.mobileImage) }}<div class="home__top-section articleInner"><h1 class="home__heading">{{ homePage.title }}</h1>{% if homePage.subTitle %}{{ homePage.subTitle }}{% endif %}</div><main class="home__main"><div class="articleInner"><div class="home__top-video-section"><div class="home__top-video-section-inner"><div class="home__video-section">{% if homePage.introText %}<section class="home__text-section">{{ markdown(homePage.introText) }}</section>{% endif %}</div><div class="home__video-section">{% if homePage.promoVideo %}{{ player(homePage.promoVideo.url, db.videos) }}{% endif %}</div></div></div>
+{%- if ourWork -%}
+<div class="home__container"><h2 class="ourwork__heading">What we do</h2><div class="ourwork__tile-grid">
+{%- for project in ourWork.ourWork -%}
+<div class="ourwork__tile"><a href="/{{ project.slug.current }}">{% if project.photo and project.photo.src %}{{ photoCont(project.photo, "ourWork") }}{% endif %}</a><div class="ourwork__text-cont"><div><h3 class="ourwork__title">{{ project.title }}</h3>{% if project.body %}{{ markdown(project.body) }}{% endif %}{{ moreButton("/" + project.slug.current) }}</div></div></div>
+{%- endfor -%}
+</div></div>
+{%- endif -%}
+</div><div class="articleInner"><div class="donate__container-with-photo"><div class="donate__container-inner"><p>Donate now to help us help children &amp; vulnerable people in Malawi.</p>{{ ctaButton("https://africanvisionmalawi.enthuse.com/", "Donate", "alt") }}</div></div></div>
+{%- if homePage.latestNews -%}<div class="home__latest-news"><div class="home__latest-news-inner"><h2>Latest news</h2>{{ markdown(homePage.latestNews) }}</div></div>{%- endif -%}
+<div class="articleInner">
+{%- if homePage.newsLinks and homePage.newsLinks.newsLinks and homePage.newsLinks.newsLinks.length -%}
+<section><div class="home__post-list"><div class="home__card-cont">{% for post in homePage.newsLinks.newsLinks %}{{ cardPost(post) }}{% endfor %}</div></div></section><div class="home__posts-footer"><a href="/news">View all news</a></div>
+{%- endif -%}
+<section><div class="home__post-list"><div class="home__card-cont">
+{%- for post in latestEvents -%}
+{{ cardPostAlt(newsEvents, "event", post.title, post.excerpt, post.slug, none, post.featured_image, post.date, post.endDate, post.hideTime, post.allDay) }}
+{%- endfor -%}
+</div></div></section><div class="home__posts-footer"><a href="/events">View all events</a></div></div></main></article>

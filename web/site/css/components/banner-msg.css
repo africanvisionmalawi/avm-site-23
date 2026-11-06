@@ -1,0 +1,15 @@
+/* Ported from the Next.js component components/common/BannerMsg.jsx (styles extracted from its Emotion styled blocks). */
+.banner-msg__hero-msg-div {
+  margin: 3em auto;
+  max-width: 650px;
+  p {
+    font-size: 1.7rem;
+  }
+  padding: 0 2rem;
+}
+
+.banner-msg__citation {
+  font-size: 0.8em;
+  text-align: right;
+}
+

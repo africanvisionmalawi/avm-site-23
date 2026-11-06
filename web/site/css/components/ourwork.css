@@ -1,0 +1,37 @@
+/* Ported from the Next.js component components/ourwork/ourwork.js (styles extracted from its Emotion styled blocks). */
+.ourwork__tile-grid {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 1fr;
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 1rem;
+  }
+  @media (min-width: 1200px) {
+    padding: 0;
+  }
+}
+
+.ourwork__text-cont {
+  margin-top: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.ourwork__title {
+  font-size: 1.3em;
+  margin-bottom: 0;
+}
+
+.ourwork__tile {
+  background: #f7f7f7;
+  border-radius: 8px;
+  padding-bottom: 1rem;
+  overflow: hidden;
+}
+
+.ourwork__heading {
+  margin: 2rem 0 1rem;
+  text-align: center;
+}
+

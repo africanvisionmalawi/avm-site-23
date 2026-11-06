@@ -1,0 +1,38 @@
+/* Ported from the Next.js component components/events/PageEvent.jsx (styles extracted from its Emotion styled blocks). */
+.page-event__container {
+  margin: 0 auto;
+  padding: 0 0 3rem;
+}
+
+.page-event__text-section {
+  background: #fff;
+  margin: 0 auto;
+  max-width: 1180px;
+  padding: 1rem;
+  position: relative;
+  width: 100%;
+  @media (min-width: 768px) {
+    padding: 2rem 4em;
+  }
+  @media (min-width: 1040px) {
+    padding: 2rem 8em;
+  }
+}
+
+.page-event__content-section {
+  margin: 0 auto;
+  max-width: 1180px;
+  padding: 0 0 3rem;
+}
+
+.page-event__event-details {
+  background: #f7f7f7;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  padding: 16px;
+  &,
+  & li {
+    list-style-type: none;
+  }
+}
+

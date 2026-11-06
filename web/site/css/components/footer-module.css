@@ -1,0 +1,46 @@
+/* Ported from the Next.js component components/footer/footer.module.css (styles extracted from its Emotion styled blocks). */
+.footer-m__footer {
+  background: #fff;
+  color: #575757;
+  font-size: 0.9rem;
+  margin-top: auto;
+  padding-bottom: 60px;
+}
+.footer-m__footer a:link,
+.footer-m__footer a:visited {
+  color: #575757;
+}
+.footer-m__footer-inner {
+  /* display: flex;
+  justify-content: center; */
+  display: flex;
+  margin: 0 auto;
+  max-width: 980px;
+  width: 100%;
+}
+.footer-m__footer-inner h3 {
+  font-size: 1.1em;
+  text-transform: uppercase;
+}
+
+.footer-m__list {
+  margin: 0;
+  padding: 0;
+}
+.footer-m__list,
+.footer-m__list li {
+  color: #575757;
+  list-style-type: none;
+}
+.footer-m__icons-list {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.footer-m__icon {
+  fill: #575757;
+  height: 30px;
+  margin: 0 5px;
+  width: auto;
+}

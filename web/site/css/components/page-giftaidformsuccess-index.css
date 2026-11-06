@@ -1,0 +1,27 @@
+/* Ported from the Next.js component pages/giftaidformsuccess/index.jsx (styles extracted from its Emotion styled blocks). */
+.page-giftaidformsuccess-index__heading {
+  font-family: Raleway, "Helvetica Neue", "Segoe UI", "Helvetica", "Arial",
+    "sans-serif";
+  text-align: center;
+}
+
+.page-giftaidformsuccess-index__top-section {
+  margin: 0 auto;
+  max-width: 885px;
+  padding: 3rem 1rem 0;
+  position: relative;
+  width: 100%;
+  @media (min-width: 768px) {
+    padding-top: 1rem;
+  }
+}
+
+.page-giftaidformsuccess-index__main {
+  background: #fff;
+  border-radius: 2px;
+}
+
+.page-giftaidformsuccess-index__text {
+  text-align: center;
+}
+

@@ -1,0 +1,7 @@
+/* Ported from the Next.js component components/common/SectionInner.js (styles extracted from its Emotion styled blocks). */
+.section-inner__section {
+  margin: 0 auto;
+  padding: 0 1rem 1rem;
+  position: relative;
+}
+

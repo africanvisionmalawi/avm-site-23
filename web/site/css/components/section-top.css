@@ -1,0 +1,9 @@
+/* Ported from the Next.js component components/common/SectionTop.js (styles extracted from its Emotion styled blocks). */
+.section-top__text-section {
+  margin: 0 auto;
+  max-width: 885px;
+  padding: 4rem 1rem;
+  position: relative;
+  width: 100%;
+}
+

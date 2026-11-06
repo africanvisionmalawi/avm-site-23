@@ -1,0 +1,21 @@
+/* Ported from the Next.js component components/videos/Videos.js (styles extracted from its Emotion styled blocks). */
+.videos__container {
+  background: #f7f7f7;
+  padding: 2rem 1rem 0;
+  p {
+    background: #f7f7f7;
+  }
+}
+
+.videos__videos-cont {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(380px, 1fr));
+  grid-gap: 1rem;
+  grid-auto-flow: dense;
+}
+
+.videos__heading {
+  text-align: center;
+}
+

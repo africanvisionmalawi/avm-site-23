@@ -1,0 +1,19 @@
+/* Ported from the Next.js component components/shop/ShopListItem.js (styles extracted from its Emotion styled blocks). */
+.shop-list-item__photo-cont {
+  max-height: 280px;
+  max-width: 280px;
+  overflow: hidden;
+  margin-left: 0;
+  @media (min-width: 768px) {
+    margin-left: 1rem;
+  }
+}
+
+.shop-list-item__heading {
+  margin-bottom: 0.5rem;
+}
+
+.shop-list-item__container {
+  padding: 0 1rem;
+}
+
