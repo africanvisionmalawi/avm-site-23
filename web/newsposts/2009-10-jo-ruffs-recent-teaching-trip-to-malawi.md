@@ -11,4 +11,4 @@ tags: []
 excerpt: "click here to see Jo's report of her trip (pdf)"
 ---
 
-[click here to see Jo's report of her trip (pdf)](/pdfs/reports/Jo-Ruff-Report.pdf)
+click here to see Jo's report of her trip (pdf)

@@ -21,10 +21,8 @@ Zikomo kwambiri (thank you very much)
 
 x
 
-[See more photos by Kerry Jordan here](../../gallery/landirani_live_by_kerry_jordan_www.kerryjordan.co.uk)
+See more photos by Kerry Jordan here
 
-[See even more photos of Landirani Live here](../../gallery/landirani_live)
-
-![](https://www.landirani.org/image_library/news/full_size/4ab21ce220a7bdsc_0336.jpg)
+See even more photos of Landirani Live here
 
 <address style="text-align: center;"><sup>Photograph: Kerry Jordan (www.kerryjordan.co.uk)</sup></address>

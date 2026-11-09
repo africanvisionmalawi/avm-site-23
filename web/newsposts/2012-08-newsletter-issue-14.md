@@ -11,8 +11,5 @@ tags: [newsletters]
 excerpt: "Download the latest copy of our newsletter by clicking the link below:Landirani Newsletter 14https:/..."
 ---
 
-Download the latest copy of our newsletter by clicking the link below:
+![Landirani Newsletter 14](https://f000.backblazeb2.com/file/avm-wp-uploads/2012/08/Newsletter-14.jpg "Newsletter-14")
 
-[![Landirani Newsletter 14](https://f000.backblazeb2.com/file/avm-wp-uploads/2012/08/Newsletter-14.jpg "Newsletter-14")](https://www.landirani.org/pdfs/newsletters/Landirani-Newsletter-issue-14.pdf)
-
-[https://www.landirani.org/pdfs/newsletters/Landirani-Newsletter-issue-14.pdf](https://www.landirani.org/pdfs/newsletters/Landirani-Newsletter-issue-14.pdf "Landirani Newsletter Issue 14")

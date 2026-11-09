@@ -54,4 +54,3 @@ excerpt: " <div>On the 23rd April 2005 The Landirani Trust was established as a
 
 <div>The work Landirani does has such a huge effect on everyone in our support area so thank you so much to everyone invloved and everyone who supports Landirani and the work we do.</div>
 
-![](https://www.landirani.org/image_library/news/full_size/499553498c637img_5642.jpg)

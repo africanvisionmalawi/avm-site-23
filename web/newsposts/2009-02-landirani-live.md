@@ -21,4 +21,3 @@ The event will be open to all the family and there will be a Neverland theme run
 
 This is going to be a very exciting day and will raise lots of awareness and funds for Malawi!
 
-![](https://www.landirani.org/image_library/news/thumb-100x100/49a40ee008bcbphotos_from_finding_neverland.jpg)![](https://www.landirani.org/image_library/news/thumb-100x100/49a40ed419cfafairies.jpg)

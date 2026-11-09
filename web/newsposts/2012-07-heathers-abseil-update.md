@@ -15,4 +15,4 @@ Heather’s abseil was very successfull, ‘frighteningly’ well in fact! On 
 
 She has a new video to look at on YouTube at the link: [https://www.youtube.com/watch?v=dzeUeeQ75fY&feature=plcp](https://landirani.createsend1.com/t/y-l-jylhmd-thiidddik-s/ "https://landirani.createsend1.com/t/y-l-jylhmd-thiidddik-s")
 
-She has raised £2000 so far towards a CBBC borehole...but another £2000 is needed to finish the job! This is not something that she had done before and she can still be sponsored at [https://mydonate.bt.com/fundraisers/heathersabseil](https://mydonate.bt.com/fundraisers/heathersabseil)
+She has raised £2000 so far towards a CBBC borehole...but another £2000 is needed to finish the job! This is not something that she had done before!

@@ -169,7 +169,7 @@ content:
         featured: false
         hideLink: false
         linkTitle: Aidcamps International
-        extUrl: 'https://www.aidcamps.org/home.aspx'
+        extUrl: 'https://aidcamps.org/'
         photo:
           src: /images/47703798c3181a9c50cc72fa9092e682910ed05e.jpg
           width: 560

@@ -17,12 +17,9 @@ You can also buy a share in a well by paying £50 and having your name on the we
 
 If you would like to take this unique opportunity to make a substantial difference to the lives of those in Malawi please visit our shop (tab at the top of the homepage) and click on "Build up a well", which costs £100\. Once you have placed your order we will send you the form to fill out the details of your recipient that you would like put on the plaque.
 
-[![](https://www.landirani.org/image_library/news/full_size/4b225ae25efc7well_flyer_both.jpg)](../../projects/#project-9)
-
 [For more information on this project click here](../../projects/#project-9)
 
 Zikomo kwambiri (thank you very much)
 
 The chart below shows the % of people drinking safe/un safe water in 4 of the areas in which we have carried out Needs Assessments. It gives you a quick insight into the huge problem we are facing.
 
-![](https://www.landirani.org/image_library/news/full_size/4b2b71ea67214water_stats.jpg)

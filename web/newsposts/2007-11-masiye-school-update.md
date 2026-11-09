@@ -11,6 +11,5 @@ tags: [malawi]
 excerpt: "Masiye School update"
 ---
 
-[Masiye School update](/files/news/Masiye%20update.pdf)
+Masiye School update
 
-![](https://www.landirani.org/image_library/news/thumb-200x200/49954967680c1cnv00105.jpg)

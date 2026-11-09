@@ -15,4 +15,4 @@ The latest African Vision newsletter is now out! Have a look at the [November 20
 
 Exciting news that the maternity is finally in use and the first baby was born on the same day as the opening.  The Landirani Training Village has changed to ‘Sam’s Village’ in memory of Sam Hayes who passed away on September 10<sup>th</sup> . His friends and family are funding the building over the next 3 years
 
-.[![Sam Village entrance](https://f000.backblazeb2.com/file/avm-wp-uploads/2013/11/Sam-Village-gate+sml-300x200.jpg)](https://f000.backblazeb2.com/file/avm-wp-uploads/2013/11/Sam-Village-gate+sml.jpg)
+.

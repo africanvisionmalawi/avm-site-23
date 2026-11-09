@@ -11,7 +11,7 @@ tags: ["classroom", "malawi", "primary school", "sharing"]
 excerpt: "Check out the new webpage on the School Partnership between Chitsime Primary and The Mall Prep Scho..."
 ---
 
-Check out the [new webpage](https://www.africanvision.org.uk/education/school-partnerships/school-partnership-chitsime-primary-the-mall-twickenham/) on the School Partnership between Chitsime Primary and [The Mall Prep School](https://www.themallschool.org.uk/), Twickenham.
+Check out the new webpage on the School Partnership between Chitsime Primary and [The Mall Prep School](https://www.themallschool.org.uk/), Twickenham.
 
 We facilitate 20 such partnerships, and this link between The Mall and Chitsime is an example of just one of them.
 

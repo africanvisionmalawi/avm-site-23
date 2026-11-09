@@ -15,8 +15,6 @@ We had an exhibition on Friday with photographs by Gaynor Cook. The exhibition, 
 
 It was a lovely evening and we raised over £1000, mainly due to the sale of 8 of Gaynor's beautiful photos.
 
-![](https://www.landirani.org/image_library/news/thumb-200x200/499544c475e07_31_0259.jpg)
-
 A big thank you to all involved, all who came to help us and to everyone who came to support us.
 
 Zikomo Kwambiri...

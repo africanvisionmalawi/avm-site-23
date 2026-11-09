@@ -11,6 +11,5 @@ tags: [newsletters]
 excerpt: "Please click here to read the latest edition of the Landirani Newsletterphoto"
 ---
 
-Please [click here](https://landirani.org/pdfs/newsletters/Newsletter_issue_10.pdf) to read the latest edition of the Landirani Newsletter
+Please click here to read the latest edition of the Landirani Newsletter
 
-[![photo](https://www.landirani.org/image_library/news/full_size/4df1f7e07d24anewsletter_10.jpg)](https://landirani.org/pdfs/newsletters/Newsletter_issue_10.pdf)

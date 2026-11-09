@@ -17,6 +17,6 @@ excerpt: "Loness Eliya outside Nkhata-Bay district hospital in the Northern regi
 
 We have begun publishing a series of life stories of the University Students whom our supporters sponsor.
 
-First is [Loness Eliya](https://www.africanvision.org.uk/projects/university-scholarships/loness-eliya-story-of-a-sponsored-university-student/), a nursing student at Kamuzu Central Hospital, who we also sponsored for her secondary education.
+First is [Loness Eliya](/education/university-scholarships/loness-eliya-story-of-a-sponsored-university-student), a nursing student at Kamuzu Central Hospital, who we also sponsored for her secondary education.
 
-You can read all about her struggle to get an education [here](https://www.africanvision.org.uk/projects/university-scholarships/loness-eliya-story-of-a-sponsored-university-student/).
+You can read all about her struggle to get an education [here](/education/university-scholarships/loness-eliya-story-of-a-sponsored-university-student).

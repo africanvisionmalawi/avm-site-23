@@ -15,6 +15,6 @@ excerpt: "Lobiner outside Kamuzu College of Nursing (KCN) administration buildin
 
 Lobiner's secondary school studies, and now her university studies, have been sponsored by African Vision Malawi supporters.
 
-[Here](https://www.africanvision.org.uk/projects/university-scholarships/lobiner-kanthenga-story-of-a-university-student/) you can read the story of her life in her own words.
+[Here](/education/university-scholarships/lobiner-kanthenga-story-of-a-university-student) you can read the story of her life in her own words.
 
 It makes SO much difference to students to be sponsored through their studies.  Without our help they would not be able to attend further education courses, or secondary school.  Can you help?  Can you change the life of a student?  If so, then please do not hesitate to [email us](mailto:info@africanvision.org.uk) today.  Zikomo kwambiri.

@@ -25,7 +25,7 @@ Can you donate to bring us up to the target we need to meet?
 
 The rate of premature births in Malawi is a global high of 18.1% and this has a massive knock-on effect to the mortality rate of Under 5's.  Our Waiting Home will provide beds for mothers just before they go into labour, nutritional advice and medical advice.
 
-[Click here](https://www.africanvision.org.uk/health/a-child-is-born/) to read all about the Waiting Home project.
+[Click here](/health/maternity-unit) to read all about the Waiting Home project.
 
 We want to say a big **THANK YOU** to everybody who has contributed towards this project so far!  You can follow us on Facebook to get all the [very latest news](https://www.facebook.com/africanvision/).
 

@@ -11,8 +11,6 @@ tags: [general]
 excerpt: 'photo<span style="font-size: small; font-family: ''Lucida Grande'',Arial,Helvetica,sans-serif;"><sp...'
 ---
 
-![photo](https://www.landirani.org/image_library/news/full_size/4d00c47d8fa83crane_gift.jpg)
-
 <span style="font-size: small; font-family: 'Lucida Grande',Arial,Helvetica,sans-serif;"><span style="font-size: 11px; white-space: pre;">From Cave Co-op:</span></span>
 
 In the last few months one of our honorary ‘Cave men’, Steve James has been out in Malawi volunteering for our clients The Landirani Trust. He has been helping them with their feeding programmes, funding proposals, maternity units, childcare centres, vegetable gardens and project managing the Cave conversion of Landirani’s shipping container into a valuable library and resource centre, starting phase 1 of the Training Village project.
@@ -29,4 +27,3 @@ This little building is just the start of a vast building programme to develop a
 
 [www.cave.coop](https://www.cave.coop/)
 
-[![photo](https://www.landirani.org/image_library/news/full_size/4d00c13011ce5cave_co-operative_sustainable_architecture.jpg)](https://www.cave.coop/)

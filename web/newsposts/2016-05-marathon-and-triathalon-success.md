@@ -21,4 +21,4 @@ Well done to both and thank you for supporting us!
 
 Between them they raised an amazing **£2,616**, all of which will go to our projects supporting orphans and vulnerable people in rural Malawi.
 
-Later in the year we have even more people taking on challenges for African Vision Malawi.  Sam Palmer will be [climbing the Matterhorn](https://mydonate.bt.com/fundraisers/africanvisionsummit) and Rainer Struck will be [cycling from London to Marseille](https://mydonate.bt.com/fundraisers/rainerstruckpedaltoempower).  Click on the links to find out more to sponsor them!
+Later in the year we have even more people taking on challenges for African Vision Malawi.  Sam Palmer will be climbing the Matterhorn and Rainer Struck will be cycling from London to Marseille.  Click on the links to find out more to sponsor them!

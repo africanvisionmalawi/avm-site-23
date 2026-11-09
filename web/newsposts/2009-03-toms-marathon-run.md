@@ -19,4 +19,3 @@ Thank you so much to Tom and everyone who sponsored him.
 
 x
 
-![](https://www.landirani.org/image_library/news/full_size/49b01a86a3242cimg0178.jpg)

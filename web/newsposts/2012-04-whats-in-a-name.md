@@ -15,7 +15,7 @@ A competition for children in Primary or Secondary school...
 
 We are running a competition to re-name The Landirani Trust.  We are looking for something short and memorable that says something about what the charity does. We shall keep the name Landirani in Malawi where it means something, and keep it as a tag line in the UK.
 
-The name must not already be registered with The Charity Commission, see www.charity-commission.gov.uk and the domain must be available with the entry name and .org after it. For example orphancaremalawi.org. The charity will make the final decision if this name will be used as the new name of the charity.
+The name must not already be registered with The Charity Commission, see https://www.gov.uk/government/organisations/charity-commission and the domain must be available with the entry name and .org after it. For example `orphancaremalawi.org`. The charity will make the final decision if this name will be used as the new name of the charity.
 
 **There are prizes for best entries:**
 

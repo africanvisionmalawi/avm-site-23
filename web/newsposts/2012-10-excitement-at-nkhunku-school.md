@@ -15,4 +15,4 @@ Heather Palmer went to visit Nkhunku school on Thursday 18th Oct 2012 with gif
 
 (Many thanks to Toni and Derek for their kind contributions)
 
-[![](https://f000.backblazeb2.com/file/avm-wp-uploads/2012/10/IMG_2522-Rec-books.jpg "Excitement as gift of books received")](https://www.landirani.org/news/2012/10/25/excitement-at-nkhunku-school/img_2522-rec-books/)
+![](https://f000.backblazeb2.com/file/avm-wp-uploads/2012/10/IMG_2522-Rec-books.jpg "Excitement as gift of books received")

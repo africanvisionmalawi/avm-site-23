@@ -54,13 +54,13 @@ Masiye & [St Matthews Primary, Surbiton](https://www.stmatthews.kingston.sch.uk/
 
 M’bang’ombe & [Long Ditton Infants, Long Ditton](https://longditton.surrey.sch.uk/)
 
-M’bang’ombe & [Ridgeway School, Leamington Spa](https://www.ridgewaysch.co.uk/)
+M’bang’ombe & Ridgeway School, Leamington Spa
 
 M’khalapadzuwa & [St John’s Primary, Kingston](https://www.stjohns.kingston.sch.uk/)
 
 Mkhunku & [Cheam Common Infants School, Sutton](https://www.cheamcommoninfants.com/)
 
-Mlumbwira & [Alexandra Infant School, Kingston upon Thames](https://www.alexandra.kingston.sch.uk/page/default.asp?title=Home&pid=1)
+Mlumbwira & [Alexandra Infant School, Kingston upon Thames](https://www.alexandra.kingston.sch.uk/)
 
 Mtemambalame & [The Mead Infant School](https://www.mead.surrey.sch.uk/)
 
@@ -72,7 +72,7 @@ Namanyanga & [Coombe Hill Infants’, Kingston](https://www.coombehillinfants.co
 
 Songwe & [Twickenham Prep School](https://twickenhamprep.org.uk/about-us/headmasters-welcome/)
 
-– as an example, you can read all about the [partnership between Chitsime and The Mall](https://www.africanvision.org.uk/education/primary-schools/school-partnership-chitsime-primary-the-mall-twickenham/)
+– as an example, you can read all about the [partnership between Chitsime and The Mall](/news/archive/2016-03-school-partnership-the-mall-and-chitsime)
 
 We do school partnership updates twice a year where we go to the schools in the UK and collect information to take to Malawi; we then collect similar information from the schools in Malawi to bring back to their partners in the UK.
 
@@ -85,7 +85,7 @@ The Schools Partnership Programme has been so successful that in 2015 we began l
 
 Many of the UK schools have fundraised for projects in their partner schools, which has had a massive positive impact on the students at their partner schools. Here are some examples of just a few recent projects:
 
-- The Mall, Twickenham UK fundraised for a new double classroom school block, learning materials and desks for Chitsime, and also equipment for the feeding programme at the attached pre-school. You can read more about [their partnership here](https://www.africanvision.org.uk/education/primary-schools/school-partnership-chitsime-primary-the-mall-twickenham/).
+- The Mall, Twickenham UK fundraised for a new double classroom school block, learning materials and desks for Chitsime, and also equipment for the feeding programme at the attached pre-school. You can read more about [their partnership here](/news/archive/2016-03-school-partnership-the-mall-and-chitsime).
 
 - Cheam Common Infant UK fundraised around 840,000MKW for Mkunkhu Primary and the money assisted buying building materials and labour for three teachers houses. Two houses were built at the end of 2014 and the remaining one was finished in 2015.
 
@@ -99,7 +99,7 @@ Many of the UK schools have fundraised for projects in their partner schools, wh
 
 You can support any of our Education projects and make a sustainable difference to the future of Malawi’s children and young people.
 
-Or you may like to [sponsor a secondary school child](https://www.africanvision.org.uk/projects/secondary-school-sponsorship/).
+Or you may like to [sponsor a secondary school child](/education/secondary-school-sponsorship).
 
 **Teacher Visits**
 

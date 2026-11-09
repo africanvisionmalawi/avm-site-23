@@ -12,7 +12,7 @@ hero: null
 bannerMsg: null
 content: []
 ---
-The Community Library at Sam’s Village in Lilongwe rural North-West, was officially opened to the public on 1st February 2017. This means that the communities around the 400 km2 of Traditional Authorities M’bang’ombe, Mtema, Chitukula, Kayembe (Dowa district) and Mkukula (Dowa district) can fully access diverse books for their knowledge and personal development. More information about the opening event [here](https://www.africanvision.org.uk/africa-vision-news/wp-content/uploads/2015/11/REPORT-ON-OPENING-LIBRARY-010217.pdf)
+The Community Library at Sam’s Village in Lilongwe rural North-West, was officially opened to the public on 1st February 2017. This means that the communities around the 400 km2 of Traditional Authorities M’bang’ombe, Mtema, Chitukula, Kayembe (Dowa district) and Mkukula (Dowa district) can fully access diverse books for their knowledge and personal development. More information about the opening event [here](https://f000.backblazeb2.com/file/avm-wp-uploads/2015/11/REPORT-ON-OPENING-LIBRARY-010217.pdf)
 
 ![Library opening](/images/453e9e191da8adf778252948939ee53ec0b70671.jpg)
 *Library opening*
@@ -27,7 +27,7 @@ The Library is a visible sign of our commitment to education and training as a m
 ![The Library is now well used](/images/66e5fb01c2b255222a3aa990ede0730a0576c8f3.jpg)
 *The Library is now well used*
 
-Our librarian [Ireen](/about-us/team/staff-stories-ireen-mwale/) is available to assist library users. The Library has electricity, powered by a solar panel. We have hopes and plans to have computers and internet access at the library in the future.
+Our librarian [Ireen](/about-us/team/staff-stories/ireen-mwale) is available to assist library users. The Library has electricity, powered by a solar panel. We have hopes and plans to have computers and internet access at the library in the future.
 
 ## Who uses the Library?
 

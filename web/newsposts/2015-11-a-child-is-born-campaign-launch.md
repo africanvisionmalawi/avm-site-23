@@ -29,7 +29,7 @@ Globally, prematurity is the leading cause of death in children under the age of
 
 [Donate](https://africanvisionmalawi.enthuse.com/a-child-is-born/)
 
-And please go to the [A Child is Born](https://www.africanvision.org.uk/health/a-child-is-born/) webpage to **read** about the campaign's progress.
+And please go to the [A Child is Born](/health/maternity-unit) webpage to **read** about the campaign's progress.
 
 Let us know what you think, and keep an eye out for updates on the campaign!
 

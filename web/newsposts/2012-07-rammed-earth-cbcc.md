@@ -15,8 +15,8 @@ Our latest build, the Rammed Earth CBCC, has now been completed, see pictures 
 
 Pictures of progress on the rammed earth CBCC...
 
-[![](https://f000.backblazeb2.com/file/avm-wp-uploads/2012/07/Ram-eth-CBCC1.jpg "Rammed earth CBCC walls nearly up to roof level")](https://www.landirani.org/news/2012/07/24/rammed-earth-cbcc/ram-eth-cbcc1/) Rammed earth CBCC walls nearly up to roof level
+![](https://f000.backblazeb2.com/file/avm-wp-uploads/2012/07/Ram-eth-CBCC1.jpg "Rammed earth CBCC walls nearly up to roof level") Rammed earth CBCC walls nearly up to roof level
 
-[![](https://f000.backblazeb2.com/file/avm-wp-uploads/2012/07/Ram-eth-CBCC2.jpg "Rammed earth walls going up")](https://www.landirani.org/news/2012/07/24/rammed-earth-cbcc/ram-eth-cbcc2/) Rammed earth walls going up
+![](https://f000.backblazeb2.com/file/avm-wp-uploads/2012/07/Ram-eth-CBCC2.jpg "Rammed earth walls going up") Rammed earth walls going up
 
-[![](https://f000.backblazeb2.com/file/avm-wp-uploads/2012/07/Ram-eth-CBCC3.jpg "CBCC roofing material ready for installation")](https://www.landirani.org/news/2012/07/24/rammed-earth-cbcc/ram-eth-cbcc3/) CBCC roofing material ready for installation
+![](https://f000.backblazeb2.com/file/avm-wp-uploads/2012/07/Ram-eth-CBCC3.jpg "CBCC roofing material ready for installation") CBCC roofing material ready for installation

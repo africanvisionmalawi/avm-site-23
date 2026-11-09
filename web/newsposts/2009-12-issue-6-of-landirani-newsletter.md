@@ -13,4 +13,3 @@ excerpt: "Click the image below to see the latest issue of our newsletter"
 
 Click the image below to see the latest issue of our newsletter
 
-[![](https://www.landirani.org/image_library/news/full_size/4b1e69d01484eissue_6_newsletter.jpg)](/pdfs/newsletters/Newsletter_issue_6.pdf)
