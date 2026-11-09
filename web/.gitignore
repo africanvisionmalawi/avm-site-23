@@ -11,3 +11,6 @@ avm-gatsby-netlify-cms.code-workspace
 .env*
 
 
+
+# Eleventy build output (Netlify builds this itself)
+_site/

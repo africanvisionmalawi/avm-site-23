@@ -76,7 +76,7 @@ content:
         url:
           slug:
             _type: slug
-            current: SEND
+            current: send
           indexPage: false
           category:
             title: Health
@@ -101,7 +101,7 @@ content:
         url:
           slug:
             _type: slug
-            current: SMU
+            current: smu
           indexPage: false
           category:
             title: Health
