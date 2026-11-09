@@ -11,7 +11,7 @@ tags: [newsletters]
 excerpt: "The latest African Vision newsletter is now out! You can read it here  April 2014 NewsletterBetween..."
 ---
 
-The latest African Vision newsletter is now out! You can read it here  [April 2014 Newsletter](https://www.africanvision.org.uk/?p=2743 "April 2014 Newsletter")
+The latest African Vision newsletter is now out!
 
 Between January and March 2014 we have assisted 94 people with disabilities; they been taken into the capital to receive assessments, prosthetics and treatment.
 

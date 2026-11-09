@@ -13,7 +13,7 @@
 <meta property="og:title" content="{{ pageTitle }}">
 <meta property="og:description" content="{{ pageDescription }}">
 {%- if canonical is defined and canonical !== null %}
-<link rel="canonical" href="{{ site.baseUrl }}{{ canonical }}">
+<link rel="canonical" href="{{ site.baseUrl }}{{ canonical | lower }}">
 {%- endif %}
 {%- endif %}
 {%- for size in ["57x57", "60x60", "72x72", "76x76", "114x114", "120x120", "144x144", "152x152", "180x180"] %}
