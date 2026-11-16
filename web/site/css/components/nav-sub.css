@@ -93,8 +93,13 @@
   justify-content: flex-end;
   flex-wrap: nowrap;
   margin: 0 auto;
-  max-width: 1060px;
+  max-width: 1180px;
   width: 100%;
+  /* Match the header's right edge (.layout__header-inner + .nav-main__desktop-nav padding). */
+  @media (min-width: 1080px) {
+    box-sizing: border-box;
+    padding-right: calc(min(100%, 1180px) * 0.02);
+  }
 }
 
 .nav-sub__icons-cont {
