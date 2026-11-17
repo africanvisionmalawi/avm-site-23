@@ -13,7 +13,7 @@ function readMarkdownFile(filePath) {
   return { ...data, bodyMarkdown: content.trim() };
 }
 
-function walkMarkdownFiles(dir) {
+export function walkMarkdownFiles(dir) {
   if (!fs.existsSync(dir)) return [];
   return fs.readdirSync(dir, { withFileTypes: true }).flatMap((entry) => {
     const full = path.join(dir, entry.name);
@@ -70,7 +70,7 @@ export function getAllPages() {
 
 /** Title + URL for every published page, used by the header search box. */
 export function getSearchIndex(publishedPages) {
-  return publishedPages.map((page) => ({ id: page.id, title: page.title, path: `/${page.urlPath}/` }));
+  return publishedPages.map((page) => ({ id: page.id, title: page.title, path: `/${page.urlPath}` }));
 }
 
 export function getHomePage() {

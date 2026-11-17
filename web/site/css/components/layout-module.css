@@ -15,7 +15,7 @@
 }
 /* TODO: fix this */
 /* blockquote {
-  border-left: 10px solid #d1c9c6;
+  border-left: 10px solid var(--c-quote);
   font-size: 1.1em;
   font-style: italic;
   margin: 2rem 0;

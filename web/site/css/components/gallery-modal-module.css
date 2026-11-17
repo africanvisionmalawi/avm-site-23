@@ -2,7 +2,7 @@
 .gallery-modal-m__content {
   width: 95vw;
   margin: 5vh auto;
-  background: white;
+  background: var(--c-bg);
   padding: 0.5rem;
   outline: none;
 }

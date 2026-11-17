@@ -24,7 +24,7 @@
 }
 
 .home__text-section {
-  background: #fff;
+  background: var(--c-bg);
   min-height: 24rem;
   margin: 0 auto;
   max-width: 1180px;
@@ -33,7 +33,7 @@
 }
 
 .home__latest-news {
-  background: #f7f7f7;
+  background: var(--c-bg-alt);
   min-height: 24rem;
   margin: 0 auto;
   padding: 1rem;
@@ -102,7 +102,7 @@
 }
 
 .home__main {
-  background: #fff;
+  background: var(--c-bg);
   border-radius: 2px;
 }
 
@@ -114,14 +114,14 @@
   &::before {
     bottom: 50%;
     content: "";
-    border-bottom: 1px solid #b75906;
+    border-bottom: 1px solid var(--c-link);
     position: absolute;
     width: 100%;
     z-index: 6;
   }
   & a {
-    background: #fff;
-    border: 2px solid #b75906;
+    background: var(--c-bg);
+    border: 2px solid var(--c-link);
     border-radius: 12px;
     display: inline-block;
     font-size: 0.8em;

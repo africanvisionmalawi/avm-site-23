@@ -58,7 +58,7 @@
   position: absolute;
   top: 20px;
   @media (min-width: 768px) {
-    background: rgba(255, 255, 255, 0.85);
+    background: var(--c-bg-glass-strong);
     border-radius: 8px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
     left: initial;

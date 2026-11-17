@@ -13,9 +13,9 @@
 
 .tags-list__tag {
   align-items: center;
-  background: #edf2f7;
+  background: var(--c-tag-bg);
   border-radius: 0.375rem;
-  color: #1a202c;
+  color: var(--c-text-strong);
   display: inline-flex;
   font-size: 0.875rem;
   font-weight: 500;

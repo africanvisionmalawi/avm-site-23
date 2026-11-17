@@ -1,6 +1,6 @@
 /* Ported from the Next.js component components/nav/sub.js (styles extracted from its Emotion styled blocks). */
 .nav-sub__close-btn {
-  color: #aaa;
+  color: var(--c-text-muted);
   cursor: pointer;
   font-family: var(--font-raleway);
   font-size: 2rem;
@@ -40,7 +40,7 @@
 }
 
 .nav-sub__drawer-content {
-  background-color: #fff;
+  background-color: var(--c-bg);
   height: 100%;
   overflow-y: auto;
   position: absolute;
@@ -62,14 +62,14 @@
   justify-content: space-between;
   flex-wrap: nowrap;
   @media (min-width: 768px) {
-    background: rgba(255, 255, 255, 0.7);
+    background: var(--c-bg-glass);
     border-radius: 0 0 6px 6px;
     display: flex;
   }
 }
 
 .nav-sub__nav-icons-inner {
-  background: rgba(255, 255, 255, 0.7);
+  background: var(--c-bg-glass);
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
@@ -104,7 +104,7 @@
 
 .nav-sub__icons-cont {
   align-items: center;
-  background: rgba(255, 255, 255, 0.7);
+  background: var(--c-bg-glass);
   display: flex;
   height: 48px;
   justify-content: center;
@@ -128,7 +128,7 @@
     margin-bottom: 0.5em;
   }
   & label {
-    color: #b75906;
+    color: var(--c-link);
     cursor: pointer;
   }
   & input[type="checkbox"] {

@@ -1,0 +1,54 @@
+/* Light/dark toggle icon in the header (white on the desktop bar, orange in the mobile bar).
+   The icon flips and the screen-reader label changes with the active theme. */
+.theme-toggle {
+  align-items: center;
+  background: none;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  padding: 0 8px;
+  &.orange {
+    color: #f99d1c;
+  }
+}
+.theme-toggle__icon {
+  height: 22px;
+  transition: transform 0.3s ease;
+  width: 22px;
+}
+.theme-toggle__label {
+  clip: rect(0 0 0 0);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+.theme-toggle__to-light {
+  display: none;
+}
+:root[data-theme="dark"] {
+  & .theme-toggle__icon {
+    transform: rotate(180deg);
+  }
+  & .theme-toggle__to-dark {
+    display: none;
+  }
+  & .theme-toggle__to-light {
+    display: inline;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    & .theme-toggle__icon {
+      transform: rotate(180deg);
+    }
+    & .theme-toggle__to-dark {
+      display: none;
+    }
+    & .theme-toggle__to-light {
+      display: inline;
+    }
+  }
+}

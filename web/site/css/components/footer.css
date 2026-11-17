@@ -64,8 +64,7 @@
   &,
   & a:link,
   & a:visited {
-    color: #246a73;
+    color: var(--c-heading);
   }
   margin-bottom: 0.5rem;
 }
-

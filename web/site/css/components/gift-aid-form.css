@@ -10,7 +10,7 @@
 }
 
 .gift-aid-form__text-input {
-  border: 1px solid #d7dade;
+  border: 1px solid var(--c-border);
   display: inline-block;
   font-size: 1rem;
   padding: 0 8px;

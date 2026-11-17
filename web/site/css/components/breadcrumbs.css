@@ -22,13 +22,13 @@
     white-space: nowrap;
   }
   & > a {
-    color: #ababad;
+    color: var(--c-text-muted);
     display: inline-block;
     font-size: 0.8em;
     text-transform: capitalize;
   }
   & > a:not(:first-child):before {
-    color: #cacaca;
+    color: var(--c-text-faint);
     content: ">";
     display: inline-block;
     margin: 0 8px;
@@ -36,12 +36,12 @@
 }
 
 .breadcrumbs__crumb-current {
-  color: #ababad;
+  color: var(--c-text-muted);
   display: inline-block;
   font-size: 0.8em;
   text-transform: capitalize;
   &:before {
-    color: #cacaca;
+    color: var(--c-text-faint);
     content: ">";
     display: inline-block;
     margin: 0 8px;

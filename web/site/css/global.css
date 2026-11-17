@@ -1,3 +1,35 @@
+/* Theme colours. Each token is light-dark(light, dark): the browser picks a value
+   from `color-scheme`, which follows the system setting unless the footer toggle
+   has set data-theme on <html>. Brand colours (header, blue buttons, orange
+   accents, white text on photos) are deliberately left the same in both themes. */
+:root {
+  color-scheme: light dark;
+  --c-bg: light-dark(#fff, #16181b);
+  --c-bg-alt: light-dark(#f7f7f7, #1f2226);
+  --c-bg-hover: light-dark(#eee, #2a2e33);
+  --c-bg-glass: light-dark(rgba(255, 255, 255, 0.7), rgba(22, 24, 27, 0.7));
+  --c-bg-glass-strong: light-dark(rgba(255, 255, 255, 0.85), rgba(22, 24, 27, 0.85));
+  --c-text: light-dark(#595959, #c9cdd2);
+  --c-text-secondary: light-dark(#575757, #b5bac0);
+  --c-text-strong: light-dark(#1a1a1a, #f2f2f2);
+  --c-text-muted: light-dark(#ababad, #8a8f96);
+  --c-text-faint: light-dark(#cacaca, #6b7077);
+  --c-heading: light-dark(#246a73, #6fc0ca);
+  --c-link: light-dark(#b75906, #f0a04b);
+  --c-date: light-dark(#c07d44, #d99a5f);
+  --c-border: light-dark(#d7dade, #33373d);
+  --c-border-light: light-dark(#e5e5e5, #2c3035);
+  --c-quote: light-dark(#d1c9c6, #4a4441);
+  --c-tag-bg: light-dark(#edf2f7, #2a2e33);
+  --c-menu-border: light-dark(transparent, #e8e4dc);
+}
+:root[data-theme="light"] {
+  color-scheme: light;
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+}
+
 li {
   margin: 0;
 }
@@ -6,10 +38,10 @@ body {
   font-family: var(--font-roboto);
 }
 body {
-  background: #fff;
+  background: var(--c-bg);
   margin: 0;
   padding: 0;
-  color: #595959;
+  color: var(--c-text);
   font-size: 18.38px;
   font-weight: 300;
   line-height: 1.63;
@@ -22,7 +54,7 @@ img {
 
 span.gatsby-resp-image-wrapper + em {
   /*border-bottom: 1px solid #e7e7e8;*/
-  color: #626262;
+  color: var(--c-text-secondary);
   display: block;
   font-size: 0.75em;
   padding: 8px 0;
@@ -41,7 +73,7 @@ h2:after {
 /* h1, h2, h3, h4, h5 {font-family: } */
 a:link,
 a:visited {
-  color: #b75906;
+  color: var(--c-link);
   text-decoration: none;
 }
 
@@ -51,7 +83,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #246a73;
+  color: var(--c-heading);
   font-family: var(--font-raleway);
   font-weight: 300;
 }
@@ -134,9 +166,9 @@ figcaption:not(:empty) {
 }
 
 .videosWrapper {
-  background: #f7f7f7;
-  border-top: 1px solid #d7dade;
-  border-bottom: 1px solid #d7dade;
+  background: var(--c-bg-alt);
+  border-top: 1px solid var(--c-border);
+  border-bottom: 1px solid var(--c-border);
   margin-top: 2rem;
   margin-bottom: 4rem;
 }
@@ -153,7 +185,7 @@ figcaption:not(:empty) {
 }
 
 blockquote {
-  border-left: 10px solid #d1c9c6;
+  border-left: 10px solid var(--c-quote);
   font-family: var(--font-roboto);
   font-size: 1.1em;
   font-style: italic;

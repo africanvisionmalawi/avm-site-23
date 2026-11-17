@@ -124,7 +124,7 @@ function initGallery(gallery) {
       "position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;object-fit:cover;color:transparent" +
       (item.focus ? `;object-position:${item.focus}` : "");
 
-    overlay.innerHTML = `<div data-reach-dialog-content role="dialog" aria-modal="true" tabindex="-1" style="background:white;margin:5vh auto;max-width:800px;outline:none;padding:0.5rem;width:95vw"><div class="gallery-m__dialog-inner"><div class="gallery__caption"></div><div class="gallery__close-icon">${CLOSE_ICON}</div></div><span class="gallery__left-arrow${i === 0 ? " disabled" : ""}"></span><span class="gallery__right-arrow${i === items.length - 1 ? " disabled" : ""}"></span></div>`;
+    overlay.innerHTML = `<div data-reach-dialog-content role="dialog" aria-modal="true" tabindex="-1" style="background:var(--c-bg);margin:5vh auto;max-width:800px;outline:none;padding:0.5rem;width:95vw"><div class="gallery-m__dialog-inner"><div class="gallery__caption"></div><div class="gallery__close-icon">${CLOSE_ICON}</div></div><span class="gallery__left-arrow${i === 0 ? " disabled" : ""}"></span><span class="gallery__right-arrow${i === items.length - 1 ? " disabled" : ""}"></span></div>`;
     const inner = overlay.querySelector(".gallery-m__dialog-inner");
     inner.prepend(img);
     inner.querySelector(".gallery__caption").textContent = item.caption;
@@ -156,7 +156,23 @@ function initVideo(el) {
   );
 }
 
+// Header light/dark toggle. CSS follows the system setting by default; clicking
+// stores an explicit choice, which the inline script in <head> restores on load.
+function initThemeToggle(btn) {
+  btn.addEventListener("click", () => {
+    const root = document.documentElement;
+    const isDark = root.dataset.theme
+      ? root.dataset.theme === "dark"
+      : matchMedia("(prefers-color-scheme: dark)").matches;
+    root.dataset.theme = isDark ? "light" : "dark";
+    try {
+      localStorage.setItem("theme", root.dataset.theme);
+    } catch {}
+  });
+}
+
 initDrawer();
+document.querySelectorAll("[data-theme-toggle]").forEach(initThemeToggle);
 document.querySelectorAll("[data-search]").forEach(initSearch);
 document.querySelectorAll("[data-gallery]").forEach(initGallery);
 document.querySelectorAll("[data-video-embed]").forEach(initVideo);

@@ -1,9 +1,9 @@
 /* Ported from the Next.js component components/videos/Videos.js (styles extracted from its Emotion styled blocks). */
 .videos__container {
-  background: #f7f7f7;
+  background: var(--c-bg-alt);
   padding: 2rem 1rem 0;
   p {
-    background: #f7f7f7;
+    background: var(--c-bg-alt);
   }
 }
 

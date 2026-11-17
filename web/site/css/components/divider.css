@@ -17,7 +17,7 @@
       height: 25px;
     }
     & .shape-fill {
-      fill: #ffffff;
+      fill: var(--c-bg);
     }
   }
 }

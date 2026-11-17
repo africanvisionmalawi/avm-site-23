@@ -1,9 +1,9 @@
 /* Ported from the Next.js component components/common/EventDate.jsx (styles extracted from its Emotion styled blocks). */
 .common-event-date__notice {
-  background: #fff;
-  border: 1px solid #c07d44;
+  background: var(--c-bg);
+  border: 1px solid var(--c-date);
   border-radius: 8px;
-  color: #c07d44;
+  color: var(--c-date);
   font-size: 1.2em;
   padding: 12px;
   text-align: center;
@@ -11,12 +11,12 @@
 }
 
 .common-event-date__dates-sub-heading {
-  color: #ababad;
+  color: var(--c-text-muted);
   font-size: 0.9rem;
 }
 
 .common-event-date__dates-heading {
-  color: #000;
+  color: var(--c-text-strong);
   font-size: 1.2rem;
   font-weight: bold;
 }

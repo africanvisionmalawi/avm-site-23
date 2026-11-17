@@ -2,12 +2,13 @@
 // Note: the upcoming/past event split uses the build date, so schedule a daily build.
 // The date logic is copied verbatim from the Next.js components/pages so the
 // output is identical (including its quirks, e.g. dayjs(undefined) = "now").
-import fs, { readdirSync } from "node:fs";
+import fs from "node:fs";
 import dayjs from "dayjs";
 import advancedFormat from "dayjs/plugin/advancedFormat.js";
-import { format, parseISO } from "date-fns";
+import { format, isValid, parseISO } from "date-fns";
 import matter from "gray-matter";
 import markdownIt from "markdown-it";
+import { walkMarkdownFiles } from "../_lib/content.js";
 
 dayjs.extend(advancedFormat);
 
@@ -45,50 +46,39 @@ function isFuture(event) {
   return dayjs(d, "MMMM DD, YYYY").isAfter(dayjs().format("MMMM DD, YYYY"));
 }
 
-// pages/news/archive: list of markdown posts in newsposts/, same reading and sorting code.
-function getFileList(dirName) {
-  let files = [];
-  const items = readdirSync(dirName);
-  for (const item of items) {
-    if (fs.statSync(dirName + "/" + item).isDirectory()) {
-      files = [...files, ...getFileList(`${dirName}/${item}`)];
-    } else {
-      files.push(`${dirName}/${item}`);
-    }
-  }
-  return files;
-}
-
+// pages/news/archive: markdown posts in newsposts/, newest first. Posts without a
+// valid date are skipped (with a warning) rather than failing the whole build.
 function archiveList() {
-  return getFileList("newsposts")
+  return walkMarkdownFiles("newsposts")
     .map((slug) => {
       const { data, content } = matter(fs.readFileSync(slug, "utf8"));
-      const date = format(parseISO(data.date), "MMMM dd, yyyy");
-      return { slug, frontmatter: { ...data, date }, content };
+      const parsed = data.date ? parseISO(data.date instanceof Date ? data.date.toISOString() : String(data.date)) : null;
+      if (!parsed || !isValid(parsed)) {
+        console.warn(`[newsposts] skipping ${slug}: missing or invalid date`);
+        return null;
+      }
+      const date = format(parsed, "MMMM dd, yyyy");
+      return { slug, data, frontmatter: { ...data, date }, content };
     })
+    .filter(Boolean)
     .sort((post1, post2) =>
       new Date(post1.frontmatter.date) > new Date(post2.frontmatter.date) ? -1 : 1
     );
 }
 
-// pages/news/archive/[...slug].jsx renders with its own markdown-it instance (no `breaks`).
+// pages/news/archive/[...slug].jsx renders with its own markdown-it options
+// (no `breaks`, unlike the site-wide `md` filter), so archive posts match the old site.
 const archiveMd = markdownIt({ html: true, linkify: true, typographer: true });
 
+// Reuses the posts already read by archiveList(). As on the old site, the page uses
+// the raw (not date-formatted) frontmatter and its URL comes from `path`.
 function archivePosts(list) {
-  // getStaticPaths
-  const slugs = list.map((post) =>
-    decodeURI(post.frontmatter.path).replace(/newsposts\//, "").replace(/\.md/, "")
-  );
-  // getStaticProps (reads the file again; frontmatter is NOT date-formatted here)
-  return slugs.map((slug) => {
-    const { data: frontmatter, content } = matter(fs.readFileSync(`newsposts/${slug}.md`, "utf-8"));
-    return {
-      slug,
-      frontmatter,
-      html: archiveMd.render(content.replace("http://www.africanvision.org.uk", ``)),
-      canonical: `/news/archive/${frontmatter.path.replace(/\/posts\//, "")}`,
-    };
-  });
+  return list.map(({ data: frontmatter, content }) => ({
+    slug: decodeURI(frontmatter.path).replace(/newsposts\//, "").replace(/\.md/, ""),
+    frontmatter,
+    html: archiveMd.render(content.replace("http://www.africanvision.org.uk", ``)),
+    canonical: `/news/archive/${frontmatter.path.replace(/\/posts\//, "")}`,
+  }));
 }
 
 function splitEvents(events) {

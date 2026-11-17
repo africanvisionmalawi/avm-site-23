@@ -42,14 +42,14 @@
 }
 
 .page-links-m__link-row {
-  background: #fff;
-  border: 1px solid #e5e5e5;
+  background: var(--c-bg);
+  border: 1px solid var(--c-border-light);
   border-radius: 2px;
   margin: 0 0 3rem;
   padding: 15px;
 }
 .page-links-m__link-heading a {
-  color: #565656;
+  color: var(--c-text-secondary);
 }
 .page-links-m__btn {
   border: 1px solid #f99d1c;
@@ -65,7 +65,7 @@
 
 /* @media (min-width: 1179px) {
   .page-links-m__box-background {
-    background: #eee;
+    background: var(--c-bg-hover);
     border-radius: 12px;
     overflow: hidden;
     text-align: center;

@@ -94,7 +94,7 @@
 {%- endmacro %}
 
 {% macro googleMap(section) -%}
-<div class="google-map__map-container"><div>{% if section.url %}<iframe src={{ section.url | safe }} width="100%" height="550"></iframe>{% endif %}</div></div>
+<div class="google-map__map-container"><div>{% if section.url %}<iframe src="{{ section.url | replace('"', '&quot;') | safe }}" width="100%" height="550"></iframe>{% endif %}</div></div>
 {%- endmacro %}
 
 {% macro gallery(section) -%}

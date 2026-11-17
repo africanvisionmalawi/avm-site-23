@@ -7,7 +7,7 @@ import path from "node:path";
 import browserslist from "browserslist";
 import { bundle, browserslistToTargets } from "lightningcss";
 import markdownIt from "markdown-it";
-import { img, resizedUrl, srcset, generateImages } from "./site/_lib/image.js";
+import { img, resizedUrl, srcset, generateImages, resetImageJobs } from "./site/_lib/image.js";
 
 const md = markdownIt({ html: true, breaks: true, linkify: true, typographer: true });
 const cssTargets = browserslistToTargets(browserslist("defaults"));
@@ -33,7 +33,11 @@ export default function (eleventyConfig) {
   eleventyConfig.on("eleventy.before", ({ directories }) => buildCss(directories.output));
 
   // Resized images are generated once the pages have said which ones they need.
+  // Skipped on --dryrun, which writes no files.
+  const dryRun = process.argv.includes("--dryrun");
+  eleventyConfig.on("eleventy.before", resetImageJobs);
   eleventyConfig.on("eleventy.after", async ({ directories }) => {
+    if (dryRun) return;
     const n = await generateImages(directories.output);
     console.log(`[image] ${n} source images processed`);
   });

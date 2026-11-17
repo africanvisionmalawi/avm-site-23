@@ -14,7 +14,7 @@
 }
 
 .layout__wrapper {
-  background: #fff;
+  background: var(--c-bg);
   margin: 0 auto;
   position: relative;
   width: 100%;

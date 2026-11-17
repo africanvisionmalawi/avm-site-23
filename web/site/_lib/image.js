@@ -106,6 +106,11 @@ export function img(image, opts = {}) {
   return `<img ${attrs.join(" ")}>`;
 }
 
+/** Forget the previous build's requests (called before each build, incl. --serve rebuilds). */
+export function resetImageJobs() {
+  jobs.clear();
+}
+
 /** Create every resized image requested during the build. */
 export async function generateImages(outputDir) {
   const outDir = path.join(outputDir, OUT_URL);

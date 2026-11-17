@@ -17,7 +17,7 @@
 }
 
 .page-giftaidformsuccess-index__main {
-  background: #fff;
+  background: var(--c-bg);
   border-radius: 2px;
 }
 

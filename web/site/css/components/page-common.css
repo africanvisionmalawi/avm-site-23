@@ -15,7 +15,7 @@
 }
 
 .page-common__text-section {
-  background: #fff;
+  background: var(--c-bg);
   margin: 0 auto;
   max-width: 1080px;
   padding: 1rem;
@@ -35,7 +35,7 @@
 }
 
 .page-common__main {
-  background: #fff;
+  background: var(--c-bg);
   border-radius: 2px;
 }
 

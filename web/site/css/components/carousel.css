@@ -24,9 +24,9 @@
     background-position: center;
     background-repeat: no-repeat;
     cursor: pointer;
-    border: 1px solid #dbdbdb;
+    border: 1px solid var(--c-border-light);
     text-indent: -1000em;
-    background-color: white;
+    background-color: var(--c-bg);
     border-radius: 50%;
     z-index: 20;
   }

@@ -11,7 +11,7 @@
 }
 
 .videos-m__vid-text {
-  background: #fff;
+  background: var(--c-bg);
   font-size: 0.9em;
   padding: 4px;
 }
